@@ -1,4 +1,4 @@
-# emf-kaizen-experiments
+# Emf Kaizen Experiments
 
 This repository collects experimental artifacts associated with research
 papers that evaluate the EMF-Kaizen approach.

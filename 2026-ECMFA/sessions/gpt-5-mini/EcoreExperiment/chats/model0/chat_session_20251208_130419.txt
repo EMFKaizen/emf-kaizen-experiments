@@ -1,0 +1,914 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||13:04
+
+You: create two classes to model Places and Transitions||13:04
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||13:04
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+      "name": "PetriNet",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbPlc7lEfCBEtIB8TpJ4g",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbTrn7lEfCBEtIB8TpJ4g",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: create attributes for the PetriNet to store description and author||13:05
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||13:05
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+  "name": "PetriNet",
+  "abstract": false,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_k3gbAttrDesc001",
+      "name": "description",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString",
+      "defaultValueLiteral": ""
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_k3gbAttrAuthor002",
+      "name": "author",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString",
+      "defaultValueLiteral": ""
+    }
+  ]
+}
+------------------------------
+
+You: Translate the current model into Spanish||13:06
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||13:06
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+  "name": "RedesPetri",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "rp",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+      "name": "RedPetri",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: create two attributes name and description for the selected class||13:07
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||13:07
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+  "name": "PetriNet",
+  "abstract": false,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_k3gbAttrName1",
+      "name": "name",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 1,
+      "upperBound": 1,
+      "eType": "EString"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_k3gbAttrDesc1",
+      "name": "description",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString"
+    }
+  ]
+}
+------------------------------
+
+You: recommend some classes for the current metamodel||13:08
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||13:09
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_recPkg1_k3gbAM7lEfCBEtIB8TpJ4g",
+  "name": "PetriNetsRecommendations",
+  "nsURI": "http://petrinet/0.1/recommendations",
+  "nsPrefix": "pnr",
+  "eClassifiers": [
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_recEDT_EString_1",
+      "name": "EString",
+      "instanceClassName": "java.lang.String",
+      "serializable": true
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_recEDT_EInt_1",
+      "name": "EInt",
+      "instanceClassName": "int",
+      "serializable": true
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_recEClass_Place_1",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_recAttr_place_name_1",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_recEDT_EString_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_recAttr_place_tokens_1",
+          "name": "tokens",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_recEDT_EInt_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_recEClass_Transition_1",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_recAttr_transition_name_1",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_recEDT_EString_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_recEClass_Arc_1",
+      "name": "Arc",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_recRef_arc_source_1",
+          "name": "source",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_recEClass_Place_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_recRef_arc_target_1",
+          "name": "target",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_recEClass_Transition_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_recEClass_Token_1",
+      "name": "Token",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_recAttr_token_count_1",
+          "name": "count",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_recEDT_EInt_1"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: recommend some attributes for the selected class||13:10
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||13:10
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+  "name": "PetriNet",
+  "abstract": false,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attr_petri_name",
+      "name": "name",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 1,
+      "upperBound": 1,
+      "defaultValueLiteral": ""
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attr_petri_description",
+      "name": "description",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "defaultValueLiteral": ""
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attr_petri_author",
+      "name": "author",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "defaultValueLiteral": ""
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attr_petri_createdDate",
+      "name": "createdDate",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "defaultValueLiteral": ""
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attr_petri_isPublic",
+      "name": "isPublic",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "defaultValueLiteral": "false"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attr_petri_version",
+      "name": "version",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "defaultValueLiteral": "1"
+    }
+  ]
+}
+------------------------------
+
+You: complete this metamodel of Petri nets, with all missing details, and to consider inhibitor arcs||13:11
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||13:12
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+      "name": "PetriNet",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_pn_desc",
+          "name": "description",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_k3g_eString1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_pn_author",
+          "name": "author",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_k3g_eString1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_pn_places",
+          "name": "places",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": true,
+          "eType": "_place_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_pn_transitions",
+          "name": "transitions",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": true,
+          "eType": "_trans_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_pn_arcs",
+          "name": "arcs",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": true,
+          "eType": "_arc_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_k3g_eString1",
+      "name": "EString",
+      "instanceClassName": "java.lang.String",
+      "serializable": true
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_k3g_eInt1",
+      "name": "EInt",
+      "instanceClassName": "int",
+      "serializable": true
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_k3g_eBool1",
+      "name": "EBoolean",
+      "instanceClassName": "boolean",
+      "serializable": true
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_place_1",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_place_name",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_k3g_eString1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_place_desc",
+          "name": "description",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_k3g_eString1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_place_tokens",
+          "name": "initialTokens",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_k3g_eInt1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_trans_1",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_trans_name",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_k3g_eString1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_trans_desc",
+          "name": "description",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_k3g_eString1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_arc_1",
+      "name": "Arc",
+      "abstract": true,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_arc_weight",
+          "name": "weight",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "defaultValueLiteral": "1",
+          "eType": "_k3g_eInt1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_ptarc_1",
+      "name": "PlaceToTransitionArc",
+      "abstract": false,
+      "eSuperTypes": [
+        "_arc_1"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_pt_source",
+          "name": "source",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_place_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_pt_target",
+          "name": "target",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_trans_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_tparc_1",
+      "name": "TransitionToPlaceArc",
+      "abstract": false,
+      "eSuperTypes": [
+        "_arc_1"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_tp_source",
+          "name": "source",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_trans_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_tp_target",
+          "name": "target",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_place_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_inharc_1",
+      "name": "InhibitorArc",
+      "abstract": false,
+      "eSuperTypes": [
+        "_ptarc_1"
+      ],
+      "eStructuralFeatures": []
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: finish the metamodel for Petri nets, considering time in transitions||13:13
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||13:14
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+      "name": "PetriNet",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_r_places_1",
+          "name": "places",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": true,
+          "eType": "_place_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_r_transitions_1",
+          "name": "transitions",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": true,
+          "eType": "_transition_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_r_arcs_1",
+          "name": "arcs",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": true,
+          "eType": "_arc_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_description_pn",
+          "name": "description",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_dt_EString_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_author_pn",
+          "name": "author",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_dt_EString_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_place_1",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_name_place",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_dt_EString_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_tokens_place",
+          "name": "tokens",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "defaultValueLiteral": "0",
+          "eType": "_dt_EInt_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_transition_1",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_name_transition",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_dt_EString_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_timed_transition",
+          "name": "timed",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "defaultValueLiteral": "false",
+          "eType": "_dt_EBoolean_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_earliestTime_transition",
+          "name": "earliestTime",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_dt_EInt_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_latestTime_transition",
+          "name": "latestTime",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_dt_EInt_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_firingDelay_transition",
+          "name": "firingDelay",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_dt_EInt_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_arc_1",
+      "name": "Arc",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_weight_arc",
+          "name": "weight",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "defaultValueLiteral": "1",
+          "eType": "_dt_EInt_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_r_sourcePlace",
+          "name": "sourcePlace",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_place_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_r_targetPlace",
+          "name": "targetPlace",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_place_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_r_sourceTransition",
+          "name": "sourceTransition",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_transition_1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_r_targetTransition",
+          "name": "targetTransition",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_transition_1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_a_type_arc",
+          "name": "type",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_enum_ArcType_1"
+        }
+      ]
+    },
+    {
+      "___type___": "EEnum",
+      "xmi_id": "_enum_ArcType_1",
+      "name": "ArcType",
+      "eLiterals": [
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_lit_normal",
+          "name": "NORMAL",
+          "value": 0,
+          "literal": "NORMAL"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_lit_inhibitor",
+          "name": "INHIBITOR",
+          "value": 1,
+          "literal": "INHIBITOR"
+        }
+      ]
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_dt_EString_1",
+      "name": "EString",
+      "instanceClassName": "java.lang.String",
+      "serializable": true
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_dt_EInt_1",
+      "name": "EInt",
+      "instanceClassName": "int",
+      "serializable": true
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_dt_EBoolean_1",
+      "name": "EBoolean",
+      "instanceClassName": "boolean",
+      "serializable": true
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+

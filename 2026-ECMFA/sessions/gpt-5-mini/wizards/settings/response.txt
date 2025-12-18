@@ -1,0 +1,295 @@
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "title": "Employee onboarding data collection",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pAccount1",
+      "name": "Account Setup",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f1",
+          "label": "Work email",
+          "minLength": 5,
+          "maxLength": 254,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f2",
+          "label": "Username",
+          "minLength": 3,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f3",
+          "label": "Set password",
+          "minLength": 8,
+          "maxLength": 128,
+          "anyLength": false,
+          "isPassword": true
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b1",
+          "label": "Next: Security & MFA",
+          "toPage": "_Onb_pSecurity1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pSecurity1",
+      "name": "Security & MFA",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f4",
+          "label": "MFA method",
+          "minLength": 3,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f5",
+          "label": "Phone for SMS",
+          "minLength": 7,
+          "maxLength": 20,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f6",
+          "label": "Recovery email",
+          "minLength": 5,
+          "maxLength": 254,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b2",
+          "label": "Back to Account Setup"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b3",
+          "label": "Next: Access & Permissions",
+          "toPage": "_Onb_pAccess1"
+        }
+      ],
+      "checkbox": {
+        "___type___": "Checkbox",
+        "xmi_id": "_Onb_cb1",
+        "checked": false,
+        "label": "Enable MFA"
+      }
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pAccess1",
+      "name": "Access & Permissions",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f7",
+          "label": "Role",
+          "minLength": 2,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f8",
+          "label": "Repository access level",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b4",
+          "label": "Back to Security & MFA"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b5",
+          "label": "Next: Tools & Resources",
+          "toPage": "_Onb_pTools1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pTools1",
+      "name": "Tools & Resources",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f9",
+          "label": "GitHub username",
+          "minLength": 1,
+          "maxLength": 39,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f10",
+          "label": "Preferred editor",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f11",
+          "label": "Slack handle",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b6",
+          "label": "Back to Access & Permissions"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b7",
+          "label": "Next: Benefits Enrollment",
+          "toPage": "_Onb_pBenefits1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pBenefits1",
+      "name": "Benefits Enrollment",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f12",
+          "label": "Health plan selection",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f13",
+          "label": "401k contribution (%)",
+          "minLength": 1,
+          "maxLength": 3,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b8",
+          "label": "Back to Tools & Resources"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b9",
+          "label": "Next: Training & Orientation",
+          "toPage": "_Onb_pTraining1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pTraining1",
+      "name": "Training & Orientation",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f14",
+          "label": "Orientation session date",
+          "minLength": 10,
+          "maxLength": 10,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f15",
+          "label": "Assigned mentor",
+          "minLength": 3,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b10",
+          "label": "Back to Benefits Enrollment"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b11",
+          "label": "Next: Final Review",
+          "toPage": "_Onb_pFinal1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pFinal1",
+      "name": "Final Review & Submit",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b12",
+          "label": "Back to Training & Orientation"
+        },
+        {
+          "___type___": "CloseWizardButton",
+          "xmi_id": "_Onb_b13",
+          "label": "Submit and Close"
+        }
+      ],
+      "checkbox": {
+        "___type___": "Checkbox",
+        "xmi_id": "_Onb_cb2",
+        "checked": false,
+        "label": "I confirm all information is accurate"
+      }
+    }
+  ],
+  "initialPage": "_Ej7jwc7WEfC-mdvB7cLErg"
+}

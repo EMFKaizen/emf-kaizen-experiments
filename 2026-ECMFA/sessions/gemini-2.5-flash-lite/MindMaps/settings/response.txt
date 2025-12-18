@@ -1,0 +1,442 @@
+{
+  "___type___": "Map",
+  "xmi_id": "_altBaroqueMap_0",
+  "name": "Baroque Music - Comprehensive Overview",
+  "description": "An alternative, more detailed mind map of Baroque music, aiming for better organization and completeness.",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_altBaroqueRoot_0",
+    "name": "Baroque Music",
+    "description": "The period in Western classical music from roughly 1600 to 1750, characterized by grandeur, drama, and elaborate ornamentation.",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_altBaroqueHistory_0",
+        "name": "Historical Context",
+        "description": "The evolution and periods within Baroque music.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueEarly_0",
+            "name": "Early Baroque",
+            "description": "c. 1600–1650. Marked by the development of opera and new harmonic styles.",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueEarlyDevelopments_0",
+                "name": "Key Developments",
+                "description": "Introduction of basso continuo, monody, and the first operas.",
+                "subConcepts": [],
+                "parent": "_altBaroqueEarly_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueEarlyComposers_0",
+                "name": "Key Composers",
+                "description": "Monteverdi, Gabrieli, Schütz.",
+                "subConcepts": [],
+                "parent": "_altBaroqueEarly_0",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_altBaroqueHistory_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueMiddle_0",
+            "name": "Middle Baroque",
+            "description": "c. 1650–1700. Instrumental music solidified, and opera spread across Europe.",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueMiddleDevelopments_0",
+                "name": "Key Developments",
+                "description": "Establishment of major instrumental forms (concerto, sonata), rise of national styles.",
+                "subConcepts": [],
+                "parent": "_altBaroqueMiddle_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueMiddleComposers_0",
+                "name": "Key Composers",
+                "description": "Lully, Purcell, Corelli, Buxtehude.",
+                "subConcepts": [],
+                "parent": "_altBaroqueMiddle_0",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_altBaroqueHistory_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueLate_0",
+            "name": "Late Baroque",
+            "description": "c. 1700–1750. The culmination of Baroque style, featuring complex counterpoint and grand forms.",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueLateDevelopments_0",
+                "name": "Key Developments",
+                "description": "Peak of fugal writing, development of the solo concerto, grand oratorios.",
+                "subConcepts": [],
+                "parent": "_altBaroqueLate_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueLateComposers_0",
+                "name": "Key Composers",
+                "description": "Bach, Handel, Vivaldi, Telemann, Rameau.",
+                "subConcepts": [],
+                "parent": "_altBaroqueLate_0",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_altBaroqueHistory_0",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_altBaroqueRoot_0",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_altBaroqueGenres_0",
+        "name": "Genres & Forms",
+        "description": "Major musical forms and categories developed or popularized during the Baroque era.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueVocal_0",
+            "name": "Vocal Music",
+            "description": "Music for the voice, often with instrumental accompaniment.",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueOpera_0",
+                "name": "Opera",
+                "description": "A staged musical drama, combining singing, acting, and orchestral accompaniment.",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueOperaOrigin_0",
+                    "name": "Origins",
+                    "description": "Developed in Italy around 1600, influenced by Greek drama.",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueOpera_0",
+                    "relatedTo": []
+                  },
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueOperaElements_0",
+                    "name": "Key Elements",
+                    "description": "Recitative, Aria, Chorus, Libretto.",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueOpera_0",
+                    "relatedTo": []
+                  },
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueOperaThemes_0",
+                    "name": "Common Themes",
+                    "description": "Mythological, historical, and heroic subjects.",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueOpera_0",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_altBaroqueVocal_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueOratorio_0",
+                "name": "Oratorio",
+                "description": "A large-scale musical work for orchestra and chorus, typically on a sacred theme, but not staged.",
+                "subConcepts": [],
+                "parent": "_altBaroqueVocal_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueCantata_0",
+                "name": "Cantata",
+                "description": "A vocal composition with instrumental accompaniment, typically in several movements.",
+                "subConcepts": [],
+                "parent": "_altBaroqueVocal_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueChoral_0",
+                "name": "Choral Music",
+                "description": "Sacred and secular choral works, including masses and motets.",
+                "subConcepts": [],
+                "parent": "_altBaroqueVocal_0",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_altBaroqueGenres_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueInstrumental_0",
+            "name": "Instrumental Music",
+            "description": "Music composed for instruments, often with intricate textures and virtuosity.",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueConcerto_0",
+                "name": "Concerto",
+                "description": "A musical composition usually featuring a solo instrument or a small group of soloists accompanied by an orchestra.",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueConcertoGrosso_0",
+                    "name": "Concerto Grosso",
+                    "description": "Features a small group of soloists (concertino) contrasted with the full orchestra (ripieno).",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueConcerto_0",
+                    "relatedTo": []
+                  },
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueSoloConcerto_0",
+                    "name": "Solo Concerto",
+                    "description": "Features a single solo instrument.",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueConcerto_0",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_altBaroqueInstrumental_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueSonata_0",
+                "name": "Sonata",
+                "description": "An instrumental composition, typically of several movements.",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueSonataDaChiesa_0",
+                    "name": "Sonata da Chiesa",
+                    "description": "Church sonata, usually with a more serious and stately character.",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueSonata_0",
+                    "relatedTo": []
+                  },
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueSonataDa Camera_0",
+                    "name": "Sonata da Camera",
+                    "description": "Chamber sonata, often a suite of dances.",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueSonata_0",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_altBaroqueInstrumental_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueSuite_0",
+                "name": "Dance Suite",
+                "description": "A collection of instrumental dances, typically preceded by a prelude or overture.",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_altBaroqueSuiteMovements_0",
+                    "name": "Typical Movements",
+                    "description": "Allemande, Courante, Sarabande, Gigue (often with optional dances like Minuet, Bourrée).",
+                    "subConcepts": [],
+                    "parent": "_altBaroqueSuite_0",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_altBaroqueInstrumental_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueFugue_0",
+                "name": "Fugue",
+                "description": "A contrapuntal compositional technique in two or more voices, built on a central theme (subject).",
+                "subConcepts": [],
+                "parent": "_altBaroqueInstrumental_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroquePrelude_0",
+                "name": "Prelude",
+                "description": "An instrumental composition that is introductory in character.",
+                "subConcepts": [],
+                "parent": "_altBaroqueInstrumental_0",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_altBaroqueToccata_0",
+                "name": "Toccata",
+                "description": "A virtuosic piece of music for keyboard instruments, typically with a free and rhapsodic style.",
+                "subConcepts": [],
+                "parent": "_altBaroqueInstrumental_0",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_altBaroqueGenres_0",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_altBaroqueRoot_0",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_altBaroqueCharacteristics_0",
+        "name": "Key Characteristics",
+        "description": "Defining musical elements and stylistic features of the Baroque era.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueTexture_0",
+            "name": "Texture",
+            "description": "Predominantly polyphonic (especially late Baroque) and homophonic (early Baroque, opera).",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueHarmony_0",
+            "name": "Harmony",
+            "description": "Development of tonal harmony, functional harmony, and chromaticism.",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueMelody_0",
+            "name": "Melody",
+            "description": "Often elaborate, sequential, and based on short, recurring motifs.",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueRhythm_0",
+            "name": "Rhythm",
+            "description": "Steady, driving rhythms with clear meter and often motoric (energetic) quality.",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueDynamics_0",
+            "name": "Dynamics",
+            "description": "Terraced dynamics (sudden shifts between loud and soft) rather than gradual crescendos/decrescendos.",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueTimbre_0",
+            "name": "Timbre",
+            "description": "Richness of instrumental color; development of the orchestra; contrast between soloists and ensemble.",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueOrnamentation_0",
+            "name": "Ornamentation",
+            "description": "Extensive use of trills, mordents, appoggiaturas, and other embellishments to add expressiveness and virtuosity.",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueBassoContinuo_0",
+            "name": "Basso Continuo",
+            "description": "A continuous bass line played by a keyboard instrument (harpsichord, organ) and a low string instrument (cello, bassoon), providing harmonic foundation.",
+            "subConcepts": [],
+            "parent": "_altBaroqueCharacteristics_0",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_altBaroqueRoot_0",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_altBaroqueInstruments_0",
+        "name": "Prominent Instruments",
+        "description": "Key instruments that defined the Baroque sound.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueKeyboard_0",
+            "name": "Keyboard Instruments",
+            "description": "Harpsichord, Organ, Clavichord.",
+            "subConcepts": [],
+            "parent": "_altBaroqueInstruments_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueStrings_0",
+            "name": "String Instruments",
+            "description": "Violin family (violin, viola, cello, double bass), Viola da gamba family, Lute.",
+            "subConcepts": [],
+            "parent": "_altBaroqueInstruments_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueWoodwinds_0",
+            "name": "Woodwind Instruments",
+            "description": "Recorder, Baroque flute, Oboe, Bassoon.",
+            "subConcepts": [],
+            "parent": "_altBaroqueInstruments_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroqueBrass_0",
+            "name": "Brass Instruments",
+            "description": "Natural trumpet, Natural horn, Sackbut.",
+            "subConcepts": [],
+            "parent": "_altBaroqueInstruments_0",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_altBaroquePercussion_0",
+            "name": "Percussion Instruments",
+            "description": "Timpani, Kettle drums (less common in chamber music).",
+            "subConcepts": [],
+            "parent": "_altBaroqueInstruments_0",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_altBaroqueRoot_0",
+        "relatedTo": []
+      }
+    ],
+    "relatedTo": []
+  }
+}

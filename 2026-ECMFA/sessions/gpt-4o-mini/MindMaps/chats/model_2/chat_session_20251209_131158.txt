@@ -1,0 +1,1025 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||13:12
+
+You: Create two concepts "Imitation" and "Counterpoint" with a parent concept "Polyphony"||13:12
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||13:12
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_newMapId",
+  "name": "Music Concepts",
+  "description": "A mind map of music concepts",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_newRootId",
+    "name": "Polyphony",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newImitationId",
+        "name": "Imitation",
+        "subConcepts": [],
+        "parent": "_newRootId",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newCounterpointId",
+        "name": "Counterpoint",
+        "subConcepts": [],
+        "parent": "_newRootId",
+        "description": "",
+        "relatedTo": []
+      }
+    ],
+    "description": "",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a sequence of subconcepts: Forms & Genres -> Instrumental forms -> Suite||13:15
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||13:15
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_JGrmIMx5EfCB57nxSn8rSw",
+  "name": "Baroque music",
+  "description": "A mind map with the main concepts of Baroque music",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+    "name": "Baroque music",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmI9x5EfCB57nxSn8rSw",
+        "name": "Forms & Genres",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmIax5EfCB57nxSn8rSw",
+            "name": "Instrumental forms",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmIbx5EfCB57nxSn8rSw",
+                "name": "Suite",
+                "subConcepts": [],
+                "parent": "_JGrmIax5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "Baroque music concepts",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Translate the current model into Spanish||13:17
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||13:18
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_JGrmIMx5EfCB57nxSn8rSw",
+  "name": "Música barroca",
+  "description": "Un mapa mental con los conceptos principales de la música barroca",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+    "name": "Música barroca",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmIsx5EfCB57nxSn8rSw",
+        "name": "Música instrumental",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmI8x5EfCB57nxSn8rSw",
+        "name": "Música vocal religiosa",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmJMx5EfCB57nxSn8rSw",
+        "name": "Ópera",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmJcx5EfCB57nxSn8rSw",
+            "name": "Inventada en Italia",
+            "subConcepts": [],
+            "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmJsx5EfCB57nxSn8rSw",
+            "name": "¿Qué es?",
+            "subConcepts": [],
+            "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+            "description": "forma de arte teatral en la que se cuenta una historia a través de la música",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmJ8x5EfCB57nxSn8rSw",
+            "name": "Argumento",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmKMx5EfCB57nxSn8rSw",
+                "name": "Libreto",
+                "subConcepts": [],
+                "parent": "_JGrmJ8x5EfCB57nxSn8rSw",
+                "description": "El texto de la ópera se llama Libreto",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmKcx5EfCB57nxSn8rSw",
+                "name": "Temas históricos o mitológicos",
+                "subConcepts": [],
+                "parent": "_JGrmJ8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmKsx5EfCB57nxSn8rSw",
+        "name": "Suite de danza",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmK8x5EfCB57nxSn8rSw",
+            "name": "Movimientos",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLMx5EfCB57nxSn8rSw",
+                "name": "Obertura",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLcx5EfCB57nxSn8rSw",
+                "name": "Alemanda",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLsx5EfCB57nxSn8rSw",
+                "name": "Corriente",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmL8x5EfCB57nxSn8rSw",
+                "name": "Sarabanda",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmMMx5EfCB57nxSn8rSw",
+                "name": "Giga",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmKsx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmMcx5EfCB57nxSn8rSw",
+        "name": "Características",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmMsx5EfCB57nxSn8rSw",
+            "name": "Timbre",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmM8x5EfCB57nxSn8rSw",
+            "name": "Textura",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNMx5EfCB57nxSn8rSw",
+            "name": "Armonía",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmNcx5EfCB57nxSn8rSw",
+        "name": "Historia",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNsx5EfCB57nxSn8rSw",
+            "name": "Barroco temprano",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmN8x5EfCB57nxSn8rSw",
+                "name": "Compositores italianos",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOMx5EfCB57nxSn8rSw",
+                    "name": "Monteverdi",
+                    "subConcepts": [],
+                    "parent": "_JGrmN8x5EfCB57nxSn8rSw",
+                    "relatedTo": [
+                      "_JGrmJMx5EfCB57nxSn8rSw"
+                    ]
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmOcx5EfCB57nxSn8rSw",
+                "name": "Otros compositores",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOsx5EfCB57nxSn8rSw",
+                    "name": "M. Praetorius",
+                    "subConcepts": [],
+                    "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1580–1650",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+            "name": "Barroco medio",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1630–1700",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+            "name": "Barroco tardío",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1680–1750",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "Conceptos de música barroca",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a copy of the selected concepts, but in lower case||13:21
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||13:21
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_JGrmIXx5EfCB57nxSn8rSw",
+  "name": "baroque music",
+  "description": "A mind map with the main concepts of baroque music",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+    "name": "baroque music",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmUw5EfCB57nxSn8rSw",
+        "name": "instrumental music",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmVx5EfCB57nxSn8rSw",
+        "name": "vocal religious music",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmZ8x5EfCB57nxSn8rSw",
+        "name": "opera",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmZcx5EfCB57nxSn8rSw",
+            "name": "invented in italy",
+            "subConcepts": [],
+            "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmZsx5EfCB57nxSn8rSw",
+            "name": "what is?",
+            "subConcepts": [],
+            "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "description": "theatrical art form in which a story is told through music",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "name": "argument",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmK8x5EfCB57nxSn8rSw",
+                "name": "libreto",
+                "subConcepts": [],
+                "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+                "description": "The text of the opera is called libreto",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmKcx5EfCB57nxSn8rSw",
+                "name": "historical or mythological themes",
+                "subConcepts": [],
+                "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmKsx5EfCB57nxSn8rSw",
+        "name": "dance suite",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmK8x5EfCB57nxSn8rSw",
+            "name": "movements",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLMx5EfCB57nxSn8rSw",
+                "name": "overture",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLcx5EfCB57nxSn8rSw",
+                "name": "allemande",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLsx5EfCB57nxSn8rSw",
+                "name": "courante",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmL8x5EfCB57nxSn8rSw",
+                "name": "sarabande",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmMMx5EfCB57nxSn8rSw",
+                "name": "gigue",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmKsx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmMcx5EfCB57nxSn8rSw",
+        "name": "features",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmMsx5EfCB57nxSn8rSw",
+            "name": "timbre",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmM8x5EfCB57nxSn8rSw",
+            "name": "texture",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNMx5EfCB57nxSn8rSw",
+            "name": "harmony",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmNcx5EfCB57nxSn8rSw",
+        "name": "history",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNsx5EfCB57nxSn8rSw",
+            "name": "early baroque",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmN8x5EfCB57nxSn8rSw",
+                "name": "italian composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOMx5EfCB57nxSn8rSw",
+                    "name": "monteverdi",
+                    "subConcepts": [],
+                    "parent": "_JGrmN8x5EfCB57nxSn8rSw",
+                    "relatedTo": [
+                      "_JGrmJMx5EfCB57nxSn8rSw"
+                    ]
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmOcx5EfCB57nxSn8rSw",
+                "name": "other composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOsx5EfCB57nxSn8rSw",
+                    "name": "m. praetorius",
+                    "subConcepts": [],
+                    "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1580–1650",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+            "name": "middle baroque",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1630–1700",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+            "name": "late baroque",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1680–1750\t",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "baroque music concepts",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Late baroque"||13:24
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||13:24
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmPcx5EfCB57nxSn8rSw",
+  "name": "Late baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmPdx5EfCB57nxSn8rSw",
+      "name": "Oratorio",
+      "subConcepts": [],
+      "parent": "_JGrmPcx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmPex5EfCB57nxSn8rSw",
+      "name": "Concertato style",
+      "subConcepts": [],
+      "parent": "_JGrmPcx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmPfx5EfCB57nxSn8rSw",
+      "name": "Toccata",
+      "subConcepts": [],
+      "parent": "_JGrmPcx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "Late baroque concepts",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||13:26
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||13:26
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmRcx5EfCB57nxSn8rSw",
+  "name": "Influence on Music",
+  "subConcepts": [],
+  "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+  "description": "Impact of baroque music on later styles",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmRdx5EfCB57nxSn8rSw",
+  "name": "Key Composers",
+  "subConcepts": [],
+  "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmRex5EfCB57nxSn8rSw",
+  "name": "Baroque Characteristics",
+  "subConcepts": [],
+  "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Complete the Middle baroque with all missing details||13:29
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||13:29
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+  "name": "Middle baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmO9x5EfCB57nxSn8rSw",
+      "name": "Key Composers",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmOax5EfCB57nxSn8rSw",
+          "name": "Bach",
+          "subConcepts": [],
+          "parent": "_JGrmO9x5EfCB57nxSn8rSw",
+          "description": "A significant composer of the Middle Baroque era.",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmObx5EfCB57nxSn8rSw",
+          "name": "Vivaldi",
+          "subConcepts": [],
+          "parent": "_JGrmO9x5EfCB57nxSn8rSw",
+          "description": "Known for the 'Four Seasons'.",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Composers who significantly influenced the music of the Middle Baroque.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmOcx5EfCB57nxSn8rSw",
+      "name": "Styles and Characteristics",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmOd5xEfCB57nxSn8rSw",
+          "name": "Ornamentation",
+          "subConcepts": [],
+          "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+          "description": "The use of elaborate melodies and embellishments.",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmOe5xEfCB57nxSn8rSw",
+          "name": "Basso Continuo",
+          "subConcepts": [],
+          "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+          "description": "A form of continuous bass that underpins Baroque music.",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Distinct features that defined the Middle Baroque style.",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "Middle baroque (1630–1700) with enriched details.",
+  "relatedTo": []
+}
+------------------------------
+
+You: create an alternative mind map for baroque music, better organised, and completing the missing information of the model||13:30
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||13:31
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_NewMapID",
+  "name": "Baroque Music (Reorganized)",
+  "description": "A comprehensive and well-organized mind map of Baroque music concepts.",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_NewRootID",
+    "name": "Baroque Music",
+    "description": "Central theme of Baroque music including various aspects, styles, and historical context.",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept1ID",
+        "name": "Instrumental Music",
+        "description": "Focuses primarily on instrumental works during the Baroque period.",
+        "subConcepts": [],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept2ID",
+        "name": "Vocal Religious Music",
+        "description": "Music created for worship and religious ceremonies.",
+        "subConcepts": [],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept3ID",
+        "name": "Opera",
+        "description": "A dramatic art form combining music, singing, and performance.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept4ID",
+            "name": "Invented in Italy",
+            "subConcepts": [],
+            "parent": "_NewConcept3ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept5ID",
+            "name": "What is?",
+            "description": "Theatrical art form in which a story is told through music.",
+            "subConcepts": [],
+            "parent": "_NewConcept3ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept6ID",
+            "name": "Argument",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept7ID",
+                "name": "Libretto",
+                "description": "Text of opera is called Libretto.",
+                "subConcepts": [],
+                "parent": "_NewConcept6ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept8ID",
+                "name": "Historical or Mythological Themes",
+                "subConcepts": [],
+                "parent": "_NewConcept6ID",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_NewConcept3ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept9ID",
+        "name": "Dance Suite",
+        "description": "A set of dances, typically stylized in instrumental music.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept10ID",
+            "name": "Movements",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept11ID",
+                "name": "Overture",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept12ID",
+                "name": "Allemande",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept13ID",
+                "name": "Courante",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept14ID",
+                "name": "Sarabande",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept15ID",
+                "name": "Gigue",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_NewConcept9ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept16ID",
+        "name": "Features",
+        "description": "Distinct characteristics defining Baroque music.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept17ID",
+            "name": "Timbre",
+            "subConcepts": [],
+            "parent": "_NewConcept16ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept18ID",
+            "name": "Texture",
+            "subConcepts": [],
+            "parent": "_NewConcept16ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept19ID",
+            "name": "Harmony",
+            "subConcepts": [],
+            "parent": "_NewConcept16ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept20ID",
+        "name": "History",
+        "description": "An overview of the Baroque music period.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept21ID",
+            "name": "Early Baroque",
+            "description": "1580–1650",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept22ID",
+                "name": "Italian Composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_NewConcept23ID",
+                    "name": "Monteverdi",
+                    "subConcepts": [],
+                    "parent": "_NewConcept22ID",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_NewConcept21ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept24ID",
+                "name": "Other Composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_NewConcept25ID",
+                    "name": "M. Praetorius",
+                    "subConcepts": [],
+                    "parent": "_NewConcept24ID",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_NewConcept21ID",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_NewConcept20ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept26ID",
+            "name": "Middle Baroque",
+            "description": "1630–1700",
+            "subConcepts": [],
+            "parent": "_NewConcept20ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept27ID",
+            "name": "Late Baroque",
+            "description": "1680–1750",
+            "subConcepts": [],
+            "parent": "_NewConcept20ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      }
+    ],
+    "relatedTo": []
+  }
+}
+------------------------------
+

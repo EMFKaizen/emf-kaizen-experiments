@@ -1,0 +1,55 @@
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF_EndSessionCS",
+  "name": "EndSession",
+  "isInitial": false,
+  "isFinal": false,
+  "description": "Composite state modeling the ending of the ATM session",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF_EndSessionIdle",
+      "name": "Idle",
+      "isInitial": true,
+      "isFinal": false
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF_EjectCard",
+      "name": "EjectCard",
+      "isInitial": false,
+      "isFinal": false
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF_SessionEnded",
+      "name": "SessionEnded",
+      "isInitial": false,
+      "isFinal": true
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF_Trans_IdleToEject",
+      "from": "_eyhF_EndSessionIdle",
+      "to": "_eyhF_EjectCard",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_eyhF_Event_EndSessionRequest",
+        "name": "end_session_request"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF_Trans_EjectToEnded",
+      "from": "_eyhF_EjectCard",
+      "to": "_eyhF_SessionEnded",
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_eyhF_Action_EjectCard",
+        "code": "eject card"
+      }
+    }
+  ]
+}

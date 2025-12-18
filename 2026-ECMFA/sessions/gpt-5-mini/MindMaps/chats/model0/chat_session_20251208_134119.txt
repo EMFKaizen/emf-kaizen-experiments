@@ -1,0 +1,861 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||14:47
+
+You: create 10 concepts with names C1..C10||14:47
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||14:47
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C1_01",
+        "name": "C1",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C2_02",
+        "name": "C2",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C3_03",
+        "name": "C3",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C4_04",
+        "name": "C4",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C5_05",
+        "name": "C5",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C6_06",
+        "name": "C6",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C7_07",
+        "name": "C7",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C8_08",
+        "name": "C8",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C9_09",
+        "name": "C9",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C10_10",
+        "name": "C10",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a concept with 3 children concepts, and each children concept should have 2 children related to each other||14:47
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||14:48
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_pc_1",
+        "name": "Parent Concept",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_pc1_c1",
+            "name": "Child 1",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g1a",
+                "name": "Child 1 - Sub A",
+                "subConcepts": [],
+                "parent": "_pc1_c1",
+                "description": "First sub-concept of Child 1",
+                "relatedTo": [
+                  "_g1b"
+                ]
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g1b",
+                "name": "Child 1 - Sub B",
+                "subConcepts": [],
+                "parent": "_pc1_c1",
+                "description": "Second sub-concept of Child 1",
+                "relatedTo": [
+                  "_g1a"
+                ]
+              }
+            ],
+            "parent": "_pc_1",
+            "description": "First child of Parent Concept",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_pc1_c2",
+            "name": "Child 2",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g2a",
+                "name": "Child 2 - Sub A",
+                "subConcepts": [],
+                "parent": "_pc1_c2",
+                "description": "First sub-concept of Child 2",
+                "relatedTo": [
+                  "_g2b"
+                ]
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g2b",
+                "name": "Child 2 - Sub B",
+                "subConcepts": [],
+                "parent": "_pc1_c2",
+                "description": "Second sub-concept of Child 2",
+                "relatedTo": [
+                  "_g2a"
+                ]
+              }
+            ],
+            "parent": "_pc_1",
+            "description": "Second child of Parent Concept",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_pc1_c3",
+            "name": "Child 3",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g3a",
+                "name": "Child 3 - Sub A",
+                "subConcepts": [],
+                "parent": "_pc1_c3",
+                "description": "First sub-concept of Child 3",
+                "relatedTo": [
+                  "_g3b"
+                ]
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g3b",
+                "name": "Child 3 - Sub B",
+                "subConcepts": [],
+                "parent": "_pc1_c3",
+                "description": "Second sub-concept of Child 3",
+                "relatedTo": [
+                  "_g3a"
+                ]
+              }
+            ],
+            "parent": "_pc_1",
+            "description": "Third child of Parent Concept",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "A concept with 3 children, each having 2 related sub-children",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Translate the current model into Spanish||14:49
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||14:49
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "IA y LLMs para la educación",
+  "description": "Un mapa mental con ideas sobre cómo usar LLMs e IA en la educación universitaria",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "IA y LLMs en la educación",
+    "subConcepts": [],
+    "description": "La Inteligencia Artificial y los LLMs como habilitadores en la educación",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a replica of the selected elements, but translated into Spanish||14:50
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||14:50
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_MH6kscyESfCB57nxSn8rSw",
+  "name": "IA y LLMs en la educación",
+  "subConcepts": [],
+  "description": "Inteligencia Artificial y LLMs como facilitadores en la educación",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "AI and LLMs in education"||14:50
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||14:51
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_rec_AIEd_1",
+        "name": "Personalized Learning",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Tailoring instruction and learning paths using AI-driven student models and adaptive content.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_rec_AIEd_2",
+        "name": "Assessment and Feedback",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Automated formative assessment, instant feedback, and analytics to inform teaching and learning.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_rec_AIEd_3",
+        "name": "Ethics and Responsible Use",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Guidelines, bias mitigation, data privacy, and digital literacy for safe and fair AI adoption in education.",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||14:51
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||14:51
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs in education",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept1",
+      "name": "Personalized learning",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Using LLMs to tailor learning paths, content pacing, and resources to individual student needs",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept2",
+      "name": "Assessment and feedback",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Automated formative assessments, instant feedback generation, and grading assistance powered by LLMs",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept3",
+      "name": "Curriculum integration",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Designing course modules and learning activities that incorporate AI tools and LLM-driven exercises",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept4",
+      "name": "Teacher training and professional development",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Preparing instructors to use LLMs effectively, including pedagogy, tool selection, and classroom practices",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept5",
+      "name": "Ethics, privacy, and policy",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Addressing data privacy, academic integrity, bias, and institutional policies for safe AI adoption",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept6",
+      "name": "Infrastructure and tools",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Technical requirements, platform selection, integrations, and support needed to deploy LLM solutions",
+      "relatedTo": []
+    }
+  ],
+  "description": "Artificial Intelligence and LLMs as enablers in Education",
+  "relatedTo": []
+}
+------------------------------
+
+You: Create subconcepts of "AI and LLMs and education" to completely describe the idea||14:52
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||14:53
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ped1",
+        "name": "Pedagogy",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ped1a",
+            "name": "Active learning & problem-based learning",
+            "subConcepts": [],
+            "parent": "_ped1",
+            "description": "Use of AI to design and facilitate active, inquiry-driven learning experiences",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ped1b",
+            "name": "AI-augmented teaching strategies",
+            "subConcepts": [],
+            "parent": "_ped1",
+            "description": "Instructor workflows enhanced by AI (scaffolding, prompts, examples)",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Instructional approaches and methods supported or transformed by AI and LLMs",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ass1",
+        "name": "Assessment",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ass1a",
+            "name": "Formative assessment & feedback",
+            "subConcepts": [],
+            "parent": "_ass1",
+            "description": "Automated, timely feedback and formative checks using LLMs",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ass1b",
+            "name": "Plagiarism & integrity",
+            "subConcepts": [],
+            "parent": "_ass1",
+            "description": "Detection, prevention and redesign of assessments to address misuse of LLMs",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Design and implementation of assessments, integrity, and evaluation with AI support",
+        "relatedTo": [
+          "_eth1",
+          "_per1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_cur1",
+        "name": "Curriculum Design",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cur1a",
+            "name": "Competency mapping",
+            "subConcepts": [],
+            "parent": "_cur1",
+            "description": "Aligning learning outcomes and competencies with AI-enabled learning activities",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cur1b",
+            "name": "Course scaffolding with AI",
+            "subConcepts": [],
+            "parent": "_cur1",
+            "description": "Integrating AI tasks, checkpoints and resources across course modules",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Structuring programs and courses to incorporate LLM-supported learning",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_per1",
+        "name": "Personalization",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_per1a",
+            "name": "Adaptive learning paths",
+            "subConcepts": [],
+            "parent": "_per1",
+            "description": "Dynamic sequencing of content and tasks based on learner performance",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_per1b",
+            "name": "Learner modeling",
+            "subConcepts": [],
+            "parent": "_per1",
+            "description": "Building models of learner knowledge, preferences and needs with AI",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Tailoring learning experiences to individual students using AI-driven insights",
+        "relatedTo": [
+          "_la1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_la1",
+        "name": "Learning Analytics & Feedback",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_la1a",
+            "name": "Real-time dashboards",
+            "subConcepts": [],
+            "parent": "_la1",
+            "description": "Visualizations for instructors and learners to monitor progress",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_la1b",
+            "name": "Predictive interventions",
+            "subConcepts": [],
+            "parent": "_la1",
+            "description": "Early-warning systems and recommended interventions from analytics",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Data-driven insights and automated feedback loops enabled by AI",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_cc1",
+        "name": "Content Creation & Curation",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cc1a",
+            "name": "Automated content generation",
+            "subConcepts": [],
+            "parent": "_cc1",
+            "description": "Using LLMs to produce exercises, summaries, examples and multimedia scripts",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cc1b",
+            "name": "Content validation & quality",
+            "subConcepts": [],
+            "parent": "_cc1",
+            "description": "Ensuring accuracy, pedagogical alignment and up-to-dateness of AI-generated content",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Generation, selection and maintenance of learning materials with AI support",
+        "relatedTo": [
+          "_tech1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_tech1",
+        "name": "Technical Infrastructure",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_tech1a",
+            "name": "Deployment & integration",
+            "subConcepts": [],
+            "parent": "_tech1",
+            "description": "Connecting LLM services with LMS, student systems and APIs",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_tech1b",
+            "name": "Scalability & performance",
+            "subConcepts": [],
+            "parent": "_tech1",
+            "description": "Compute, latency, cost and availability considerations for campus-scale use",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Platforms, integrations and operational concerns for AI in education",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_fac1",
+        "name": "Faculty Development & Support",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_fac1a",
+            "name": "Training and upskilling",
+            "subConcepts": [],
+            "parent": "_fac1",
+            "description": "Workshops and resources to help instructors use AI effectively",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_fac1b",
+            "name": "Workflow tools for instructors",
+            "subConcepts": [],
+            "parent": "_fac1",
+            "description": "Templates, prompt libraries and automation to reduce instructor workload",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Support structures to enable educator adoption and best practices",
+        "relatedTo": [
+          "_ped1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_eth1",
+        "name": "Ethics & Policy",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_eth1a",
+            "name": "Bias, fairness, transparency",
+            "subConcepts": [],
+            "parent": "_eth1",
+            "description": "Mitigating bias, ensuring explainability and fair use of AI tools",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_eth1b",
+            "name": "Data privacy & consent",
+            "subConcepts": [],
+            "parent": "_eth1",
+            "description": "Policies for student data protection, consent and secure handling",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Ethical, legal and governance frameworks for responsible AI use in education",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_stu1",
+        "name": "Student Skills & Literacies",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_stu1a",
+            "name": "Prompting and critical thinking",
+            "subConcepts": [],
+            "parent": "_stu1",
+            "description": "Teaching students how to craft prompts and critically evaluate AI outputs",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_stu1b",
+            "name": "AI literacy and digital citizenship",
+            "subConcepts": [],
+            "parent": "_stu1",
+            "description": "Building understanding of AI capabilities, limits and responsible use",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Competencies students need to effectively and ethically use AI tools",
+        "relatedTo": [
+          "_ped1",
+          "_eth1"
+        ]
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Complete the mind map with concepts that summarise the history of use of AI in education||14:53
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||14:54
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc1IEfCB0001",
+        "name": "Computer‑Assisted Instruction (1960s-1970s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Early use of computers for drill-and-practice, programmed instruction and tutorial systems.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc2IEfCB0002",
+        "name": "Intelligent Tutoring Systems (1970s-1990s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Rule-based ITS modelling student knowledge and providing adaptive feedback (e.g., SCHOLAR, Cognitive Tutors).",
+        "relatedTo": [
+          "_MH6ksc1IEfCB0001",
+          "_MH6ksc5IEfCB0005"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc3IEfCB0003",
+        "name": "Expert Systems & AI research (1980s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Use of expert-system approaches to model domain expertise and support decision-making in education.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc4IEfCB0004",
+        "name": "Multimedia & Computer‑Based Training (1990s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Integration of multimedia, simulations and CBT, enabling richer interactive learning experiences.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc5IEfCB0005",
+        "name": "Adaptive Learning & Personalization (2000s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Systems that adapt content and sequencing to individual learner profiles using algorithms and models.",
+        "relatedTo": [
+          "_MH6ksc2IEfCB0002",
+          "_MH6ksc6IEfCB0006"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc6IEfCB0006",
+        "name": "Learning Analytics & Educational Data Mining (2010s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Analysis of learner data to inform design, adaptivity and institutional decision-making.",
+        "relatedTo": [
+          "_MH6ksc5IEfCB0005",
+          "_MH6ksc7IEfCB0007"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc7IEfCB0007",
+        "name": "MOOCs & Scalable Online Platforms (2010s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Massive open online courses and platforms that scaled delivery and generated large learning datasets.",
+        "relatedTo": [
+          "_MH6ksc6IEfCB0006"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc8IEfCB0008",
+        "name": "Automated Assessment & NLP (2000s-2010s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Use of natural language processing for essay scoring, automated feedback and grading assistance.",
+        "relatedTo": [
+          "_MH6ksc9IEfCB0009",
+          "_MH6ksc10IEfCB0010"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc9IEfCB0009",
+        "name": "Deep Learning & Large Language Models (2020s‑present)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Recent advances in deep learning and LLMs enabling conversational tutors, content generation and complex feedback.",
+        "relatedTo": [
+          "_MH6ksc8IEfCB0008",
+          "_MH6ksc10IEfCB0010"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc10IEfCB0010",
+        "name": "Ethics, Policy & Equity (ongoing)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Concerns about bias, privacy, academic integrity, regulation and equitable access as AI is adopted in education.",
+        "relatedTo": [
+          "_MH6ksc9IEfCB0009",
+          "_MH6ksc8IEfCB0008"
+        ]
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+

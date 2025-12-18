@@ -1,0 +1,185 @@
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+  "name": "Late baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltComp1Mx5EfCB57nxSn8rSw",
+      "name": "Composers",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltBach1Mx5EfCB57nxSn8rSw",
+          "name": "J.S. Bach",
+          "subConcepts": [],
+          "parent": "_AltComp1Mx5EfCB57nxSn8rSw",
+          "description": "Johann Sebastian Bach (1685–1750). Central figure of late Baroque; known for fugues, cantatas, Brandenburg Concertos, The Well-Tempered Clavier, Mass in B minor.",
+          "relatedTo": [
+            "_JGrmNMx5EfCB57nxSn8rSw",
+            "_JGrmIsx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltHandel1Mx5EfCB57nxSn8rSw",
+          "name": "G.F. Handel",
+          "subConcepts": [],
+          "parent": "_AltComp1Mx5EfCB57nxSn8rSw",
+          "description": "George Frideric Handel (1685–1759). Composer of operas, oratorios (e.g., Messiah) and instrumental music; active in England.",
+          "relatedTo": [
+            "_JGrmJMx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltVivaldi1Mx5EfCB57nxSn8rSw",
+          "name": "A. Vivaldi",
+          "subConcepts": [],
+          "parent": "_AltComp1Mx5EfCB57nxSn8rSw",
+          "description": "Antonio Vivaldi (1678–1741). Italian composer noted for violin concertos (The Four Seasons) and contributions to solo concerto form.",
+          "relatedTo": [
+            "_JGrmIsx5EfCB57nxSn8rSw",
+            "_JGrmKsx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Key composers of the Late Baroque period and their roles.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltChar1Mx5EfCB57nxSn8rSw",
+      "name": "Characteristics",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltFugue1Mx5EfCB57nxSn8rSw",
+          "name": "Fugue & Counterpoint",
+          "subConcepts": [],
+          "parent": "_AltChar1Mx5EfCB57nxSn8rSw",
+          "description": "Highly developed contrapuntal techniques; fugues as a central compositional form.",
+          "relatedTo": [
+            "_AltBach1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltContinuo1Mx5EfCB57nxSn8rSw",
+          "name": "Basso continuo",
+          "subConcepts": [],
+          "parent": "_AltChar1Mx5EfCB57nxSn8rSw",
+          "description": "Continuo (figured bass) providing harmonic foundation, typically harpsichord/organ with cello or bassoon.",
+          "relatedTo": [
+            "_JGrmNMx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltTerrace1Mx5EfCB57nxSn8rSw",
+          "name": "Terraced dynamics",
+          "subConcepts": [],
+          "parent": "_AltChar1Mx5EfCB57nxSn8rSw",
+          "description": "Abrupt shifts in volume rather than gradual crescendos; common in Baroque performance practice.",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Musical and performance traits distinctive of the Late Baroque.",
+      "relatedTo": [
+        "_JGrmMcx5EfCB57nxSn8rSw"
+      ]
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltForms1Mx5EfCB57nxSn8rSw",
+      "name": "Forms & Genres",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltConcerto1Mx5EfCB57nxSn8rSw",
+          "name": "Concerto grosso",
+          "subConcepts": [],
+          "parent": "_AltForms1Mx5EfCB57nxSn8rSw",
+          "description": "Contrast between a small group of soloists (concertino) and full ensemble (ripieno).",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltSoloConc1Mx5EfCB57nxSn8rSw",
+          "name": "Solo concerto",
+          "subConcepts": [],
+          "parent": "_AltForms1Mx5EfCB57nxSn8rSw",
+          "description": "Virtuosic solo instrument contrasted with orchestra; developed notably by Vivaldi.",
+          "relatedTo": [
+            "_AltVivaldi1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltOratorio1Mx5EfCB57nxSn8rSw",
+          "name": "Oratorio",
+          "subConcepts": [],
+          "parent": "_AltForms1Mx5EfCB57nxSn8rSw",
+          "description": "Large-scale vocal genre similar to opera but performed without staging; Handel is a key figure.",
+          "relatedTo": [
+            "_AltHandel1Mx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Principal musical forms and genres in the Late Baroque.",
+      "relatedTo": [
+        "_JGrmJMx5EfCB57nxSn8rSw",
+        "_JGrmKsx5EfCB57nxSn8rSw"
+      ]
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltWorks1Mx5EfCB57nxSn8rSw",
+      "name": "Notable works",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltBrandenburg1Mx5EfCB57nxSn8rSw",
+          "name": "Brandenburg Concertos",
+          "subConcepts": [],
+          "parent": "_AltWorks1Mx5EfCB57nxSn8rSw",
+          "description": "Set of six concertos by J.S. Bach showcasing concerto grosso and soloist writing.",
+          "relatedTo": [
+            "_AltBach1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltFourSeasons1Mx5EfCB57nxSn8rSw",
+          "name": "The Four Seasons",
+          "subConcepts": [],
+          "parent": "_AltWorks1Mx5EfCB57nxSn8rSw",
+          "description": "Four violin concertos by Vivaldi, each accompanied by a sonnet and programmatic elements.",
+          "relatedTo": [
+            "_AltVivaldi1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltMessiah1Mx5EfCB57nxSn8rSw",
+          "name": "Messiah",
+          "subConcepts": [],
+          "parent": "_AltWorks1Mx5EfCB57nxSn8rSw",
+          "description": "Oratorio by Handel, emblematic of late Baroque vocal-orchestral writing.",
+          "relatedTo": [
+            "_AltHandel1Mx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Representative works of the Late Baroque period.",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "1680–1750",
+  "relatedTo": []
+}

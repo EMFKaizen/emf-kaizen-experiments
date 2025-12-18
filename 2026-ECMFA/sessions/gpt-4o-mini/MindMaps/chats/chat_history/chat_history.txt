@@ -1,0 +1,2080 @@
+You: create 10 concepts with names C1..C10||12:37
+
+------------------------------||12:37
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw_new",
+  "name": "AI and LLMs for education with additional concepts",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education including new concepts.",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_C1",
+    "name": "C1",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C2",
+        "name": "C2",
+        "subConcepts": [],
+        "description": "Description for C2",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C3",
+        "name": "C3",
+        "subConcepts": [],
+        "description": "Description for C3",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C4",
+        "name": "C4",
+        "subConcepts": [],
+        "description": "Description for C4",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C5",
+        "name": "C5",
+        "subConcepts": [],
+        "description": "Description for C5",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C6",
+        "name": "C6",
+        "subConcepts": [],
+        "description": "Description for C6",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C7",
+        "name": "C7",
+        "subConcepts": [],
+        "description": "Description for C7",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C8",
+        "name": "C8",
+        "subConcepts": [],
+        "description": "Description for C8",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C9",
+        "name": "C9",
+        "subConcepts": [],
+        "description": "Description for C9",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C10",
+        "name": "C10",
+        "subConcepts": [],
+        "description": "Description for C10",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a concept with 3 children concepts, and each children concept should have 2 children related to each other||12:39
+
+------------------------------||12:40
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_childConcept1",
+        "name": "Child Concept 1",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_grandChildConcept1_1",
+            "name": "Grandchild Concept 1.1",
+            "subConcepts": [],
+            "description": "Description for Grandchild Concept 1.1",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_grandChildConcept1_2",
+            "name": "Grandchild Concept 1.2",
+            "subConcepts": [],
+            "description": "Description for Grandchild Concept 1.2",
+            "relatedTo": []
+          }
+        ],
+        "description": "Description for Child Concept 1",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_childConcept2",
+        "name": "Child Concept 2",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_grandChildConcept2_1",
+            "name": "Grandchild Concept 2.1",
+            "subConcepts": [],
+            "description": "Description for Grandchild Concept 2.1",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_grandChildConcept2_2",
+            "name": "Grandchild Concept 2.2",
+            "subConcepts": [],
+            "description": "Description for Grandchild Concept 2.2",
+            "relatedTo": []
+          }
+        ],
+        "description": "Description for Child Concept 2",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_childConcept3",
+        "name": "Child Concept 3",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_grandChildConcept3_1",
+            "name": "Grandchild Concept 3.1",
+            "subConcepts": [],
+            "description": "Description for Grandchild Concept 3.1",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_grandChildConcept3_2",
+            "name": "Grandchild Concept 3.2",
+            "subConcepts": [],
+            "description": "Description for Grandchild Concept 3.2",
+            "relatedTo": []
+          }
+        ],
+        "description": "Description for Child Concept 3",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Translate the current model into Spanish||12:42
+
+------------------------------||12:42
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: Create a replica of the selected elements, but translated into Spanish||12:43
+
+------------------------------||12:43
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_MH6kscyIEfCB57nxSn8rSw_esp",
+  "name": "IA y LLMs en educación",
+  "subConcepts": [],
+  "description": "Inteligencia Artificial y LLMs como habilitadores en Educación",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "AI and LLMs in education"||12:45
+
+------------------------------||12:45
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_MH6kscyIEfCB57nxSn8rSx",
+  "name": "Applications of AI in Education",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH6kscyIEfCB57nxSn8rSy",
+      "name": "Personalized Learning",
+      "subConcepts": [],
+      "description": "Using AI to tailor educational experiences to individual student needs.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH6kscyIEfCB57nxSn8rSz",
+      "name": "Automated Assessment",
+      "subConcepts": [],
+      "description": "Implementing AI to automate grading and assessment processes.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH6kscyIEfCB57nxSn8rSA",
+      "name": "Virtual Learning Environments",
+      "subConcepts": [],
+      "description": "Creating AI-driven virtual classrooms and learning spaces.",
+      "relatedTo": []
+    }
+  ],
+  "description": "Subconcepts related to the use of AI and LLMs in education.",
+  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||12:47
+
+------------------------------||12:47
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs in education",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_newId1",
+      "name": "Benefits of AI in Learning",
+      "subConcepts": [],
+      "description": "Exploring how AI can enhance the learning experience.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_newId2",
+      "name": "Challenges of Implementing LLMs",
+      "subConcepts": [],
+      "description": "Understanding the obstacles when integrating LLMs in education.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_newId3",
+      "name": "Future of AI in Education",
+      "subConcepts": [],
+      "description": "Discussing the potential future impacts of AI in educational systems.",
+      "relatedTo": []
+    }
+  ],
+  "description": "Artificial Intelligence and LLMs as enablers in Education",
+  "relatedTo": []
+}
+------------------------------
+
+You: Create subconcepts of "AI and LLMs and education" to completely describe the idea||12:48
+
+------------------------------||12:49
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_subC1",
+        "name": "Personalized Learning",
+        "subConcepts": [],
+        "description": "Utilizing AI to tailor education to individual students' needs.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_subC2",
+        "name": "Automated Assessment",
+        "subConcepts": [],
+        "description": "Using AI to assess student performance and provide feedback.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_subC3",
+        "name": "Intelligent Tutoring Systems",
+        "subConcepts": [],
+        "description": "AI-driven systems that guide students through learning processes.",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Complete the mind map with concepts that summarise the history of use of AI in education||12:52
+
+------------------------------||12:52
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newConcept1",
+        "name": "History of AI in Education",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newSubConcept1",
+            "name": "Early Adoption",
+            "description": "Initial use of AI tools in classrooms during the late 20th century.",
+            "subConcepts": [],
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newSubConcept2",
+            "name": "Growth of AI Applications",
+            "description": "Expansion of AI capabilities in education during the 21st century.",
+            "subConcepts": [],
+            "relatedTo": []
+          }
+        ],
+        "description": "A summary of how AI has been integrated into educational systems over the years.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newConcept2",
+        "name": "Impact on Teaching",
+        "description": "Exploration of how AI is reshaping teaching methodologies.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newSubConcept3",
+            "name": "Personalized Learning",
+            "description": "Use of AI to tailor educational experiences to individual student needs.",
+            "subConcepts": [],
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newSubConcept4",
+            "name": "Automation of Grading",
+            "description": "AI systems that assist in grading and assessment.",
+            "subConcepts": [],
+            "relatedTo": []
+          }
+        ],
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a mind map with 3 concepts inside||12:55
+
+------------------------------||12:55
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+  "name": "New Mind Map",
+  "description": "A mind map containing three concepts.",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_F1U4Qcx7EfCB57nxSn8rSw",
+    "name": "Main Concept",
+    "description": "The central idea of the mind map.",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Qsx7EfCB57nxSn8rSw",
+        "name": "Concept 1",
+        "description": "Description of Concept 1.",
+        "subConcepts": [],
+        "parent": "_F1U4Qcx7EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Rcx7EfCB57nxSn8rSw",
+        "name": "Concept 2",
+        "description": "Description of Concept 2.",
+        "subConcepts": [],
+        "parent": "_F1U4Qcx7EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Scx7EfCB57nxSn8rSw",
+        "name": "Concept 3",
+        "description": "Description of Concept 3.",
+        "subConcepts": [],
+        "parent": "_F1U4Qcx7EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a concept "Social" with three subconcepts "Family", "Friends" and "Relatives" inside||12:57
+
+------------------------------||12:57
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+  "name": "Social",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Q8x7EfCB57nxSn8rSw",
+      "name": "Family",
+      "subConcepts": [],
+      "parent": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Qcx7EfCB57nxSn8rSw",
+      "name": "Friends",
+      "subConcepts": [],
+      "parent": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Qjx7EfCB57nxSn8rSw",
+      "name": "Relatives",
+      "subConcepts": [],
+      "parent": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    }
+  ],
+  "description": "",
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Translate the current model into Spanish||12:58
+
+------------------------------||12:59
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_F1U4MMx7EfCB57nxSn8rSw",
+  "name": "Salud",
+  "description": "Un mapa mental con ideas para vivir de manera saludable",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_F1U4Mcx7EfCB57nxSn8rSw",
+    "name": "Salud",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Msx7EfCB57nxSn8rSw",
+        "name": "Dieta",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U4M8x7EfCB57nxSn8rSw",
+            "name": "Fruta",
+            "subConcepts": [],
+            "parent": "_F1U4Msx7EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U4NMx7EfCB57nxSn8rSw",
+            "name": "Vegetal",
+            "subConcepts": [],
+            "parent": "_F1U4Msx7EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U4Ncx7EfCB57nxSn8rSw",
+            "name": "Pan y Cereales",
+            "subConcepts": [],
+            "parent": "_F1U4Msx7EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Nsx7EfCB57nxSn8rSw",
+        "name": "Sueño",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U4N8x7EfCB57nxSn8rSw",
+            "name": "33% de nuestras vidas",
+            "subConcepts": [],
+            "parent": "_F1U4Nsx7EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U4OMx7EfCB57nxSn8rSw",
+            "name": "Insomnio",
+            "subConcepts": [],
+            "parent": "_F1U4Nsx7EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Ocx7EfCB57nxSn8rSw",
+        "name": "Estrés",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U4Osx7EfCB57nxSn8rSw",
+            "name": "Causas",
+            "subConcepts": [],
+            "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4O8x7EfCB57nxSn8rSw",
+        "name": "Ejercicio",
+        "subConcepts": [],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "¿Cómo podemos lograr la salud?",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create three children concepts for the selected one||13:00
+
+------------------------------||13:00
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4P8x7EfCB57nxSn8rSw",
+  "name": "Exercise",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Q8x7EfCB57nxSn8rSw",
+      "name": "Cardio",
+      "subConcepts": [],
+      "parent": "_F1U4P8x7EfCB57nxSn8rSw",
+      "description": "Aerobic exercises that increase heart rate.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4R8x7EfCB57nxSn8rSw",
+      "name": "Strength Training",
+      "subConcepts": [],
+      "parent": "_F1U4P8x7EfCB57nxSn8rSw",
+      "description": "Exercises to build muscle strength.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4S8x7EfCB57nxSn8rSw",
+      "name": "Flexibility",
+      "subConcepts": [],
+      "parent": "_F1U4P8x7EfCB57nxSn8rSw",
+      "description": "Activities that enhance body flexibility.",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "description": "Various forms of physical activity to improve health.",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Exercise"||13:02
+
+------------------------------||13:02
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4P8x7EfCB57nxSn8rSw",
+  "name": "Aerobics",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "A form of exercise that combines rhythmic aerobic exercise with stretching and strength training.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Q8x7EfCB57nxSn8rSw",
+  "name": "Weight Training",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "A type of strength training that uses free weights or machines to build muscle strength.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4R8x7EfCB57nxSn8rSw",
+  "name": "Yoga",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "A physical, mental, and spiritual practice that incorporates postures, breath control, and meditation.",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||13:04
+
+------------------------------||13:04
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Pxx7EfCB57nxSn8rSw",
+  "name": "Flexibility",
+  "subConcepts": [],
+  "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "description": "The ability to adapt exercises to different fitness levels.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Qxx7EfCB57nxSn8rSw",
+  "name": "Strength Training",
+  "subConcepts": [],
+  "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "description": "Exercises focused on building muscle strength.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Rxx7EfCB57nxSn8rSw",
+  "name": "Cardiovascular Endurance",
+  "subConcepts": [],
+  "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "description": "Activities that improve heart and lung function.",
+  "relatedTo": []
+}
+------------------------------
+
+You: Add concepts to model additional dimensions of Health, in detail||13:08
+
+------------------------------||13:08
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_F1U4MMx7EfCB57nxSn8rSw",
+  "name": "Health",
+  "description": "A mind map with ideas for healthy living",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_F1U4Mcx7EfCB57nxSn8rSw",
+    "name": "Health",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Pc5x7EfCB57nxSn8rSw",
+        "name": "Mental Health",
+        "subConcepts": [],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Understanding and maintaining mental well-being.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Qc5x7EfCB57nxSn8rSw",
+        "name": "Nutrition",
+        "subConcepts": [],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "The science of food and its impacts on health.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Rc5x7EfCB57nxSn8rSw",
+        "name": "Preventive Care",
+        "subConcepts": [],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Measures taken to prevent diseases and maintain health.",
+        "relatedTo": []
+      }
+    ],
+    "description": "How can we achieve health?",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Add all missing concepts to Stress||13:10
+
+------------------------------||13:10
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Odx7EfCB57nxSn8rSw",
+  "name": "Effects",
+  "subConcepts": [],
+  "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Create two concepts "Imitation" and "Counterpoint" with a parent concept "Polyphony"||13:12
+
+------------------------------||13:12
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_newMapId",
+  "name": "Music Concepts",
+  "description": "A mind map of music concepts",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_newRootId",
+    "name": "Polyphony",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newImitationId",
+        "name": "Imitation",
+        "subConcepts": [],
+        "parent": "_newRootId",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newCounterpointId",
+        "name": "Counterpoint",
+        "subConcepts": [],
+        "parent": "_newRootId",
+        "description": "",
+        "relatedTo": []
+      }
+    ],
+    "description": "",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a sequence of subconcepts: Forms & Genres -> Instrumental forms -> Suite||13:15
+
+------------------------------||13:15
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_JGrmIMx5EfCB57nxSn8rSw",
+  "name": "Baroque music",
+  "description": "A mind map with the main concepts of Baroque music",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+    "name": "Baroque music",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmI9x5EfCB57nxSn8rSw",
+        "name": "Forms & Genres",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmIax5EfCB57nxSn8rSw",
+            "name": "Instrumental forms",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmIbx5EfCB57nxSn8rSw",
+                "name": "Suite",
+                "subConcepts": [],
+                "parent": "_JGrmIax5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "Baroque music concepts",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Translate the current model into Spanish||13:17
+
+------------------------------||13:18
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_JGrmIMx5EfCB57nxSn8rSw",
+  "name": "Música barroca",
+  "description": "Un mapa mental con los conceptos principales de la música barroca",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+    "name": "Música barroca",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmIsx5EfCB57nxSn8rSw",
+        "name": "Música instrumental",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmI8x5EfCB57nxSn8rSw",
+        "name": "Música vocal religiosa",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmJMx5EfCB57nxSn8rSw",
+        "name": "Ópera",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmJcx5EfCB57nxSn8rSw",
+            "name": "Inventada en Italia",
+            "subConcepts": [],
+            "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmJsx5EfCB57nxSn8rSw",
+            "name": "¿Qué es?",
+            "subConcepts": [],
+            "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+            "description": "forma de arte teatral en la que se cuenta una historia a través de la música",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmJ8x5EfCB57nxSn8rSw",
+            "name": "Argumento",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmKMx5EfCB57nxSn8rSw",
+                "name": "Libreto",
+                "subConcepts": [],
+                "parent": "_JGrmJ8x5EfCB57nxSn8rSw",
+                "description": "El texto de la ópera se llama Libreto",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmKcx5EfCB57nxSn8rSw",
+                "name": "Temas históricos o mitológicos",
+                "subConcepts": [],
+                "parent": "_JGrmJ8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmKsx5EfCB57nxSn8rSw",
+        "name": "Suite de danza",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmK8x5EfCB57nxSn8rSw",
+            "name": "Movimientos",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLMx5EfCB57nxSn8rSw",
+                "name": "Obertura",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLcx5EfCB57nxSn8rSw",
+                "name": "Alemanda",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLsx5EfCB57nxSn8rSw",
+                "name": "Corriente",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmL8x5EfCB57nxSn8rSw",
+                "name": "Sarabanda",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmMMx5EfCB57nxSn8rSw",
+                "name": "Giga",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmKsx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmMcx5EfCB57nxSn8rSw",
+        "name": "Características",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmMsx5EfCB57nxSn8rSw",
+            "name": "Timbre",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmM8x5EfCB57nxSn8rSw",
+            "name": "Textura",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNMx5EfCB57nxSn8rSw",
+            "name": "Armonía",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmNcx5EfCB57nxSn8rSw",
+        "name": "Historia",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNsx5EfCB57nxSn8rSw",
+            "name": "Barroco temprano",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmN8x5EfCB57nxSn8rSw",
+                "name": "Compositores italianos",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOMx5EfCB57nxSn8rSw",
+                    "name": "Monteverdi",
+                    "subConcepts": [],
+                    "parent": "_JGrmN8x5EfCB57nxSn8rSw",
+                    "relatedTo": [
+                      "_JGrmJMx5EfCB57nxSn8rSw"
+                    ]
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmOcx5EfCB57nxSn8rSw",
+                "name": "Otros compositores",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOsx5EfCB57nxSn8rSw",
+                    "name": "M. Praetorius",
+                    "subConcepts": [],
+                    "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1580–1650",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+            "name": "Barroco medio",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1630–1700",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+            "name": "Barroco tardío",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1680–1750",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "Conceptos de música barroca",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a copy of the selected concepts, but in lower case||13:21
+
+------------------------------||13:21
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_JGrmIXx5EfCB57nxSn8rSw",
+  "name": "baroque music",
+  "description": "A mind map with the main concepts of baroque music",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+    "name": "baroque music",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmUw5EfCB57nxSn8rSw",
+        "name": "instrumental music",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmVx5EfCB57nxSn8rSw",
+        "name": "vocal religious music",
+        "subConcepts": [],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmZ8x5EfCB57nxSn8rSw",
+        "name": "opera",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmZcx5EfCB57nxSn8rSw",
+            "name": "invented in italy",
+            "subConcepts": [],
+            "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmZsx5EfCB57nxSn8rSw",
+            "name": "what is?",
+            "subConcepts": [],
+            "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "description": "theatrical art form in which a story is told through music",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "name": "argument",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmK8x5EfCB57nxSn8rSw",
+                "name": "libreto",
+                "subConcepts": [],
+                "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+                "description": "The text of the opera is called libreto",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmKcx5EfCB57nxSn8rSw",
+                "name": "historical or mythological themes",
+                "subConcepts": [],
+                "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmZ8x5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmKsx5EfCB57nxSn8rSw",
+        "name": "dance suite",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmK8x5EfCB57nxSn8rSw",
+            "name": "movements",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLMx5EfCB57nxSn8rSw",
+                "name": "overture",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLcx5EfCB57nxSn8rSw",
+                "name": "allemande",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmLsx5EfCB57nxSn8rSw",
+                "name": "courante",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmL8x5EfCB57nxSn8rSw",
+                "name": "sarabande",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmMMx5EfCB57nxSn8rSw",
+                "name": "gigue",
+                "subConcepts": [],
+                "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmKsx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmMcx5EfCB57nxSn8rSw",
+        "name": "features",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmMsx5EfCB57nxSn8rSw",
+            "name": "timbre",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmM8x5EfCB57nxSn8rSw",
+            "name": "texture",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNMx5EfCB57nxSn8rSw",
+            "name": "harmony",
+            "subConcepts": [],
+            "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmNcx5EfCB57nxSn8rSw",
+        "name": "history",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmNsx5EfCB57nxSn8rSw",
+            "name": "early baroque",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmN8x5EfCB57nxSn8rSw",
+                "name": "italian composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOMx5EfCB57nxSn8rSw",
+                    "name": "monteverdi",
+                    "subConcepts": [],
+                    "parent": "_JGrmN8x5EfCB57nxSn8rSw",
+                    "relatedTo": [
+                      "_JGrmJMx5EfCB57nxSn8rSw"
+                    ]
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmOcx5EfCB57nxSn8rSw",
+                "name": "other composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_JGrmOsx5EfCB57nxSn8rSw",
+                    "name": "m. praetorius",
+                    "subConcepts": [],
+                    "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1580–1650",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+            "name": "middle baroque",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1630–1700",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+            "name": "late baroque",
+            "subConcepts": [],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1680–1750\t",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "baroque music concepts",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Late baroque"||13:24
+
+------------------------------||13:24
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmPcx5EfCB57nxSn8rSw",
+  "name": "Late baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmPdx5EfCB57nxSn8rSw",
+      "name": "Oratorio",
+      "subConcepts": [],
+      "parent": "_JGrmPcx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmPex5EfCB57nxSn8rSw",
+      "name": "Concertato style",
+      "subConcepts": [],
+      "parent": "_JGrmPcx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmPfx5EfCB57nxSn8rSw",
+      "name": "Toccata",
+      "subConcepts": [],
+      "parent": "_JGrmPcx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "Late baroque concepts",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||13:26
+
+------------------------------||13:26
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmRcx5EfCB57nxSn8rSw",
+  "name": "Influence on Music",
+  "subConcepts": [],
+  "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+  "description": "Impact of baroque music on later styles",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmRdx5EfCB57nxSn8rSw",
+  "name": "Key Composers",
+  "subConcepts": [],
+  "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmRex5EfCB57nxSn8rSw",
+  "name": "Baroque Characteristics",
+  "subConcepts": [],
+  "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Complete the Middle baroque with all missing details||13:29
+
+------------------------------||13:29
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+  "name": "Middle baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmO9x5EfCB57nxSn8rSw",
+      "name": "Key Composers",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmOax5EfCB57nxSn8rSw",
+          "name": "Bach",
+          "subConcepts": [],
+          "parent": "_JGrmO9x5EfCB57nxSn8rSw",
+          "description": "A significant composer of the Middle Baroque era.",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmObx5EfCB57nxSn8rSw",
+          "name": "Vivaldi",
+          "subConcepts": [],
+          "parent": "_JGrmO9x5EfCB57nxSn8rSw",
+          "description": "Known for the 'Four Seasons'.",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Composers who significantly influenced the music of the Middle Baroque.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmOcx5EfCB57nxSn8rSw",
+      "name": "Styles and Characteristics",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmOd5xEfCB57nxSn8rSw",
+          "name": "Ornamentation",
+          "subConcepts": [],
+          "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+          "description": "The use of elaborate melodies and embellishments.",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmOe5xEfCB57nxSn8rSw",
+          "name": "Basso Continuo",
+          "subConcepts": [],
+          "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+          "description": "A form of continuous bass that underpins Baroque music.",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Distinct features that defined the Middle Baroque style.",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "Middle baroque (1630–1700) with enriched details.",
+  "relatedTo": []
+}
+------------------------------
+
+You: create an alternative mind map for baroque music, better organised, and completing the missing information of the model||13:30
+
+------------------------------||13:31
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_NewMapID",
+  "name": "Baroque Music (Reorganized)",
+  "description": "A comprehensive and well-organized mind map of Baroque music concepts.",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_NewRootID",
+    "name": "Baroque Music",
+    "description": "Central theme of Baroque music including various aspects, styles, and historical context.",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept1ID",
+        "name": "Instrumental Music",
+        "description": "Focuses primarily on instrumental works during the Baroque period.",
+        "subConcepts": [],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept2ID",
+        "name": "Vocal Religious Music",
+        "description": "Music created for worship and religious ceremonies.",
+        "subConcepts": [],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept3ID",
+        "name": "Opera",
+        "description": "A dramatic art form combining music, singing, and performance.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept4ID",
+            "name": "Invented in Italy",
+            "subConcepts": [],
+            "parent": "_NewConcept3ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept5ID",
+            "name": "What is?",
+            "description": "Theatrical art form in which a story is told through music.",
+            "subConcepts": [],
+            "parent": "_NewConcept3ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept6ID",
+            "name": "Argument",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept7ID",
+                "name": "Libretto",
+                "description": "Text of opera is called Libretto.",
+                "subConcepts": [],
+                "parent": "_NewConcept6ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept8ID",
+                "name": "Historical or Mythological Themes",
+                "subConcepts": [],
+                "parent": "_NewConcept6ID",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_NewConcept3ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept9ID",
+        "name": "Dance Suite",
+        "description": "A set of dances, typically stylized in instrumental music.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept10ID",
+            "name": "Movements",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept11ID",
+                "name": "Overture",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept12ID",
+                "name": "Allemande",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept13ID",
+                "name": "Courante",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept14ID",
+                "name": "Sarabande",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept15ID",
+                "name": "Gigue",
+                "subConcepts": [],
+                "parent": "_NewConcept10ID",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_NewConcept9ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept16ID",
+        "name": "Features",
+        "description": "Distinct characteristics defining Baroque music.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept17ID",
+            "name": "Timbre",
+            "subConcepts": [],
+            "parent": "_NewConcept16ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept18ID",
+            "name": "Texture",
+            "subConcepts": [],
+            "parent": "_NewConcept16ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept19ID",
+            "name": "Harmony",
+            "subConcepts": [],
+            "parent": "_NewConcept16ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_NewConcept20ID",
+        "name": "History",
+        "description": "An overview of the Baroque music period.",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept21ID",
+            "name": "Early Baroque",
+            "description": "1580–1650",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept22ID",
+                "name": "Italian Composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_NewConcept23ID",
+                    "name": "Monteverdi",
+                    "subConcepts": [],
+                    "parent": "_NewConcept22ID",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_NewConcept21ID",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_NewConcept24ID",
+                "name": "Other Composers",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_NewConcept25ID",
+                    "name": "M. Praetorius",
+                    "subConcepts": [],
+                    "parent": "_NewConcept24ID",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_NewConcept21ID",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_NewConcept20ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept26ID",
+            "name": "Middle Baroque",
+            "description": "1630–1700",
+            "subConcepts": [],
+            "parent": "_NewConcept20ID",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_NewConcept27ID",
+            "name": "Late Baroque",
+            "description": "1680–1750",
+            "subConcepts": [],
+            "parent": "_NewConcept20ID",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_NewRootID",
+        "relatedTo": []
+      }
+    ],
+    "relatedTo": []
+  }
+}
+------------------------------
+
+------------------------------||13:34
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_VRkQoM7UEfC2mPVygn5YyA",
+  "title": "Choose and Customise the LLM requests",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyB",
+      "name": "P1",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyC",
+      "name": "P2",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyD",
+      "name": "P3",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyE",
+      "name": "P4",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyF",
+      "name": "P5",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyG",
+      "name": "P6",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyH",
+      "name": "P7",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyI",
+      "name": "P8",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyJ",
+      "name": "P9",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_VRkQoc7UEfC2mPVygn5YyK",
+      "name": "P10",
+      "wizard": "_VRkQoM7UEfC2mPVygn5YyA",
+      "fields": [],
+      "buttons": []
+    }
+  ],
+  "initialPage": "_VRkQoc7UEfC2mPVygn5YyA"
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Exercise"||13:38
+
+------------------------------||13:39
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_new_Exercise_SubConcepts_Parent",
+  "name": "Exercise",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_new_Exercise_Cardio",
+      "name": "Cardio",
+      "description": "Aerobic exercises that increase heart rate",
+      "subConcepts": [],
+      "parent": "_new_Exercise_SubConcepts_Parent",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_new_Exercise_StrengthTraining",
+      "name": "Strength Training",
+      "description": "Exercises to build muscle strength",
+      "subConcepts": [],
+      "parent": "_new_Exercise_SubConcepts_Parent",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_new_Exercise_Flexibility",
+      "name": "Flexibility",
+      "description": "Exercises to improve the range of motion",
+      "subConcepts": [],
+      "parent": "_new_Exercise_SubConcepts_Parent",
+      "relatedTo": []
+    }
+  ],
+  "description": "",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend 3 subconcpts||13:41
+
+------------------------------||13:41
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_newSubConcept1",
+  "name": "Personalized Learning",
+  "description": "Using AI and LLMs to tailor education to individual student needs",
+  "subConcepts": [],
+  "relatedTo": [],
+  "parent": "_MH6kscyIEfCB57nxSn8rSw"
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_newSubConcept2",
+  "name": "Automated Grading",
+  "description": "Leveraging AI to automate the grading process for assignments and exams",
+  "subConcepts": [],
+  "relatedTo": [],
+  "parent": "_MH6kscyIEfCB57nxSn8rSw"
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_newSubConcept3",
+  "name": "Content Generation",
+  "description": "Using LLMs to generate educational content and resources dynamically",
+  "subConcepts": [],
+  "relatedTo": [],
+  "parent": "_MH6kscyIEfCB57nxSn8rSw"
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Exercise"||16:54
+
+------------------------------||16:55
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_F1U4MMx7EfCB57nxSn8rSw",
+  "name": "Health",
+  "description": "A mind map with ideas for healthy living",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_F1U4Mcx7EfCB57nxSn8rSw",
+    "name": "Health",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+        "name": "Cardio",
+        "subConcepts": [],
+        "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Qcx7EfCB57nxSn8rSw",
+        "name": "Strength Training",
+        "subConcepts": [],
+        "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U4Rcx7EfCB57nxSn8rSw",
+        "name": "Flexibility",
+        "subConcepts": [],
+        "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "How can we achieve health?",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Exercise"||16:55
+
+------------------------------||16:57
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+  "name": "Cardio",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises that raise your heart rate.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Qcx7EfCB57nxSn8rSw",
+  "name": "Strength Training",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises aimed at improving muscle strength.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Rcx7EfCB57nxSn8rSw",
+  "name": "Flexibility",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises that enhance the range of motion of muscles and joints.",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for "Exercise"||17:15
+
+------------------------------||17:15
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+  "name": "Cardio",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises that raise your heart rate.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Qcx7EfCB57nxSn8rSw",
+  "name": "Strength Training",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises aimed at improving muscle strength.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Rcx7EfCB57nxSn8rSw",
+  "name": "Flexibility",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises that enhance the range of motion of joints.",
+  "relatedTo": []
+}
+------------------------------
+

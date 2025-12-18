@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hsm:StateMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hsm="http://statemachines/0.1" xsi:schemaLocation="http://statemachines/0.1 StateMachines.ecore" xmi:id="_eyhF0MyMEfCuhbiBFBlMQg" description="ATM">
+  <states xmi:id="_eyhF0cyMEfCuhbiBFBlMQg" name="OutOfService"/>
+  <states xmi:id="_eyhF0syMEfCuhbiBFBlMQg" isInitial="true" name="MaintenanceMode"/>
+  <states xsi:type="hsm:CompositeState" xmi:id="_eyhF08yMEfCuhbiBFBlMQg" name="Operational" description="The ATM is working normally">
+    <states xmi:id="_eyhF1MyMEfCuhbiBFBlMQg" isInitial="true" name="Idle"/>
+    <states xmi:id="_eyhF1cyMEfCuhbiBFBlMQg" name="Card Inserted"/>
+    <states xmi:id="_eyhF1syMEfCuhbiBFBlMQg" name="PIN entry"/>
+    <states xmi:id="_eyhF18yMEfCuhbiBFBlMQg" name="MainMenu"/>
+    <states xsi:type="hsm:CompositeState" xmi:id="_eyhF2MyMEfCuhbiBFBlMQg" name="Transaction" description="This state models an ATM transaction">
+      <states xmi:id="_eyhF2cyMEfCuhbiBFBlMQg" name="Withdrawal"/>
+      <states xmi:id="_eyhF2syMEfCuhbiBFBlMQg" name="BalanceInquiry"/>
+      <states xmi:id="_eyhF28yMEfCuhbiBFBlMQg" name="Deposit"/>
+    </states>
+    <transitions xmi:id="_eyhF3MyMEfCuhbiBFBlMQg" from="_eyhF1MyMEfCuhbiBFBlMQg" to="_eyhF1cyMEfCuhbiBFBlMQg">
+      <event xmi:id="_eyhF3cyMEfCuhbiBFBlMQg" name="card_detected"/>
+    </transitions>
+    <transitions xmi:id="_eyhF3syMEfCuhbiBFBlMQg" from="_eyhF1cyMEfCuhbiBFBlMQg" to="_eyhF1MyMEfCuhbiBFBlMQg">
+      <action xmi:id="_eyhF38yMEfCuhbiBFBlMQg" code="eject card"/>
+      <guard xmi:id="_eyhF4MyMEfCuhbiBFBlMQg" condition="invalid card"/>
+    </transitions>
+    <transitions xmi:id="_eyhF4cyMEfCuhbiBFBlMQg" from="_eyhF1cyMEfCuhbiBFBlMQg" to="_eyhF1syMEfCuhbiBFBlMQg">
+      <guard xmi:id="_eyhF4syMEfCuhbiBFBlMQg" condition="valid card"/>
+    </transitions>
+    <transitions xmi:id="_eyhF48yMEfCuhbiBFBlMQg" from="_eyhF1syMEfCuhbiBFBlMQg" to="_eyhF1MyMEfCuhbiBFBlMQg">
+      <event xsi:type="hsm:TimeEvent" xmi:id="_eyhF5MyMEfCuhbiBFBlMQg" name="time out" time="1000.0"/>
+      <action xmi:id="_eyhF5cyMEfCuhbiBFBlMQg" code="eject card"/>
+    </transitions>
+  </states>
+</hsm:StateMachine>

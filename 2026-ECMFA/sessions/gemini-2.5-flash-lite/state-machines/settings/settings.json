@@ -1,0 +1,44 @@
+{
+  "StateMachines.ecore": {
+    "SerializationSelection": {
+      "StateMachine": [
+        "states",
+        "transitions",
+        "description"
+      ],
+      "State": [
+        "isInitial",
+        "isFinal",
+        "name"
+      ],
+      "Transition": [
+        "from",
+        "to",
+        "event",
+        "action",
+        "guard"
+      ],
+      "Event": [
+        "name"
+      ],
+      "CompositeState": [
+        "isInitial",
+        "isFinal",
+        "name",
+        "states",
+        "transitions",
+        "description"
+      ],
+      "Action": [
+        "code"
+      ],
+      "Guard": [
+        "condition"
+      ],
+      "TimeEvent": [
+        "name",
+        "time"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proc:ProcessModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:proc="http://ProcessModelling/0.1" xmi:id="_esXxcM7EEfCRuoeAi1p5xA" description="CI/CD Pipeline">
+  <nodes xsi:type="proc:Task" xmi:id="_esXxcc7EEfCRuoeAi1p5xA" name="Push changes to repository"/>
+  <nodes xsi:type="proc:Task" xmi:id="_esXxcs7EEfCRuoeAi1p5xA" name="Checkout code"/>
+  <nodes xsi:type="proc:Task" xmi:id="_esXxc87EEfCRuoeAi1p5xA" name="Unit test"/>
+  <nodes xsi:type="proc:Task" xmi:id="_esXxdM7EEfCRuoeAi1p5xA" name="integration test"/>
+  <nodes xsi:type="proc:ParallelSplit" xmi:id="_esXxdc7EEfCRuoeAi1p5xA"/>
+  <edges xmi:id="_esXxds7EEfCRuoeAi1p5xA" input="_esXxcc7EEfCRuoeAi1p5xA" output="_esXxcs7EEfCRuoeAi1p5xA" name="push to checkout"/>
+  <edges xmi:id="_esXxd87EEfCRuoeAi1p5xA" input="_esXxcs7EEfCRuoeAi1p5xA" output="_esXxdc7EEfCRuoeAi1p5xA" name="checkout to parallel"/>
+  <edges xmi:id="_esXxeM7EEfCRuoeAi1p5xA" input="_esXxdc7EEfCRuoeAi1p5xA" output="_esXxc87EEfCRuoeAi1p5xA" name="split to unit"/>
+  <edges xmi:id="_esXxec7EEfCRuoeAi1p5xA" input="_esXxdc7EEfCRuoeAi1p5xA" output="_esXxdM7EEfCRuoeAi1p5xA" name="split to integration"/>
+</proc:ProcessModel>

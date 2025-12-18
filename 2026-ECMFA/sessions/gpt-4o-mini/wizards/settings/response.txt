@@ -1,0 +1,18 @@
+{
+  "___type___": "Field",
+  "xmi_id": "_VRkQoc7UEfC2mPVygn5YyB",
+  "label": "LLM Vendor",
+  "minLength": 1,
+  "maxLength": 100,
+  "anyLength": false,
+  "isPassword": false
+},
+{
+  "___type___": "Field",
+  "xmi_id": "_VRkQoc7UEfC2mPVygn5YyC",
+  "label": "LLM Model",
+  "minLength": 1,
+  "maxLength": 100,
+  "anyLength": false,
+  "isPassword": false
+}

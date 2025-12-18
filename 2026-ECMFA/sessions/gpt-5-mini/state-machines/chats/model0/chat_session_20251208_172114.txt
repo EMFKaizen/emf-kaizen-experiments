@@ -1,0 +1,498 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||17:23
+
+You: create 10 states with names S1…S10||17:23
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||17:23
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S2"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S3",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S3"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S4",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S4"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S5",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S5"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S6",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S6"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S7",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S7"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S8",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S8"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S9",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S9"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg_S10",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S10"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: Create a sequence of 3 states, connected by transitions||17:23
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||17:24
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA1State_S1",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "S1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA2State_S2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S2"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_jYfA3State_S3",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "S3"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_jYfA1Trans_1",
+      "from": "_jYfA1State_S1",
+      "to": "_jYfA2State_S2"
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_jYfA2Trans_2",
+      "from": "_jYfA2State_S2",
+      "to": "_jYfA3State_S3"
+    }
+  ],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: Translate the current model into Spanish||17:24
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||17:24
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [],
+  "transitions": [],
+  "description": "Semáforo"
+}
+------------------------------
+
+You: add a composite state with an initial state to the selected element||17:25
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||17:25
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_compState_1_jYfA0MyL",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Composite1",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_compState_1_initial_1",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "Initial"
+        }
+      ],
+      "transitions": [],
+      "description": "Composite state containing an initial state"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: recommend three states for the state machine||17:25
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||17:26
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_sRed_01",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "Red"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_sYellow_02",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Yellow"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_sGreen_03",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Green"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: recommend a better name for the State Machine||17:26
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||17:26
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [],
+  "transitions": [],
+  "description": "Traffic Signal State Machine"
+}
+------------------------------
+
+You: Create the states and transitions for the state machine||17:26
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||17:27
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_s_Red",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "Red"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_s_Green",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Green"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_s_Yellow",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Yellow"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_t_Red_Green",
+      "from": "_s_Red",
+      "to": "_s_Green",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_e_timer_rg",
+        "name": "timer",
+        "time": 5000.0
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_a_setGreen",
+        "code": "setLight(GREEN)"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_t_Green_Yellow",
+      "from": "_s_Green",
+      "to": "_s_Yellow",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_e_timer_gy",
+        "name": "timer",
+        "time": 4000.0
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_a_setYellow",
+        "code": "setLight(YELLOW)"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_t_Yellow_Red",
+      "from": "_s_Yellow",
+      "to": "_s_Red",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_e_timer_yr",
+        "name": "timer",
+        "time": 1000.0
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_a_setRed",
+        "code": "setLight(RED)"
+      }
+    }
+  ],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: Create the states and transitions for a traffic light that has both lights for cars and for pedestrians, and that has time-triggered transitions||17:27
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||17:28
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_CARComp_1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "CarSignals",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_CAR_Green",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "CarGreen"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_CAR_Yellow",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "CarYellow"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_CAR_Red",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "CarRed"
+        }
+      ],
+      "transitions": [
+        {
+          "___type___": "Transition",
+          "xmi_id": "_t_car_g_y",
+          "from": "_CAR_Green",
+          "to": "_CAR_Yellow",
+          "event": {
+            "___type___": "TimeEvent",
+            "xmi_id": "_te_car_g_y",
+            "name": "GreenTimeout",
+            "time": 60000.0
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_act_car_g_y",
+            "code": "setCarYellow();"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_t_car_y_r",
+          "from": "_CAR_Yellow",
+          "to": "_CAR_Red",
+          "event": {
+            "___type___": "TimeEvent",
+            "xmi_id": "_te_car_y_r",
+            "name": "YellowTimeout",
+            "time": 5000.0
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_act_car_y_r",
+            "code": "setCarRed();"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_t_car_r_g",
+          "from": "_CAR_Red",
+          "to": "_CAR_Green",
+          "event": {
+            "___type___": "TimeEvent",
+            "xmi_id": "_te_car_r_g",
+            "name": "RedTimeout",
+            "time": 60000.0
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_act_car_r_g",
+            "code": "setCarGreen();"
+          }
+        }
+      ],
+      "description": "Car traffic lights cycle"
+    },
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_PEDComp_1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "PedestrianSignals",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_PED_Walk",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "PedWalk"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_PED_DontWalk",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "PedDontWalk"
+        }
+      ],
+      "transitions": [
+        {
+          "___type___": "Transition",
+          "xmi_id": "_t_ped_w_dw",
+          "from": "_PED_Walk",
+          "to": "_PED_DontWalk",
+          "event": {
+            "___type___": "TimeEvent",
+            "xmi_id": "_te_ped_w_dw",
+            "name": "WalkTimeout",
+            "time": 30000.0
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_act_ped_w_dw",
+            "code": "setPedDontWalk();"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_t_ped_dw_w",
+          "from": "_PED_DontWalk",
+          "to": "_PED_Walk",
+          "event": {
+            "___type___": "TimeEvent",
+            "xmi_id": "_te_ped_dw_w",
+            "name": "DontWalkTimeout",
+            "time": 30000.0
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_act_ped_dw_w",
+            "code": "setPedWalk();"
+          }
+        }
+      ],
+      "description": "Pedestrian signals cycle"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+

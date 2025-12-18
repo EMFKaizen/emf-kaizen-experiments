@@ -1,0 +1,34 @@
+{
+   "soba_userInput":"recommend three subconcepts for the concept \"AI and LLMs in education\"",
+   "soba_metaModelContext":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ecore:EPackage xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ecore=\"http://www.eclipse.org/emf/2002/Ecore\" name=\"mindMap\" nsURI=\"http://mindmap/0.1\" nsPrefix=\"map\">\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Map\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"root\" eType=\"//Concept\" containment=\"true\"/>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Concept\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"subConcepts\" upperBound=\"-1\" eType=\"//Concept\" containment=\"true\" eOpposite=\"//Concept/parent\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"parent\" eType=\"//Concept\" eOpposite=\"//Concept/subConcepts\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"relatedTo\" upperBound=\"-1\" eType=\"//Concept\"/>\r\n  <\/eClassifiers>\r\n<\/ecore:EPackage>\r\n",
+   "recommendationPayload":{"results":[
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_newConcept1",
+	  "name": "Personalized Learning",
+	  "description": "Utilizing AI and LLMs to tailor educational content and pacing to individual student needs.",
+	  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+	  "subConcepts": [],
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_newConcept2",
+	  "name": "Automated Assessment and Feedback",
+	  "description": "Employing AI and LLMs for grading, performance analysis, and providing instant feedback to students.",
+	  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+	  "subConcepts": [],
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_newConcept3",
+	  "name": "AI-Assisted Content Creation",
+	  "description": "Leveraging LLMs to generate educational materials, lesson plans, and learning resources.",
+	  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+	  "subConcepts": [],
+	  "relatedTo": []
+	}
+      ]
+   }
+}

@@ -1,0 +1,90 @@
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4h",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4i",
+          "name": "tokens",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4j",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4k",
+          "name": "time",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4l",
+          "name": "input",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": false,
+          "eType": "_k3gbAc7lEfCBEtIB8TpJ4h"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4m",
+          "name": "output",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": false,
+          "eType": "_k3gbAc7lEfCBEtIB8TpJ4h"
+        }
+      ]
+    },
+    {
+      "___type___": "EReference",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4n",
+      "name": "places",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": -1,
+      "containment": true,
+      "eType": "_k3gbAc7lEfCBEtIB8TpJ4h",
+      "eContainingClass": "_k3gbAc7lEfCBEtIB8TpJ4g"
+    },
+    {
+      "___type___": "EReference",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4o",
+      "name": "transitions",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": -1,
+      "containment": true,
+      "eType": "_k3gbAc7lEfCBEtIB8TpJ4j",
+      "eContainingClass": "_k3gbAc7lEfCBEtIB8TpJ4g"
+    }
+  ]
+}

@@ -1,0 +1,1116 @@
+You: Create 10 tasks with names T1..T10||16:48
+
+------------------------------||16:48
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task1",
+      "name": "T1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task2",
+      "name": "T2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task3",
+      "name": "T3"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task4",
+      "name": "T4"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task5",
+      "name": "T5"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task6",
+      "name": "T6"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task7",
+      "name": "T7"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task8",
+      "name": "T8"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task9",
+      "name": "T9"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task10",
+      "name": "T10"
+    }
+  ],
+  "edges": [],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Create three tasks, one of the task should have as output a ParallelSplit. The ParallelSplit should have as output the other two tasks.||16:51
+
+------------------------------||16:51
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask1",
+      "name": "Task 1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask2",
+      "name": "Task 2"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_parallelSplit1"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_flowEdge1",
+      "input": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "output": "_parallelSplit1",
+      "name": "to ParallelSplit"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_flowEdge2",
+      "input": "_parallelSplit1",
+      "output": "_newTask1",
+      "name": "to Task 1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_flowEdge3",
+      "input": "_parallelSplit1",
+      "output": "_newTask2",
+      "name": "to Task 2"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Create three tasks, one of the task should have as output a ParallelSplit. The ParallelSplit should have as output the other two tasks.||16:56
+
+------------------------------||16:57
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask1",
+      "name": "Task 1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask2",
+      "name": "Task 2"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_newParallelSplit"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge1",
+      "input": "_newTask1",
+      "output": "_newParallelSplit",
+      "name": "Flow from Task 1 to Parallel Split"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge2",
+      "input": "_newTask2",
+      "output": "_newParallelSplit",
+      "name": "Flow from Task 2 to Parallel Split"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Translate the current model into Spanish||16:58
+
+------------------------------||16:59
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: add an initial and a final task to the selected element||17:00
+
+------------------------------||17:00
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_newInitialTaskId",
+      "name": "Start Process"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_newFinalTaskId",
+      "name": "End Process"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    }
+  ],
+  "edges": [],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Recommend three tasks for the process model||17:01
+
+------------------------------||17:01
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask1",
+      "name": "Task 1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask2",
+      "name": "Task 2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask3",
+      "name": "Task 3"
+    }
+  ],
+  "edges": [],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Recommend a better name for the selected element||17:02
+
+------------------------------||17:02
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Research Paper Submission"
+    }
+  ],
+  "edges": [],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: finish the process model with the necessary tasks and edges||17:04
+
+------------------------------||17:04
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ_initial",
+      "name": "Start Process"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ_task1",
+      "name": "Task 1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ_task2",
+      "name": "Task 2"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ_final",
+      "name": "End Process"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ_edge1",
+      "input": "_cnlMAM7AEfCub4t_QbJKtQ_initial",
+      "output": "_cnlMAM7AEfCub4t_QbJKtQ_task1",
+      "name": "Start to Task 1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ_edge2",
+      "input": "_cnlMAM7AEfCub4t_QbJKtQ_task1",
+      "output": "_cnlMAM7AEfCub4t_QbJKtQ_task2",
+      "name": "Task 1 to Task 2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ_edge3",
+      "input": "_cnlMAM7AEfCub4t_QbJKtQ_task2",
+      "output": "_cnlMAM7AEfCub4t_QbJKtQ_final",
+      "name": "Task 2 to End"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Finish the process model for a journal that has an initial phase of deciding if the paper is in the journal scope||17:06
+
+------------------------------||17:06
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_newInitialTask",
+      "name": "Decide if paper is in journal scope"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_newFinalTask",
+      "name": "Complete publication process"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newFlowEdge1",
+      "input": "_newInitialTask",
+      "output": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Initial decision"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newFlowEdge2",
+      "input": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "output": "_newFinalTask",
+      "name": "Proceed to publication"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Create two tasks that are the input of a Synchronisation gateway, the gateway should has as output a new Task with name "Finish"||17:07
+
+------------------------------||17:08
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxwM7EEfCRuoeAi1p5xB",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxwA7EEfCRuoeAi1p5xC",
+      "name": "Task 1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxwB7EEfCRuoeAi1p5xD",
+      "name": "Task 2"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_esXxwC7EEfCRuoeAi1p5xE"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxwD7EEfCRuoeAi1p5xF",
+      "name": "Finish"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxwE7EEfCRuoeAi1p5xG",
+      "input": "_esXxwA7EEfCRuoeAi1p5xC",
+      "output": "_esXxwC7EEfCRuoeAi1p5xE",
+      "name": "input to sync 1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxwF7EEfCRuoeAi1p5xH",
+      "input": "_esXxwB7EEfCRuoeAi1p5xD",
+      "output": "_esXxwC7EEfCRuoeAi1p5xE",
+      "name": "input to sync 2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxwG7EEfCRuoeAi1p5xI",
+      "input": "_esXxwC7EEfCRuoeAi1p5xE",
+      "output": "_esXxwD7EEfCRuoeAi1p5xF",
+      "name": "sync to finish"
+    }
+  ],
+  "description": "Process with synchronization gateway and finish task"
+}
+------------------------------
+
+You: Create an exclusive choice gateway with two output conditions: "integration test passed" goes to a new Task "system test", and "integration test failed" that goes to a new Task "notify integration failure"||17:11
+
+------------------------------||17:11
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_esXxfM7EEfCRuoeAi1p5xA",
+      "conditions": [
+        {
+          "___type___": "ConditionalFlowEdge",
+          "xmi_id": "_esXxgM7EEfCRuoeAi1p5xA",
+          "input": "_esXxdM7EEfCRuoeAi1p5xA",
+          "output": "_esXxhM7EEfCRuoeAi1p5xA",
+          "name": "integration test passed",
+          "condition": "integration test passed"
+        },
+        {
+          "___type___": "ConditionalFlowEdge",
+          "xmi_id": "_esXxiM7EEfCRuoeAi1p5xA",
+          "input": "_esXxdM7EEfCRuoeAi1p5xA",
+          "output": "_esXxjM7EEfCRuoeAi1p5xA",
+          "name": "integration test failed",
+          "condition": "integration test failed"
+        }
+      ]
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxh7EEfCRuoeAi1p5xA",
+      "name": "system test"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxi7EEfCRuoeAi1p5xA",
+      "name": "notify integration failure"
+    }
+  ],
+  "edges": [],
+  "description": "CI/CD Pipeline"
+}
+------------------------------
+
+You: Translate the current model into Spanish||17:13
+
+------------------------------||17:13
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: Translate the name of the selected tasks into Spanish||17:14
+
+------------------------------||17:14
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: recommend three more tasks for the process model||17:15
+
+------------------------------||17:15
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxgM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxgN7EEfCRuoeAi1p5xA",
+      "name": "Code review"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxgP7EEfCRuoeAi1p5xA",
+      "name": "Prepare deployment"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxgQ7EEfCRuoeAi1p5xA",
+      "name": "Monitor deployment"
+    }
+  ],
+  "edges": [],
+  "description": ""
+}
+------------------------------
+
+You: recommend conditions for a multichoice gateway that goes after task "unit test"||17:24
+
+------------------------------||17:24
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "MultiChoice",
+  "xmi_id": "_esXxd87EEfCRuoeAi1p5xA",
+  "conditions": [
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newFlowEdge1",
+      "input": "_esXxc87EEfCRuoeAi1p5xA",
+      "output": "_newTask1",
+      "name": "unit test passed",
+      "condition": "unit test passed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newFlowEdge2",
+      "input": "_esXxc87EEfCRuoeAi1p5xA",
+      "output": "_newTask2",
+      "name": "unit test failed",
+      "condition": "unit test failed"
+    }
+  ]
+}
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for AI software systems||17:27
+
+------------------------------||17:27
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_newId1",
+      "name": "Code Review"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newId2",
+      "name": "Deploy to Production"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_newId3",
+      "name": "Monitor System"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_newId4"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newId5",
+      "input": "_esXxxdM7EEfCRuoeAi1p5xA",
+      "output": "_newId1",
+      "name": "integration to review"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newId6",
+      "input": "_newId4",
+      "output": "_newId2",
+      "condition": "Code Review Approved"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newId7",
+      "input": "_newId4",
+      "output": "_newId3",
+      "condition": "Code Review Rejected"
+    }
+  ],
+  "description": "CI/CD pipeline for AI software systems"
+}
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for a cyberphysical system that has a digital twin||17:28
+
+------------------------------||17:28
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxth7EEfCRuoeAi1p5xA",
+      "name": "Deploy to staging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxti7EEfCRuoeAi1p5xA",
+      "name": "Monitor system performance"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_esXxtj7EEfCRuoeAi1p5xA",
+      "name": "Release to production"
+    },
+    {
+      "___type___": "MultiChoice",
+      "xmi_id": "_esXxtk7EEfCRuoeAi1p5xA",
+      "conditions": []
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxtl7EEfCRuoeAi1p5xA",
+      "input": "_esXxd87EEfCRuoeAi1p5xA",
+      "output": "_esXxth7EEfCRuoeAi1p5xA",
+      "name": "integration to deploy"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxtm7EEfCRuoeAi1p5xA",
+      "input": "_esXxth7EEfCRuoeAi1p5xA",
+      "output": "_esXxti7EEfCRuoeAi1p5xA",
+      "name": "deploy to monitor"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxtn7EEfCRuoeAi1p5xA",
+      "input": "_esXxti7EEfCRuoeAi1p5xA",
+      "output": "_esXxtj7EEfCRuoeAi1p5xA",
+      "name": "monitor to release"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxto7EEfCRuoeAi1p5xA",
+      "input": "_esXxtk7EEfCRuoeAi1p5xA",
+      "output": "_esXxth7EEfCRuoeAi1p5xA",
+      "name": "success condition",
+      "condition": "notified if issues"
+    }
+  ],
+  "description": "CI/CD Pipeline for a cyberphysical system with digital twin"
+}
+------------------------------
+
+You: Create a multichoice gateway with three conditions (payment OK, network error, payment cancelled) to three new tasks||17:31
+
+------------------------------||17:32
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "MultiChoice",
+      "xmi_id": "_Cy4ohM7MEfC3JOLdj2VwAA",
+      "conditions": [
+        {
+          "___type___": "ConditionalFlowEdge",
+          "xmi_id": "_Cy4oi87MEfC3JOLdj2VwAA",
+          "condition": "payment OK"
+        },
+        {
+          "___type___": "ConditionalFlowEdge",
+          "xmi_id": "_Cy4oiM7MEfC3JOLdj2VwAA",
+          "condition": "network error"
+        },
+        {
+          "___type___": "ConditionalFlowEdge",
+          "xmi_id": "_Cy4oj87MEfC3JOLdj2VwAA",
+          "condition": "payment cancelled"
+        }
+      ]
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4okM7MEfC3JOLdj2VwAA",
+      "name": "Handle Payment Success"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ol87MEfC3JOLdj2VwAA",
+      "name": "Handle Network Error"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4olm7MEfC3JOLdj2VwAA",
+      "name": "Handle Payment Cancellation"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Cy4onM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ohM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4okM7MEfC3JOLdj2VwAA",
+      "name": "to payment success"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Cy4oop7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ohM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ol87MEfC3JOLdj2VwAA",
+      "name": "to network error"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Cy4ooM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ohM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4olm7MEfC3JOLdj2VwAA",
+      "name": "to payment cancelled"
+    }
+  ],
+  "description": "Order Payment Decision"
+}
+------------------------------
+
+You: Create a sequence of three connected tasks, the first one should be an initial task, and the last one should be final||17:33
+
+------------------------------||17:33
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_Cy4oex7MEfC3JOLdj2VwAA",
+      "name": "Start Process"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ofy7MEfC3JOLdj2VwAA",
+      "name": "Intermediate Step"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_Cy4og07MEfC3JOLdj2VwAA",
+      "name": "End Process"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4og87MEfC3JOLdj2VwAA",
+      "input": "_Cy4oex7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ofy7MEfC3JOLdj2VwAA",
+      "name": "Start to Intermediate"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ofy7MEfC3JOLdj2VwAA",
+      "output": "_Cy4og07MEfC3JOLdj2VwAA",
+      "name": "Intermediate to End"
+    }
+  ],
+  "description": "Sequence of tasks with initial and final tasks"
+}
+------------------------------
+
+You: Translate the current model into Spanish||17:35
+
+------------------------------||17:35
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: Create a replica of the current process model, but were the three parallel tasks (inventory check, payment processing, ship preparation) are sequential||17:36
+
+------------------------------||17:36
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_Cy4ocX7MEfC3JOLdj2VwAA",
+      "name": "Order Received"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ocY7MEfC3JOLdj2VwAA",
+      "name": "Inventory Check & Reservation"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ocZ7MEfC3JOLdj2VwAA",
+      "name": "Payment Processing"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odA7MEfC3JOLdj2VwAA",
+      "name": "Shipping Preparation"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_Cy4odB7MEfC3JOLdj2VwAA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odC7MEfC3JOLdj2VwAA",
+      "name": "Packaging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odD7MEfC3JOLdj2VwAA",
+      "name": "Dispatch order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odE7MEfC3JOLdj2VwAA",
+      "name": "Notification"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odF7MEfC3JOLdj2VwAA",
+      "name": "Post-Delivery Support"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4odG7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ocX7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ocY7MEfC3JOLdj2VwAA",
+      "name": "initial to inventory"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4odH7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ocY7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ocZ7MEfC3JOLdj2VwAA",
+      "name": "inventory to payment"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4odI7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ocZ7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odA7MEfC3JOLdj2VwAA",
+      "name": "payment to shipping"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4odJ7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odA7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odB7MEfC3JOLdj2VwAA",
+      "name": "shipping to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4odK7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odB7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odC7MEfC3JOLdj2VwAA",
+      "name": "sync to packaging"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4odL7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odC7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odD7MEfC3JOLdj2VwAA",
+      "name": "packaging to dispatch"
+    }
+  ],
+  "description": "Order Fulfillment"
+}
+------------------------------
+
+You: recommend more descriptive names for the tasks||17:42
+
+------------------------------||17:42
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "name": "Order Acknowledgment"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "Inventory Assessment and Reservation"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "Payment Verification"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "Order Packaging Preparation"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "Final Packaging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "Order Dispatch"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "name": "Customer Notification"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oes7MEfC3JOLdj2VwAA",
+      "name": "Post-Delivery Assistance"
+    }
+  ],
+  "edges": [],
+  "description": "Order Fulfillment"
+}
+------------------------------
+
+You: Complete the process assumming we allow customers to return the order||17:43
+
+------------------------------||17:43
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_Cy4odX7MEfC3JOLdj2VwAA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odY7MEfC3JOLdj2VwAA",
+      "name": "Process Return Request"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odZ7MEfC3JOLdj2VwAA",
+      "name": "Assess Condition of Returned Item"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeA7MEfC3JOLdj2VwAA",
+      "name": "Refund Customer"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeB7MEfC3JOLdj2VwAA",
+      "name": "Restock Item"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oeC7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odX7MEfC3JOLdj2VwAA",
+      "name": "allow return"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Cy4oeD7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odX7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odY7MEfC3JOLdj2VwAA",
+      "name": "return initiated",
+      "condition": "customer chooses to return"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oeE7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odY7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odZ7MEfC3JOLdj2VwAA",
+      "name": "return assessed"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oeF7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odZ7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oeA7MEfC3JOLdj2VwAA",
+      "name": "condition assessed - refund"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oeG7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oeA7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oeB7MEfC3JOLdj2VwAA",
+      "name": "refund complete - restock"
+    }
+  ],
+  "description": "Order Return Process"
+}
+------------------------------
+
+You: recommend three more tasks for the process model||17:47
+
+------------------------------||17:47
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oef7MEfC3JOLdj2VwAA",
+      "name": "Customer Feedback Collection"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeh7MEfC3JOLdj2VwAA",
+      "name": "Return Processing"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oej7MEfC3JOLdj2VwAA",
+      "name": "Refund Issuance"
+    }
+  ],
+  "edges": [],
+  "description": "Order Fulfillment"
+}
+------------------------------
+
+You: create a new version of the process model supporting payment in instalments||17:48
+
+------------------------------||17:48
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4od88MEfC3JOLdj2VwAB",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_Cy4od89MEfC3JOLdj2VwAC",
+      "name": "Start Payment Process"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4od90MEfC3JOLdj2VwAD",
+      "name": "Payment in Instalments"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_Cy4od91MEfC3JOLdj2VwAE",
+      "name": "Completion of Payment"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4od92MEfC3JOLdj2VwAF",
+      "input": "_Cy4od89MEfC3JOLdj2VwAC",
+      "output": "_Cy4od90MEfC3JOLdj2VwAD",
+      "name": "start to payment in instalments"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4od93MEfC3JOLdj2VwAG",
+      "input": "_Cy4od90MEfC3JOLdj2VwAD",
+      "output": "_Cy4od91MEfC3JOLdj2VwAE",
+      "name": "payment in instalments to completion"
+    }
+  ],
+  "description": "Order Fulfillment with Instalment Payments"
+}
+------------------------------
+

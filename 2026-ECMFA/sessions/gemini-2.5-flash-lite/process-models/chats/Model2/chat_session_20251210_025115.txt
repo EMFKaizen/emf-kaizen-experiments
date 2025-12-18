@@ -1,0 +1,663 @@
+[DATE]10/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||02:53
+
+You: Create a multichoice gateway with three conditions (payment OK, network error, payment cancelled) to three new tasks.||02:53
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||02:53
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_NewMultiChoiceGateway",
+  "nodes": [
+    {
+      "___type___": "MultiChoice",
+      "xmi_id": "_Gateway_PaymentDecision"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Task_PaymentOK",
+      "name": "Payment OK Task"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Task_NetworkError",
+      "name": "Network Error Task"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Task_PaymentCancelled",
+      "name": "Payment Cancelled Task"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Edge_PaymentOK",
+      "input": "_Gateway_PaymentDecision",
+      "output": "_Task_PaymentOK",
+      "name": "Payment OK",
+      "condition": "payment OK"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Edge_NetworkError",
+      "input": "_Gateway_PaymentDecision",
+      "output": "_Task_NetworkError",
+      "name": "Network Error",
+      "condition": "network error"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Edge_PaymentCancelled",
+      "input": "_Gateway_PaymentDecision",
+      "output": "_Task_PaymentCancelled",
+      "name": "Payment Cancelled",
+      "condition": "payment cancelled"
+    }
+  ]
+}
+------------------------------
+
+You: Create a sequence of three connected tasks, the first one should be an initial task, and the last one should be final||02:53
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||02:53
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_new_initial_task_1",
+      "name": "Start Process"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_new_task_1",
+      "name": "Process Step 1"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_new_final_task_1",
+      "name": "End Process"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_new_edge_1",
+      "input": "_new_initial_task_1",
+      "output": "_new_task_1",
+      "name": "Start to Step 1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_new_edge_2",
+      "input": "_new_task_1",
+      "output": "_new_final_task_1",
+      "name": "Step 1 to End"
+    }
+  ]
+}
+------------------------------
+
+You: Translate the current model into Spanish||02:54
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "ProcessModel",
+    "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+    "nodes": [
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4occ7MEfC3JOLdj2VwAA",
+        "name": "Pedido Recibido"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4ocs7MEfC3JOLdj2VwAA",
+        "name": "Verificación y Reserva de Inventario"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oc87MEfC3JOLdj2VwAA",
+        "name": "Procesamiento de Pago"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4odM7MEfC3JOLdj2VwAA",
+        "name": "Preparación de Envío"
+      },
+      {
+        "___type___": "ParallelSplit",
+        "xmi_id": "_Cy4odc7MEfC3JOLdj2VwAA"
+      },
+      {
+        "___type___": "Synchronization",
+        "xmi_id": "_Cy4ods7MEfC3JOLdj2VwAA"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4od87MEfC3JOLdj2VwAA",
+        "name": "Empaquetado"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oeM7MEfC3JOLdj2VwAA",
+        "name": "Envío del pedido"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oec7MEfC3JOLdj2VwAA",
+        "name": "Notificación"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oes7MEfC3JOLdj2VwAA",
+        "name": "Soporte Post-Entrega"
+      }
+    ],
+    "edges": [
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4oe87MEfC3JOLdj2VwAA",
+        "input": "_Cy4occ7MEfC3JOLdj2VwAA",
+        "output": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "name": "recibido a dividir"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ofM7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "output": "_Cy4ocs7MEfC3JOLdj2VwAA",
+        "name": "dividir a inventario"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ofc7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "output": "_Cy4oc87MEfC3JOLdj2VwAA",
+        "name": "dividir a pago"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ofs7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "output": "_Cy4odM7MEfC3JOLdj2VwAA",
+        "name": "dividir a envío"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4of87MEfC3JOLdj2VwAA",
+        "input": "_Cy4ocs7MEfC3JOLdj2VwAA",
+        "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "name": "inventario a sincronizar"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ogM7MEfC3JOLdj2VwAA",
+        "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+        "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "name": "pago a sincronizar"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ogc7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odM7MEfC3JOLdj2VwAA",
+        "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "name": "envío a sincronizar"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ogs7MEfC3JOLdj2VwAA",
+        "input": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "output": "_Cy4od87MEfC3JOLdj2VwAA",
+        "name": "sincronizar a empaquetado"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4og87MEfC3JOLdj2VwAA",
+        "input": "_Cy4od87MEfC3JOLdj2VwAA",
+        "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+        "name": "empaquetado a envío"
+      }
+    ],
+    "description": "Cumplimiento de Pedido"
+  }
+] }
+------------------------------
+
+You: Create a replica of the current process model, but were the three parallel tasks (inventory check, payment processing, ship preparation) are sequential||02:54
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "name": "Order Received"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "Inventory Check \u0026 Reservation"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "Payment Processing"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "Shipping Preparation"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "Packaging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "Dispatch order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "name": "Notification"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oes7MEfC3JOLdj2VwAA",
+      "name": "Post-Delivery Support"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oe87MEfC3JOLdj2VwAA",
+      "input": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "received to inventory"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "inventory to payment"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "output": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "payment to shipping"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofs7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "shipping to packaging"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4og87MEfC3JOLdj2VwAA",
+      "input": "_Cy4od87MEfC3JOLdj2VwAA",
+      "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "packaging to dispatch"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "name": "dispatch to notification"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oes7MEfC3JOLdj2VwAA",
+      "name": "notification to post-delivery"
+    }
+  ],
+  "description": "Order Fulfillment Sequential Tasks"
+}
+------------------------------
+
+You: recommend three more tasks for the process model||02:54
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_1",
+    "name": "Customer Feedback"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_2",
+    "name": "Update Records"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_3",
+    "name": "Archiving"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_1",
+    "name": "feedback from post-delivery",
+    "input": "_Cy4oes7MEfC3JOLdj2VwAA",
+    "output": "_new_task_1"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_2",
+    "name": "feedback to update",
+    "input": "_new_task_1",
+    "output": "_new_task_2"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_3",
+    "name": "update to archiving",
+    "input": "_new_task_2",
+    "output": "_new_task_3"
+  }
+] }
+------------------------------
+
+You: recommend more descriptive names for the tasks||02:54
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "name": "Receive Customer Order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "Check and Reserve Stock"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "Process Customer Payment"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "Prepare Shipment"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_Cy4odc7MEfC3JOLdj2VwAA"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_Cy4ods7MEfC3JOLdj2VwAA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "Package Order Items"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "Dispatch Shipped Order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "name": "Send Order Notifications"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oes7MEfC3JOLdj2VwAA",
+      "name": "Handle Post-Delivery Inquiries"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oe87MEfC3JOLdj2VwAA",
+      "input": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "name": "received to split"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "split to inventory"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "split to payment"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofs7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "split to shipping"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4of87MEfC3JOLdj2VwAA",
+      "input": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "name": "inventory to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "name": "payment to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "name": "shipping to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogs7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "output": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "sync to packaging"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4og87MEfC3JOLdj2VwAA",
+      "input": "_Cy4od87MEfC3JOLdj2VwAA",
+      "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "packaging to dispatch"
+    }
+  ],
+  "description": "Order Fulfillment"
+}
+------------------------------
+
+You: Complete the process assumming we allow customers to return the order||02:54
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||02:55
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "ExclusiveChoice",
+    "xmi_id": "_ReturnDecisionGateway",
+    "name": "Return Decision"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_ReturnDecision_NoReturnEdge",
+    "input": "_ReturnDecisionGateway",
+    "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+    "name": "No Return",
+    "condition": "No Return"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_HandleReturnTask",
+    "name": "Handle Return"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_ReturnDecision_ReturnEdge",
+    "input": "_ReturnDecisionGateway",
+    "output": "_HandleReturnTask",
+    "name": "Return Initiated",
+    "condition": "Return Initiated"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_ProcessRefundTask",
+    "name": "Process Refund"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_HandleReturn_RefundEdge",
+    "input": "_HandleReturnTask",
+    "output": "_ProcessRefundTask",
+    "name": "Return Processed"
+  },
+  {
+    "___type___": "FinalTask",
+    "xmi_id": "_ReturnFinalTask",
+    "name": "Return Completed"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_ProcessRefund_FinalEdge",
+    "input": "_ProcessRefundTask",
+    "output": "_ReturnFinalTask",
+    "name": "Refund Processed"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_PostDelivery_ReturnDecisionEdge",
+    "input": "_Cy4oes7MEfC3JOLdj2VwAA",
+    "output": "_ReturnDecisionGateway",
+    "name": "After Support"
+  }
+] }
+------------------------------
+
+You: create a new version of the process model supporting payment in instalments||02:55
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||02:55
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "MultiChoice",
+  "xmi_id": "_NewMultiChoiceGateway_Instalment",
+  "name": "Instalment Payment Choice"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_FullPayment",
+  "name": "Process Full Payment"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_InstalmentSetup",
+  "name": "Setup Instalment Plan"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_ProcessInstalment",
+  "name": "Process Instalment Payment"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_PaymentToInstalmentChoice",
+  "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+  "output": "_NewMultiChoiceGateway_Instalment",
+  "name": "Payment Decision"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_InstalmentChoiceToFull",
+  "input": "_NewMultiChoiceGateway_Instalment",
+  "output": "_NewTask_FullPayment",
+  "condition": "Payment Type = Full"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_InstalmentChoiceToSetup",
+  "input": "_NewMultiChoiceGateway_Instalment",
+  "output": "_NewTask_InstalmentSetup",
+  "condition": "Payment Type = Instalment"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_FullPaymentToSync",
+  "input": "_NewTask_FullPayment",
+  "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+  "name": "Full Payment Complete"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_InstalmentSetupToProcess",
+  "input": "_NewTask_InstalmentSetup",
+  "output": "_NewTask_ProcessInstalment",
+  "name": "Instalment Plan Ready"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_ProcessInstalmentToSync",
+  "input": "_NewTask_ProcessInstalment",
+  "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+  "name": "Instalment Payment Processed"
+}
+------------------------------
+

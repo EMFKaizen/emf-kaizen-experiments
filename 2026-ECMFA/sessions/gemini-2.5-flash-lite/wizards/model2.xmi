@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wiz:Wizard xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Wiz="http://example.com/wizards" xmi:id="_Ej7jwM7WEfC-mdvB7cLErg" title="Employee onboarding data collection">
+  <pages xmi:id="_Ej7jwc7WEfC-mdvB7cLErg" name="Personal Information">
+    <fields xmi:id="_Ej7jws7WEfC-mdvB7cLErg" label="Full legal name"/>
+    <fields xmi:id="_Ej7jw87WEfC-mdvB7cLErg" label="Preferred name"/>
+    <fields xmi:id="_Ej7jxM7WEfC-mdvB7cLErg" label="Date of Birth"/>
+    <fields xmi:id="_Ej7jxc7WEfC-mdvB7cLErg" label="Gender (optional)"/>
+    <fields xmi:id="_Ej7jxs7WEfC-mdvB7cLErg" label="Nationality&#xA;"/>
+  </pages>
+  <pages xmi:id="_Ej7jx87WEfC-mdvB7cLErg" name="Contact Details">
+    <fields xmi:id="_Ej7jyM7WEfC-mdvB7cLErg" label="Home address"/>
+    <fields xmi:id="_Ej7jyc7WEfC-mdvB7cLErg" label="Personal email"/>
+    <fields xmi:id="_Ej7jys7WEfC-mdvB7cLErg" label="Phone number"/>
+  </pages>
+  <pages xmi:id="_Ej7jy87WEfC-mdvB7cLErg" name="Emergency Contacts">
+    <fields xmi:id="_Ej7jzM7WEfC-mdvB7cLErg" label="Contact name"/>
+    <fields xmi:id="_Ej7jzc7WEfC-mdvB7cLErg" label="Relationship"/>
+    <fields xmi:id="_Ej7jzs7WEfC-mdvB7cLErg" label="Phone number"/>
+  </pages>
+  <pages xmi:id="_Ej7jz87WEfC-mdvB7cLErg" name="Job Details">
+    <checkbox xmi:id="_Ej7j0M7WEfC-mdvB7cLErg" label="remote work?"/>
+  </pages>
+  <pages xmi:id="_Ej7j0c7WEfC-mdvB7cLErg" name="Work Location &amp; Equipment"/>
+  <pages xmi:id="_Ej7j0s7WEfC-mdvB7cLErg" name="Identity Verification / Document Upload"/>
+  <pages xmi:id="_Ej7j087WEfC-mdvB7cLErg" name="Tax Information"/>
+  <pages xmi:id="_Ej7j1M7WEfC-mdvB7cLErg" name="Payroll Setup"/>
+</Wiz:Wizard>

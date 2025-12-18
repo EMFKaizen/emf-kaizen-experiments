@@ -1,0 +1,38 @@
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4od88MEfC3JOLdj2VwAB",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_Cy4od89MEfC3JOLdj2VwAC",
+      "name": "Start Payment Process"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4od90MEfC3JOLdj2VwAD",
+      "name": "Payment in Instalments"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_Cy4od91MEfC3JOLdj2VwAE",
+      "name": "Completion of Payment"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4od92MEfC3JOLdj2VwAF",
+      "input": "_Cy4od89MEfC3JOLdj2VwAC",
+      "output": "_Cy4od90MEfC3JOLdj2VwAD",
+      "name": "start to payment in instalments"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4od93MEfC3JOLdj2VwAG",
+      "input": "_Cy4od90MEfC3JOLdj2VwAD",
+      "output": "_Cy4od91MEfC3JOLdj2VwAE",
+      "name": "payment in instalments to completion"
+    }
+  ],
+  "description": "Order Fulfillment with Instalment Payments"
+}

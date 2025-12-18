@@ -1,0 +1,1112 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||13:27
+
+You: create an abstract class ModelElement with a String attribute name||13:27
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||13:28
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_MEc1",
+  "name": "ModelElement",
+  "abstract": true,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_MEa1",
+      "name": "name",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 1,
+      "upperBound": 1,
+      "eType": "EString"
+    }
+  ]
+}
+------------------------------
+
+You: Create two classes with names Country and City, where Country has a containment reference "cities" to its Cities||13:28
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||13:29
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_UzsRwM7oEfCBEtIB8TpJ4g",
+  "name": "tourismRoutes",
+  "nsURI": "http://tourism-routes/0.1",
+  "nsPrefix": "tour",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_NewCity_01",
+      "name": "City",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_NewCountry_01",
+      "name": "Country",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_NewCountry_cities_01",
+          "name": "cities",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_NewCity_01",
+          "containment": true
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: Translate the current model into Spanish||13:29
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||13:31
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_RutasPkg_01",
+  "name": "rutasTuristicas",
+  "nsURI": "http://rutas-turisticas/0.1",
+  "nsPrefix": "rut",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Ruta_01",
+      "name": "Ruta",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Ruta_lugares_01",
+          "name": "lugares",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_R_Lugar_01",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Ruta_eventos_01",
+          "name": "eventos",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_R_Evento_01",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Ruta_personas_01",
+          "name": "personas",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_R_Persona_01",
+          "containment": true
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Lugar_01",
+      "name": "Lugar",
+      "abstract": true,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Lugar_nombre_01",
+          "name": "nombre",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Lugar_url_01",
+          "name": "url",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Lugar_descripcion_01",
+          "name": "descripcion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Lugar_horario_01",
+          "name": "horarioApertura",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Lugar_temperatura_01",
+          "name": "temperatura",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Lugar_siguiente_01",
+          "name": "siguiente",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_R_Transporte_01",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Lugar_opiniones_01",
+          "name": "opiniones",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_R_Opinion_01",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Lugar_cercanos_01",
+          "name": "cercanos",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_R_Lugar_01",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Cultural_01",
+      "name": "Cultural",
+      "abstract": true,
+      "eSuperTypes": [
+        "_R_Lugar_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Museo_01",
+      "name": "Museo",
+      "abstract": false,
+      "eSuperTypes": [
+        "_R_Cultural_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Teatro_01",
+      "name": "Teatro",
+      "abstract": false,
+      "eSuperTypes": [
+        "_R_Cultural_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Escultura_01",
+      "name": "Escultura",
+      "abstract": false,
+      "eSuperTypes": [
+        "_R_Cultural_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Edificio_01",
+      "name": "Edificio",
+      "abstract": false,
+      "eSuperTypes": [
+        "_R_Cultural_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Gastronomia_01",
+      "name": "Gastronomia",
+      "abstract": true,
+      "eSuperTypes": [
+        "_R_Lugar_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Restaurante_01",
+      "name": "Restaurante",
+      "abstract": false,
+      "eSuperTypes": [
+        "_R_Gastronomia_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Bar_01",
+      "name": "Bar",
+      "abstract": false,
+      "eSuperTypes": [
+        "_R_Gastronomia_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Cafeteria_01",
+      "name": "Cafeteria",
+      "abstract": false,
+      "eSuperTypes": [
+        "_R_Gastronomia_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Evento_01",
+      "name": "Evento",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Evento_nombre_01",
+          "name": "nombre",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Evento_descripcion_01",
+          "name": "descripcion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Evento_precio_01",
+          "name": "precio",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EDouble"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Evento_horaInicio_01",
+          "name": "horaInicio",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Evento_horaFin_01",
+          "name": "horaFin",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Evento_ubicacion_01",
+          "name": "ubicacion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_R_Lugar_01",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Transporte_01",
+      "name": "Transporte",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Transporte_tipo_01",
+          "name": "tipo",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_R_TipoTransporte_01"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Transporte_descripcion_01",
+          "name": "descripcion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Transporte_duracion_01",
+          "name": "duracion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Transporte_hacia_01",
+          "name": "hacia",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_R_Lugar_01",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Persona_01",
+      "name": "Persona",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Persona_nombre_01",
+          "name": "nombre",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Persona_actual_01",
+          "name": "actual",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_R_Lugar_01",
+          "containment": false
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Persona_historial_01",
+          "name": "historial",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_R_Lugar_01",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_R_Opinion_01",
+      "name": "Opinion",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Opinion_valoracion_01",
+          "name": "valoracion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_R_Valoracion_01"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_R_Opinion_opinion_01",
+          "name": "opinion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_R_Opinion_autor_01",
+          "name": "autor",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_R_Persona_01",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EEnum",
+      "xmi_id": "_R_TipoTransporte_01",
+      "eAnnotations": [],
+      "name": "TipoTransporte",
+      "eTypeParameters": [],
+      "serializable": true,
+      "eLiterals": [
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_TT_cualquiera_01",
+          "eAnnotations": [],
+          "name": "cualquiera",
+          "value": 0,
+          "literal": "cualquiera"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_TT_aPie_01",
+          "eAnnotations": [],
+          "name": "aPie",
+          "value": 1,
+          "literal": "aPie"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_TT_enTren_01",
+          "eAnnotations": [],
+          "name": "enTren",
+          "value": 2,
+          "literal": "enTren"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_TT_enAutobus_01",
+          "eAnnotations": [],
+          "name": "enAutobus",
+          "value": 3,
+          "literal": "enAutobus"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_TT_enCoche_01",
+          "eAnnotations": [],
+          "name": "enCoche",
+          "value": 4,
+          "literal": "enCoche"
+        }
+      ]
+    },
+    {
+      "___type___": "EEnum",
+      "xmi_id": "_R_Valoracion_01",
+      "eAnnotations": [],
+      "name": "Valoracion",
+      "eTypeParameters": [],
+      "serializable": true,
+      "eLiterals": [
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_V_terrible_01",
+          "eAnnotations": [],
+          "name": "terrible",
+          "value": 1,
+          "literal": "terrible"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_V_malo_01",
+          "eAnnotations": [],
+          "name": "malo",
+          "value": 2,
+          "literal": "malo"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_V_regular_01",
+          "eAnnotations": [],
+          "name": "regular",
+          "value": 3,
+          "literal": "regular"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_V_bueno_01",
+          "eAnnotations": [],
+          "name": "bueno",
+          "value": 4,
+          "literal": "bueno"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_R_V_excelente_01",
+          "eAnnotations": [],
+          "name": "excelente",
+          "value": 5,
+          "literal": "excelente"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: create a class NamedElement with the common attributes of Event and Transportation||13:31
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||13:32
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_UzsNEM7oEfCBEtIB8TpJ4g",
+  "name": "NamedElement",
+  "abstract": false,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_UzsNEc7oEfCBEtIB8TpJ4g",
+      "name": "description",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString"
+    },
+    {
+      "___type___": "EReference",
+      "xmi_id": "_UzsNEs7oEfCBEtIB8TpJ4g",
+      "name": "location",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 1,
+      "upperBound": 1,
+      "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+      "containment": false
+    }
+  ]
+}
+------------------------------
+
+You: recommend more classes for the current metamodel||13:32
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||13:34
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_UzsRecPkg1EfCBEtIB8TpJ4g",
+  "name": "tourismRoutesRecommendations",
+  "nsURI": "http://tourism-routes/recommendations/0.1",
+  "nsPrefix": "tourRec",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsRecAcc1EfCBEtIB8TpJ4g",
+      "name": "Accommodation",
+      "abstract": true,
+      "eSuperTypes": [
+        "_UzsRxc7oEfCBEtIB8TpJ4g"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecAcc_rateAttr1EfCBEtIB8TpJ4g",
+          "name": "rating",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_Uzs46M7oEfCBEtIB8TpJ4g"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsRecHotel1EfCBEtIB8TpJ4g",
+      "name": "Hotel",
+      "abstract": false,
+      "eSuperTypes": [
+        "_UzsRecAcc1EfCBEtIB8TpJ4g"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecHotel_starsAttr1EfCBEtIB8TpJ4g",
+          "name": "stars",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecHotel_wifiAttr1EfCBEtIB8TpJ4g",
+          "name": "hasWifi",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EBoolean"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecHotel_roomsAttr1EfCBEtIB8TpJ4g",
+          "name": "rooms",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsRecHostel1EfCBEtIB8TpJ4g",
+      "name": "Hostel",
+      "abstract": false,
+      "eSuperTypes": [
+        "_UzsRecAcc1EfCBEtIB8TpJ4g"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecHostel_capacityAttr1EfCBEtIB8TpJ4g",
+          "name": "capacity",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecHostel_priceAttr1EfCBEtIB8TpJ4g",
+          "name": "pricePerNight",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EDouble"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsRecLandmark1EfCBEtIB8TpJ4g",
+      "name": "Landmark",
+      "abstract": false,
+      "eSuperTypes": [
+        "_UzsRxc7oEfCBEtIB8TpJ4g"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecLandmark_yearAttr1EfCBEtIB8TpJ4g",
+          "name": "establishedYear",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecLandmark_protAttr1EfCBEtIB8TpJ4g",
+          "name": "protected",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EBoolean"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsRecPark1EfCBEtIB8TpJ4g",
+      "name": "Park",
+      "abstract": false,
+      "eSuperTypes": [
+        "_UzsRxc7oEfCBEtIB8TpJ4g"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecPark_areaAttr1EfCBEtIB8TpJ4g",
+          "name": "area",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EFloat"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecPark_playAttr1EfCBEtIB8TpJ4g",
+          "name": "hasPlayground",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EBoolean"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsRecTransportHub1EfCBEtIB8TpJ4g",
+      "name": "TransportHub",
+      "abstract": false,
+      "eSuperTypes": [
+        "_UzsRxc7oEfCBEtIB8TpJ4g"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsRecTransportHub_servicesRef1EfCBEtIB8TpJ4g",
+          "name": "services",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_UzsR_87oEfCBEtIB8TpJ4g",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsRecGuide1EfCBEtIB8TpJ4g",
+      "name": "Guide",
+      "abstract": false,
+      "eSuperTypes": [
+        "_Uzs41c7oEfCBEtIB8TpJ4g"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsRecGuide_langsAttr1EfCBEtIB8TpJ4g",
+          "name": "languages",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsRecGuide_currentTourRef1EfCBEtIB8TpJ4g",
+          "name": "currentTour",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+          "containment": false
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: recommend three attributes for class Museum||13:34
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||13:34
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_UzsR4s7oEfCBEtIB8TpJ4g",
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_UzsRmu1oEfCBEtIB8TpJ4g",
+      "name": "collectionSize",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EInt"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_UzsRmu2oEfCBEtIB8TpJ4g",
+      "name": "establishedYear",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EInt"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_UzsRmu3oEfCBEtIB8TpJ4g",
+      "name": "admissionFee",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EDouble"
+    }
+  ]
+}
+------------------------------
+
+You: Create a subpackage to handle user registration, with a declaration of interests||13:35
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||13:35
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_URpkg_userRegistration_01",
+  "name": "userRegistration",
+  "nsURI": "http://tourism-routes/user-registration/0.1",
+  "nsPrefix": "user",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_URc_User_01",
+      "name": "User",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_URa_username_01",
+          "name": "username",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_URa_email_01",
+          "name": "email",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_URa_password_01",
+          "name": "password",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_URr_declaration_01",
+          "name": "declarationOfInterests",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_URc_DeclarationOfInterests_01",
+          "containment": true
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_URc_DeclarationOfInterests_01",
+      "name": "DeclarationOfInterests",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_URa_interests_01",
+          "name": "interests",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_URa_declarationText_01",
+          "name": "declarationText",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: the metamodel should consider countries, with cities. Store which one is the capital, and which ones are recommended to visit||13:35
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||13:36
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_UzsRwM7oEfCBEtIB8TpJ4g",
+  "name": "tourismRoutes",
+  "nsURI": "http://tourism-routes/0.1",
+  "nsPrefix": "tour",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsCountryNew01",
+      "name": "Country",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsCountry_cities_ref01",
+          "name": "cities",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_UzsCityNew01",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsCountry_capital_ref01",
+          "name": "capital",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_UzsCityNew01",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsCityNew01",
+      "name": "City",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsCity_name_attr01",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsCity_recommended_attr01",
+          "name": "recommended",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EBoolean"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+

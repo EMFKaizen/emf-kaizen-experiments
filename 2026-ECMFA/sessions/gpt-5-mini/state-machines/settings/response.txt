@@ -1,0 +1,238 @@
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_eyhF08yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Operational",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "Idle"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Card Inserted"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1syMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "PIN entry"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF18yMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "MainMenu"
+        },
+        {
+          "___type___": "CompositeState",
+          "xmi_id": "_eyhF2MyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Transaction",
+          "states": [
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF2cyMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "Withdrawal"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "BalanceInquiry"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF28yMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "Deposit"
+            }
+          ],
+          "transitions": [],
+          "description": "This state models an ATM transaction"
+        },
+        {
+          "___type___": "CompositeState",
+          "xmi_id": "_endCS1",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "EndSession",
+          "states": [
+            {
+              "___type___": "State",
+              "xmi_id": "_endS1",
+              "isInitial": true,
+              "isFinal": false,
+              "name": "ReturnCard"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_endS2",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "PrintReceipt"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_endS3",
+              "isInitial": false,
+              "isFinal": true,
+              "name": "SessionEnded"
+            }
+          ],
+          "transitions": [
+            {
+              "___type___": "Transition",
+              "xmi_id": "_endT1",
+              "from": "_endS1",
+              "to": "_endS2",
+              "event": {
+                "___type___": "Event",
+                "xmi_id": "_endE1",
+                "name": "receipt_requested"
+              },
+              "action": {
+                "___type___": "Action",
+                "xmi_id": "_endA1",
+                "code": "start printing receipt"
+              }
+            },
+            {
+              "___type___": "Transition",
+              "xmi_id": "_endT2",
+              "from": "_endS2",
+              "to": "_endS3",
+              "event": {
+                "___type___": "TimeEvent",
+                "xmi_id": "_endTE1",
+                "name": "print_timeout",
+                "time": 2000.0
+              },
+              "action": {
+                "___type___": "Action",
+                "xmi_id": "_endA2",
+                "code": "complete print; eject card; display 'Thank you'"
+              }
+            },
+            {
+              "___type___": "Transition",
+              "xmi_id": "_endT3",
+              "from": "_endS1",
+              "to": "_endS3",
+              "action": {
+                "___type___": "Action",
+                "xmi_id": "_endA3",
+                "code": "eject card and display 'Goodbye'"
+              },
+              "guard": {
+                "___type___": "Guard",
+                "xmi_id": "_endG1",
+                "condition": "receipt_not_requested"
+              }
+            }
+          ],
+          "description": "Models ending the user's session: return card, optionally print receipt, and finalize the session"
+        }
+      ],
+      "transitions": [
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+          "from": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "to": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "event": {
+            "___type___": "Event",
+            "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg",
+            "name": "card_detected"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF3syMEfCuhbiBFBlMQg",
+          "from": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_eyhF38yMEfCuhbiBFBlMQg",
+            "code": "eject card"
+          },
+          "guard": {
+            "___type___": "Guard",
+            "xmi_id": "_eyhF4MyMEfCuhbiBFBlMQg",
+            "condition": "invalid card"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF4cyMEfCuhbiBFBlMQg",
+          "from": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "to": "_eyhF1syMEfCuhbiBFBlMQg",
+          "guard": {
+            "___type___": "Guard",
+            "xmi_id": "_eyhF4syMEfCuhbiBFBlMQg",
+            "condition": "valid card"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF48yMEfCuhbiBFBlMQg",
+          "from": "_eyhF1syMEfCuhbiBFBlMQg",
+          "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "event": {
+            "___type___": "TimeEvent",
+            "xmi_id": "_eyhF5MyMEfCuhbiBFBlMQg",
+            "name": "time out",
+            "time": 1000.0
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_eyhF5cyMEfCuhbiBFBlMQg",
+            "code": "eject card"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_endT4",
+          "from": "_eyhF18yMEfCuhbiBFBlMQg",
+          "to": "_endCS1",
+          "event": {
+            "___type___": "Event",
+            "xmi_id": "_endE4",
+            "name": "end_session"
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_endA4",
+            "code": "enter EndSession composite; begin return card substate"
+          },
+          "guard": {
+            "___type___": "Guard",
+            "xmi_id": "_endG2",
+            "condition": "user_authenticated"
+          }
+        }
+      ],
+      "description": "The ATM is working normally"
+    }
+  ],
+  "transitions": [],
+  "description": "ATM"
+}

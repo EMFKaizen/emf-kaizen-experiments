@@ -1,0 +1,25 @@
+{
+  "___type___": "Page",
+  "xmi_id": "_OpenAI_IntroPage",
+  "name": "Welcome to OpenAI Onboarding",
+  "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "fields": [
+    {
+      "___type___": "Field",
+      "xmi_id": "_OpenAI_IntroField1",
+      "label": "Employee ID",
+      "minLength": 1,
+      "maxLength": 10,
+      "anyLength": false,
+      "isPassword": false
+    }
+  ],
+  "buttons": [
+    {
+      "___type___": "NavigateButton",
+      "xmi_id": "_OpenAI_IntroToPersonalInfo",
+      "label": "Next",
+      "toPage": "_Ej7jwc7WEfC-mdvB7cLErg"
+    }
+  ]
+}

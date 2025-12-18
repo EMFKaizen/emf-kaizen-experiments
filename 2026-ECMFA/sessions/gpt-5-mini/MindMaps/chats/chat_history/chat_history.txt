@@ -1,0 +1,2391 @@
+You: create 10 concepts with names C1..C10||14:47
+
+------------------------------||14:47
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C1_01",
+        "name": "C1",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C2_02",
+        "name": "C2",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C3_03",
+        "name": "C3",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C4_04",
+        "name": "C4",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C5_05",
+        "name": "C5",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C6_06",
+        "name": "C6",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C7_07",
+        "name": "C7",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C8_08",
+        "name": "C8",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C9_09",
+        "name": "C9",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C10_10",
+        "name": "C10",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a concept with 3 children concepts, and each children concept should have 2 children related to each other||14:47
+
+------------------------------||14:48
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_pc_1",
+        "name": "Parent Concept",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_pc1_c1",
+            "name": "Child 1",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g1a",
+                "name": "Child 1 - Sub A",
+                "subConcepts": [],
+                "parent": "_pc1_c1",
+                "description": "First sub-concept of Child 1",
+                "relatedTo": [
+                  "_g1b"
+                ]
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g1b",
+                "name": "Child 1 - Sub B",
+                "subConcepts": [],
+                "parent": "_pc1_c1",
+                "description": "Second sub-concept of Child 1",
+                "relatedTo": [
+                  "_g1a"
+                ]
+              }
+            ],
+            "parent": "_pc_1",
+            "description": "First child of Parent Concept",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_pc1_c2",
+            "name": "Child 2",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g2a",
+                "name": "Child 2 - Sub A",
+                "subConcepts": [],
+                "parent": "_pc1_c2",
+                "description": "First sub-concept of Child 2",
+                "relatedTo": [
+                  "_g2b"
+                ]
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g2b",
+                "name": "Child 2 - Sub B",
+                "subConcepts": [],
+                "parent": "_pc1_c2",
+                "description": "Second sub-concept of Child 2",
+                "relatedTo": [
+                  "_g2a"
+                ]
+              }
+            ],
+            "parent": "_pc_1",
+            "description": "Second child of Parent Concept",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_pc1_c3",
+            "name": "Child 3",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g3a",
+                "name": "Child 3 - Sub A",
+                "subConcepts": [],
+                "parent": "_pc1_c3",
+                "description": "First sub-concept of Child 3",
+                "relatedTo": [
+                  "_g3b"
+                ]
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_g3b",
+                "name": "Child 3 - Sub B",
+                "subConcepts": [],
+                "parent": "_pc1_c3",
+                "description": "Second sub-concept of Child 3",
+                "relatedTo": [
+                  "_g3a"
+                ]
+              }
+            ],
+            "parent": "_pc_1",
+            "description": "Third child of Parent Concept",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "A concept with 3 children, each having 2 related sub-children",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Translate the current model into Spanish||14:49
+
+------------------------------||14:49
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "IA y LLMs para la educación",
+  "description": "Un mapa mental con ideas sobre cómo usar LLMs e IA en la educación universitaria",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "IA y LLMs en la educación",
+    "subConcepts": [],
+    "description": "La Inteligencia Artificial y los LLMs como habilitadores en la educación",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a replica of the selected elements, but translated into Spanish||14:50
+
+------------------------------||14:50
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_MH6kscyESfCB57nxSn8rSw",
+  "name": "IA y LLMs en la educación",
+  "subConcepts": [],
+  "description": "Inteligencia Artificial y LLMs como facilitadores en la educación",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "AI and LLMs in education"||14:50
+
+------------------------------||14:51
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_rec_AIEd_1",
+        "name": "Personalized Learning",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Tailoring instruction and learning paths using AI-driven student models and adaptive content.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_rec_AIEd_2",
+        "name": "Assessment and Feedback",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Automated formative assessment, instant feedback, and analytics to inform teaching and learning.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_rec_AIEd_3",
+        "name": "Ethics and Responsible Use",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Guidelines, bias mitigation, data privacy, and digital literacy for safe and fair AI adoption in education.",
+        "relatedTo": []
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||14:51
+
+------------------------------||14:51
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs in education",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept1",
+      "name": "Personalized learning",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Using LLMs to tailor learning paths, content pacing, and resources to individual student needs",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept2",
+      "name": "Assessment and feedback",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Automated formative assessments, instant feedback generation, and grading assistance powered by LLMs",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept3",
+      "name": "Curriculum integration",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Designing course modules and learning activities that incorporate AI tools and LLM-driven exercises",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept4",
+      "name": "Teacher training and professional development",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Preparing instructors to use LLMs effectively, including pedagogy, tool selection, and classroom practices",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept5",
+      "name": "Ethics, privacy, and policy",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Addressing data privacy, academic integrity, bias, and institutional policies for safe AI adoption",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_MH7a1_concept6",
+      "name": "Infrastructure and tools",
+      "subConcepts": [],
+      "parent": "_MH6kscyIEfCB57nxSn8rSw",
+      "description": "Technical requirements, platform selection, integrations, and support needed to deploy LLM solutions",
+      "relatedTo": []
+    }
+  ],
+  "description": "Artificial Intelligence and LLMs as enablers in Education",
+  "relatedTo": []
+}
+------------------------------
+
+You: Create subconcepts of "AI and LLMs and education" to completely describe the idea||14:52
+
+------------------------------||14:53
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ped1",
+        "name": "Pedagogy",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ped1a",
+            "name": "Active learning & problem-based learning",
+            "subConcepts": [],
+            "parent": "_ped1",
+            "description": "Use of AI to design and facilitate active, inquiry-driven learning experiences",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ped1b",
+            "name": "AI-augmented teaching strategies",
+            "subConcepts": [],
+            "parent": "_ped1",
+            "description": "Instructor workflows enhanced by AI (scaffolding, prompts, examples)",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Instructional approaches and methods supported or transformed by AI and LLMs",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ass1",
+        "name": "Assessment",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ass1a",
+            "name": "Formative assessment & feedback",
+            "subConcepts": [],
+            "parent": "_ass1",
+            "description": "Automated, timely feedback and formative checks using LLMs",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ass1b",
+            "name": "Plagiarism & integrity",
+            "subConcepts": [],
+            "parent": "_ass1",
+            "description": "Detection, prevention and redesign of assessments to address misuse of LLMs",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Design and implementation of assessments, integrity, and evaluation with AI support",
+        "relatedTo": [
+          "_eth1",
+          "_per1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_cur1",
+        "name": "Curriculum Design",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cur1a",
+            "name": "Competency mapping",
+            "subConcepts": [],
+            "parent": "_cur1",
+            "description": "Aligning learning outcomes and competencies with AI-enabled learning activities",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cur1b",
+            "name": "Course scaffolding with AI",
+            "subConcepts": [],
+            "parent": "_cur1",
+            "description": "Integrating AI tasks, checkpoints and resources across course modules",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Structuring programs and courses to incorporate LLM-supported learning",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_per1",
+        "name": "Personalization",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_per1a",
+            "name": "Adaptive learning paths",
+            "subConcepts": [],
+            "parent": "_per1",
+            "description": "Dynamic sequencing of content and tasks based on learner performance",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_per1b",
+            "name": "Learner modeling",
+            "subConcepts": [],
+            "parent": "_per1",
+            "description": "Building models of learner knowledge, preferences and needs with AI",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Tailoring learning experiences to individual students using AI-driven insights",
+        "relatedTo": [
+          "_la1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_la1",
+        "name": "Learning Analytics & Feedback",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_la1a",
+            "name": "Real-time dashboards",
+            "subConcepts": [],
+            "parent": "_la1",
+            "description": "Visualizations for instructors and learners to monitor progress",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_la1b",
+            "name": "Predictive interventions",
+            "subConcepts": [],
+            "parent": "_la1",
+            "description": "Early-warning systems and recommended interventions from analytics",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Data-driven insights and automated feedback loops enabled by AI",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_cc1",
+        "name": "Content Creation & Curation",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cc1a",
+            "name": "Automated content generation",
+            "subConcepts": [],
+            "parent": "_cc1",
+            "description": "Using LLMs to produce exercises, summaries, examples and multimedia scripts",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_cc1b",
+            "name": "Content validation & quality",
+            "subConcepts": [],
+            "parent": "_cc1",
+            "description": "Ensuring accuracy, pedagogical alignment and up-to-dateness of AI-generated content",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Generation, selection and maintenance of learning materials with AI support",
+        "relatedTo": [
+          "_tech1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_tech1",
+        "name": "Technical Infrastructure",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_tech1a",
+            "name": "Deployment & integration",
+            "subConcepts": [],
+            "parent": "_tech1",
+            "description": "Connecting LLM services with LMS, student systems and APIs",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_tech1b",
+            "name": "Scalability & performance",
+            "subConcepts": [],
+            "parent": "_tech1",
+            "description": "Compute, latency, cost and availability considerations for campus-scale use",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Platforms, integrations and operational concerns for AI in education",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_fac1",
+        "name": "Faculty Development & Support",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_fac1a",
+            "name": "Training and upskilling",
+            "subConcepts": [],
+            "parent": "_fac1",
+            "description": "Workshops and resources to help instructors use AI effectively",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_fac1b",
+            "name": "Workflow tools for instructors",
+            "subConcepts": [],
+            "parent": "_fac1",
+            "description": "Templates, prompt libraries and automation to reduce instructor workload",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Support structures to enable educator adoption and best practices",
+        "relatedTo": [
+          "_ped1"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_eth1",
+        "name": "Ethics & Policy",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_eth1a",
+            "name": "Bias, fairness, transparency",
+            "subConcepts": [],
+            "parent": "_eth1",
+            "description": "Mitigating bias, ensuring explainability and fair use of AI tools",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_eth1b",
+            "name": "Data privacy & consent",
+            "subConcepts": [],
+            "parent": "_eth1",
+            "description": "Policies for student data protection, consent and secure handling",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Ethical, legal and governance frameworks for responsible AI use in education",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_stu1",
+        "name": "Student Skills & Literacies",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_stu1a",
+            "name": "Prompting and critical thinking",
+            "subConcepts": [],
+            "parent": "_stu1",
+            "description": "Teaching students how to craft prompts and critically evaluate AI outputs",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_stu1b",
+            "name": "AI literacy and digital citizenship",
+            "subConcepts": [],
+            "parent": "_stu1",
+            "description": "Building understanding of AI capabilities, limits and responsible use",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Competencies students need to effectively and ethically use AI tools",
+        "relatedTo": [
+          "_ped1",
+          "_eth1"
+        ]
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Complete the mind map with concepts that summarise the history of use of AI in education||14:53
+
+------------------------------||14:54
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "AI and LLMs for education",
+  "description": "A mind map with ideas on how to use LLMs and AI in University education",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "AI and LLMs in education",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc1IEfCB0001",
+        "name": "Computer‑Assisted Instruction (1960s-1970s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Early use of computers for drill-and-practice, programmed instruction and tutorial systems.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc2IEfCB0002",
+        "name": "Intelligent Tutoring Systems (1970s-1990s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Rule-based ITS modelling student knowledge and providing adaptive feedback (e.g., SCHOLAR, Cognitive Tutors).",
+        "relatedTo": [
+          "_MH6ksc1IEfCB0001",
+          "_MH6ksc5IEfCB0005"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc3IEfCB0003",
+        "name": "Expert Systems & AI research (1980s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Use of expert-system approaches to model domain expertise and support decision-making in education.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc4IEfCB0004",
+        "name": "Multimedia & Computer‑Based Training (1990s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Integration of multimedia, simulations and CBT, enabling richer interactive learning experiences.",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc5IEfCB0005",
+        "name": "Adaptive Learning & Personalization (2000s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Systems that adapt content and sequencing to individual learner profiles using algorithms and models.",
+        "relatedTo": [
+          "_MH6ksc2IEfCB0002",
+          "_MH6ksc6IEfCB0006"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc6IEfCB0006",
+        "name": "Learning Analytics & Educational Data Mining (2010s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Analysis of learner data to inform design, adaptivity and institutional decision-making.",
+        "relatedTo": [
+          "_MH6ksc5IEfCB0005",
+          "_MH6ksc7IEfCB0007"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc7IEfCB0007",
+        "name": "MOOCs & Scalable Online Platforms (2010s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Massive open online courses and platforms that scaled delivery and generated large learning datasets.",
+        "relatedTo": [
+          "_MH6ksc6IEfCB0006"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc8IEfCB0008",
+        "name": "Automated Assessment & NLP (2000s-2010s)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Use of natural language processing for essay scoring, automated feedback and grading assistance.",
+        "relatedTo": [
+          "_MH6ksc9IEfCB0009",
+          "_MH6ksc10IEfCB0010"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc9IEfCB0009",
+        "name": "Deep Learning & Large Language Models (2020s‑present)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Recent advances in deep learning and LLMs enabling conversational tutors, content generation and complex feedback.",
+        "relatedTo": [
+          "_MH6ksc8IEfCB0008",
+          "_MH6ksc10IEfCB0010"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_MH6ksc10IEfCB0010",
+        "name": "Ethics, Policy & Equity (ongoing)",
+        "subConcepts": [],
+        "parent": "_MH6kscyIEfCB57nxSn8rSw",
+        "description": "Concerns about bias, privacy, academic integrity, regulation and equitable access as AI is adopted in education.",
+        "relatedTo": [
+          "_MH6ksc9IEfCB0009",
+          "_MH6ksc8IEfCB0008"
+        ]
+      }
+    ],
+    "description": "Artificial Intelligence and LLMs as enablers in Education",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a mind map with 3 concepts inside||14:56
+
+------------------------------||14:56
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_Mmap_001",
+  "name": "Three Concepts Map",
+  "description": "A simple mind map containing three concepts",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_Croot_001",
+    "name": "Central Idea",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C_001",
+        "name": "Concept A",
+        "subConcepts": [],
+        "parent": "_Croot_001",
+        "description": "First concept",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C_002",
+        "name": "Concept B",
+        "subConcepts": [],
+        "parent": "_Croot_001",
+        "description": "Second concept",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C_003",
+        "name": "Concept C",
+        "subConcepts": [],
+        "parent": "_Croot_001",
+        "description": "Third concept",
+        "relatedTo": []
+      }
+    ],
+    "description": "The central idea of the map",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a concept "Social" with three subconcepts "Family", "Friends" and "Relatives" inside||14:56
+
+------------------------------||14:57
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U5Scx7EfCB57nxSn8rSw",
+  "name": "Social",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U5Ssx7EfCB57nxSn8rSw",
+      "name": "Family",
+      "subConcepts": [],
+      "parent": "_F1U5Scx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U5Fdx7EfCB57nxSn8rSw",
+      "name": "Friends",
+      "subConcepts": [],
+      "parent": "_F1U5Scx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U5Rlx7EfCB57nxSn8rSw",
+      "name": "Relatives",
+      "subConcepts": [],
+      "parent": "_F1U5Scx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Translate the current model into Spanish||14:57
+
+------------------------------||14:57
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_T1Map_es_0001",
+  "name": "Salud",
+  "description": "Un mapa mental con ideas para una vida saludable",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_T1Conc_es_root",
+    "name": "Salud",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_dieta",
+        "name": "Dieta",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_frutas",
+            "name": "Frutas",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_dieta",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_verduras",
+            "name": "Verduras",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_dieta",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_panes_cereales",
+            "name": "Pan y cereales",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_dieta",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_sueno",
+        "name": "Sueño",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_33vidas",
+            "name": "33% de nuestras vidas",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_sueno",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_insomnio",
+            "name": "Insomnio",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_sueno",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_estres",
+        "name": "Estrés",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_causas",
+            "name": "Causas",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_estres",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_ejercicio",
+        "name": "Ejercicio",
+        "subConcepts": [],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      }
+    ],
+    "description": "¿Cómo podemos lograr la salud?",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create three children concepts for the selected one||14:58
+
+------------------------------||14:58
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4O8x7EfCB57nxSn8rSw",
+  "name": "Exercise",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pax7EfCB57nxSn8rSw",
+      "name": "Cardio",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pbx7EfCB57nxSn8rSw",
+      "name": "Strength",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Flexibility",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Exercise"||14:58
+
+------------------------------||14:59
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4O8x7EfCB57nxSn8rSw",
+  "name": "Exercise",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pax7EfCB57nxSn8rSw",
+      "name": "Cardio",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "description": "Aerobic activities that raise heart rate (e.g., running, cycling)",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pbx7EfCB57nxSn8rSw",
+      "name": "Strength Training",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "description": "Resistance exercises to build muscle and bone strength (e.g., weightlifting)",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Flexibility",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "description": "Stretching and mobility practices to improve range of motion (e.g., yoga)",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "description": "",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||14:59
+
+------------------------------||15:00
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "name": "Stress",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Effects",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Physical and mental consequences of stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Psx7EfCB57nxSn8rSw",
+      "name": "Coping Strategies",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Techniques and behaviors to manage stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4P8x7EfCB57nxSn8rSw",
+      "name": "Management Techniques",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Lifestyle changes and professional interventions to reduce stress",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Add concepts to model additional dimensions of Health, in detail||15:00
+
+------------------------------||15:01
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_F1U4MMx7EfCB57nxSn8rSw",
+  "name": "Health",
+  "description": "A mind map with ideas for healthy living",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_F1U4Mcx7EfCB57nxSn8rSw",
+    "name": "Health",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Mmx7EfCB57nxSn8rSw",
+        "name": "Mental Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5M1x7EfCB57nxSn8rSw",
+            "name": "Cognition & Attention",
+            "subConcepts": [],
+            "parent": "_F1U5Mmx7EfCB57nxSn8rSw",
+            "description": "Memory, concentration, decision-making and executive function",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5M2x7EfCB57nxSn8rSw",
+            "name": "Common Disorders",
+            "subConcepts": [],
+            "parent": "_F1U5Mmx7EfCB57nxSn8rSw",
+            "description": "Depression, anxiety, bipolar disorder — recognition and treatment pathways",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5M3x7EfCB57nxSn8rSw",
+            "name": "Mental Health Care",
+            "subConcepts": [],
+            "parent": "_F1U5Mmx7EfCB57nxSn8rSw",
+            "description": "Therapy, medication, self-help strategies and access to services",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Cognitive function, mental disorders, treatment and prevention",
+        "relatedTo": [
+          "_F1U4Ocx7EfCB57nxSn8rSw"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Emx7EfCB57nxSn8rSw",
+        "name": "Emotional Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5E1x7EfCB57nxSn8rSw",
+            "name": "Emotional Regulation",
+            "subConcepts": [],
+            "parent": "_F1U5Emx7EfCB57nxSn8rSw",
+            "description": "Skills to identify, express and manage emotions",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5E2x7EfCB57nxSn8rSw",
+            "name": "Resilience & Coping",
+            "subConcepts": [],
+            "parent": "_F1U5Emx7EfCB57nxSn8rSw",
+            "description": "Building coping strategies, stress reduction techniques and recovery after setbacks",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5E3x7EfCB57nxSn8rSw",
+            "name": "Support & Therapy",
+            "subConcepts": [],
+            "parent": "_F1U5Emx7EfCB57nxSn8rSw",
+            "description": "Counseling, group therapy, peer support and crisis resources",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Understanding and managing emotions for wellbeing",
+        "relatedTo": [
+          "_F1U4Ocx7EfCB57nxSn8rSw"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Sox7EfCB57nxSn8rSw",
+        "name": "Social Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5S1x7EfCB57nxSn8rSw",
+            "name": "Relationships",
+            "subConcepts": [],
+            "parent": "_F1U5Sox7EfCB57nxSn8rSw",
+            "description": "Family, friendships and intimate relationships — communication and boundaries",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5S2x7EfCB57nxSn8rSw",
+            "name": "Community & Belonging",
+            "subConcepts": [],
+            "parent": "_F1U5Sox7EfCB57nxSn8rSw",
+            "description": "Social networks, civic engagement and support systems",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5S3x7EfCB57nxSn8rSw",
+            "name": "Social Skills & Conflict Resolution",
+            "subConcepts": [],
+            "parent": "_F1U5Sox7EfCB57nxSn8rSw",
+            "description": "Communication, empathy, negotiation and managing social stressors",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Interactions, support networks and social wellbeing",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Envx7EfCB57nxSn8rSw",
+        "name": "Environmental Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5En1x7EfCB57nxSn8rSw",
+            "name": "Physical Environment",
+            "subConcepts": [],
+            "parent": "_F1U5Envx7EfCB57nxSn8rSw",
+            "description": "Air and water quality, housing, urban design and green spaces",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5En2x7EfCB57nxSn8rSw",
+            "name": "Workplace & Safety",
+            "subConcepts": [],
+            "parent": "_F1U5Envx7EfCB57nxSn8rSw",
+            "description": "Occupational exposures, ergonomics and hazard prevention",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "External factors that affect health and wellbeing",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Spvx7EfCB57nxSn8rSw",
+        "name": "Spiritual Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5Sp1x7EfCB57nxSn8rSw",
+            "name": "Purpose & Meaning",
+            "subConcepts": [],
+            "parent": "_F1U5Spvx7EfCB57nxSn8rSw",
+            "description": "Personal values, life meaning and connectedness",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5Sp2x7EfCB57nxSn8rSw",
+            "name": "Practices",
+            "subConcepts": [],
+            "parent": "_F1U5Spvx7EfCB57nxSn8rSw",
+            "description": "Meditation, reflection, rituals and community practices that support wellbeing",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Aspects of meaning, values and spiritual practices",
+        "relatedTo": []
+      }
+    ],
+    "description": "How can we achieve health?",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Add all missing concepts to Stress||15:01
+
+------------------------------||15:02
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "name": "Stress",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Osx7EfCB57nxSn8rSw",
+      "name": "Causes",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Symptoms",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Emotional and physical signs of stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Psx7EfCB57nxSn8rSw",
+      "name": "Effects",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Short-term and long-term effects on health",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4P8x7EfCB57nxSn8rSw",
+      "name": "Management",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Techniques to manage stress, e.g., relaxation, exercise",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4QMx7EfCB57nxSn8rSw",
+      "name": "Prevention",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Ways to reduce exposure to stressors",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Qsx7EfCB57nxSn8rSw",
+      "name": "Coping Strategies",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Behavioral and cognitive strategies to handle stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Q8x7EfCB57nxSn8rSw",
+      "name": "Stressors",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Sources that trigger stress (work, relationships, health)",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "description": null,
+  "relatedTo": []
+}
+------------------------------
+
+You: Create two concepts "Imitation" and "Counterpoint" with a parent concept "Polyphony"||16:30
+
+------------------------------||16:30
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmQMx5EfCB57nxSn8rSw",
+  "name": "Polyphony",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmQcx5EfCB57nxSn8rSw",
+      "name": "Imitation",
+      "subConcepts": [],
+      "parent": "_JGrmQMx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmQsx5EfCB57nxSn8rSw",
+      "name": "Counterpoint",
+      "subConcepts": [],
+      "parent": "_JGrmQMx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+  "description": "",
+  "relatedTo": []
+}
+------------------------------
+
+You: Create a sequence of subconcepts: Forms & Genres -> Instrumental forms -> Suite||16:32
+
+------------------------------||16:33
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_KGrmFcx5EfCB57nxSn8rSw",
+  "name": "Forms & Genres",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_KGrmFsx5EfCB57nxSn8rSw",
+      "name": "Instrumental forms",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_KGrmF8x5EfCB57nxSn8rSw",
+          "name": "Suite",
+          "subConcepts": [],
+          "parent": "_KGrmFsx5EfCB57nxSn8rSw",
+          "description": "",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_KGrmFcx5EfCB57nxSn8rSw",
+      "description": "",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+  "description": "",
+  "relatedTo": []
+}
+------------------------------
+
+You: Translate the current model into Spanish||16:33
+
+------------------------------||16:35
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_ESMap1",
+  "name": "Música barroca",
+  "description": "Un mapa mental con los conceptos principales de la música barroca",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_ESCon_root",
+    "name": "Música barroca",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ESCon_inst",
+        "name": "Música instrumental",
+        "subConcepts": [],
+        "parent": "_ESCon_root",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ESCon_vocal",
+        "name": "Música vocal religiosa",
+        "subConcepts": [],
+        "parent": "_ESCon_root",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ESCon_opera",
+        "name": "Ópera",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_inventadoItalia",
+            "name": "Inventada en Italia",
+            "subConcepts": [],
+            "parent": "_ESCon_opera",
+            "description": "",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_quees",
+            "name": "¿Qué es?",
+            "subConcepts": [],
+            "parent": "_ESCon_opera",
+            "description": "forma de arte teatral en la que una historia se cuenta a través de la música",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_argumento",
+            "name": "Argumento",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_libreto",
+                "name": "Libreto",
+                "subConcepts": [],
+                "parent": "_ESCon_argumento",
+                "description": "El texto de la ópera se llama libreto",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_temas",
+                "name": "Temas históricos o mitológicos",
+                "subConcepts": [],
+                "parent": "_ESCon_argumento",
+                "description": "",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_ESCon_opera",
+            "description": "",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_ESCon_root",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ESCon_suite",
+        "name": "Suite de danzas",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_movimientos",
+            "name": "Movimientos",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_overture",
+                "name": "Obertura",
+                "subConcepts": [],
+                "parent": "_ESCon_movimientos",
+                "description": "",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_allemande",
+                "name": "Allemande",
+                "subConcepts": [],
+                "parent": "_ESCon_movimientos",
+                "description": "",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_courante",
+                "name": "Courante",
+                "subConcepts": [],
+                "parent": "_ESCon_movimientos",
+                "description": "",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_sarabande",
+                "name": "Sarabande",
+                "subConcepts": [],
+                "parent": "_ESCon_movimientos",
+                "description": "",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_gigue",
+                "name": "Gigue",
+                "subConcepts": [],
+                "parent": "_ESCon_movimientos",
+                "description": "",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_ESCon_suite",
+            "description": "",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_ESCon_root",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ESCon_caracteristicas",
+        "name": "Características",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_timbre",
+            "name": "Timbre",
+            "subConcepts": [],
+            "parent": "_ESCon_caracteristicas",
+            "description": "",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_textura",
+            "name": "Textura",
+            "subConcepts": [],
+            "parent": "_ESCon_caracteristicas",
+            "description": "",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_armonia",
+            "name": "Armonía",
+            "subConcepts": [],
+            "parent": "_ESCon_caracteristicas",
+            "description": "",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_ESCon_root",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_ESCon_historia",
+        "name": "Historia",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_early",
+            "name": "Barroco temprano",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_compositores_italianos",
+                "name": "Compositores italianos",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_ESCon_monteverdi",
+                    "name": "Monteverdi",
+                    "subConcepts": [],
+                    "parent": "_ESCon_compositores_italianos",
+                    "description": "",
+                    "relatedTo": [
+                      "_ESCon_opera"
+                    ]
+                  }
+                ],
+                "parent": "_ESCon_early",
+                "description": "",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_ESCon_otros_compositores",
+                "name": "Otros compositores",
+                "subConcepts": [
+                  {
+                    "___type___": "Concept",
+                    "xmi_id": "_ESCon_praetorius",
+                    "name": "M. Praetorius",
+                    "subConcepts": [],
+                    "parent": "_ESCon_otros_compositores",
+                    "description": "",
+                    "relatedTo": []
+                  }
+                ],
+                "parent": "_ESCon_early",
+                "description": "",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_ESCon_historia",
+            "description": "1580–1650",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_middle",
+            "name": "Barroco medio",
+            "subConcepts": [],
+            "parent": "_ESCon_historia",
+            "description": "1630–1700",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_ESCon_late",
+            "name": "Barroco tardío",
+            "subConcepts": [],
+            "parent": "_ESCon_historia",
+            "description": "1680–1750",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_ESCon_root",
+        "description": "",
+        "relatedTo": []
+      }
+    ],
+    "description": "Conceptos de la música barroca",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a copy of the selected concepts, but in lower case||16:35
+
+------------------------------||16:36
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_LCpyMap1",
+  "name": "Baroque music - lowercase copies",
+  "description": "Copies of selected concepts in lower case",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_LCpyRoot1",
+    "name": "features copies",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_LCpyC1",
+        "name": "timbre",
+        "subConcepts": [],
+        "parent": "_LCpyRoot1",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_LCpyC2",
+        "name": "texture",
+        "subConcepts": [],
+        "parent": "_LCpyRoot1",
+        "description": "",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_LCpyC3",
+        "name": "harmony",
+        "subConcepts": [],
+        "parent": "_LCpyRoot1",
+        "description": "",
+        "relatedTo": []
+      }
+    ],
+    "description": "",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Late baroque"||16:37
+
+------------------------------||16:37
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_JGrmIMx5EfCB57nxSn8rSw",
+  "name": "Baroque music",
+  "description": "A mind map with the main concepts of Baroque music",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+    "name": "Baroque music",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_JGrmNcx5EfCB57nxSn8rSw",
+        "name": "History",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+            "name": "Late baroque",
+            "subConcepts": [
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmQMx5EfCB57nxSn8rSw",
+                "name": "Fugue",
+                "subConcepts": [],
+                "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+                "description": "Advanced contrapuntal form reaching maturity in the late Baroque (e.g., J.S. Bach).",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmQcx5EfCB57nxSn8rSw",
+                "name": "Concerto grosso",
+                "subConcepts": [],
+                "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+                "description": "Instrumental form contrasting concertino and ripieno, prominent in the late Baroque.",
+                "relatedTo": []
+              },
+              {
+                "___type___": "Concept",
+                "xmi_id": "_JGrmQsx5EfCB57nxSn8rSw",
+                "name": "Ornamentation",
+                "subConcepts": [],
+                "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+                "description": "Elaborate melodic embellishments and virtuosic passagework characteristic of the period.",
+                "relatedTo": []
+              }
+            ],
+            "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+            "description": "1680–1750	",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+        "relatedTo": []
+      }
+    ],
+    "description": "Baroque music concepts",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||16:38
+
+------------------------------||16:38
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+  "name": "Late baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmQMx5EfCB57nxSn8rSw",
+      "name": "Characteristic composers",
+      "subConcepts": [],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Key figures: J.S. Bach, G.F. Handel, A. Vivaldi",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmQcx5EfCB57nxSn8rSw",
+      "name": "Popular forms",
+      "subConcepts": [],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Fugue, Concerto grosso, Oratorio, Suite",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmQsx5EfCB57nxSn8rSw",
+      "name": "Performance practice",
+      "subConcepts": [],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Ornamentation, basso continuo, tuning and ensemble conventions",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmQ8x5EfCB57nxSn8rSw",
+      "name": "Instrumental innovation",
+      "subConcepts": [],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Development of violin technique, harpsichord repertoire, and orchestration",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "1680–1750	",
+  "relatedTo": []
+}
+------------------------------
+
+You: Complete the Middle baroque with all missing details||16:39
+
+------------------------------||16:41
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+  "name": "Middle baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmQsx5EfCB57nxSn8rSw",
+      "name": "Composers",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmQ8x5EfCB57nxSn8rSw",
+          "name": "Jean-Baptiste Lully",
+          "subConcepts": [],
+          "parent": "_JGrmQsx5EfCB57nxSn8rSw",
+          "description": "(1632–1687) French court composer, central to French operatic and dance traditions",
+          "relatedTo": [
+            "_JGrmKsx5EfCB57nxSn8rSw",
+            "_JGrmJMx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmRMx5EfCB57nxSn8rSw",
+          "name": "Arcangelo Corelli",
+          "subConcepts": [],
+          "parent": "_JGrmQsx5EfCB57nxSn8rSw",
+          "description": "(1653–1713) Italian violinist and composer; influential in development of the concerto grosso and violin technique",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmRcx5EfCB57nxSn8rSw",
+          "name": "Dieterich Buxtehude",
+          "subConcepts": [],
+          "parent": "_JGrmQsx5EfCB57nxSn8rSw",
+          "description": "(c.1637–1707) North German organist and composer; important for organ and sacred music traditions",
+          "relatedTo": [
+            "_JGrmI8x5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmRsx5EfCB57nxSn8rSw",
+          "name": "Henry Purcell",
+          "subConcepts": [],
+          "parent": "_JGrmQsx5EfCB57nxSn8rSw",
+          "description": "(1659–1695) English composer known for theatre music, sacred works and songs",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Representative composers of the Middle Baroque period",
+      "relatedTo": [
+        "_JGrmOMx5EfCB57nxSn8rSw"
+      ]
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmR8x5EfCB57nxSn8rSw",
+      "name": "Forms and genres",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmTMx5EfCB57nxSn8rSw",
+          "name": "Concerto grosso",
+          "subConcepts": [],
+          "parent": "_JGrmR8x5EfCB57nxSn8rSw",
+          "description": "Instrumental form contrasting a small group (concertino) with the full ensemble (ripieno); consolidated in the Middle Baroque",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmTcx5EfCB57nxSn8rSw",
+          "name": "Oratorio",
+          "subConcepts": [],
+          "parent": "_JGrmR8x5EfCB57nxSn8rSw",
+          "description": "Large-scale vocal-instrumental genre with sacred narrative performed without staging",
+          "relatedTo": [
+            "_JGrmI8x5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmTsx5EfCB57nxSn8rSw",
+          "name": "Suite (dance suite)",
+          "subConcepts": [],
+          "parent": "_JGrmR8x5EfCB57nxSn8rSw",
+          "description": "Sequence of dance movements; continuation and elaboration of earlier dance-suite practice",
+          "relatedTo": [
+            "_JGrmKsx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Typical genres and formal types developed or consolidated during the Middle Baroque",
+      "relatedTo": [
+        "_JGrmKsx5EfCB57nxSn8rSw"
+      ]
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmT8x5EfCB57nxSn8rSw",
+      "name": "National styles",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmUMx5EfCB57nxSn8rSw",
+          "name": "French style",
+          "subConcepts": [],
+          "parent": "_JGrmT8x5EfCB57nxSn8rSw",
+          "description": "Court-centered, dance-oriented music with emphasis on ornamentation and clear dance rhythms",
+          "relatedTo": [
+            "_JGrmQ8x5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmUcx5EfCB57nxSn8rSw",
+          "name": "Italian style",
+          "subConcepts": [],
+          "parent": "_JGrmT8x5EfCB57nxSn8rSw",
+          "description": "Virtuosic instrumental writing and development of forms like the concerto; strong melodic focus",
+          "relatedTo": [
+            "_JGrmRMx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmUsx5EfCB57nxSn8rSw",
+          "name": "German style",
+          "subConcepts": [],
+          "parent": "_JGrmT8x5EfCB57nxSn8rSw",
+          "description": "Blend of Italian and northern traditions with emphasis on sacred music, organ repertoire and contrapuntal practice",
+          "relatedTo": [
+            "_JGrmRcx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmU8x5EfCB57nxSn8rSw",
+          "name": "English style",
+          "subConcepts": [],
+          "parent": "_JGrmT8x5EfCB57nxSn8rSw",
+          "description": "Distinctive vocal and theatre music tradition, with prominent composers writing both sacred and stage works",
+          "relatedTo": [
+            "_JGrmRsx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Regional idioms and their characteristics during the Middle Baroque",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmVcx5EfCB57nxSn8rSw",
+      "name": "Musical characteristics",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmV8x5EfCB57nxSn8rSw",
+          "name": "Basso continuo",
+          "subConcepts": [],
+          "parent": "_JGrmVcx5EfCB57nxSn8rSw",
+          "description": "Continuo practice with a bass line and harmony realization became standard, underpinning textures across genres",
+          "relatedTo": [
+            "_JGrmMcx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmVMx5EfCB57nxSn8rSw",
+          "name": "Consolidation of tonality",
+          "subConcepts": [],
+          "parent": "_JGrmVcx5EfCB57nxSn8rSw",
+          "description": "Clearer functional harmony and major/minor key orientation became more established",
+          "relatedTo": [
+            "_JGrmMcx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmVsx5EfCB57nxSn8rSw",
+          "name": "Monody and expressive vocal writing",
+          "subConcepts": [],
+          "parent": "_JGrmVcx5EfCB57nxSn8rSw",
+          "description": "Emphasis on solo voice with accompaniment for heightened expression continued and evolved",
+          "relatedTo": [
+            "_JGrmJMx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Core musical features and technical developments of the Middle Baroque",
+      "relatedTo": [
+        "_JGrmMcx5EfCB57nxSn8rSw"
+      ]
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmWcx5EfCB57nxSn8rSw",
+      "name": "Instruments & ensembles",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmW8x5EfCB57nxSn8rSw",
+          "name": "Violin family prominence",
+          "subConcepts": [],
+          "parent": "_JGrmWcx5EfCB57nxSn8rSw",
+          "description": "The violin and its family became central in chamber and orchestral music, with virtuosic writing emerging",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmWMx5EfCB57nxSn8rSw",
+          "name": "Continuo instruments",
+          "subConcepts": [],
+          "parent": "_JGrmWcx5EfCB57nxSn8rSw",
+          "description": "Harpsichord, organ, lute and theorbo commonly realized the continuo part supporting ensembles and soloists",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmO8x5EfCB57nxSn8rSw",
+      "description": "Typical instrumentations and ensemble types of the period",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "1630–1700",
+  "relatedTo": []
+}
+------------------------------
+
+You: create an alternative mind map for baroque music, better organised, and completing the missing information of the model||16:42
+
+------------------------------||16:43
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+  "name": "Late baroque",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltComp1Mx5EfCB57nxSn8rSw",
+      "name": "Composers",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltBach1Mx5EfCB57nxSn8rSw",
+          "name": "J.S. Bach",
+          "subConcepts": [],
+          "parent": "_AltComp1Mx5EfCB57nxSn8rSw",
+          "description": "Johann Sebastian Bach (1685–1750). Central figure of late Baroque; known for fugues, cantatas, Brandenburg Concertos, The Well-Tempered Clavier, Mass in B minor.",
+          "relatedTo": [
+            "_JGrmNMx5EfCB57nxSn8rSw",
+            "_JGrmIsx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltHandel1Mx5EfCB57nxSn8rSw",
+          "name": "G.F. Handel",
+          "subConcepts": [],
+          "parent": "_AltComp1Mx5EfCB57nxSn8rSw",
+          "description": "George Frideric Handel (1685–1759). Composer of operas, oratorios (e.g., Messiah) and instrumental music; active in England.",
+          "relatedTo": [
+            "_JGrmJMx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltVivaldi1Mx5EfCB57nxSn8rSw",
+          "name": "A. Vivaldi",
+          "subConcepts": [],
+          "parent": "_AltComp1Mx5EfCB57nxSn8rSw",
+          "description": "Antonio Vivaldi (1678–1741). Italian composer noted for violin concertos (The Four Seasons) and contributions to solo concerto form.",
+          "relatedTo": [
+            "_JGrmIsx5EfCB57nxSn8rSw",
+            "_JGrmKsx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Key composers of the Late Baroque period and their roles.",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltChar1Mx5EfCB57nxSn8rSw",
+      "name": "Characteristics",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltFugue1Mx5EfCB57nxSn8rSw",
+          "name": "Fugue & Counterpoint",
+          "subConcepts": [],
+          "parent": "_AltChar1Mx5EfCB57nxSn8rSw",
+          "description": "Highly developed contrapuntal techniques; fugues as a central compositional form.",
+          "relatedTo": [
+            "_AltBach1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltContinuo1Mx5EfCB57nxSn8rSw",
+          "name": "Basso continuo",
+          "subConcepts": [],
+          "parent": "_AltChar1Mx5EfCB57nxSn8rSw",
+          "description": "Continuo (figured bass) providing harmonic foundation, typically harpsichord/organ with cello or bassoon.",
+          "relatedTo": [
+            "_JGrmNMx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltTerrace1Mx5EfCB57nxSn8rSw",
+          "name": "Terraced dynamics",
+          "subConcepts": [],
+          "parent": "_AltChar1Mx5EfCB57nxSn8rSw",
+          "description": "Abrupt shifts in volume rather than gradual crescendos; common in Baroque performance practice.",
+          "relatedTo": []
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Musical and performance traits distinctive of the Late Baroque.",
+      "relatedTo": [
+        "_JGrmMcx5EfCB57nxSn8rSw"
+      ]
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltForms1Mx5EfCB57nxSn8rSw",
+      "name": "Forms & Genres",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltConcerto1Mx5EfCB57nxSn8rSw",
+          "name": "Concerto grosso",
+          "subConcepts": [],
+          "parent": "_AltForms1Mx5EfCB57nxSn8rSw",
+          "description": "Contrast between a small group of soloists (concertino) and full ensemble (ripieno).",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltSoloConc1Mx5EfCB57nxSn8rSw",
+          "name": "Solo concerto",
+          "subConcepts": [],
+          "parent": "_AltForms1Mx5EfCB57nxSn8rSw",
+          "description": "Virtuosic solo instrument contrasted with orchestra; developed notably by Vivaldi.",
+          "relatedTo": [
+            "_AltVivaldi1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltOratorio1Mx5EfCB57nxSn8rSw",
+          "name": "Oratorio",
+          "subConcepts": [],
+          "parent": "_AltForms1Mx5EfCB57nxSn8rSw",
+          "description": "Large-scale vocal genre similar to opera but performed without staging; Handel is a key figure.",
+          "relatedTo": [
+            "_AltHandel1Mx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Principal musical forms and genres in the Late Baroque.",
+      "relatedTo": [
+        "_JGrmJMx5EfCB57nxSn8rSw",
+        "_JGrmKsx5EfCB57nxSn8rSw"
+      ]
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_AltWorks1Mx5EfCB57nxSn8rSw",
+      "name": "Notable works",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltBrandenburg1Mx5EfCB57nxSn8rSw",
+          "name": "Brandenburg Concertos",
+          "subConcepts": [],
+          "parent": "_AltWorks1Mx5EfCB57nxSn8rSw",
+          "description": "Set of six concertos by J.S. Bach showcasing concerto grosso and soloist writing.",
+          "relatedTo": [
+            "_AltBach1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltFourSeasons1Mx5EfCB57nxSn8rSw",
+          "name": "The Four Seasons",
+          "subConcepts": [],
+          "parent": "_AltWorks1Mx5EfCB57nxSn8rSw",
+          "description": "Four violin concertos by Vivaldi, each accompanied by a sonnet and programmatic elements.",
+          "relatedTo": [
+            "_AltVivaldi1Mx5EfCB57nxSn8rSw"
+          ]
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_AltMessiah1Mx5EfCB57nxSn8rSw",
+          "name": "Messiah",
+          "subConcepts": [],
+          "parent": "_AltWorks1Mx5EfCB57nxSn8rSw",
+          "description": "Oratorio by Handel, emblematic of late Baroque vocal-orchestral writing.",
+          "relatedTo": [
+            "_AltHandel1Mx5EfCB57nxSn8rSw"
+          ]
+        }
+      ],
+      "parent": "_JGrmPMx5EfCB57nxSn8rSw",
+      "description": "Representative works of the Late Baroque period.",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+  "description": "1680–1750",
+  "relatedTo": []
+}
+------------------------------
+

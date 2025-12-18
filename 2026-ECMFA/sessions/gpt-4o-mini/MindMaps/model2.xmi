@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:Map xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:map="http://mindmap/0.1" xmi:id="_JGrmIMx5EfCB57nxSn8rSw" name="Baroque music" description="A mind map with the main concepts of Baroque music">
+  <root xmi:id="_JGrmIcx5EfCB57nxSn8rSw" name="Baroque music" description="Baroque music concepts">
+    <subConcepts xmi:id="_JGrmIsx5EfCB57nxSn8rSw" name="Instrumental music" description=""/>
+    <subConcepts xmi:id="_JGrmI8x5EfCB57nxSn8rSw" name="Vocal religious music"/>
+    <subConcepts xmi:id="_JGrmJMx5EfCB57nxSn8rSw" name="Opera">
+      <subConcepts xmi:id="_JGrmJcx5EfCB57nxSn8rSw" name="Invented in Italy"/>
+      <subConcepts xmi:id="_JGrmJsx5EfCB57nxSn8rSw" name="What is?" description="theatrical art form in which a story is told through music"/>
+      <subConcepts xmi:id="_JGrmJ8x5EfCB57nxSn8rSw" name="Argument">
+        <subConcepts xmi:id="_JGrmKMx5EfCB57nxSn8rSw" name="Libreto" description="The text of the opera is called Libreto"/>
+        <subConcepts xmi:id="_JGrmKcx5EfCB57nxSn8rSw" name="Historical or Mythological themes"/>
+      </subConcepts>
+    </subConcepts>
+    <subConcepts xmi:id="_JGrmKsx5EfCB57nxSn8rSw" name="Dance suite">
+      <subConcepts xmi:id="_JGrmK8x5EfCB57nxSn8rSw" name="Movements">
+        <subConcepts xmi:id="_JGrmLMx5EfCB57nxSn8rSw" name="Overture"/>
+        <subConcepts xmi:id="_JGrmLcx5EfCB57nxSn8rSw" name="Allemande"/>
+        <subConcepts xmi:id="_JGrmLsx5EfCB57nxSn8rSw" name="Courante"/>
+        <subConcepts xmi:id="_JGrmL8x5EfCB57nxSn8rSw" name="Sarabande"/>
+        <subConcepts xmi:id="_JGrmMMx5EfCB57nxSn8rSw" name="Gigue"/>
+      </subConcepts>
+    </subConcepts>
+    <subConcepts xmi:id="_JGrmMcx5EfCB57nxSn8rSw" name="Features">
+      <subConcepts xmi:id="_JGrmMsx5EfCB57nxSn8rSw" name="Timbre"/>
+      <subConcepts xmi:id="_JGrmM8x5EfCB57nxSn8rSw" name="Texture"/>
+      <subConcepts xmi:id="_JGrmNMx5EfCB57nxSn8rSw" name="Harmony"/>
+    </subConcepts>
+    <subConcepts xmi:id="_JGrmNcx5EfCB57nxSn8rSw" name="History">
+      <subConcepts xmi:id="_JGrmNsx5EfCB57nxSn8rSw" name="Early baroque" description="1580–1650">
+        <subConcepts xmi:id="_JGrmN8x5EfCB57nxSn8rSw" name="Italian composers">
+          <subConcepts xmi:id="_JGrmOMx5EfCB57nxSn8rSw" name="Monteverdi" relatedTo="_JGrmJMx5EfCB57nxSn8rSw"/>
+        </subConcepts>
+        <subConcepts xmi:id="_JGrmOcx5EfCB57nxSn8rSw" name="Other composers">
+          <subConcepts xmi:id="_JGrmOsx5EfCB57nxSn8rSw" name="M. Praetorius"/>
+        </subConcepts>
+      </subConcepts>
+      <subConcepts xmi:id="_JGrmO8x5EfCB57nxSn8rSw" name="Middle baroque" description="1630–1700"/>
+      <subConcepts xmi:id="_JGrmPMx5EfCB57nxSn8rSw" name="Late baroque" description="1680–1750&#x9;"/>
+    </subConcepts>
+  </root>
+</map:Map>

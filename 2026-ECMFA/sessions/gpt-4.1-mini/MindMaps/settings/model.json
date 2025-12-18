@@ -1,0 +1,30 @@
+{
+  "MindMap.ecore": [
+    {
+      "___type___": "Map",
+      "xmi_id": "_9vfoQMx0EfCrYI_c90wAJw",
+      "name": "name_example",
+      "description": "description_example",
+      "root": {
+        "___type___": "Concept",
+        "xmi_id": "_9vfoQcx0EfCrYI_c90wAJw",
+        "name": "name_example",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_9vfoQsx0EfCrYI_c90wAJw",
+            "name": "name_example",
+            "subConcepts": [],
+            "parent": "_9vfoQcx0EfCrYI_c90wAJw",
+            "description": "description_example",
+            "relatedTo": [
+              "_9vfoQcx0EfCrYI_c90wAJw"
+            ]
+          }
+        ],
+        "description": "description_example",
+        "relatedTo": []
+      }
+    }
+  ]
+}

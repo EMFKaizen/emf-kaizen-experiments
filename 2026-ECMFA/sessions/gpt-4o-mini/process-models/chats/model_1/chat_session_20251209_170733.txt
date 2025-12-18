@@ -1,0 +1,333 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||17:07
+
+You: Create two tasks that are the input of a Synchronisation gateway, the gateway should has as output a new Task with name "Finish"||17:07
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||17:08
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxwM7EEfCRuoeAi1p5xB",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxwA7EEfCRuoeAi1p5xC",
+      "name": "Task 1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxwB7EEfCRuoeAi1p5xD",
+      "name": "Task 2"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_esXxwC7EEfCRuoeAi1p5xE"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxwD7EEfCRuoeAi1p5xF",
+      "name": "Finish"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxwE7EEfCRuoeAi1p5xG",
+      "input": "_esXxwA7EEfCRuoeAi1p5xC",
+      "output": "_esXxwC7EEfCRuoeAi1p5xE",
+      "name": "input to sync 1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxwF7EEfCRuoeAi1p5xH",
+      "input": "_esXxwB7EEfCRuoeAi1p5xD",
+      "output": "_esXxwC7EEfCRuoeAi1p5xE",
+      "name": "input to sync 2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxwG7EEfCRuoeAi1p5xI",
+      "input": "_esXxwC7EEfCRuoeAi1p5xE",
+      "output": "_esXxwD7EEfCRuoeAi1p5xF",
+      "name": "sync to finish"
+    }
+  ],
+  "description": "Process with synchronization gateway and finish task"
+}
+------------------------------
+
+You: Create an exclusive choice gateway with two output conditions: "integration test passed" goes to a new Task "system test", and "integration test failed" that goes to a new Task "notify integration failure"||17:11
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||17:11
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_esXxfM7EEfCRuoeAi1p5xA",
+      "conditions": [
+        {
+          "___type___": "ConditionalFlowEdge",
+          "xmi_id": "_esXxgM7EEfCRuoeAi1p5xA",
+          "input": "_esXxdM7EEfCRuoeAi1p5xA",
+          "output": "_esXxhM7EEfCRuoeAi1p5xA",
+          "name": "integration test passed",
+          "condition": "integration test passed"
+        },
+        {
+          "___type___": "ConditionalFlowEdge",
+          "xmi_id": "_esXxiM7EEfCRuoeAi1p5xA",
+          "input": "_esXxdM7EEfCRuoeAi1p5xA",
+          "output": "_esXxjM7EEfCRuoeAi1p5xA",
+          "name": "integration test failed",
+          "condition": "integration test failed"
+        }
+      ]
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxh7EEfCRuoeAi1p5xA",
+      "name": "system test"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxi7EEfCRuoeAi1p5xA",
+      "name": "notify integration failure"
+    }
+  ],
+  "edges": [],
+  "description": "CI/CD Pipeline"
+}
+------------------------------
+
+You: Translate the current model into Spanish||17:13
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||17:13
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: Translate the name of the selected tasks into Spanish||17:14
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||17:14
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: recommend three more tasks for the process model||17:15
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||17:15
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxgM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxgN7EEfCRuoeAi1p5xA",
+      "name": "Code review"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxgP7EEfCRuoeAi1p5xA",
+      "name": "Prepare deployment"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxgQ7EEfCRuoeAi1p5xA",
+      "name": "Monitor deployment"
+    }
+  ],
+  "edges": [],
+  "description": ""
+}
+------------------------------
+
+You: recommend conditions for a multichoice gateway that goes after task "unit test"||17:24
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||17:24
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "MultiChoice",
+  "xmi_id": "_esXxd87EEfCRuoeAi1p5xA",
+  "conditions": [
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newFlowEdge1",
+      "input": "_esXxc87EEfCRuoeAi1p5xA",
+      "output": "_newTask1",
+      "name": "unit test passed",
+      "condition": "unit test passed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newFlowEdge2",
+      "input": "_esXxc87EEfCRuoeAi1p5xA",
+      "output": "_newTask2",
+      "name": "unit test failed",
+      "condition": "unit test failed"
+    }
+  ]
+}
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for AI software systems||17:27
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||17:27
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_newId1",
+      "name": "Code Review"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newId2",
+      "name": "Deploy to Production"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_newId3",
+      "name": "Monitor System"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_newId4"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newId5",
+      "input": "_esXxxdM7EEfCRuoeAi1p5xA",
+      "output": "_newId1",
+      "name": "integration to review"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newId6",
+      "input": "_newId4",
+      "output": "_newId2",
+      "condition": "Code Review Approved"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newId7",
+      "input": "_newId4",
+      "output": "_newId3",
+      "condition": "Code Review Rejected"
+    }
+  ],
+  "description": "CI/CD pipeline for AI software systems"
+}
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for a cyberphysical system that has a digital twin||17:28
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||17:28
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxth7EEfCRuoeAi1p5xA",
+      "name": "Deploy to staging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxti7EEfCRuoeAi1p5xA",
+      "name": "Monitor system performance"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_esXxtj7EEfCRuoeAi1p5xA",
+      "name": "Release to production"
+    },
+    {
+      "___type___": "MultiChoice",
+      "xmi_id": "_esXxtk7EEfCRuoeAi1p5xA",
+      "conditions": []
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxtl7EEfCRuoeAi1p5xA",
+      "input": "_esXxd87EEfCRuoeAi1p5xA",
+      "output": "_esXxth7EEfCRuoeAi1p5xA",
+      "name": "integration to deploy"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxtm7EEfCRuoeAi1p5xA",
+      "input": "_esXxth7EEfCRuoeAi1p5xA",
+      "output": "_esXxti7EEfCRuoeAi1p5xA",
+      "name": "deploy to monitor"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxtn7EEfCRuoeAi1p5xA",
+      "input": "_esXxti7EEfCRuoeAi1p5xA",
+      "output": "_esXxtj7EEfCRuoeAi1p5xA",
+      "name": "monitor to release"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxto7EEfCRuoeAi1p5xA",
+      "input": "_esXxtk7EEfCRuoeAi1p5xA",
+      "output": "_esXxth7EEfCRuoeAi1p5xA",
+      "name": "success condition",
+      "condition": "notified if issues"
+    }
+  ],
+  "description": "CI/CD Pipeline for a cyberphysical system with digital twin"
+}
+------------------------------
+

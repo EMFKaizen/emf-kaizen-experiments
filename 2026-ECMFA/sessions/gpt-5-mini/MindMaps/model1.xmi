@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:Map xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:map="http://mindmap/0.1" xmi:id="_F1U4MMx7EfCB57nxSn8rSw" name="Health" description="A mind map with ideas for healthy living">
+  <root xmi:id="_F1U4Mcx7EfCB57nxSn8rSw" name="Health" description="How can we achieve health?">
+    <subConcepts xmi:id="_F1U4Msx7EfCB57nxSn8rSw" name="Diet">
+      <subConcepts xmi:id="_F1U4M8x7EfCB57nxSn8rSw" name="Fruit"/>
+      <subConcepts xmi:id="_F1U4NMx7EfCB57nxSn8rSw" name="Vegetable"/>
+      <subConcepts xmi:id="_F1U4Ncx7EfCB57nxSn8rSw" name="Breads and Cereals"/>
+    </subConcepts>
+    <subConcepts xmi:id="_F1U4Nsx7EfCB57nxSn8rSw" name="Sleep">
+      <subConcepts xmi:id="_F1U4N8x7EfCB57nxSn8rSw" name="33% of our lives"/>
+      <subConcepts xmi:id="_F1U4OMx7EfCB57nxSn8rSw" name="Insomnia"/>
+    </subConcepts>
+    <subConcepts xmi:id="_F1U4Ocx7EfCB57nxSn8rSw" name="Stress">
+      <subConcepts xmi:id="_F1U4Osx7EfCB57nxSn8rSw" name="Causes"/>
+    </subConcepts>
+    <subConcepts xmi:id="_F1U4O8x7EfCB57nxSn8rSw" name="Exercise"/>
+  </root>
+</map:Map>

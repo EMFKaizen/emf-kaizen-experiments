@@ -1,0 +1,448 @@
+You are an AI assistant called EMF Kaizen, who generates structured JSON model elements based on a user request and a domain-specific metamodel in EMF/ECore.
+Your goal is to create, expand or modify the current model precisely, using ONLY the information provided.
+
+Your tasks are:
+1. Understand the user's modeling request.
+2. Analyze the provided metamodel to extract valid class/type names, attributes, and relationships.
+3. Generate ONLY the model elements required to fulfill the user request.
+4. Output a valid JSON object that follows the metamodel's structure and constraints.
+
+âœ… DO:
+- Use ONLY class/attribute names from the metamodel.
+- Match names exactly (case-sensitive).
+- Reference other objects if the metamodel defines a relationship (even if not shown in the current model).
+- Include valid references (object links) as defined by the metamodel when suggesting classes or relationships..
+- Use the language of the user request (e.g., English or Spanish).
+- Include only what the user asked for.
+
+â�Œ DO NOT:
+- Invent new types, or attributes.
+- Use markdown code blocks like ```json ... ```.
+- Output arrays unless clearly required by the structure.
+- Repeat elements of the current model. Avoid repeating as much as possible, only if necessary to relate with new elements that you recommend, or needed to serve the user request.
+- Include comments, greetings, or explanatory text.
+
+===== USER REQUEST =====
+The user has requested the following:"create an alternative mind map for baroque music, better organised, and completing the missing information of the model"
+
+===== METAMODEL DESCRIPTION =====
+This is a high-level description of the metamodel (or a user-selected subset of it) to provide additional context:
+The metamodel describes Mind Mappings, encapsulated in two main classes: `Map` and `Concept`.
+
+1. **Map**:
+   - The **Map** class represents a mind map, which is a visual tool used for organizing information. It is characterized by:
+     - **name**: A string attribute that specifies the title of the mind map.
+     - **description**: A string attribute providing additional details about the mind map's purpose or content.
+     - **root**: A containment reference to a `Concept`. This indicates that a mind map begins with a root concept, serving as the central idea around which related concepts will be organized.
+
+2. **Concept**:
+   - The **Concept** class represents an individual idea or node within the mind map. It features:
+     - **name**: A string attribute for the name of the concept.
+     - **description**: A string attribute that offers an explanation of the concept.
+     - **subConcepts**: A containment reference allowing a concept to have multiple child concepts (sub-concepts), enabling a hierarchical organization.
+     - **parent**: A reference to the parent `Concept` in the hierarchy (this is the opposite reference of subConcepts).
+     - **relatedTo**: A reference that can link this concept to other concepts, enhancing relational understanding among various ideas.
+
+### Relationships
+- The `Map` class is a top-level entity that contains a single `root` `Concept`, which acts as the foundational idea for the mind map.
+- The `Concept` class supports a recursive structure where each concept can have multiple `subConcepts`, all of which are child nodes to the respective parent concept.
+- The `relatedTo` feature enables concepts to connect with additional concepts, fostering a web of associations that mirrors the exploratory nature of mind mapping.
+
+===== METAMODEL =====
+The following is the full meta-model, in Ecore format:
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mindMap" nsURI="http://mindmap/0.1" nsPrefix="map">
+  <eClassifiers xsi:type="ecore:EClass" name="Map">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="root" eType="//Concept" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Concept">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subConcepts" upperBound="-1" eType="//Concept" containment="true" eOpposite="//Concept/parent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="//Concept" eOpposite="//Concept/subConcepts"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedTo" upperBound="-1" eType="//Concept"/>
+  </eClassifiers>
+</ecore:EPackage>
+
+
+===== RELEVANT TYPES FOR YOUR RESPONSE =====
+Your response can ONLY use the classes listed below (the rest are not relevant for the user):
+- Map
+- Concept
+
+===== CURRENT MODEL =====
+[
+  {
+    "___type___": "Map",
+    "xmi_id": "_JGrmIMx5EfCB57nxSn8rSw",
+    "name": "Baroque music",
+    "description": "A mind map with the main concepts of Baroque music",
+    "root": {
+      "___type___": "Concept",
+      "xmi_id": "_JGrmIcx5EfCB57nxSn8rSw",
+      "name": "Baroque music",
+      "subConcepts": [
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmIsx5EfCB57nxSn8rSw",
+          "name": "Instrumental music",
+          "subConcepts": [],
+          "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+          "description": "",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmI8x5EfCB57nxSn8rSw",
+          "name": "Vocal religious music",
+          "subConcepts": [],
+          "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmJMx5EfCB57nxSn8rSw",
+          "name": "Opera",
+          "subConcepts": [
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmJcx5EfCB57nxSn8rSw",
+              "name": "Invented in Italy",
+              "subConcepts": [],
+              "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+              "relatedTo": []
+            },
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmJsx5EfCB57nxSn8rSw",
+              "name": "What is?",
+              "subConcepts": [],
+              "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+              "description": "theatrical art form in which a story is told through music",
+              "relatedTo": []
+            },
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmJ8x5EfCB57nxSn8rSw",
+              "name": "Argument",
+              "subConcepts": [
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmKMx5EfCB57nxSn8rSw",
+                  "name": "Libreto",
+                  "subConcepts": [],
+                  "parent": "_JGrmJ8x5EfCB57nxSn8rSw",
+                  "description": "The text of the opera is called Libreto",
+                  "relatedTo": []
+                },
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmKcx5EfCB57nxSn8rSw",
+                  "name": "Historical or Mythological themes",
+                  "subConcepts": [],
+                  "parent": "_JGrmJ8x5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                }
+              ],
+              "parent": "_JGrmJMx5EfCB57nxSn8rSw",
+              "relatedTo": []
+            }
+          ],
+          "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmKsx5EfCB57nxSn8rSw",
+          "name": "Dance suite",
+          "subConcepts": [
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmK8x5EfCB57nxSn8rSw",
+              "name": "Movements",
+              "subConcepts": [
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmLMx5EfCB57nxSn8rSw",
+                  "name": "Overture",
+                  "subConcepts": [],
+                  "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                },
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmLcx5EfCB57nxSn8rSw",
+                  "name": "Allemande",
+                  "subConcepts": [],
+                  "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                },
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmLsx5EfCB57nxSn8rSw",
+                  "name": "Courante",
+                  "subConcepts": [],
+                  "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                },
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmL8x5EfCB57nxSn8rSw",
+                  "name": "Sarabande",
+                  "subConcepts": [],
+                  "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                },
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmMMx5EfCB57nxSn8rSw",
+                  "name": "Gigue",
+                  "subConcepts": [],
+                  "parent": "_JGrmK8x5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                }
+              ],
+              "parent": "_JGrmKsx5EfCB57nxSn8rSw",
+              "relatedTo": []
+            }
+          ],
+          "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmMcx5EfCB57nxSn8rSw",
+          "name": "Features",
+          "subConcepts": [
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmMsx5EfCB57nxSn8rSw",
+              "name": "Timbre",
+              "subConcepts": [],
+              "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+              "relatedTo": []
+            },
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmM8x5EfCB57nxSn8rSw",
+              "name": "Texture",
+              "subConcepts": [],
+              "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+              "relatedTo": []
+            },
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmNMx5EfCB57nxSn8rSw",
+              "name": "Harmony",
+              "subConcepts": [],
+              "parent": "_JGrmMcx5EfCB57nxSn8rSw",
+              "relatedTo": []
+            }
+          ],
+          "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+          "relatedTo": []
+        },
+        {
+          "___type___": "Concept",
+          "xmi_id": "_JGrmNcx5EfCB57nxSn8rSw",
+          "name": "History",
+          "subConcepts": [
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmNsx5EfCB57nxSn8rSw",
+              "name": "Early baroque",
+              "subConcepts": [
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmN8x5EfCB57nxSn8rSw",
+                  "name": "Italian composers",
+                  "subConcepts": [
+                    {
+                      "___type___": "Concept",
+                      "xmi_id": "_JGrmOMx5EfCB57nxSn8rSw",
+                      "name": "Monteverdi",
+                      "subConcepts": [],
+                      "parent": "_JGrmN8x5EfCB57nxSn8rSw",
+                      "relatedTo": [
+                        "_JGrmJMx5EfCB57nxSn8rSw"
+                      ]
+                    }
+                  ],
+                  "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                },
+                {
+                  "___type___": "Concept",
+                  "xmi_id": "_JGrmOcx5EfCB57nxSn8rSw",
+                  "name": "Other composers",
+                  "subConcepts": [
+                    {
+                      "___type___": "Concept",
+                      "xmi_id": "_JGrmOsx5EfCB57nxSn8rSw",
+                      "name": "M. Praetorius",
+                      "subConcepts": [],
+                      "parent": "_JGrmOcx5EfCB57nxSn8rSw",
+                      "relatedTo": []
+                    }
+                  ],
+                  "parent": "_JGrmNsx5EfCB57nxSn8rSw",
+                  "relatedTo": []
+                }
+              ],
+              "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+              "description": "1580–1650",
+              "relatedTo": []
+            },
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmO8x5EfCB57nxSn8rSw",
+              "name": "Middle baroque",
+              "subConcepts": [],
+              "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+              "description": "1630–1700",
+              "relatedTo": []
+            },
+            {
+              "___type___": "Concept",
+              "xmi_id": "_JGrmPMx5EfCB57nxSn8rSw",
+              "name": "Late baroque",
+              "subConcepts": [],
+              "parent": "_JGrmNcx5EfCB57nxSn8rSw",
+              "description": "1680–1750\t",
+              "relatedTo": []
+            }
+          ],
+          "parent": "_JGrmIcx5EfCB57nxSn8rSw",
+          "relatedTo": []
+        }
+      ],
+      "description": "Baroque music concepts",
+      "relatedTo": []
+    }
+  }
+]
+
+The user has selected the following model element(s): 
+  - Object of type Concept with ID: _JGrmPMx5EfCB57nxSn8rSw
+
+
+===== MODEL CONSTRAINTS =====
+Before generating new model elements:
+- Parse the current model above.
+- Identify which elements already exist (e.g., room numbers, IDs, guest names).
+- DO NOT recreate or duplicate any existing elements.
+- ONLY generate new elements as required by the user request.
+
+===== EXAMPLE JSON RESPONSE =====
+
+Example model:
+{
+  "___type___": "Map",
+  "xmi_id": "_9vfoQMx0EfCrYI_c90wAJw",
+  "name": "name_example",
+  "description": "description_example",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_9vfoQcx0EfCrYI_c90wAJw",
+    "name": "name_example",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_9vfoQsx0EfCrYI_c90wAJw",
+        "name": "name_example",
+        "subConcepts": [],
+        "parent": "_9vfoQcx0EfCrYI_c90wAJw",
+        "description": "description_example",
+        "relatedTo": [
+          "_9vfoQcx0EfCrYI_c90wAJw"
+        ]
+      }
+    ],
+    "description": "description_example",
+    "relatedTo": []
+  }
+}
+
+
+===== HISTORY / NOTES =====
+before replying, verify:
+- That your JSON is valid and properly structured.
+- That all class and attribute names exist in the metamodel.
+- That your output is not in the present model and relevant to the request.
+
+- The root object of your response should be a VALID object, with its ___type___ identifier and attributes.
+
+===== CONVERSATION HISTORY =====
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.
+
+You: Create two concepts "Imitation" and "Counterpoint" with a parent concept "Polyphony"||18:57
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+EMF Kaizen: The recommendation details can be found in the EMF Kaizen Results view.
+
+How else can I help you?||18:57
+
+You: Create a sequence of subconcepts: Forms & Genres -> Instrumental forms -> Suite||19:01
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+EMF Kaizen: The recommendation details can be found in the EMF Kaizen Results view.
+
+How else can I help you?||19:01
+
+You: Translate the current model into Spanish||19:03
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+EMF Kaizen: The recommendation details can be found in the EMF Kaizen Results view.
+
+How else can I help you?||19:03
+
+You: create a copy of the selected concepts, but in lower case||19:04
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+EMF Kaizen: The recommendation details can be found in the EMF Kaizen Results view.
+
+How else can I help you?||19:04
+
+You: recommend three subconcepts for the concept "Late baroque"||19:05
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+EMF Kaizen: The recommendation details can be found in the EMF Kaizen Results view.
+
+How else can I help you?||19:05
+
+You: recommend more subconcepts for the selected concept||19:05
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+EMF Kaizen: The recommendation details can be found in the EMF Kaizen Results view.
+
+How else can I help you?||19:05
+
+You: Complete the Middle baroque with all missing details||19:06
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+EMF Kaizen: The recommendation details can be found in the EMF Kaizen Results view.
+
+How else can I help you?||19:06
+
+You: create an alternative mind map for baroque music, better organised, and completing the missing information of the model||19:06
+
+EMF Kaizen: Processing recommendation request [#8]...
+---- END OF HISTORY ----
+

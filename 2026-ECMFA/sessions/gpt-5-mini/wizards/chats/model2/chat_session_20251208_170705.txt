@@ -1,0 +1,1324 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||17:07
+
+You: create two consecutive pages with names N1, N2, the second page should have a button to close the wizard, and a back button to go to N1||17:07
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||17:07
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_N1_page_01",
+      "name": "N1",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_N1_to_N2_btn",
+          "label": "Next",
+          "toPage": "_N2_page_01"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_N2_page_01",
+      "name": "N2",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "CloseWizardButton",
+          "xmi_id": "_N2_close_btn",
+          "label": "Close"
+        },
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_N2_back_btn",
+          "label": "Back"
+        }
+      ]
+    }
+  ]
+}
+------------------------------
+
+You: create a page with a password field, a checkbox, and a button to display a message||17:08
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||17:08
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Page",
+  "xmi_id": "_Pg_PasswordPage_01",
+  "name": "Password Entry",
+  "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "fields": [
+    {
+      "___type___": "Field",
+      "xmi_id": "_Fld_Password_01",
+      "label": "Password",
+      "minLength": 8,
+      "maxLength": 128,
+      "anyLength": false,
+      "isPassword": true
+    }
+  ],
+  "buttons": [
+    {
+      "___type___": "ShowMessageButton",
+      "xmi_id": "_Btn_ShowMsg_01",
+      "label": "Show Message",
+      "messageText": "Your password has been recorded."
+    }
+  ],
+  "checkbox": {
+    "___type___": "Checkbox",
+    "xmi_id": "_Chk_Remember_01",
+    "checked": false,
+    "label": "Remember me"
+  }
+}
+------------------------------
+
+You: Translate the current model into Spanish||17:09
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||17:09
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "title": "Recopilación de datos de incorporación de empleados",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jwc7WEfC-mdvB7cLErg",
+      "name": "Información personal",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jws7WEfC-mdvB7cLErg",
+          "label": "Nombre legal completo",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jw87WEfC-mdvB7cLErg",
+          "label": "Nombre preferido",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jxM7WEfC-mdvB7cLErg",
+          "label": "Fecha de nacimiento",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jxc7WEfC-mdvB7cLErg",
+          "label": "Género (opcional)",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jxs7WEfC-mdvB7cLErg",
+          "label": "Nacionalidad",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jx87WEfC-mdvB7cLErg",
+      "name": "Datos de contacto",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jyM7WEfC-mdvB7cLErg",
+          "label": "Dirección",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jyc7WEfC-mdvB7cLErg",
+          "label": "Correo personal",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jys7WEfC-mdvB7cLErg",
+          "label": "Número de teléfono",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jy87WEfC-mdvB7cLErg",
+      "name": "Contactos de emergencia",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jzM7WEfC-mdvB7cLErg",
+          "label": "Nombre del contacto",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jzc7WEfC-mdvB7cLErg",
+          "label": "Parentesco",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7jzs7WEfC-mdvB7cLErg",
+          "label": "Número de teléfono",
+          "minLength": 0,
+          "maxLength": 0,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jz87WEfC-mdvB7cLErg",
+      "name": "Detalles del puesto",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [],
+      "buttons": [],
+      "checkbox": {
+        "___type___": "Checkbox",
+        "xmi_id": "_Ej7j0M7WEfC-mdvB7cLErg",
+        "checked": false,
+        "label": "¿Trabajo remoto?"
+      }
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0c7WEfC-mdvB7cLErg",
+      "name": "Ubicación de trabajo y equipo",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0s7WEfC-mdvB7cLErg",
+      "name": "Verificación de identidad / Carga de documentos",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j087WEfC-mdvB7cLErg",
+      "name": "Información fiscal",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j1M7WEfC-mdvB7cLErg",
+      "name": "Configuración de nómina",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [],
+      "buttons": []
+    }
+  ]
+}
+------------------------------
+
+You: add back navigations to the selected pages (each button should have a label indicating the target page name)||17:09
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||17:10
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "title": "Employee onboarding data collection",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jx87WEfC-mdvB7cLErg",
+      "name": "Contact Details",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej7kB17WEfC-mdvB7cLErg",
+          "label": "Personal Information"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jy87WEfC-mdvB7cLErg",
+      "name": "Emergency Contacts",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej7kB27WEfC-mdvB7cLErg",
+          "label": "Contact Details"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jz87WEfC-mdvB7cLErg",
+      "name": "Job Details",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej7kB37WEfC-mdvB7cLErg",
+          "label": "Emergency Contacts"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0c7WEfC-mdvB7cLErg",
+      "name": "Work Location \u0026 Equipment",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej7kB47WEfC-mdvB7cLErg",
+          "label": "Job Details"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0s7WEfC-mdvB7cLErg",
+      "name": "Identity Verification / Document Upload",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej7kB57WEfC-mdvB7cLErg",
+          "label": "Work Location \u0026 Equipment"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j087WEfC-mdvB7cLErg",
+      "name": "Tax Information",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej7kB67WEfC-mdvB7cLErg",
+          "label": "Identity Verification / Document Upload"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j1M7WEfC-mdvB7cLErg",
+      "name": "Payroll Setup",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej7kB77WEfC-mdvB7cLErg",
+          "label": "Tax Information"
+        }
+      ]
+    }
+  ]
+}
+------------------------------
+
+You: recommend fields for each selected page||17:11
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||17:13
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "title": "Employee onboarding data collection",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0c7WEfC-mdvB7cLErg",
+      "name": "Work Location \u0026 Equipment",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j0c7_f1",
+          "label": "Primary work location",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j0c7_f2",
+          "label": "Equipment required (laptop / desktop / other)",
+          "minLength": 1,
+          "maxLength": 200,
+          "anyLength": true,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j0c7_f3",
+          "label": "Number of monitors",
+          "minLength": 1,
+          "maxLength": 2,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j0c7_f4",
+          "label": "Ergonomic equipment needed (yes/no)",
+          "minLength": 1,
+          "maxLength": 3,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0s7WEfC-mdvB7cLErg",
+      "name": "Identity Verification / Document Upload",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j0s7_f1",
+          "label": "ID type (passport, driver license, national ID)",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j0s7_f2",
+          "label": "ID number",
+          "minLength": 4,
+          "maxLength": 30,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j0s7_f3",
+          "label": "Document upload description (file)",
+          "minLength": 1,
+          "maxLength": 255,
+          "anyLength": true,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j087WEfC-mdvB7cLErg",
+      "name": "Tax Information",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j087_f1",
+          "label": "Tax residency country",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j087_f2",
+          "label": "Tax Identification Number",
+          "minLength": 4,
+          "maxLength": 30,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j087_f3",
+          "label": "Tax form completed (yes/no)",
+          "minLength": 1,
+          "maxLength": 3,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j1M7WEfC-mdvB7cLErg",
+      "name": "Payroll Setup",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j1M7_f1",
+          "label": "Bank account number",
+          "minLength": 8,
+          "maxLength": 34,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j1M7_f2",
+          "label": "Bank routing number",
+          "minLength": 9,
+          "maxLength": 9,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j1M7_f3",
+          "label": "Account holder name",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": true,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej7j1M7_f4",
+          "label": "Preferred pay frequency",
+          "minLength": 1,
+          "maxLength": 20,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "initialPage": "_Ej7jwc7WEfC-mdvB7cLErg"
+}
+------------------------------
+
+You: recommend missing fields for the selected pages||17:13
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||17:14
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "title": "Employee onboarding data collection",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jwc7WEfC-mdvB7cLErg",
+      "name": "Personal Information",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_PI_1",
+          "label": "National ID / Social Security number",
+          "minLength": 5,
+          "maxLength": 20,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_PI_2",
+          "label": "Personal pronouns (e.g., he/him, she/her, they/them)",
+          "minLength": 2,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_PI_3",
+          "label": "Marital status",
+          "minLength": 1,
+          "maxLength": 30,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jx87WEfC-mdvB7cLErg",
+      "name": "Contact Details",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_CD_1",
+          "label": "Work email",
+          "minLength": 5,
+          "maxLength": 254,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_CD_2",
+          "label": "Secondary phone number",
+          "minLength": 7,
+          "maxLength": 15,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_CD_3",
+          "label": "Postal / ZIP code",
+          "minLength": 2,
+          "maxLength": 12,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jy87WEfC-mdvB7cLErg",
+      "name": "Emergency Contacts",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_EC_1",
+          "label": "Contact email",
+          "minLength": 5,
+          "maxLength": 254,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_EC_2",
+          "label": "Alternate phone number",
+          "minLength": 7,
+          "maxLength": 15,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jz87WEfC-mdvB7cLErg",
+      "name": "Job Details",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_JD_1",
+          "label": "Job title",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_JD_2",
+          "label": "Department",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_JD_3",
+          "label": "Start date (YYYY-MM-DD)",
+          "minLength": 10,
+          "maxLength": 10,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_rec_JD_4",
+          "label": "Employee ID",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": []
+    }
+  ]
+}
+------------------------------
+
+You: complete the wizard with the necessary pages, fields and navigations||17:14
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||17:16
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "initialPage": "_Ej7jwc7WEfC-mdvB7cLErg",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jwc7WEfC-mdvB7cLErg",
+      "name": "Personal Information",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Ej8n01",
+          "label": "Next: Contact Details",
+          "toPage": "_Ej7jx87WEfC-mdvB7cLErg"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jx87WEfC-mdvB7cLErg",
+      "name": "Contact Details",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej8n02",
+          "label": "Back to Personal Information"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Ej8n03",
+          "label": "Next: Emergency Contacts",
+          "toPage": "_Ej7jy87WEfC-mdvB7cLErg"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jy87WEfC-mdvB7cLErg",
+      "name": "Emergency Contacts",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej8n04",
+          "label": "Back to Contact Details"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Ej8n05",
+          "label": "Next: Job Details",
+          "toPage": "_Ej7jz87WEfC-mdvB7cLErg"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7jz87WEfC-mdvB7cLErg",
+      "name": "Job Details",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f01",
+          "label": "Job title",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f02",
+          "label": "Department",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f03",
+          "label": "Start date",
+          "minLength": 1,
+          "maxLength": 20,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej8n06",
+          "label": "Back to Emergency Contacts"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Ej8n07",
+          "label": "Next: Work Location & Equipment",
+          "toPage": "_Ej7j0c7WEfC-mdvB7cLErg"
+        }
+      ],
+      "checkbox": {
+        "___type___": "Checkbox",
+        "xmi_id": "_Ej7j0M7WEfC-mdvB7cLErg",
+        "checked": false,
+        "label": "remote work?"
+      }
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0c7WEfC-mdvB7cLErg",
+      "name": "Work Location \u0026 Equipment",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f04",
+          "label": "Office location",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f05",
+          "label": "Equipment required",
+          "minLength": 1,
+          "maxLength": 500,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej8n08",
+          "label": "Back to Job Details"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Ej8n09",
+          "label": "Next: Identity Verification / Document Upload",
+          "toPage": "_Ej7j0s7WEfC-mdvB7cLErg"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j0s7WEfC-mdvB7cLErg",
+      "name": "Identity Verification / Document Upload",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f06",
+          "label": "ID type",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f07",
+          "label": "ID number",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f08",
+          "label": "Document file name",
+          "minLength": 1,
+          "maxLength": 200,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej8n10",
+          "label": "Back to Work Location & Equipment"
+        },
+        {
+          "___type___": "ShowMessageButton",
+          "xmi_id": "_Ej8m01",
+          "label": "Upload instructions",
+          "messageText": "Please upload a clear photo or scan of a government-issued ID."
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Ej8n11",
+          "label": "Next: Tax Information",
+          "toPage": "_Ej7j087WEfC-mdvB7cLErg"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j087WEfC-mdvB7cLErg",
+      "name": "Tax Information",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f09",
+          "label": "Tax ID number",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f10",
+          "label": "Tax filing status",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej8n12",
+          "label": "Back to Identity Verification / Document Upload"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Ej8n13",
+          "label": "Next: Payroll Setup",
+          "toPage": "_Ej7j1M7WEfC-mdvB7cLErg"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Ej7j1M7WEfC-mdvB7cLErg",
+      "name": "Payroll Setup",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Ej8f11",
+          "label": "Bank account number",
+          "minLength": 1,
+          "maxLength": 34,
+          "anyLength": false,
+          "isPassword": true
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Ej8n14",
+          "label": "Back to Tax Information"
+        },
+        {
+          "___type___": "ShowMessageButton",
+          "xmi_id": "_Ej8m02",
+          "label": "Confirm payroll setup",
+          "messageText": "Your payroll setup information will be used for direct deposit."
+        },
+        {
+          "___type___": "CloseWizardButton",
+          "xmi_id": "_Ej8n15",
+          "label": "Finish and Close"
+        }
+      ],
+      "checkbox": {
+        "___type___": "Checkbox",
+        "xmi_id": "_Ej8c01",
+        "checked": false,
+        "label": "Consent to direct deposit"
+      }
+    }
+  ]
+}
+------------------------------
+
+You: Create fields and pages to model the onboarding process at OpenAI||17:17
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||17:18
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_Ej7jwM7WEfC-mdvB7cLErg",
+  "title": "Employee onboarding data collection",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pAccount1",
+      "name": "Account Setup",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f1",
+          "label": "Work email",
+          "minLength": 5,
+          "maxLength": 254,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f2",
+          "label": "Username",
+          "minLength": 3,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f3",
+          "label": "Set password",
+          "minLength": 8,
+          "maxLength": 128,
+          "anyLength": false,
+          "isPassword": true
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b1",
+          "label": "Next: Security & MFA",
+          "toPage": "_Onb_pSecurity1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pSecurity1",
+      "name": "Security & MFA",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f4",
+          "label": "MFA method",
+          "minLength": 3,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f5",
+          "label": "Phone for SMS",
+          "minLength": 7,
+          "maxLength": 20,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f6",
+          "label": "Recovery email",
+          "minLength": 5,
+          "maxLength": 254,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b2",
+          "label": "Back to Account Setup"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b3",
+          "label": "Next: Access & Permissions",
+          "toPage": "_Onb_pAccess1"
+        }
+      ],
+      "checkbox": {
+        "___type___": "Checkbox",
+        "xmi_id": "_Onb_cb1",
+        "checked": false,
+        "label": "Enable MFA"
+      }
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pAccess1",
+      "name": "Access & Permissions",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f7",
+          "label": "Role",
+          "minLength": 2,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f8",
+          "label": "Repository access level",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b4",
+          "label": "Back to Security & MFA"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b5",
+          "label": "Next: Tools & Resources",
+          "toPage": "_Onb_pTools1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pTools1",
+      "name": "Tools & Resources",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f9",
+          "label": "GitHub username",
+          "minLength": 1,
+          "maxLength": 39,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f10",
+          "label": "Preferred editor",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f11",
+          "label": "Slack handle",
+          "minLength": 1,
+          "maxLength": 50,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b6",
+          "label": "Back to Access & Permissions"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b7",
+          "label": "Next: Benefits Enrollment",
+          "toPage": "_Onb_pBenefits1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pBenefits1",
+      "name": "Benefits Enrollment",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f12",
+          "label": "Health plan selection",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f13",
+          "label": "401k contribution (%)",
+          "minLength": 1,
+          "maxLength": 3,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b8",
+          "label": "Back to Tools & Resources"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b9",
+          "label": "Next: Training & Orientation",
+          "toPage": "_Onb_pTraining1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pTraining1",
+      "name": "Training & Orientation",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f14",
+          "label": "Orientation session date",
+          "minLength": 10,
+          "maxLength": 10,
+          "anyLength": false,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_Onb_f15",
+          "label": "Assigned mentor",
+          "minLength": 3,
+          "maxLength": 100,
+          "anyLength": false,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b10",
+          "label": "Back to Benefits Enrollment"
+        },
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_Onb_b11",
+          "label": "Next: Final Review",
+          "toPage": "_Onb_pFinal1"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_Onb_pFinal1",
+      "name": "Final Review & Submit",
+      "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+      "fields": [],
+      "buttons": [
+        {
+          "___type___": "BackButton",
+          "xmi_id": "_Onb_b12",
+          "label": "Back to Training & Orientation"
+        },
+        {
+          "___type___": "CloseWizardButton",
+          "xmi_id": "_Onb_b13",
+          "label": "Submit and Close"
+        }
+      ],
+      "checkbox": {
+        "___type___": "Checkbox",
+        "xmi_id": "_Onb_cb2",
+        "checked": false,
+        "label": "I confirm all information is accurate"
+      }
+    }
+  ],
+  "initialPage": "_Ej7jwc7WEfC-mdvB7cLErg"
+}
+------------------------------
+

@@ -1,0 +1,52 @@
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_Country_0",
+    "name": "Country",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EReference",
+        "xmi_id": "_Country_cities_0",
+        "name": "cities",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_City_0",
+        "containment": true
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_Country_capital_0",
+        "name": "capital",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_City_0"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_Country_recommendedCities_0",
+        "name": "recommendedCities",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_City_0"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_City_0",
+    "name": "City",
+    "abstract": false,
+    "eSuperTypes": [
+      "_UzsRxc7oEfCBEtIB8TpJ4g"
+    ],
+    "eStructuralFeatures": []
+  }
+] }

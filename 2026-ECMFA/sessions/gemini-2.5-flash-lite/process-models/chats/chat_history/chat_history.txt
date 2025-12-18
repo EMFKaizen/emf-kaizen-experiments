@@ -1,0 +1,1523 @@
+You: Create 10 tasks with names T1..T10||02:02
+
+------------------------------||02:02
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_1",
+      "name": "T1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_2",
+      "name": "T2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_3",
+      "name": "T3"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_4",
+      "name": "T4"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_5",
+      "name": "T5"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_6",
+      "name": "T6"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_7",
+      "name": "T7"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_8",
+      "name": "T8"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_9",
+      "name": "T9"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_10",
+      "name": "T10"
+    }
+  ],
+  "edges": [],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Create three tasks, one of the task should have as output a ParallelSplit. The ParallelSplit should have as output the other two tasks.||02:02
+
+------------------------------||02:02
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Task",
+    "xmi_id": "_task1",
+    "name": "Task A"
+  },
+  {
+    "___type___": "ParallelSplit",
+    "xmi_id": "_parallelSplit1"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_task2",
+    "name": "Task B"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_task3",
+    "name": "Task C"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_edge1",
+    "input": "_task1",
+    "output": "_parallelSplit1",
+    "name": "Flow to Split"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_edge2",
+    "input": "_parallelSplit1",
+    "output": "_task2",
+    "name": "Flow to Task B"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_edge3",
+    "input": "_parallelSplit1",
+    "output": "_task3",
+    "name": "Flow to Task C"
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||02:02
+
+------------------------------||02:02
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Escribir artículo"
+    }
+  ],
+  "edges": [],
+  "description": "publicación de artículo en una revista"
+}
+------------------------------
+
+You: add an initial and a final task to the selected element||02:02
+
+------------------------------||02:02
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_initialTask_1",
+      "name": "Start"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_finalTask_1",
+      "name": "End"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_flowEdge_1",
+      "input": "_initialTask_1",
+      "output": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Start to Write"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_flowEdge_2",
+      "input": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "output": "_finalTask_1",
+      "name": "Write to End"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Recommend three tasks for the process model||02:03
+
+------------------------------||02:03
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Task",
+    "xmi_id": "_task_1",
+    "name": "Task 1"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_task_2",
+    "name": "Task 2"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_task_3",
+    "name": "Task 3"
+  }
+] }
+------------------------------
+
+You: Recommend a better name for the selected element||02:03
+
+------------------------------||02:03
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "description": "Journal Publication Process"
+}
+------------------------------
+
+You: Finish the process model with the necessary tasks and edges||02:03
+
+------------------------------||02:03
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "InitialTask",
+  "xmi_id": "_initialTask_01",
+  "name": "Start"
+}
+------------------------------
+
+You: Finish the process model for a journal that has an initial phase of deciding if the paper is in the journal scope||02:03
+
+------------------------------||02:03
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "InitialTask",
+    "xmi_id": "_-z49gM7jEfC_Wp4fW-0pTA",
+    "name": "Start"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_-z49gc7jEfC_Wp4fW-0pTA",
+    "name": "Check Scope"
+  },
+  {
+    "___type___": "ExclusiveChoice",
+    "xmi_id": "_-z49gg7jEfC_Wp4fW-0pTA"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_-z49gq7jEfC_Wp4fW-0pTA",
+    "name": "Reject Paper"
+  },
+  {
+    "___type___": "FinalTask",
+    "xmi_id": "_-z49gw7jEfC_Wp4fW-0pTA",
+    "name": "End Process"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_-z49hM7jEfC_Wp4fW-0pTA",
+    "input": "_-z49gM7jEfC_Wp4fW-0pTA",
+    "output": "_-z49gc7jEfC_Wp4fW-0pTA",
+    "name": "Start to Check Scope"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_-z49hM7jEfC_Wp4fW-0pTB",
+    "input": "_-z49gc7jEfC_Wp4fW-0pTA",
+    "output": "_-z49gg7jEfC_Wp4fW-0pTA",
+    "name": "Check Scope to Decision"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_-z49hc7jEfC_Wp4fW-0pTC",
+    "input": "_-z49gg7jEfC_Wp4fW-0pTA",
+    "output": "_cnlMAc7AEfCub4t_QbJKtQ",
+    "name": "Scope is Yes",
+    "condition": "In Scope"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_-z49hg7jEfC_Wp4fW-0pTD",
+    "input": "_-z49gg7jEfC_Wp4fW-0pTA",
+    "output": "_-z49gq7jEfC_Wp4fW-0pTA",
+    "name": "Scope is No",
+    "condition": "Out of Scope"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_-z49hq7jEfC_Wp4fW-0pTE",
+    "input": "_-z49gq7jEfC_Wp4fW-0pTA",
+    "output": "_-z49gw7jEfC_Wp4fW-0pTA",
+    "name": "Reject to End"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_-z49hw7jEfC_Wp4fW-0pTF",
+    "input": "_cnlMAc7AEfCub4t_QbJKtQ",
+    "output": "_-z49gw7jEfC_Wp4fW-0pTA",
+    "name": "Paper Written to End"
+  }
+] }
+------------------------------
+
+You: Create two tasks that are the input of a Synchronisation gateway, the gateway should has as output a new Task with name "Finish"||02:24
+
+------------------------------||02:24
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_1",
+    "name": "Input Task A"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_2",
+    "name": "Input Task B"
+  },
+  {
+    "___type___": "Synchronization",
+    "xmi_id": "_new_sync_gateway_1"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_3",
+    "name": "Finish"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_1",
+    "input": "_new_task_1",
+    "output": "_new_sync_gateway_1",
+    "name": "Input A to Sync"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_2",
+    "input": "_new_task_2",
+    "output": "_new_sync_gateway_1",
+    "name": "Input B to Sync"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_3",
+    "input": "_new_sync_gateway_1",
+    "output": "_new_task_3",
+    "name": "Sync to Finish"
+  }
+] }
+------------------------------
+
+You: Create an exclusive choice gateway with two output conditions: "integration test passed" goes to a new Task "system test", and "integration test failed" that goes to a new Task "notify integration failure"||02:26
+
+------------------------------||02:26
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_new_exclusiveChoiceGateway",
+      "eContainer": "_esXxcM7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_new_systemTestTask",
+      "name": "system test",
+      "eContainer": "_esXxcM7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_new_notifyFailureTask",
+      "name": "notify integration failure",
+      "eContainer": "_esXxcM7EEfCRuoeAi1p5xA"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_new_edge_passed",
+      "input": "_esXxdM7EEfCRuoeAi1p5xA",
+      "output": "_new_systemTestTask",
+      "name": "integration test passed",
+      "condition": "integration test passed",
+      "eContainer": "_esXxcM7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_new_edge_failed",
+      "input": "_esXxdM7EEfCRuoeAi1p5xA",
+      "output": "_new_notifyFailureTask",
+      "name": "integration test failed",
+      "condition": "integration test failed",
+      "eContainer": "_esXxcM7EEfCRuoeAi1p5xA"
+    }
+  ]
+}
+------------------------------
+
+You: Translate the current model into Spanish||02:26
+
+------------------------------||02:26
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcc7EEfCRuoeAi1p5xA",
+      "name": "Enviar cambios al repositorio"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "Descargar código"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "Prueba unitaria"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "Prueba de integración"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_esXxdc7EEfCRuoeAi1p5xA"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxds7EEfCRuoeAi1p5xA",
+      "input": "_esXxcc7EEfCRuoeAi1p5xA",
+      "output": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "enviar a descargar"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxd87EEfCRuoeAi1p5xA",
+      "input": "_esXxcs7EEfCRuoeAi1p5xA",
+      "output": "_esXxdc7EEfCRuoeAi1p5xA",
+      "name": "descargar a paralelo"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxeM7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "dividir a unitaria"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxec7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "dividir a integración"
+    }
+  ],
+  "description": "Pipeline CI/CD"
+}
+------------------------------
+
+You: Translate the name of the selected tasks into Spanish||02:26
+
+------------------------------||02:27
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "ProcessModel",
+    "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+    "nodes": [
+      {
+        "___type___": "Task",
+        "xmi_id": "_esXxcc7EEfCRuoeAi1p5xA",
+        "name": "Enviar cambios al repositorio"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_esXxcs7EEfCRuoeAi1p5xA",
+        "name": "Descargar código"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_esXxc87EEfCRuoeAi1p5xA",
+        "name": "Prueba unitaria"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_esXxdM7EEfCRuoeAi1p5xA",
+        "name": "Prueba de integración"
+      },
+      {
+        "___type___": "ParallelSplit",
+        "xmi_id": "_esXxdc7EEfCRuoeAi1p5xA"
+      }
+    ],
+    "edges": [
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_esXxds7EEfCRuoeAi1p5xA",
+        "input": "_esXxcc7EEfCRuoeAi1p5xA",
+        "output": "_esXxcs7EEfCRuoeAi1p5xA",
+        "name": "push to checkout"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_esXxd87EEfCRuoeAi1p5xA",
+        "input": "_esXxcs7EEfCRuoeAi1p5xA",
+        "output": "_esXxdc7EEfCRuoeAi1p5xA",
+        "name": "checkout to parallel"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_esXxeM7EEfCRuoeAi1p5xA",
+        "input": "_esXxdc7EEfCRuoeAi1p5xA",
+        "output": "_esXxc87EEfCRuoeAi1p5xA",
+        "name": "split to unit"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_esXxec7EEfCRuoeAi1p5xA",
+        "input": "_esXxdc7EEfCRuoeAi1p5xA",
+        "output": "_esXxdM7EEfCRuoeAi1p5xA",
+        "name": "split to integration"
+      }
+    ],
+    "description": "CI/CD Pipeline"
+  }
+] }
+------------------------------
+
+You: recommend three more tasks for the process model||02:27
+
+------------------------------||02:27
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Task",
+    "xmi_id": "_esXxe87EEfCRuoeAi1p5xA",
+    "name": "New Task 1"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_esXxfM7EEfCRuoeAi1p5xA",
+    "name": "New Task 2"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_esXxfc7EEfCRuoeAi1p5xA",
+    "name": "New Task 3"
+  }
+] }
+------------------------------
+
+You: recommend conditions for a multichoice gateway that goes after task "unit test"||02:27
+
+------------------------------||02:27
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "MultiChoice",
+    "xmi_id": "_newMultiChoiceGateway",
+    "conditions": []
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_edgeUnitTestToMultiChoice",
+    "input": "_esXxc87EEfCRuoeAi1p5xA",
+    "output": "_newMultiChoiceGateway",
+    "name": "to multichoice"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_condition1",
+    "input": "_newMultiChoiceGateway",
+    "output": "_newTask1",
+    "name": "condition_pass",
+    "condition": "Unit test passed"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_newTask1",
+    "name": "Proceed to next stage"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_condition2",
+    "input": "_newMultiChoiceGateway",
+    "output": "_newTask2",
+    "name": "condition_needs_review",
+    "condition": "Unit test needs review"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_newTask2",
+    "name": "Review unit test results"
+  }
+] }
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for AI software systems||02:27
+
+------------------------------||02:27
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcc7EEfCRuoeAi1p5xA",
+      "name": "Push changes to repository"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "Checkout code"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "Unit test"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "integration test"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_esXxdc7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_aB_c7g7jEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_aB_c7w7jEfCRuoeAi1p5xA",
+      "name": "Train AI Model"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_aB_c8A7jEfCRuoeAi1p5xA",
+      "name": "Evaluate AI Model"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_aB_c8g7jEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_aB_c8w7jEfCRuoeAi1p5xA",
+      "name": "Deploy to Staging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_aB_c9A7jEfCRuoeAi1p5xA",
+      "name": "Notify Model Failure"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_aB_c9g7jEfCRuoeAi1p5xA",
+      "name": "Deploy to Production"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_aB_c9w7jEfCRuoeAi1p5xA",
+      "name": "Pipeline Complete"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxds7EEfCRuoeAi1p5xA",
+      "input": "_esXxcc7EEfCRuoeAi1p5xA",
+      "output": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "push to checkout"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxd87EEfCRuoeAi1p5xA",
+      "input": "_esXxcs7EEfCRuoeAi1p5xA",
+      "output": "_esXxdc7EEfCRuoeAi1p5xA",
+      "name": "checkout to parallel"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxeM7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "split to unit"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxec7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "split to integration"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cAQ7jEfCRuoeAi1p5xA",
+      "input": "_esXxc87EEfCRuoeAi1p5xA",
+      "output": "_aB_c7g7jEfCRuoeAi1p5xA",
+      "name": "unit test sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cAg7jEfCRuoeAi1p5xA",
+      "input": "_esXxdM7EEfCRuoeAi1p5xA",
+      "output": "_aB_c7g7jEfCRuoeAi1p5xA",
+      "name": "integration test sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cAw7jEfCRuoeAi1p5xA",
+      "input": "_aB_c7g7jEfCRuoeAi1p5xA",
+      "output": "_aB_c7w7jEfCRuoeAi1p5xA",
+      "name": "sync to train model"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cBA7jEfCRuoeAi1p5xA",
+      "input": "_aB_c7w7jEfCRuoeAi1p5xA",
+      "output": "_aB_c8A7jEfCRuoeAi1p5xA",
+      "name": "train to evaluate"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cBg7jEfCRuoeAi1p5xA",
+      "input": "_aB_c8A7jEfCRuoeAi1p5xA",
+      "output": "_aB_c8g7jEfCRuoeAi1p5xA",
+      "name": "evaluate to choice"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_aB_cDw7jEfCRuoeAi1p5xA",
+      "input": "_aB_c8g7jEfCRuoeAi1p5xA",
+      "output": "_aB_c8w7jEfCRuoeAi1p5xA",
+      "name": "model evaluation passed",
+      "condition": "model_performance >= threshold"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_aB_cEA7jEfCRuoeAi1p5xA",
+      "input": "_aB_c8g7jEfCRuoeAi1p5xA",
+      "output": "_aB_c9A7jEfCRuoeAi1p5xA",
+      "name": "model evaluation failed",
+      "condition": "model_performance < threshold"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cEg7jEfCRuoeAi1p5xA",
+      "input": "_aB_c8w7jEfCRuoeAi1p5xA",
+      "output": "_aB_c9g7jEfCRuoeAi1p5xA",
+      "name": "deploy staging to prod"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cEw7jEfCRuoeAi1p5xA",
+      "input": "_aB_c9g7jEfCRuoeAi1p5xA",
+      "output": "_aB_c9w7jEfCRuoeAi1p5xA",
+      "name": "deploy prod to complete"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_aB_cFA7jEfCRuoeAi1p5xA",
+      "input": "_aB_c9A7jEfCRuoeAi1p5xA",
+      "output": "_aB_c9w7jEfCRuoeAi1p5xA",
+      "name": "notify failure to complete"
+    }
+  ],
+  "description": "CI/CD Pipeline"
+}
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for a cyberphysical system that has a digital twin||02:27
+
+------------------------------||02:27
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_newSync1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newDeployDT",
+      "name": "Deploy to Digital Twin"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTestDT",
+      "name": "Test Digital Twin"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newDeployCPS",
+      "name": "Deploy to Cyberphysical System"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newMonitorCPS",
+      "name": "Monitor Cyberphysical System"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_newFinal"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdgeSync",
+      "input": "_esXxdM7EEfCRuoeAi1p5xA",
+      "output": "_newSync1",
+      "name": "integration test to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdgeSyncToDTDeploy",
+      "input": "_newSync1",
+      "output": "_newDeployDT",
+      "name": "sync to deploy digital twin"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdgeDTDeployToTest",
+      "input": "_newDeployDT",
+      "output": "_newTestDT",
+      "name": "deploy digital twin to test"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdgeTestDTToDeployCPS",
+      "input": "_newTestDT",
+      "output": "_newDeployCPS",
+      "name": "test digital twin to deploy cps"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdgeDeployCPSToMonitor",
+      "input": "_newDeployCPS",
+      "output": "_newMonitorCPS",
+      "name": "deploy cps to monitor"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdgeMonitorToFinal",
+      "input": "_newMonitorCPS",
+      "output": "_newFinal",
+      "name": "monitor to final"
+    }
+  ]
+}
+------------------------------
+
+You: Create a multichoice gateway with three conditions (payment OK, network error, payment cancelled) to three new tasks.||02:53
+
+------------------------------||02:53
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_NewMultiChoiceGateway",
+  "nodes": [
+    {
+      "___type___": "MultiChoice",
+      "xmi_id": "_Gateway_PaymentDecision"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Task_PaymentOK",
+      "name": "Payment OK Task"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Task_NetworkError",
+      "name": "Network Error Task"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Task_PaymentCancelled",
+      "name": "Payment Cancelled Task"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Edge_PaymentOK",
+      "input": "_Gateway_PaymentDecision",
+      "output": "_Task_PaymentOK",
+      "name": "Payment OK",
+      "condition": "payment OK"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Edge_NetworkError",
+      "input": "_Gateway_PaymentDecision",
+      "output": "_Task_NetworkError",
+      "name": "Network Error",
+      "condition": "network error"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Edge_PaymentCancelled",
+      "input": "_Gateway_PaymentDecision",
+      "output": "_Task_PaymentCancelled",
+      "name": "Payment Cancelled",
+      "condition": "payment cancelled"
+    }
+  ]
+}
+------------------------------
+
+You: Create a sequence of three connected tasks, the first one should be an initial task, and the last one should be final||02:53
+
+------------------------------||02:53
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_new_initial_task_1",
+      "name": "Start Process"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_new_task_1",
+      "name": "Process Step 1"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_new_final_task_1",
+      "name": "End Process"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_new_edge_1",
+      "input": "_new_initial_task_1",
+      "output": "_new_task_1",
+      "name": "Start to Step 1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_new_edge_2",
+      "input": "_new_task_1",
+      "output": "_new_final_task_1",
+      "name": "Step 1 to End"
+    }
+  ]
+}
+------------------------------
+
+You: Translate the current model into Spanish||02:54
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "ProcessModel",
+    "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+    "nodes": [
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4occ7MEfC3JOLdj2VwAA",
+        "name": "Pedido Recibido"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4ocs7MEfC3JOLdj2VwAA",
+        "name": "Verificación y Reserva de Inventario"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oc87MEfC3JOLdj2VwAA",
+        "name": "Procesamiento de Pago"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4odM7MEfC3JOLdj2VwAA",
+        "name": "Preparación de Envío"
+      },
+      {
+        "___type___": "ParallelSplit",
+        "xmi_id": "_Cy4odc7MEfC3JOLdj2VwAA"
+      },
+      {
+        "___type___": "Synchronization",
+        "xmi_id": "_Cy4ods7MEfC3JOLdj2VwAA"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4od87MEfC3JOLdj2VwAA",
+        "name": "Empaquetado"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oeM7MEfC3JOLdj2VwAA",
+        "name": "Envío del pedido"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oec7MEfC3JOLdj2VwAA",
+        "name": "Notificación"
+      },
+      {
+        "___type___": "Task",
+        "xmi_id": "_Cy4oes7MEfC3JOLdj2VwAA",
+        "name": "Soporte Post-Entrega"
+      }
+    ],
+    "edges": [
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4oe87MEfC3JOLdj2VwAA",
+        "input": "_Cy4occ7MEfC3JOLdj2VwAA",
+        "output": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "name": "recibido a dividir"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ofM7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "output": "_Cy4ocs7MEfC3JOLdj2VwAA",
+        "name": "dividir a inventario"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ofc7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "output": "_Cy4oc87MEfC3JOLdj2VwAA",
+        "name": "dividir a pago"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ofs7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+        "output": "_Cy4odM7MEfC3JOLdj2VwAA",
+        "name": "dividir a envío"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4of87MEfC3JOLdj2VwAA",
+        "input": "_Cy4ocs7MEfC3JOLdj2VwAA",
+        "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "name": "inventario a sincronizar"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ogM7MEfC3JOLdj2VwAA",
+        "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+        "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "name": "pago a sincronizar"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ogc7MEfC3JOLdj2VwAA",
+        "input": "_Cy4odM7MEfC3JOLdj2VwAA",
+        "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "name": "envío a sincronizar"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4ogs7MEfC3JOLdj2VwAA",
+        "input": "_Cy4ods7MEfC3JOLdj2VwAA",
+        "output": "_Cy4od87MEfC3JOLdj2VwAA",
+        "name": "sincronizar a empaquetado"
+      },
+      {
+        "___type___": "FlowEdge",
+        "xmi_id": "_Cy4og87MEfC3JOLdj2VwAA",
+        "input": "_Cy4od87MEfC3JOLdj2VwAA",
+        "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+        "name": "empaquetado a envío"
+      }
+    ],
+    "description": "Cumplimiento de Pedido"
+  }
+] }
+------------------------------
+
+You: Create a replica of the current process model, but were the three parallel tasks (inventory check, payment processing, ship preparation) are sequential||02:54
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "name": "Order Received"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "Inventory Check \u0026 Reservation"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "Payment Processing"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "Shipping Preparation"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "Packaging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "Dispatch order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "name": "Notification"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oes7MEfC3JOLdj2VwAA",
+      "name": "Post-Delivery Support"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oe87MEfC3JOLdj2VwAA",
+      "input": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "received to inventory"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "inventory to payment"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "output": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "payment to shipping"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofs7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "shipping to packaging"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4og87MEfC3JOLdj2VwAA",
+      "input": "_Cy4od87MEfC3JOLdj2VwAA",
+      "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "packaging to dispatch"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "name": "dispatch to notification"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oes7MEfC3JOLdj2VwAA",
+      "name": "notification to post-delivery"
+    }
+  ],
+  "description": "Order Fulfillment Sequential Tasks"
+}
+------------------------------
+
+You: recommend three more tasks for the process model||02:54
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_1",
+    "name": "Customer Feedback"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_2",
+    "name": "Update Records"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_new_task_3",
+    "name": "Archiving"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_1",
+    "name": "feedback from post-delivery",
+    "input": "_Cy4oes7MEfC3JOLdj2VwAA",
+    "output": "_new_task_1"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_2",
+    "name": "feedback to update",
+    "input": "_new_task_1",
+    "output": "_new_task_2"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_new_edge_3",
+    "name": "update to archiving",
+    "input": "_new_task_2",
+    "output": "_new_task_3"
+  }
+] }
+------------------------------
+
+You: recommend more descriptive names for the tasks||02:54
+
+------------------------------||02:54
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Cy4ocM7MEfC3JOLdj2VwAA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "name": "Receive Customer Order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "Check and Reserve Stock"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "Process Customer Payment"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "Prepare Shipment"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_Cy4odc7MEfC3JOLdj2VwAA"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_Cy4ods7MEfC3JOLdj2VwAA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "Package Order Items"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "Dispatch Shipped Order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oec7MEfC3JOLdj2VwAA",
+      "name": "Send Order Notifications"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Cy4oes7MEfC3JOLdj2VwAA",
+      "name": "Handle Post-Delivery Inquiries"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4oe87MEfC3JOLdj2VwAA",
+      "input": "_Cy4occ7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "name": "received to split"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "name": "split to inventory"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "output": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "name": "split to payment"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ofs7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odc7MEfC3JOLdj2VwAA",
+      "output": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "name": "split to shipping"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4of87MEfC3JOLdj2VwAA",
+      "input": "_Cy4ocs7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "name": "inventory to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogM7MEfC3JOLdj2VwAA",
+      "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+      "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "name": "payment to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogc7MEfC3JOLdj2VwAA",
+      "input": "_Cy4odM7MEfC3JOLdj2VwAA",
+      "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "name": "shipping to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4ogs7MEfC3JOLdj2VwAA",
+      "input": "_Cy4ods7MEfC3JOLdj2VwAA",
+      "output": "_Cy4od87MEfC3JOLdj2VwAA",
+      "name": "sync to packaging"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Cy4og87MEfC3JOLdj2VwAA",
+      "input": "_Cy4od87MEfC3JOLdj2VwAA",
+      "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+      "name": "packaging to dispatch"
+    }
+  ],
+  "description": "Order Fulfillment"
+}
+------------------------------
+
+You: Complete the process assumming we allow customers to return the order||02:54
+
+------------------------------||02:55
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "ExclusiveChoice",
+    "xmi_id": "_ReturnDecisionGateway",
+    "name": "Return Decision"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_ReturnDecision_NoReturnEdge",
+    "input": "_ReturnDecisionGateway",
+    "output": "_Cy4oeM7MEfC3JOLdj2VwAA",
+    "name": "No Return",
+    "condition": "No Return"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_HandleReturnTask",
+    "name": "Handle Return"
+  },
+  {
+    "___type___": "ConditionalFlowEdge",
+    "xmi_id": "_ReturnDecision_ReturnEdge",
+    "input": "_ReturnDecisionGateway",
+    "output": "_HandleReturnTask",
+    "name": "Return Initiated",
+    "condition": "Return Initiated"
+  },
+  {
+    "___type___": "Task",
+    "xmi_id": "_ProcessRefundTask",
+    "name": "Process Refund"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_HandleReturn_RefundEdge",
+    "input": "_HandleReturnTask",
+    "output": "_ProcessRefundTask",
+    "name": "Return Processed"
+  },
+  {
+    "___type___": "FinalTask",
+    "xmi_id": "_ReturnFinalTask",
+    "name": "Return Completed"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_ProcessRefund_FinalEdge",
+    "input": "_ProcessRefundTask",
+    "output": "_ReturnFinalTask",
+    "name": "Refund Processed"
+  },
+  {
+    "___type___": "FlowEdge",
+    "xmi_id": "_PostDelivery_ReturnDecisionEdge",
+    "input": "_Cy4oes7MEfC3JOLdj2VwAA",
+    "output": "_ReturnDecisionGateway",
+    "name": "After Support"
+  }
+] }
+------------------------------
+
+You: create a new version of the process model supporting payment in instalments||02:55
+
+------------------------------||02:55
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "MultiChoice",
+  "xmi_id": "_NewMultiChoiceGateway_Instalment",
+  "name": "Instalment Payment Choice"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_FullPayment",
+  "name": "Process Full Payment"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_InstalmentSetup",
+  "name": "Setup Instalment Plan"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_ProcessInstalment",
+  "name": "Process Instalment Payment"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_PaymentToInstalmentChoice",
+  "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+  "output": "_NewMultiChoiceGateway_Instalment",
+  "name": "Payment Decision"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_InstalmentChoiceToFull",
+  "input": "_NewMultiChoiceGateway_Instalment",
+  "output": "_NewTask_FullPayment",
+  "condition": "Payment Type = Full"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_InstalmentChoiceToSetup",
+  "input": "_NewMultiChoiceGateway_Instalment",
+  "output": "_NewTask_InstalmentSetup",
+  "condition": "Payment Type = Instalment"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_FullPaymentToSync",
+  "input": "_NewTask_FullPayment",
+  "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+  "name": "Full Payment Complete"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_InstalmentSetupToProcess",
+  "input": "_NewTask_InstalmentSetup",
+  "output": "_NewTask_ProcessInstalment",
+  "name": "Instalment Plan Ready"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_ProcessInstalmentToSync",
+  "input": "_NewTask_ProcessInstalment",
+  "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+  "name": "Instalment Payment Processed"
+}
+------------------------------
+

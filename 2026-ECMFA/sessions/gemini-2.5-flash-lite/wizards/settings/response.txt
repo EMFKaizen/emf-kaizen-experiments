@@ -1,0 +1,426 @@
+{ "result": [
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_NysM7aEfC2mPVygn5YyA",
+    "label": "Employee ID",
+    "minLength": 5,
+    "maxLength": 10,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nysc7aEfC2mPVygn5YyA",
+    "label": "Start Date",
+    "minLength": 10,
+    "maxLength": 10,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nyss7aEfC2mPVygn5YyA",
+    "label": "Manager Name",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nys87aEfC2mPVygn5YyA",
+    "label": "Department",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_NztM7aEfC2mPVygn5YyA",
+    "label": "Role/Title",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nztc7aEfC2mPVygn5YyA",
+    "label": "Work Email Address",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzts7aEfC2mPVygn5YyA",
+    "label": "Company Phone Number",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzt87aEfC2mPVygn5YyA",
+    "label": "Accepted Offer Letter ID",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_NzuM7aEfC2mPVygn5YyA",
+    "label": "NDA Agreement ID",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzuc7aEfC2mPVygn5YyA",
+    "label": "Confidentiality Agreement ID",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzus7aEfC2mPVygn5YyA",
+    "label": "Workstation Type (e.g., Laptop, Desktop)",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzu87aEfC2mPVygn5YyA",
+    "label": "Required Software Licenses",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_NzvM7aEfC2mPVygn5YyA",
+    "label": "IT Support Contact Information",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzvc7aEfC2mPVygn5YyA",
+    "label": "Bank Name",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzvs7aEfC2mPVygn5YyA",
+    "label": "Account Number",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzv87aEfC2mPVygn5YyA",
+    "label": "Routing Number",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_NzwM7aEfC2mPVygn5YyA",
+    "label": "Tax ID (e.g., SSN, ITIN)",
+    "minLength": 9,
+    "maxLength": 11,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzwc7aEfC2mPVygn5YyA",
+    "label": "W-4 Form Status",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzws7aEfC2mPVygn5YyA",
+    "label": "Emergency Contact Name",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzw87aEfC2mPVygn5YyA",
+    "label": "Emergency Contact Relationship",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_NzxM7aEfC2mPVygn5YyA",
+    "label": "Emergency Contact Phone",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzxc7aEfC2mPVygn5YyA",
+    "label": "Compliance Training Completion Status",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzxs7aEfC2mPVygn5YyA",
+    "label": "Company Policy Acknowledgment",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_Nzx87aEfC2mPVygn5YyA",
+    "label": "Hardware Acceptance Form ID",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Field",
+    "xmi_id": "_o_NzyM7aEfC2mPVygn5YyA",
+    "label": "Badge/Access Card Number",
+    "minLength": 0,
+    "maxLength": 0,
+    "anyLength": false,
+    "isPassword": false
+  },
+  {
+    "___type___": "Page",
+    "xmi_id": "_o_Nzyc7aEfC2mPVygn5YyA",
+    "name": "Pre-boarding Information",
+    "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+    "fields": [
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_Nzys7aEfC2mPVygn5YyA",
+        "label": "Previous Employer Verification",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      },
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_Nzy87aEfC2mPVygn5YyA",
+        "label": "Background Check Consent Form ID",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      }
+    ],
+    "buttons": [
+      {
+        "___type___": "NavigateButton",
+        "xmi_id": "_o_NzzM7aEfC2mPVygn5YyA",
+        "label": "Next",
+        "toPage": "_Ej7jwc7WEfC-mdvB7cLErg"
+      }
+    ]
+  },
+  {
+    "___type___": "Page",
+    "xmi_id": "_o_Nz_c7aEfC2mPVygn5YyA",
+    "name": "Legal & Compliance",
+    "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+    "fields": [
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_Nz_s7aEfC2mPVygn5YyA",
+        "label": "Non-Disclosure Agreement (NDA) Signed",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      },
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_Nz_87aEfC2mPVygn5YyA",
+        "label": "Intellectual Property Agreement Signed",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      },
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_N0AM7aEfC2mPVygn5YyA",
+        "label": "Data Privacy Policy Acknowledged",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      }
+    ],
+    "buttons": [
+      {
+        "___type___": "NavigateButton",
+        "xmi_id": "_o_N0Ac7aEfC2mPVygn5YyA",
+        "label": "Next",
+        "toPage": "_Ej7jx87WEfC-mdvB7cLErg"
+      },
+      {
+        "___type___": "BackButton",
+        "xmi_id": "_o_N0As7aEfC2mPVygn5YyA",
+        "label": "Back"
+      }
+    ]
+  },
+  {
+    "___type___": "Page",
+    "xmi_id": "_o_N0A87aEfC2mPVygn5YyA",
+    "name": "IT & Equipment Setup",
+    "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+    "fields": [
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_N0BM7aEfC2mPVygn5YyA",
+        "label": "Laptop Serial Number",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      },
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_N0Bc7aEfC2mPVygn5YyA",
+        "label": "Monitor Serial Number",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      },
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_N0Bs7aEfC2mPVygn5YyA",
+        "label": "Company Mobile Phone Number",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      }
+    ],
+    "buttons": [
+      {
+        "___type___": "NavigateButton",
+        "xmi_id": "_o_N0B87aEfC2mPVygn5YyA",
+        "label": "Next",
+        "toPage": "_Ej7jy87WEfC-mdvB7cLErg"
+      },
+      {
+        "___type___": "BackButton",
+        "xmi_id": "_o_N0CM7aEfC2mPVygn5YyA",
+        "label": "Back"
+      }
+    ]
+  },
+  {
+    "___type___": "Page",
+    "xmi_id": "_o_N0Cc7aEfC2mPVygn5YyA",
+    "name": "Training & Development",
+    "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+    "fields": [
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_N0Cs7aEfC2mPVygn5YyA",
+        "label": "Mandatory Training Modules",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      },
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_N0C87aEfC2mPVygn5YyA",
+        "label": "Access to Learning Platforms",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      }
+    ],
+    "buttons": [
+      {
+        "___type___": "NavigateButton",
+        "xmi_id": "_o_N0DM7aEfC2mPVygn5YyA",
+        "label": "Next",
+        "toPage": "_Ej7jz87WEfC-mdvB7cLErg"
+      },
+      {
+        "___type___": "BackButton",
+        "xmi_id": "_o_N0Dc7aEfC2mPVygn5YyA",
+        "label": "Back"
+      }
+    ]
+  },
+  {
+    "___type___": "Page",
+    "xmi_id": "_o_N0Ds7aEfC2mPVygn5YyA",
+    "name": "Finalization",
+    "wizard": "_Ej7jwM7WEfC-mdvB7cLErg",
+    "fields": [
+      {
+        "___type___": "Field",
+        "xmi_id": "_o_N0D87aEfC2mPVygn5YyA",
+        "label": "Onboarding Checklist Completion",
+        "minLength": 0,
+        "maxLength": 0,
+        "anyLength": false,
+        "isPassword": false
+      }
+    ],
+    "buttons": [
+      {
+        "___type___": "ShowMessageButton",
+        "xmi_id": "_o_N0EM7aEfC2mPVygn5YyA",
+        "label": "Finish",
+        "messageText": "Welcome to OpenAI! Your onboarding is complete."
+      },
+      {
+        "___type___": "BackButton",
+        "xmi_id": "_o_N0Ec7aEfC2mPVygn5YyA",
+        "label": "Back"
+      }
+    ]
+  }
+] }

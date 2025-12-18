@@ -1,0 +1,34 @@
+{
+   "soba_userInput":"Create subconcepts of \"AI and LLMs and education\" to completely describe the idea.",
+   "soba_metaModelContext":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ecore:EPackage xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ecore=\"http://www.eclipse.org/emf/2002/Ecore\" name=\"mindMap\" nsURI=\"http://mindmap/0.1\" nsPrefix=\"map\">\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Map\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"root\" eType=\"//Concept\" containment=\"true\"/>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Concept\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"subConcepts\" upperBound=\"-1\" eType=\"//Concept\" containment=\"true\" eOpposite=\"//Concept/parent\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"parent\" eType=\"//Concept\" eOpposite=\"//Concept/subConcepts\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"relatedTo\" upperBound=\"-1\" eType=\"//Concept\"/>\r\n  <\/eClassifiers>\r\n<\/ecore:EPackage>\r\n",
+   "recommendationPayload":{"results":[
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_A1",
+	  "name": "Applications in Education",
+	  "description": "Specific ways AI and LLMs are being used or can be used in educational settings.",
+	  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+	  "subConcepts": [],
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_A2",
+	  "name": "Benefits and Impact",
+	  "description": "The positive outcomes and transformative effects of integrating AI and LLMs into education.",
+	  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+	  "subConcepts": [],
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_A3",
+	  "name": "Challenges and Ethical Considerations",
+	  "description": "Difficulties, risks, and ethical questions associated with AI and LLM adoption in education.",
+	  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+	  "subConcepts": [],
+	  "relatedTo": []
+	}
+      ]
+   }
+}

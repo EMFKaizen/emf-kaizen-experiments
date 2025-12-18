@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_UzsRwM7oEfCBEtIB8TpJ4g" name="tourismRoutes" nsURI="http://tourism-routes/0.1" nsPrefix="tour">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsRwc7oEfCBEtIB8TpJ4g" name="Route">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UzsRws7oEfCBEtIB8TpJ4g" name="places" ordered="false" upperBound="-1" eType="_UzsRxc7oEfCBEtIB8TpJ4g" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UzsRw87oEfCBEtIB8TpJ4g" name="events" ordered="false" upperBound="-1" eType="_UzsR8s7oEfCBEtIB8TpJ4g" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UzsRxM7oEfCBEtIB8TpJ4g" name="people" ordered="false" upperBound="-1" eType="_Uzs41c7oEfCBEtIB8TpJ4g" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsRxc7oEfCBEtIB8TpJ4g" name="Place" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsRxs7oEfCBEtIB8TpJ4g" name="name" lowerBound="1">
+      <eAnnotations xmi:id="_UzsRx87oEfCBEtIB8TpJ4g" source="readDevice">
+        <details xmi:id="_UzsRyM7oEfCBEtIB8TpJ4g" key="device" value="dev.identifier"/>
+        <details xmi:id="_UzsRyc7oEfCBEtIB8TpJ4g" key="policy" value="onOpen"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsRy87oEfCBEtIB8TpJ4g" name="url">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsRzc7oEfCBEtIB8TpJ4g" name="description">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsRz87oEfCBEtIB8TpJ4g" name="openingHours">
+      <eAnnotations xmi:id="_UzsR0M7oEfCBEtIB8TpJ4g" source="readDevice">
+        <details xmi:id="_UzsR0c7oEfCBEtIB8TpJ4g" key="device" value="dev.hour"/>
+        <details xmi:id="_UzsR0s7oEfCBEtIB8TpJ4g" key="policy" value="onOpen"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsR1M7oEfCBEtIB8TpJ4g" name="temperature">
+      <eAnnotations xmi:id="_UzsR1c7oEfCBEtIB8TpJ4g" source="readExternal">
+        <details xmi:id="_UzsR1s7oEfCBEtIB8TpJ4g" key="policy" value="onOpen"/>
+        <details xmi:id="_UzsR187oEfCBEtIB8TpJ4g" key="api" value="openweather"/>
+        <details xmi:id="_UzsR2M7oEfCBEtIB8TpJ4g" key="get" value="temp"/>
+        <details xmi:id="_UzsR2c7oEfCBEtIB8TpJ4g" key="lat" value="lat"/>
+        <details xmi:id="_UzsR2s7oEfCBEtIB8TpJ4g" key="long" value="long"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UzsR3M7oEfCBEtIB8TpJ4g" name="next" eType="_UzsR_87oEfCBEtIB8TpJ4g" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UzsR3c7oEfCBEtIB8TpJ4g" name="opinions" ordered="false" upperBound="-1" eType="_Uzs43M7oEfCBEtIB8TpJ4g" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UzsR3s7oEfCBEtIB8TpJ4g" name="nearby" ordered="false" upperBound="-1" eType="_UzsRxc7oEfCBEtIB8TpJ4g"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR4M7oEfCBEtIB8TpJ4g" name="Cultural" abstract="true" eSuperTypes="_UzsRxc7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR4s7oEfCBEtIB8TpJ4g" name="Museum" eSuperTypes="_UzsR4M7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR5M7oEfCBEtIB8TpJ4g" name="Theater" eSuperTypes="_UzsR4M7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR5s7oEfCBEtIB8TpJ4g" name="Sculpture" eSuperTypes="_UzsR4M7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR6M7oEfCBEtIB8TpJ4g" name="Building" eSuperTypes="_UzsR4M7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR6s7oEfCBEtIB8TpJ4g" name="Gastronomy" abstract="true" eSuperTypes="_UzsRxc7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR7M7oEfCBEtIB8TpJ4g" name="Restaurant" eSuperTypes="_UzsR6s7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR7s7oEfCBEtIB8TpJ4g" name="Bar" eSuperTypes="_UzsR6s7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR8M7oEfCBEtIB8TpJ4g" name="Cafe" eSuperTypes="_UzsR6s7oEfCBEtIB8TpJ4g"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR8s7oEfCBEtIB8TpJ4g" name="Event">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsR887oEfCBEtIB8TpJ4g" name="name" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsR9c7oEfCBEtIB8TpJ4g" name="description">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsR987oEfCBEtIB8TpJ4g" name="price">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsR-c7oEfCBEtIB8TpJ4g" name="startTime">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsR-87oEfCBEtIB8TpJ4g" name="endTime">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UzsR_c7oEfCBEtIB8TpJ4g" name="location" lowerBound="1" eType="_UzsRxc7oEfCBEtIB8TpJ4g"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UzsR_87oEfCBEtIB8TpJ4g" name="Transportation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsSAM7oEfCBEtIB8TpJ4g" name="kind" lowerBound="1" eType="_Uzs44s7oEfCBEtIB8TpJ4g"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UzsSAc7oEfCBEtIB8TpJ4g" name="description">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Uzs40c7oEfCBEtIB8TpJ4g" name="duration">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Uzs4087oEfCBEtIB8TpJ4g" name="to" lowerBound="1" eType="_UzsRxc7oEfCBEtIB8TpJ4g"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Uzs41c7oEfCBEtIB8TpJ4g" name="Person">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Uzs41s7oEfCBEtIB8TpJ4g" name="name" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Uzs42M7oEfCBEtIB8TpJ4g" name="current" eType="_UzsRxc7oEfCBEtIB8TpJ4g"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Uzs42s7oEfCBEtIB8TpJ4g" name="history" ordered="false" upperBound="-1" eType="_UzsRxc7oEfCBEtIB8TpJ4g"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Uzs43M7oEfCBEtIB8TpJ4g" name="Opinion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Uzs43c7oEfCBEtIB8TpJ4g" name="rate" lowerBound="1" eType="_Uzs46M7oEfCBEtIB8TpJ4g" defaultValueLiteral="average"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Uzs43s7oEfCBEtIB8TpJ4g" name="opinion">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Uzs44M7oEfCBEtIB8TpJ4g" name="from" lowerBound="1" eType="_Uzs41c7oEfCBEtIB8TpJ4g"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_Uzs44s7oEfCBEtIB8TpJ4g" name="TransportationKind">
+    <eLiterals xmi:id="_Uzs4487oEfCBEtIB8TpJ4g" name="any"/>
+    <eLiterals xmi:id="_Uzs45M7oEfCBEtIB8TpJ4g" name="onFoot" value="1"/>
+    <eLiterals xmi:id="_Uzs45c7oEfCBEtIB8TpJ4g" name="onTrain" value="2"/>
+    <eLiterals xmi:id="_Uzs45s7oEfCBEtIB8TpJ4g" name="onBus" value="3"/>
+    <eLiterals xmi:id="_Uzs4587oEfCBEtIB8TpJ4g" name="onCar" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_Uzs46M7oEfCBEtIB8TpJ4g" name="Rate">
+    <eLiterals xmi:id="_Uzs46c7oEfCBEtIB8TpJ4g" name="terrible" value="1"/>
+    <eLiterals xmi:id="_Uzs46s7oEfCBEtIB8TpJ4g" name="bad" value="2"/>
+    <eLiterals xmi:id="_Uzs4687oEfCBEtIB8TpJ4g" name="average" value="3"/>
+    <eLiterals xmi:id="_Uzs47M7oEfCBEtIB8TpJ4g" name="good" value="4"/>
+    <eLiterals xmi:id="_Uzs47c7oEfCBEtIB8TpJ4g" name="excellent" value="5"/>
+  </eClassifiers>
+</ecore:EPackage>

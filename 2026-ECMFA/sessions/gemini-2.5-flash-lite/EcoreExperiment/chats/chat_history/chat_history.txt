@@ -1,0 +1,2225 @@
+You: create two classes to model Places and Transitions||03:16
+
+------------------------------||03:16
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_placeholder_id_Places",
+    "name": "Places",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": []
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_placeholder_id_Transitions",
+    "name": "Transitions",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": []
+  }
+] }
+------------------------------
+
+You: create attributes for the PetriNet to store description and author||03:16
+
+------------------------------||03:16
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_description_attr",
+    "name": "description",
+    "eType": "//EString",
+    "lowerBound": 0,
+    "upperBound": 1
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_author_attr",
+    "name": "author",
+    "eType": "//EString",
+    "lowerBound": 0,
+    "upperBound": 1
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||03:16
+
+------------------------------||03:16
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EPackage",
+    "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+    "name": "RedesDePetri",
+    "nsURI": "http://petrinet/0.1",
+    "nsPrefix": "pns",
+    "eClassifiers": [
+      {
+        "___type___": "EClass",
+        "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+        "name": "RedDePetri",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": []
+      }
+    ],
+    "eSubpackages": []
+  }
+] }
+------------------------------You: create two attributes name and description for the selected class||03:34
+
+------------------------------||03:34
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "result": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_name_attr_petrinet",
+      "name": "name",
+      "eType": "//EString",
+      "lowerBound": 0,
+      "upperBound": 1
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_description_attr_petrinet",
+      "name": "description",
+      "eType": "//EString",
+      "lowerBound": 0,
+      "upperBound": 1
+    }
+  ]
+}
+------------------------------
+
+You: recommend some classes for the current metamodel||03:34
+
+------------------------------||03:34
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "result": [
+    {
+      "___type___": "EPackage",
+      "xmi_id": "_recommendation_1_EPackage",
+      "name": "MyPackage",
+      "nsURI": "http://example.com/mypackage/0.1",
+      "nsPrefix": "mypkg"
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_recommendation_2_EClass",
+      "name": "MyClass",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_recommendation_3_EAttribute",
+      "name": "myAttribute",
+      "eType": "//EString",
+      "lowerBound": 0,
+      "upperBound": 1
+    },
+    {
+      "___type___": "EReference",
+      "xmi_id": "_recommendation_4_EReference",
+      "name": "myReference",
+      "lowerBound": 0,
+      "upperBound": -1,
+      "eType": "//EClass"
+    },
+    {
+      "___type___": "EDataType",
+      "xmi_id": "_recommendation_5_EDataType",
+      "name": "MyDataType",
+      "instanceClassName": "java.lang.Object"
+    },
+    {
+      "___type___": "EEnum",
+      "xmi_id": "_recommendation_6_EEnum",
+      "name": "MyEnum",
+      "instanceClassName": "java.lang.Object",
+      "eLiterals": [
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_recommendation_7_EEnumLiteral",
+          "name": "LITERAL1",
+          "value": 0,
+          "literal": "Literal1"
+        }
+      ]
+    }
+  ]
+}
+------------------------------
+
+You: recommend some attributes for the selected class||03:34
+
+------------------------------||03:34
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "result": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_version_attr",
+      "name": "version",
+      "eType": "//EString",
+      "lowerBound": 0,
+      "upperBound": 1
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_creationDate_attr",
+      "name": "creationDate",
+      "eType": "//EDate",
+      "lowerBound": 0,
+      "upperBound": 1
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_isPublic_attr",
+      "name": "isPublic",
+      "eType": "//EBoolean",
+      "lowerBound": 0,
+      "upperBound": 1,
+      "defaultValueLiteral": "false"
+    }
+  ]
+}
+------------------------------
+
+You: complete this metamodel of Petri nets, with all missing details, and to consider inhibitor arcs||03:34
+
+------------------------------||03:34
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+      "name": "PetriNet",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_petrinet_places",
+          "name": "places",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_places_class",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_petrinet_transitions",
+          "name": "transitions",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_transitions_class",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_petrinet_arcs",
+          "name": "arcs",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_arc_class",
+          "containment": true
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_places_class",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_places_name",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_places_tokens",
+          "name": "tokens",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_token_class",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_places_outgoing",
+          "name": "outgoing",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_arc_class",
+          "eOpposite": "_arc_source"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_places_incoming",
+          "name": "incoming",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_arc_class",
+          "eOpposite": "_arc_target"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_transitions_class",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_transitions_name",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_transitions_outgoing",
+          "name": "outgoing",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_arc_class",
+          "eOpposite": "_arc_source"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_transitions_incoming",
+          "name": "incoming",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_arc_class",
+          "eOpposite": "_arc_target"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_arc_class",
+      "name": "Arc",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_arc_weight",
+          "name": "weight",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "//EInt",
+          "defaultValueLiteral": "1"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_arc_source",
+          "name": "source",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "//ENamedElement",
+          "eOpposite": "_arc_outgoing"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_arc_target",
+          "name": "target",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "//ENamedElement",
+          "eOpposite": "_arc_incoming"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_arc_is_inhibitor",
+          "name": "isInhibitor",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "//EBoolean",
+          "defaultValueLiteral": "false"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_token_class",
+      "name": "Token",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_token_id",
+          "name": "id",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EString"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: finish the metamodel for Petri nets, considering time in transitions||03:34
+
+------------------------------||03:35
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_places_class",
+    "name": "Place",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_place_name_attr",
+        "name": "name",
+        "eType": "//EString",
+        "lowerBound": 1,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_place_tokens_attr",
+        "name": "tokens",
+        "eType": "//EInt",
+        "lowerBound": 0,
+        "upperBound": 1,
+        "defaultValueLiteral": "0"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_transitions_class",
+    "name": "Transition",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_transition_name_attr",
+        "name": "name",
+        "eType": "//EString",
+        "lowerBound": 1,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_transition_guard_attr",
+        "name": "guard",
+        "eType": "//EString",
+        "lowerBound": 0,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_transition_time_attr",
+        "name": "time",
+        "eType": "//EDouble",
+        "lowerBound": 0,
+        "upperBound": 1,
+        "defaultValueLiteral": "0.0"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_transition_in_arcs_ref",
+        "name": "inArcs",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_arc_class",
+        "containment": true
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_transition_out_arcs_ref",
+        "name": "outArcs",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_arc_class",
+        "containment": true
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_arc_class",
+    "name": "Arc",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_arc_weight_attr",
+        "name": "weight",
+        "eType": "//EInt",
+        "lowerBound": 1,
+        "upperBound": 1,
+        "defaultValueLiteral": "1"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_arc_source_ref",
+        "name": "source",
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_places_class"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_arc_target_ref",
+        "name": "target",
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_transitions_class"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_arc_is_inhibitor_attr",
+        "name": "isInhibitor",
+        "eType": "//EBoolean",
+        "lowerBound": 1,
+        "upperBound": 1,
+        "defaultValueLiteral": "false"
+      }
+    ]
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_petrinet_description_attr",
+    "name": "description",
+    "eType": "//EString",
+    "lowerBound": 0,
+    "upperBound": 1
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_petrinet_author_attr",
+    "name": "author",
+    "eType": "//EString",
+    "lowerBound": 0,
+    "upperBound": 1
+  },
+  {
+    "___type___": "EReference",
+    "xmi_id": "_petrinet_places_ref",
+    "name": "places",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": -1,
+    "eType": "_places_class",
+    "containment": true
+  },
+  {
+    "___type___": "EReference",
+    "xmi_id": "_petrinet_transitions_ref",
+    "name": "transitions",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": -1,
+    "eType": "_transitions_class",
+    "containment": true
+  }
+] }
+------------------------------
+You: create an integer attribute "importance" for class Goal||03:56
+
+------------------------------||03:56
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQtn0M7dEfC_ucElWBea5Q",
+    "name": "importance",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "EInt"
+  }
+] }
+------------------------------
+
+You: create an abstract class ModelElement with a String attribute name||03:57
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_ModelElement_0",
+    "name": "ModelElement",
+    "abstract": true,
+    "eSuperTypes": [
+      "//ENamedElement"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_ModelElement_name_0",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||03:57
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EPackage",
+    "xmi_id": "_WQPJQM7dEfC_ucElWBea5Q",
+    "name": "ModeloMeta",
+    "nsURI": "http://goalModel/0.1",
+    "nsPrefix": "gm",
+    "eClassifiers": [
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQUo0M7dEfC_ucElWBea5Q",
+        "name": "ModeloMeta",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EReference",
+            "xmi_id": "_WQXsIM7dEfC_ucElWBea5Q",
+            "name": "metas",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_WQckoM7dEfC_ucElWBea5Q",
+            "containment": true
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQZhUM7dEfC_ucElWBea5Q",
+            "name": "descripcion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQckoM7dEfC_ucElWBea5Q",
+        "name": "Meta",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQeZ0M7dEfC_ucElWBea5Q",
+            "name": "nombre",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQhdIM7dEfC_ucElWBea5Q",
+            "name": "esBlanda",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQj5YM7dEfC_ucElWBea5Q",
+        "name": "Actor",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQlukM7dEfC_ucElWBea5Q",
+            "name": "nombre",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q",
+        "name": "Recurso",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": []
+      }
+    ],
+    "eSubpackages": []
+  }
+] }
+------------------------------
+
+You: create a reference "resource" for the selected class||03:57
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "EReference",
+  "xmi_id": "_generated_id_resource_ref",
+  "name": "resource",
+  "ordered": true,
+  "unique": true,
+  "lowerBound": 0,
+  "upperBound": -1,
+  "eType": "_WQpY8M7dEfC_ucElWBea5Q"
+}
+------------------------------
+
+You: recommend more classes for the current metamodel||03:57
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_NewClass_GoalRelationship",
+    "name": "GoalRelationship",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_GoalRelationship_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_GoalRelationship_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_GoalRelationship_type",
+        "name": "type",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_NewClass_Obstacle",
+    "name": "Obstacle",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_Obstacle_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_Obstacle_description",
+        "name": "description",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_Obstacle_relatedGoal",
+        "name": "relatedGoal",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_NewClass_Strategy",
+    "name": "Strategy",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_Strategy_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_Strategy_achievesGoal",
+        "name": "achievesGoal",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_Strategy_usesResource",
+        "name": "usesResource",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQpY8M7dEfC_ucElWBea5Q"
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: recommend attributes for the Resource class||03:58
+
+------------------------------||03:58
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q_name",
+    "name": "name",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "//EString"
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q_description",
+    "name": "description",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "//EString"
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q_quantity",
+    "name": "quantity",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "//EInt"
+  }
+] }
+------------------------------
+
+You: use the composite design pattern to create Tasks, which can be simple or composite||03:58
+
+------------------------------||03:58
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_task_id",
+    "name": "Task",
+    "abstract": true,
+    "eSuperTypes": [
+      "//ENamedElement"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_task_name_id",
+        "name": "name",
+        "eType": "//EString"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_simple_task_id",
+    "name": "SimpleTask",
+    "abstract": false,
+    "eSuperTypes": [
+      "_task_id"
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_composite_task_id",
+    "name": "CompositeTask",
+    "abstract": false,
+    "eSuperTypes": [
+      "_task_id"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EReference",
+        "xmi_id": "_composite_task_children_id",
+        "name": "children",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_task_id",
+        "containment": true
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: Complete the metamodel to consider decomposition relations (and, or, contribution links) between goals||03:58
+
+------------------------------||03:58
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1",
+    "name": "GoalRelationship",
+    "abstract": true,
+    "eSuperTypes": [
+      "//EModelElement"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      }
+    ]
+  },
+  {
+    "___type___": "EEnum",
+    "xmi_id": "_goalRelType_1",
+    "name": "GoalRelationshipType",
+    "eLiterals": [
+      {
+        "___type___": "EEnumLiteral",
+        "xmi_id": "_goalRelType_1_AND",
+        "name": "AND",
+        "value": 0,
+        "literal": "AND"
+      },
+      {
+        "___type___": "EEnumLiteral",
+        "xmi_id": "_goalRelType_1_OR",
+        "name": "OR",
+        "value": 1,
+        "literal": "OR"
+      },
+      {
+        "___type___": "EEnumLiteral",
+        "xmi_id": "_goalRelType_1_CONTRIBUTION",
+        "name": "CONTRIBUTION",
+        "value": 2,
+        "literal": "CONTRIBUTION"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_WQckoM7dEfC_ucElWBea5Q",
+    "name": "Goal",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_WQeZ0M7dEfC_ucElWBea5Q",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_WQhdIM7dEfC_ucElWBea5Q",
+        "name": "isSoft",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goal_decomposition",
+        "name": "decomposition",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_goalRel_1",
+        "containment": true,
+        "eOpposite": "_goalRel_1_source"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goal_contribution",
+        "name": "contribution",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_goalRel_1",
+        "containment": true,
+        "eOpposite": "_goalRel_1_target"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1_AND",
+    "name": "ANDGoal",
+    "abstract": false,
+    "eSuperTypes": [
+      "_goalRel_1"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_AND_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_AND_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_AND_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_AND_relationshipType",
+        "name": "relationshipType",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_goalRelType_1",
+        "defaultValueLiteral": "AND"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1_OR",
+    "name": "ORGoal",
+    "abstract": false,
+    "eSuperTypes": [
+      "_goalRel_1"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_OR_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_OR_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_OR_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_OR_relationshipType",
+        "name": "relationshipType",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_goalRelType_1",
+        "defaultValueLiteral": "OR"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1_CONTRIBUTION",
+    "name": "ContributionLink",
+    "abstract": false,
+    "eSuperTypes": [
+      "_goalRel_1"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_relationshipType",
+        "name": "relationshipType",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_goalRelType_1",
+        "defaultValueLiteral": "CONTRIBUTION"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_value",
+        "name": "value",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EInt"
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: create an abstract class ModelElement with a String attribute name||04:15
+
+------------------------------||04:15
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_ModelElement_0",
+  "name": "ModelElement",
+  "abstract": true,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_ModelElement_name_0",
+      "name": "name",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 1,
+      "upperBound": 1,
+      "eType": "//EString"
+    }
+  ]
+}
+------------------------------
+
+You: Create two classes with names Country and City, where Country has a containment reference "cities" to its Cities||04:15
+
+------------------------------||04:15
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_Country_id",
+    "name": "Country",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EReference",
+        "xmi_id": "_CountryCitiesRef_id",
+        "name": "cities",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_City_id",
+        "containment": true
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_City_id",
+    "name": "City",
+    "abstract": false,
+    "eSuperTypes": []
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||04:16
+
+------------------------------||04:16
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EPackage",
+    "xmi_id": "_UzsRwM7oEfCBEtIB8TpJ4g",
+    "name": "rutasTuristicas",
+    "nsURI": "http://tourism-routes/0.1",
+    "nsPrefix": "tour",
+    "eClassifiers": [
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsRwc7oEfCBEtIB8TpJ4g",
+        "name": "Ruta",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EReference",
+            "xmi_id": "_UzsRws7oEfCBEtIB8TpJ4g",
+            "name": "lugares",
+            "ordered": false,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+            "containment": true
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_UzsRw87oEfCBEtIB8TpJ4g",
+            "name": "eventos",
+            "ordered": false,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_UzsR8s7oEfCBEtIB8TpJ4g",
+            "containment": true
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_UzsRxM7oEfCBEtIB8TpJ4g",
+            "name": "personas",
+            "ordered": false,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_Uzs41c7oEfCBEtIB8TpJ4g",
+            "containment": true
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsRxc7oEfCBEtIB8TpJ4g",
+        "name": "Lugar",
+        "abstract": true,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsRxs7oEfCBEtIB8TpJ4g",
+            "name": "nombre",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsRy87oEfCBEtIB8TpJ4g",
+            "name": "url",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsRzc7oEfCBEtIB8TpJ4g",
+            "name": "descripcion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsRz87oEfCBEtIB8TpJ4g",
+            "name": "horarioApertura",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsR1M7oEfCBEtIB8TpJ4g",
+            "name": "temperatura",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_UzsR3M7oEfCBEtIB8TpJ4g",
+            "name": "siguiente",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1,
+            "eType": "_UzsR_87oEfCBEtIB8TpJ4g",
+            "containment": true
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_UzsR3c7oEfCBEtIB8TpJ4g",
+            "name": "opiniones",
+            "ordered": false,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_Uzs43M7oEfCBEtIB8TpJ4g",
+            "containment": true
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_UzsR3s7oEfCBEtIB8TpJ4g",
+            "name": "cercano",
+            "ordered": false,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+            "containment": false
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR4M7oEfCBEtIB8TpJ4g",
+        "name": "Cultural",
+        "abstract": true,
+        "eSuperTypes": [
+          "_UzsRxc7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR4s7oEfCBEtIB8TpJ4g",
+        "name": "Museo",
+        "abstract": false,
+        "eSuperTypes": [
+          "_UzsR4M7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR5M7oEfCBEtIB8TpJ4g",
+        "name": "Teatro",
+        "abstract": false,
+        "eSuperTypes": [
+          "_UzsR4M7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR5s7oEfCBEtIB8TpJ4g",
+        "name": "Escultura",
+        "abstract": false,
+        "eSuperTypes": [
+          "_UzsR4M7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR6M7oEfCBEtIB8TpJ4g",
+        "name": "Edificio",
+        "abstract": false,
+        "eSuperTypes": [
+          "_UzsR4M7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR6s7oEfCBEtIB8TpJ4g",
+        "name": "Gastronomia",
+        "abstract": true,
+        "eSuperTypes": [
+          "_UzsRxc7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR7M7oEfCBEtIB8TpJ4g",
+        "name": "Restaurante",
+        "abstract": false,
+        "eSuperTypes": [
+          "_UzsR6s7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR7s7oEfCBEtIB8TpJ4g",
+        "name": "Bar",
+        "abstract": false,
+        "eSuperTypes": [
+          "_UzsR6s7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR8M7oEfCBEtIB8TpJ4g",
+        "name": "Cafe",
+        "abstract": false,
+        "eSuperTypes": [
+          "_UzsR6s7oEfCBEtIB8TpJ4g"
+        ],
+        "eStructuralFeatures": []
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR8s7oEfCBEtIB8TpJ4g",
+        "name": "Evento",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsR887oEfCBEtIB8TpJ4g",
+            "name": "nombre",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsR9c7oEfCBEtIB8TpJ4g",
+            "name": "descripcion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsR987oEfCBEtIB8TpJ4g",
+            "name": "precio",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsR-c7oEfCBEtIB8TpJ4g",
+            "name": "horaInicio",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsR-87oEfCBEtIB8TpJ4g",
+            "name": "horaFin",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_UzsR_c7oEfCBEtIB8TpJ4g",
+            "name": "ubicacion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+            "containment": false
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_UzsR_87oEfCBEtIB8TpJ4g",
+        "name": "Transporte",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsSAM7oEfCBEtIB8TpJ4g",
+            "name": "tipo",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_Uzs44s7oEfCBEtIB8TpJ4g"
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_UzsSAc7oEfCBEtIB8TpJ4g",
+            "name": "descripcion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_Uzs40c7oEfCBEtIB8TpJ4g",
+            "name": "duracion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_Uzs4087oEfCBEtIB8TpJ4g",
+            "name": "destino",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+            "containment": false
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_Uzs41c7oEfCBEtIB8TpJ4g",
+        "name": "Persona",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_Uzs41s7oEfCBEtIB8TpJ4g",
+            "name": "nombre",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_Uzs42M7oEfCBEtIB8TpJ4g",
+            "name": "actual",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1,
+            "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+            "containment": false
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_Uzs42s7oEfCBEtIB8TpJ4g",
+            "name": "historial",
+            "ordered": false,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+            "containment": false
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_Uzs43M7oEfCBEtIB8TpJ4g",
+        "name": "Opinion",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_Uzs43c7oEfCBEtIB8TpJ4g",
+            "name": "calificacion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_Uzs46M7oEfCBEtIB8TpJ4g"
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_Uzs43s7oEfCBEtIB8TpJ4g",
+            "name": "opinion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_Uzs44M7oEfCBEtIB8TpJ4g",
+            "name": "de",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_Uzs41c7oEfCBEtIB8TpJ4g",
+            "containment": false
+          }
+        ]
+      },
+      {
+        "___type___": "EEnum",
+        "xmi_id": "_Uzs44s7oEfCBEtIB8TpJ4g",
+        "eAnnotations": [],
+        "name": "TipoTransporte",
+        "eTypeParameters": [],
+        "serializable": true,
+        "eLiterals": [
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs4487oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "cualquiera",
+            "value": 0,
+            "literal": "cualquiera"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs45M7oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "aPie",
+            "value": 1,
+            "literal": "aPie"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs45c7oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "enTren",
+            "value": 2,
+            "literal": "enTren"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs45s7oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "enBus",
+            "value": 3,
+            "literal": "enBus"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs4587oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "enCoche",
+            "value": 4,
+            "literal": "enCoche"
+          }
+        ]
+      },
+      {
+        "___type___": "EEnum",
+        "xmi_id": "_Uzs46M7oEfCBEtIB8TpJ4g",
+        "eAnnotations": [],
+        "name": "Calificacion",
+        "eTypeParameters": [],
+        "serializable": true,
+        "eLiterals": [
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs46c7oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "terrible",
+            "value": 1,
+            "literal": "terrible"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs46s7oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "malo",
+            "value": 2,
+            "literal": "malo"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs4687oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "promedio",
+            "value": 3,
+            "literal": "promedio"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs47M7oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "bueno",
+            "value": 4,
+            "literal": "bueno"
+          },
+          {
+            "___type___": "EEnumLiteral",
+            "xmi_id": "_Uzs47c7oEfCBEtIB8TpJ4g",
+            "eAnnotations": [],
+            "name": "excelente",
+            "value": 5,
+            "literal": "excelente"
+          }
+        ]
+      }
+    ],
+    "eSubpackages": []
+  }
+] }
+------------------------------
+
+You: create a class NamedElement with the common attributes of Event and Transportation||04:16
+
+------------------------------||04:16
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_-a1b0_aWEfCX44bKz0uQeQ",
+    "name": "NamedElement",
+    "abstract": true,
+    "eSuperTypes": [
+      "//ENamedElement"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_-a1b0_aWEfCX44bKz0uQeQ_attr1",
+        "name": "description",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: recommend more classes for the current metamodel||04:16
+
+------------------------------||04:16
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_new_1",
+    "name": "Accommodation",
+    "eSuperTypes": [
+      "_UzsRxc7oEfCBEtIB8TpJ4g"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_new_1_attr_1",
+        "name": "stars",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_Uzs46M7oEfCBEtIB8TpJ4g"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_new_2",
+    "name": "TourGuide",
+    "eSuperTypes": [
+      "_Uzs41c7oEfCBEtIB8TpJ4g"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_new_2_attr_1",
+        "name": "languages",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_UzsRxs7oEfCBEtIB8TpJ4g"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_new_2_ref_1",
+        "name": "tours",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_UzsRwM7oEfCBEtIB8TpJ4g",
+        "containment": false
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_new_3",
+    "name": "TourPackage",
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_new_3_attr_1",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_new_3_attr_2",
+        "name": "description",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_new_3_ref_1",
+        "name": "routes",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_UzsRwM7oEfCBEtIB8TpJ4g",
+        "containment": true
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_new_3_ref_2",
+        "name": "events",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_UzsR8s7oEfCBEtIB8TpJ4g",
+        "containment": true
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_new_3_ref_3",
+        "name": "accommodations",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_new_1",
+        "containment": true
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_new_4",
+    "name": "City",
+    "eSuperTypes": [
+      "_UzsRxc7oEfCBEtIB8TpJ4g"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_new_4_attr_1",
+        "name": "country",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_UzsRxs7oEfCBEtIB8TpJ4g"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_new_4_ref_1",
+        "name": "places",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_UzsRxc7oEfCBEtIB8TpJ4g",
+        "containment": true
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: recommend three attributes for class Museum||04:16
+
+------------------------------||04:17
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_UzsR4s7oEfCBEtIB8TpJ4g_newID_1",
+    "name": "address",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "_UzsRzM7oEfCBEtIB8TpJ4g"
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_UzsR4s7oEfCBEtIB8TpJ4g_newID_2",
+    "name": "visitorCount",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "_UzsRzM7oEfCBEtIB8TpJ4g"
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_UzsR4s7oEfCBEtIB8TpJ4g_newID_3",
+    "name": "hasGiftShop",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "_UzsRzM7oEfCBEtIB8TpJ4g"
+  }
+] }
+------------------------------
+
+You: Create a subpackage to handle user registration, with a declaration of interests||04:17
+
+------------------------------||04:17
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EPackage",
+    "xmi_id": "_userManagementPackage",
+    "name": "userManagement",
+    "nsURI": "http://tourism-routes/userManagement/0.1",
+    "nsPrefix": "usermgmt",
+    "eClassifiers": [
+      {
+        "___type___": "EClass",
+        "xmi_id": "_userClass",
+        "name": "User",
+        "abstract": false,
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_userNameAttribute",
+            "name": "username",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_UzsEString"
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_userEmailAttribute",
+            "name": "email",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_UzsEString"
+          },
+          {
+            "___type___": "EReference",
+            "xmi_id": "_userInterestsReference",
+            "name": "interests",
+            "ordered": false,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_interestClass",
+            "containment": true
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_interestClass",
+        "name": "Interest",
+        "abstract": false,
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_interestNameAttribute",
+            "name": "name",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 1,
+            "upperBound": 1,
+            "eType": "_UzsEString"
+          }
+        ]
+      }
+    ],
+    "eSubpackages": []
+  }
+] }
+------------------------------
+
+You: the metamodel should consider countries, with cities. Store which one is the capital, and which ones are recommended to visit||04:17
+
+------------------------------||04:17
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_Country_0",
+    "name": "Country",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EReference",
+        "xmi_id": "_Country_cities_0",
+        "name": "cities",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_City_0",
+        "containment": true
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_Country_capital_0",
+        "name": "capital",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_City_0"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_Country_recommendedCities_0",
+        "name": "recommendedCities",
+        "ordered": false,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_City_0"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_City_0",
+    "name": "City",
+    "abstract": false,
+    "eSuperTypes": [
+      "_UzsRxc7oEfCBEtIB8TpJ4g"
+    ],
+    "eStructuralFeatures": []
+  }
+] }
+------------------------------
+

@@ -1,0 +1,704 @@
+[DATE]10/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||03:56
+
+You: create an integer attribute "importance" for class Goal||03:56
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||03:56
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQtn0M7dEfC_ucElWBea5Q",
+    "name": "importance",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "EInt"
+  }
+] }
+------------------------------
+
+You: create an abstract class ModelElement with a String attribute name||03:57
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_ModelElement_0",
+    "name": "ModelElement",
+    "abstract": true,
+    "eSuperTypes": [
+      "//ENamedElement"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_ModelElement_name_0",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||03:57
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EPackage",
+    "xmi_id": "_WQPJQM7dEfC_ucElWBea5Q",
+    "name": "ModeloMeta",
+    "nsURI": "http://goalModel/0.1",
+    "nsPrefix": "gm",
+    "eClassifiers": [
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQUo0M7dEfC_ucElWBea5Q",
+        "name": "ModeloMeta",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EReference",
+            "xmi_id": "_WQXsIM7dEfC_ucElWBea5Q",
+            "name": "metas",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "eType": "_WQckoM7dEfC_ucElWBea5Q",
+            "containment": true
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQZhUM7dEfC_ucElWBea5Q",
+            "name": "descripcion",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQckoM7dEfC_ucElWBea5Q",
+        "name": "Meta",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQeZ0M7dEfC_ucElWBea5Q",
+            "name": "nombre",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          },
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQhdIM7dEfC_ucElWBea5Q",
+            "name": "esBlanda",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQj5YM7dEfC_ucElWBea5Q",
+        "name": "Actor",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": [
+          {
+            "___type___": "EAttribute",
+            "xmi_id": "_WQlukM7dEfC_ucElWBea5Q",
+            "name": "nombre",
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": 1
+          }
+        ]
+      },
+      {
+        "___type___": "EClass",
+        "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q",
+        "name": "Recurso",
+        "abstract": false,
+        "eSuperTypes": [],
+        "eStructuralFeatures": []
+      }
+    ],
+    "eSubpackages": []
+  }
+] }
+------------------------------
+
+You: create a reference "resource" for the selected class||03:57
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "EReference",
+  "xmi_id": "_generated_id_resource_ref",
+  "name": "resource",
+  "ordered": true,
+  "unique": true,
+  "lowerBound": 0,
+  "upperBound": -1,
+  "eType": "_WQpY8M7dEfC_ucElWBea5Q"
+}
+------------------------------
+
+You: recommend more classes for the current metamodel||03:57
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||03:57
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_NewClass_GoalRelationship",
+    "name": "GoalRelationship",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_GoalRelationship_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_GoalRelationship_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_GoalRelationship_type",
+        "name": "type",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_NewClass_Obstacle",
+    "name": "Obstacle",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_Obstacle_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_Obstacle_description",
+        "name": "description",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_Obstacle_relatedGoal",
+        "name": "relatedGoal",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_NewClass_Strategy",
+    "name": "Strategy",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_NewFeature_Strategy_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_Strategy_achievesGoal",
+        "name": "achievesGoal",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_NewFeature_Strategy_usesResource",
+        "name": "usesResource",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQpY8M7dEfC_ucElWBea5Q"
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: recommend attributes for the Resource class||03:58
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||03:58
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q_name",
+    "name": "name",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "//EString"
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q_description",
+    "name": "description",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "//EString"
+  },
+  {
+    "___type___": "EAttribute",
+    "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q_quantity",
+    "name": "quantity",
+    "ordered": true,
+    "unique": true,
+    "lowerBound": 0,
+    "upperBound": 1,
+    "eType": "//EInt"
+  }
+] }
+------------------------------
+
+You: use the composite design pattern to create Tasks, which can be simple or composite||03:58
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||03:58
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_task_id",
+    "name": "Task",
+    "abstract": true,
+    "eSuperTypes": [
+      "//ENamedElement"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_task_name_id",
+        "name": "name",
+        "eType": "//EString"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_simple_task_id",
+    "name": "SimpleTask",
+    "abstract": false,
+    "eSuperTypes": [
+      "_task_id"
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_composite_task_id",
+    "name": "CompositeTask",
+    "abstract": false,
+    "eSuperTypes": [
+      "_task_id"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EReference",
+        "xmi_id": "_composite_task_children_id",
+        "name": "children",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_task_id",
+        "containment": true
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: Complete the metamodel to consider decomposition relations (and, or, contribution links) between goals||03:58
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||03:58
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1",
+    "name": "GoalRelationship",
+    "abstract": true,
+    "eSuperTypes": [
+      "//EModelElement"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      }
+    ]
+  },
+  {
+    "___type___": "EEnum",
+    "xmi_id": "_goalRelType_1",
+    "name": "GoalRelationshipType",
+    "eLiterals": [
+      {
+        "___type___": "EEnumLiteral",
+        "xmi_id": "_goalRelType_1_AND",
+        "name": "AND",
+        "value": 0,
+        "literal": "AND"
+      },
+      {
+        "___type___": "EEnumLiteral",
+        "xmi_id": "_goalRelType_1_OR",
+        "name": "OR",
+        "value": 1,
+        "literal": "OR"
+      },
+      {
+        "___type___": "EEnumLiteral",
+        "xmi_id": "_goalRelType_1_CONTRIBUTION",
+        "name": "CONTRIBUTION",
+        "value": 2,
+        "literal": "CONTRIBUTION"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_WQckoM7dEfC_ucElWBea5Q",
+    "name": "Goal",
+    "abstract": false,
+    "eSuperTypes": [],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_WQeZ0M7dEfC_ucElWBea5Q",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_WQhdIM7dEfC_ucElWBea5Q",
+        "name": "isSoft",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goal_decomposition",
+        "name": "decomposition",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_goalRel_1",
+        "containment": true,
+        "eOpposite": "_goalRel_1_source"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goal_contribution",
+        "name": "contribution",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_goalRel_1",
+        "containment": true,
+        "eOpposite": "_goalRel_1_target"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1_AND",
+    "name": "ANDGoal",
+    "abstract": false,
+    "eSuperTypes": [
+      "_goalRel_1"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_AND_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_AND_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_AND_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_AND_relationshipType",
+        "name": "relationshipType",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_goalRelType_1",
+        "defaultValueLiteral": "AND"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1_OR",
+    "name": "ORGoal",
+    "abstract": false,
+    "eSuperTypes": [
+      "_goalRel_1"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_OR_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_OR_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_OR_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": -1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_OR_relationshipType",
+        "name": "relationshipType",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_goalRelType_1",
+        "defaultValueLiteral": "OR"
+      }
+    ]
+  },
+  {
+    "___type___": "EClass",
+    "xmi_id": "_goalRel_1_CONTRIBUTION",
+    "name": "ContributionLink",
+    "abstract": false,
+    "eSuperTypes": [
+      "_goalRel_1"
+    ],
+    "eStructuralFeatures": [
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_name",
+        "name": "name",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EString"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_source",
+        "name": "source",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EReference",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_target",
+        "name": "target",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "_WQckoM7dEfC_ucElWBea5Q"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_relationshipType",
+        "name": "relationshipType",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 1,
+        "upperBound": 1,
+        "eType": "_goalRelType_1",
+        "defaultValueLiteral": "CONTRIBUTION"
+      },
+      {
+        "___type___": "EAttribute",
+        "xmi_id": "_goalRel_1_CONTRIBUTION_value",
+        "name": "value",
+        "ordered": true,
+        "unique": true,
+        "lowerBound": 0,
+        "upperBound": 1,
+        "eType": "//EInt"
+      }
+    ]
+  }
+] }
+------------------------------
+

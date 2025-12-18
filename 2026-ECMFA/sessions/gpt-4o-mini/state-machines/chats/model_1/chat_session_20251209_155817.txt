@@ -1,0 +1,340 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||15:58
+
+You: Create one state with two outgoing transitions to two other new states||15:58
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||15:58
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjtMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "NewState1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjt8yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "NewState2"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjt9yMEfCuhbiBFBlMQg",
+      "from": "_YLhjsMyMEfCuhbiBFBlMQg",
+      "to": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjucyMEfCuhbiBFBlMQg",
+        "name": "event_to_NewState1"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjt0yMEfCuhbiBFBlMQg",
+      "from": "_YLhjsMyMEfCuhbiBFBlMQg",
+      "to": "_YLhjt8yMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhju8yMEfCuhbiBFBlMQg",
+        "name": "event_to_NewState2"
+      }
+    }
+  ],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Create two states connected by a time-triggered transition||16:02
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||16:02
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjsMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjot8MEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "StateA"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjp8yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "StateB"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjq8yMEfCuhbiBFBlMQg",
+      "from": "_YLhjot8MEfCuhbiBFBlMQg",
+      "to": "_YLhjp8yMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_YLhjr8yMEfCuhbiBFBlMQg",
+        "name": "timeTransition",
+        "time": 1000.0
+      }
+    }
+  ],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Translate the current model into Spanish||16:04
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||16:04
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: Create a composite state that contains the selected elements||16:05
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||16:05
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_YLhjsczMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "CompositeState_Example",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjscyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Playing"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjssyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Pause"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjs8yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Stop"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtMyMEfCuhbiBFBlMQg",
+      "from": "_YLhjscyMEfCuhbiBFBlMQg",
+      "to": "_YLhjssyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+        "name": "pause"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtsyMEfCuhbiBFBlMQg",
+      "from": "_YLhjssyMEfCuhbiBFBlMQg",
+      "to": "_YLhjscyMEfCuhbiBFBlMQg"
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjuMyMEfCuhbiBFBlMQg",
+      "from": "_YLhjs8yMEfCuhbiBFBlMQg",
+      "to": "_YLhjscyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjucyMEfCuhbiBFBlMQg",
+        "name": "play"
+      }
+    }
+  ],
+  "description": "Contains selected states and transitions"
+}
+------------------------------
+
+You: recommend an event for the selected transition||16:09
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||16:09
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Event",
+  "xmi_id": "_YLhjvcyMEfCuhbiBFBlMQg",
+  "name": "resume"
+}
+------------------------------
+
+You: recommend more states for the state machine||16:10
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||16:11
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjsMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjs9yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Rewind"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjsAyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Fast Forward"
+    }
+  ],
+  "transitions": [],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Create a composite state to model the selection of different types of media in the player (videos, music, podcasts)||16:13
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||16:13
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjsMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_YLhjs9yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "MediaSelection",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_YLhjtByMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Videos"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_YLhjtCyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Music"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_YLhjtDyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Podcasts"
+        }
+      ],
+      "transitions": [],
+      "description": "Selection of different types of media"
+    }
+  ],
+  "transitions": [],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Create a composite state to model a controller for media streaming in full detail||16:15
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||16:15
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_YLhjs9yMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "MediaStreamingController",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "SelectingMedia"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_1",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "StreamingMedia"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_2",
+      "from": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "to": "_YLhjtcyMEfCuhbiBFBlMQg_1",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_3",
+        "name": "mediaSelected"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_4",
+      "from": "_YLhjtcyMEfCuhbiBFBlMQg_1",
+      "to": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_5",
+        "name": "stopStreaming"
+      }
+    }
+  ],
+  "description": "Controls media streaming, allowing selection and playing of media."
+}
+------------------------------
+

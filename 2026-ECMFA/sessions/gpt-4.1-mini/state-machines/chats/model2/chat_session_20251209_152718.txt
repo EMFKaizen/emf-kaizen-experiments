@@ -1,0 +1,499 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||15:27
+
+You: Create two states connected by a transition with guard and action||15:27
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||15:27
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_newState1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_newState2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State2"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_newTransition1",
+      "from": "_newState1",
+      "to": "_newState2",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_newEvent1",
+        "name": "triggerEvent"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_newGuard1",
+        "condition": "condition_example"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_newAction1",
+        "code": "action_code_example"
+      }
+    }
+  ]
+}
+------------------------------
+
+You: Create a composite state with two connected states inside||15:29
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||15:29
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_newCompositeState1",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "NewCompositeState",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_newState1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_newState2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State2"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_newTransition1",
+      "from": "_newState1",
+      "to": "_newState2"
+    }
+  ],
+  "description": ""
+}
+------------------------------
+
+You: Translate the current model into Spanish||15:30
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||15:30
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF0cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "FueraDeServicio"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF0syMEfCuhbiBFBlMQg",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "ModoDeMantenimiento"
+    },
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_eyhF08yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Operativo",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "Inactivo"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "TarjetaInsertada"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1syMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "EntradaPIN"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF18yMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "MenuPrincipal"
+        },
+        {
+          "___type___": "CompositeState",
+          "xmi_id": "_eyhF2MyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Transaccion",
+          "states": [
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF2cyMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "Retiro"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "ConsultaDeSaldo"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF28yMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "Deposito"
+            }
+          ],
+          "transitions": [],
+          "description": "Este estado modela una transacción del cajero automático"
+        }
+      ],
+      "transitions": [
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+          "from": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "to": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "event": {
+            "___type___": "Event",
+            "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg",
+            "name": "tarjeta_detectada"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF3syMEfCuhbiBFBlMQg",
+          "from": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_eyhF38yMEfCuhbiBFBlMQg",
+            "code": "expulsar tarjeta"
+          },
+          "guard": {
+            "___type___": "Guard",
+            "xmi_id": "_eyhF4MyMEfCuhbiBFBlMQg",
+            "condition": "tarjeta inválida"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF4cyMEfCuhbiBFBlMQg",
+          "from": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "to": "_eyhF1syMEfCuhbiBFBlMQg",
+          "guard": {
+            "___type___": "Guard",
+            "xmi_id": "_eyhF4syMEfCuhbiBFBlMQg",
+            "condition": "tarjeta válida"
+          }
+        },
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF48yMEfCuhbiBFBlMQg",
+          "from": "_eyhF1syMEfCuhbiBFBlMQg",
+          "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "event": {
+            "___type___": "TimeEvent",
+            "xmi_id": "_eyhF5MyMEfCuhbiBFBlMQg",
+            "name": "tiempo agotado",
+            "time": 1000.0
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_eyhF5cyMEfCuhbiBFBlMQg",
+            "code": "expulsar tarjeta"
+          }
+        }
+      ],
+      "description": "El cajero automático está funcionando normalmente"
+    }
+  ],
+  "transitions": [],
+  "description": "Cajero Automático"
+}
+------------------------------
+
+You: create a final state for the selected element||15:32
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||15:32
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "State",
+  "xmi_id": "_eyhF0fyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": true,
+  "name": "FinalState"
+}
+------------------------------
+
+You: recommend guards and actions for the selected transition||15:33
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||15:33
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+  "guard": {
+    "___type___": "Guard",
+    "xmi_id": "_recommend_guard_1",
+    "condition": "card is valid"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_recommend_action_1",
+    "code": "activate card reader"
+  }
+}
+------------------------------
+
+You: recommend more substates for Operational||15:34
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||15:34
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF08yMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg_new1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Card Ejected"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg_new2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Session Timeout"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg_new3",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Error"
+    }
+  ]
+}
+------------------------------
+
+You: Create the full details of the Transaction State||15:35
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||15:36
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF2MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "Transaction",
+  "description": "This state models an ATM transaction",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Withdrawal"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "BalanceInquiry"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF28yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Deposit"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transaction_withdrawal_to_balance_inquiry",
+      "from": "_eyhF2cyMEfCuhbiBFBlMQg",
+      "to": "_eyhF2syMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_event_select_balance_inquiry",
+        "name": "select_balance_inquiry"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_action_prepare_balance_inquiry",
+        "code": "prepare balance inquiry"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_guard_valid_withdrawal_complete",
+        "condition": "withdrawal complete"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transaction_balance_inquiry_to_deposit",
+      "from": "_eyhF2syMEfCuhbiBFBlMQg",
+      "to": "_eyhF28yMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_event_select_deposit",
+        "name": "select_deposit"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_action_prepare_deposit",
+        "code": "prepare deposit"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_guard_valid_balance_inquiry_complete",
+        "condition": "balance inquiry complete"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transaction_deposit_to_withdrawal",
+      "from": "_eyhF28yMEfCuhbiBFBlMQg",
+      "to": "_eyhF2cyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_event_select_withdrawal",
+        "name": "select_withdrawal"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_action_prepare_withdrawal",
+        "code": "prepare withdrawal"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_guard_valid_deposit_complete",
+        "condition": "deposit complete"
+      }
+    }
+  ]
+}
+------------------------------
+
+You: Create a composite state to model ending the session with the ATM, in full detail||15:37
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||15:37
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF_EndSessionCS",
+  "name": "EndSession",
+  "isInitial": false,
+  "isFinal": false,
+  "description": "Composite state modeling the ending of the ATM session",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF_EndSessionIdle",
+      "name": "Idle",
+      "isInitial": true,
+      "isFinal": false
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF_EjectCard",
+      "name": "EjectCard",
+      "isInitial": false,
+      "isFinal": false
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF_SessionEnded",
+      "name": "SessionEnded",
+      "isInitial": false,
+      "isFinal": true
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF_Trans_IdleToEject",
+      "from": "_eyhF_EndSessionIdle",
+      "to": "_eyhF_EjectCard",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_eyhF_Event_EndSessionRequest",
+        "name": "end_session_request"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF_Trans_EjectToEnded",
+      "from": "_eyhF_EjectCard",
+      "to": "_eyhF_SessionEnded",
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_eyhF_Action_EjectCard",
+        "code": "eject card"
+      }
+    }
+  ]
+}
+------------------------------
+

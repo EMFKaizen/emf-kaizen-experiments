@@ -1,0 +1,358 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||22:05
+
+You: create two classes to model Places and Transitions||22:05
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||22:05
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_P2zN7a7pEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_P2zN7b7pEfCBEtIB8TpJ4g",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_P2zN7c7pEfCBEtIB8TpJ4g",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: create attributes for the PetriNet to store description and author||22:08
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||22:08
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAM7lEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+      "name": "PetriNet",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g_desc",
+          "name": "description",
+          "ordered": false,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g_author",
+          "name": "author",
+          "ordered": false,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EString"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: Translate the current model into Spanish||22:11
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||22:11
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: create two attributes name and description for the selected class||22:13
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||22:13
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+  "name": "PetriNet",
+  "abstract": false,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attrName",
+      "name": "name",
+      "ordered": false,
+      "unique": true,
+      "lowerBound": 1,
+      "upperBound": 1,
+      "eType": "EString"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_attrDescription",
+      "name": "description",
+      "ordered": false,
+      "unique": false,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString"
+    }
+  ]
+}
+------------------------------
+
+You: recommend some classes for the current metamodel||22:16
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||22:16
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAm7lEfCBEtIB8TpJ4g",
+  "name": "AdditionalModel",
+  "nsURI": "http://additionalmodel/0.1",
+  "nsPrefix": "ams",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAn7lEfCBEtIB8TpJ4g",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAo7lEfCBEtIB8TpJ4g",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: recommend some attributes for the selected class||22:18
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||22:19
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "EClass",
+  "name": "PetriNet",
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "name": "description",
+      "ordered": true,
+      "unique": false,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "//EString"
+    },
+    {
+      "___type___": "EAttribute",
+      "name": "author",
+      "ordered": true,
+      "unique": false,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "//EString"
+    }
+  ]
+}
+------------------------------
+
+You: complete this metamodel of Petri nets, with all missing details, and to consider inhibitor arcs||22:21
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||22:21
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAx7lEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAy7lEfCBEtIB8TpJ4g",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbA97lEfCBEtIB8TpJ4g",
+          "name": "tokens",
+          "ordered": false,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EInt"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbA9M7lEfCBEtIB8TpJ4g",
+          "name": "description",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EString"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbA97lEfCBEtIB8TpJ4h",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAa7lEfCBEtIB8TpJ4h",
+          "name": "name",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "//EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAb7lEfCBEtIB8TpJ4h",
+          "name": "description",
+          "ordered": false,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "//EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4h",
+          "name": "inhibitorArcs",
+          "ordered": false,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_k3gbA9M7lEfCBEtIB8TpJ4g"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: finish the metamodel for Petri nets, considering time in transitions||22:28
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||22:28
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_k3gbAc7lEfCBEtIB8TpJ4g",
+  "name": "PetriNets",
+  "nsURI": "http://petrinet/0.1",
+  "nsPrefix": "pns",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAc8lEfCBEtIB8TpJ4g",
+      "name": "Place",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAc9lEfCBEtIB8TpJ4g",
+          "name": "name",
+          "eType": "//EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAca1EfCBEtIB8TpJ4g",
+          "name": "tokenCount",
+          "eType": "//EInt"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_k3gbAcb1EfCBEtIB8TpJ4g",
+      "name": "Transition",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAcc1EfCBEtIB8TpJ4g",
+          "name": "name",
+          "eType": "//EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_k3gbAcd1EfCBEtIB8TpJ4g",
+          "name": "timeDelay",
+          "eType": "//EInt"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+

@@ -1,0 +1,621 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||14:56
+
+You: create a mind map with 3 concepts inside||14:56
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||14:56
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_Mmap_001",
+  "name": "Three Concepts Map",
+  "description": "A simple mind map containing three concepts",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_Croot_001",
+    "name": "Central Idea",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C_001",
+        "name": "Concept A",
+        "subConcepts": [],
+        "parent": "_Croot_001",
+        "description": "First concept",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C_002",
+        "name": "Concept B",
+        "subConcepts": [],
+        "parent": "_Croot_001",
+        "description": "Second concept",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_C_003",
+        "name": "Concept C",
+        "subConcepts": [],
+        "parent": "_Croot_001",
+        "description": "Third concept",
+        "relatedTo": []
+      }
+    ],
+    "description": "The central idea of the map",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: create a concept "Social" with three subconcepts "Family", "Friends" and "Relatives" inside||14:56
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||14:57
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U5Scx7EfCB57nxSn8rSw",
+  "name": "Social",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U5Ssx7EfCB57nxSn8rSw",
+      "name": "Family",
+      "subConcepts": [],
+      "parent": "_F1U5Scx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U5Fdx7EfCB57nxSn8rSw",
+      "name": "Friends",
+      "subConcepts": [],
+      "parent": "_F1U5Scx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U5Rlx7EfCB57nxSn8rSw",
+      "name": "Relatives",
+      "subConcepts": [],
+      "parent": "_F1U5Scx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Translate the current model into Spanish||14:57
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||14:57
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_T1Map_es_0001",
+  "name": "Salud",
+  "description": "Un mapa mental con ideas para una vida saludable",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_T1Conc_es_root",
+    "name": "Salud",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_dieta",
+        "name": "Dieta",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_frutas",
+            "name": "Frutas",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_dieta",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_verduras",
+            "name": "Verduras",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_dieta",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_panes_cereales",
+            "name": "Pan y cereales",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_dieta",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_sueno",
+        "name": "Sueño",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_33vidas",
+            "name": "33% de nuestras vidas",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_sueno",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_insomnio",
+            "name": "Insomnio",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_sueno",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_estres",
+        "name": "Estrés",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_T1Conc_es_causas",
+            "name": "Causas",
+            "subConcepts": [],
+            "parent": "_T1Conc_es_estres",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_T1Conc_es_ejercicio",
+        "name": "Ejercicio",
+        "subConcepts": [],
+        "parent": "_T1Conc_es_root",
+        "relatedTo": []
+      }
+    ],
+    "description": "¿Cómo podemos lograr la salud?",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create three children concepts for the selected one||14:58
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||14:58
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4O8x7EfCB57nxSn8rSw",
+  "name": "Exercise",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pax7EfCB57nxSn8rSw",
+      "name": "Cardio",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pbx7EfCB57nxSn8rSw",
+      "name": "Strength",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Flexibility",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "Exercise"||14:58
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||14:59
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4O8x7EfCB57nxSn8rSw",
+  "name": "Exercise",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pax7EfCB57nxSn8rSw",
+      "name": "Cardio",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "description": "Aerobic activities that raise heart rate (e.g., running, cycling)",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pbx7EfCB57nxSn8rSw",
+      "name": "Strength Training",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "description": "Resistance exercises to build muscle and bone strength (e.g., weightlifting)",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Flexibility",
+      "subConcepts": [],
+      "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+      "description": "Stretching and mobility practices to improve range of motion (e.g., yoga)",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "description": "",
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||14:59
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||15:00
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "name": "Stress",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Effects",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Physical and mental consequences of stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Psx7EfCB57nxSn8rSw",
+      "name": "Coping Strategies",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Techniques and behaviors to manage stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4P8x7EfCB57nxSn8rSw",
+      "name": "Management Techniques",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Lifestyle changes and professional interventions to reduce stress",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "relatedTo": []
+}
+------------------------------
+
+You: Add concepts to model additional dimensions of Health, in detail||15:00
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||15:01
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_F1U4MMx7EfCB57nxSn8rSw",
+  "name": "Health",
+  "description": "A mind map with ideas for healthy living",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_F1U4Mcx7EfCB57nxSn8rSw",
+    "name": "Health",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Mmx7EfCB57nxSn8rSw",
+        "name": "Mental Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5M1x7EfCB57nxSn8rSw",
+            "name": "Cognition & Attention",
+            "subConcepts": [],
+            "parent": "_F1U5Mmx7EfCB57nxSn8rSw",
+            "description": "Memory, concentration, decision-making and executive function",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5M2x7EfCB57nxSn8rSw",
+            "name": "Common Disorders",
+            "subConcepts": [],
+            "parent": "_F1U5Mmx7EfCB57nxSn8rSw",
+            "description": "Depression, anxiety, bipolar disorder — recognition and treatment pathways",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5M3x7EfCB57nxSn8rSw",
+            "name": "Mental Health Care",
+            "subConcepts": [],
+            "parent": "_F1U5Mmx7EfCB57nxSn8rSw",
+            "description": "Therapy, medication, self-help strategies and access to services",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Cognitive function, mental disorders, treatment and prevention",
+        "relatedTo": [
+          "_F1U4Ocx7EfCB57nxSn8rSw"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Emx7EfCB57nxSn8rSw",
+        "name": "Emotional Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5E1x7EfCB57nxSn8rSw",
+            "name": "Emotional Regulation",
+            "subConcepts": [],
+            "parent": "_F1U5Emx7EfCB57nxSn8rSw",
+            "description": "Skills to identify, express and manage emotions",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5E2x7EfCB57nxSn8rSw",
+            "name": "Resilience & Coping",
+            "subConcepts": [],
+            "parent": "_F1U5Emx7EfCB57nxSn8rSw",
+            "description": "Building coping strategies, stress reduction techniques and recovery after setbacks",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5E3x7EfCB57nxSn8rSw",
+            "name": "Support & Therapy",
+            "subConcepts": [],
+            "parent": "_F1U5Emx7EfCB57nxSn8rSw",
+            "description": "Counseling, group therapy, peer support and crisis resources",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Understanding and managing emotions for wellbeing",
+        "relatedTo": [
+          "_F1U4Ocx7EfCB57nxSn8rSw"
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Sox7EfCB57nxSn8rSw",
+        "name": "Social Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5S1x7EfCB57nxSn8rSw",
+            "name": "Relationships",
+            "subConcepts": [],
+            "parent": "_F1U5Sox7EfCB57nxSn8rSw",
+            "description": "Family, friendships and intimate relationships — communication and boundaries",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5S2x7EfCB57nxSn8rSw",
+            "name": "Community & Belonging",
+            "subConcepts": [],
+            "parent": "_F1U5Sox7EfCB57nxSn8rSw",
+            "description": "Social networks, civic engagement and support systems",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5S3x7EfCB57nxSn8rSw",
+            "name": "Social Skills & Conflict Resolution",
+            "subConcepts": [],
+            "parent": "_F1U5Sox7EfCB57nxSn8rSw",
+            "description": "Communication, empathy, negotiation and managing social stressors",
+            "relatedTo": [
+              "_F1U4Ocx7EfCB57nxSn8rSw"
+            ]
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Interactions, support networks and social wellbeing",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Envx7EfCB57nxSn8rSw",
+        "name": "Environmental Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5En1x7EfCB57nxSn8rSw",
+            "name": "Physical Environment",
+            "subConcepts": [],
+            "parent": "_F1U5Envx7EfCB57nxSn8rSw",
+            "description": "Air and water quality, housing, urban design and green spaces",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5En2x7EfCB57nxSn8rSw",
+            "name": "Workplace & Safety",
+            "subConcepts": [],
+            "parent": "_F1U5Envx7EfCB57nxSn8rSw",
+            "description": "Occupational exposures, ergonomics and hazard prevention",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "External factors that affect health and wellbeing",
+        "relatedTo": []
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_F1U5Spvx7EfCB57nxSn8rSw",
+        "name": "Spiritual Health",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5Sp1x7EfCB57nxSn8rSw",
+            "name": "Purpose & Meaning",
+            "subConcepts": [],
+            "parent": "_F1U5Spvx7EfCB57nxSn8rSw",
+            "description": "Personal values, life meaning and connectedness",
+            "relatedTo": []
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_F1U5Sp2x7EfCB57nxSn8rSw",
+            "name": "Practices",
+            "subConcepts": [],
+            "parent": "_F1U5Spvx7EfCB57nxSn8rSw",
+            "description": "Meditation, reflection, rituals and community practices that support wellbeing",
+            "relatedTo": []
+          }
+        ],
+        "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+        "description": "Aspects of meaning, values and spiritual practices",
+        "relatedTo": []
+      }
+    ],
+    "description": "How can we achieve health?",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Add all missing concepts to Stress||15:01
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||15:02
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Ocx7EfCB57nxSn8rSw",
+  "name": "Stress",
+  "subConcepts": [
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Osx7EfCB57nxSn8rSw",
+      "name": "Causes",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+      "name": "Symptoms",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Emotional and physical signs of stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Psx7EfCB57nxSn8rSw",
+      "name": "Effects",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Short-term and long-term effects on health",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4P8x7EfCB57nxSn8rSw",
+      "name": "Management",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Techniques to manage stress, e.g., relaxation, exercise",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4QMx7EfCB57nxSn8rSw",
+      "name": "Prevention",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Ways to reduce exposure to stressors",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Qsx7EfCB57nxSn8rSw",
+      "name": "Coping Strategies",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Behavioral and cognitive strategies to handle stress",
+      "relatedTo": []
+    },
+    {
+      "___type___": "Concept",
+      "xmi_id": "_F1U4Q8x7EfCB57nxSn8rSw",
+      "name": "Stressors",
+      "subConcepts": [],
+      "parent": "_F1U4Ocx7EfCB57nxSn8rSw",
+      "description": "Sources that trigger stress (work, relationships, health)",
+      "relatedTo": []
+    }
+  ],
+  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+  "description": null,
+  "relatedTo": []
+}
+------------------------------
+

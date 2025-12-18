@@ -1,0 +1,143 @@
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_Instalment_v2_PM_001",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_Instalment_v2_N_001",
+      "name": "Order Received - v2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Instalment_v2_N_002",
+      "name": "Validate Order - v2"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_Instalment_v2_N_003"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Instalment_v2_N_004",
+      "name": "One-time Payment Processing - v2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Instalment_v2_N_005",
+      "name": "Instalment Plan Setup - v2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Instalment_v2_N_006",
+      "name": "First Instalment Processing - v2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Instalment_v2_N_007",
+      "name": "Instalment Schedule Management - v2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Instalment_v2_N_008",
+      "name": "Payment Cancelled Handling - v2"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_Instalment_v2_N_009",
+      "name": "Payment Confirmed - v2"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_Instalment_v2_N_010",
+      "name": "Order Cancelled - v2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Instalment_v2_N_011",
+      "name": "Shipping Preparation - v2"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_001",
+      "input": "_Instalment_v2_N_001",
+      "output": "_Instalment_v2_N_002",
+      "name": "received to validate - v2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_002",
+      "input": "_Instalment_v2_N_002",
+      "output": "_Instalment_v2_N_003",
+      "name": "validate to payment choice - v2"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Instalment_v2_E_003",
+      "input": "_Instalment_v2_N_003",
+      "output": "_Instalment_v2_N_004",
+      "name": "choice to one-time - v2",
+      "condition": "one-time payment"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Instalment_v2_E_004",
+      "input": "_Instalment_v2_N_003",
+      "output": "_Instalment_v2_N_005",
+      "name": "choice to instalment setup - v2",
+      "condition": "instalment selected"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_Instalment_v2_E_005",
+      "input": "_Instalment_v2_N_003",
+      "output": "_Instalment_v2_N_008",
+      "name": "choice to cancelled - v2",
+      "condition": "payment cancelled"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_006",
+      "input": "_Instalment_v2_N_004",
+      "output": "_Instalment_v2_N_009",
+      "name": "one-time to confirmed - v2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_007",
+      "input": "_Instalment_v2_N_005",
+      "output": "_Instalment_v2_N_006",
+      "name": "instalment setup to first instalment - v2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_008",
+      "input": "_Instalment_v2_N_006",
+      "output": "_Instalment_v2_N_007",
+      "name": "first instalment to schedule management - v2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_009",
+      "input": "_Instalment_v2_N_007",
+      "output": "_Instalment_v2_N_009",
+      "name": "schedule management to confirmed - v2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_010",
+      "input": "_Instalment_v2_N_008",
+      "output": "_Instalment_v2_N_010",
+      "name": "cancel handling to order cancelled - v2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Instalment_v2_E_011",
+      "input": "_Instalment_v2_N_009",
+      "output": "_Instalment_v2_N_011",
+      "name": "confirmed to shipping prep - v2"
+    }
+  ],
+  "description": "Order Fulfillment v2 - supports instalment payments"
+}

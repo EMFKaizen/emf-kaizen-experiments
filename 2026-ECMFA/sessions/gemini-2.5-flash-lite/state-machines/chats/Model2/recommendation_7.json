@@ -1,0 +1,103 @@
+{
+   "soba_userInput":"Create the full details of the Transaction State",
+   "soba_metaModelContext":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ecore:EPackage xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ecore=\"http://www.eclipse.org/emf/2002/Ecore\" name=\"HierarchicalStateMachine\" nsURI=\"http://statemachines/0.1\" nsPrefix=\"hsm\">\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"StateMachine\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"states\" upperBound=\"-1\" eType=\"//State\" containment=\"true\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"transitions\" upperBound=\"-1\" eType=\"//Transition\" containment=\"true\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"State\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"isInitial\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EBoolean\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"isFinal\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EBoolean\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Transition\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"from\" lowerBound=\"1\" eType=\"//State\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"to\" lowerBound=\"1\" eType=\"//State\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"event\" eType=\"//Event\" containment=\"true\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"action\" eType=\"//Action\" containment=\"true\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"guard\" eType=\"//Guard\" containment=\"true\"/>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Event\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"CompositeState\" eSuperTypes=\"//State //StateMachine\"/>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Action\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"code\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Guard\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"condition\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"TimeEvent\" eSuperTypes=\"//Event\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"time\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EDouble\"/>\r\n    <\/eStructuralFeatures>\r\n  <\/eClassifiers>\r\n<\/ecore:EPackage>\r\n",
+   "recommendationPayload":  {"results":[
+	{
+	  "___type___": "Transition",
+	  "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+	  "from": "_eyhF2cyMEfCuhbiBFBlMQg",
+	  "to": "_eyhF2syMEfCuhbiBFBlMQg",
+	  "event": {
+	    "___type___": "Event",
+	    "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+	    "name": "select_balance_inquiry"
+	  },
+	  "action": {
+	    "___type___": "Action",
+	    "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+	    "code": "display balance"
+	  }
+	},
+	{
+	  "___type___": "Transition",
+	  "xmi_id": "_eyhF68yMEfCuhbiBFBlMQg",
+	  "from": "_eyhF2syMEfCuhbiBFBlMQg",
+	  "to": "_eyhF28yMEfCuhbiBFBlMQg",
+	  "event": {
+	    "___type___": "Event",
+	    "xmi_id": "_eyhF7MyMEfCuhbiBFBlMQg",
+	    "name": "select_deposit"
+	  },
+	  "action": {
+	    "___type___": "Action",
+	    "xmi_id": "_eyhF7cyMEfCuhbiBFBlMQg",
+	    "code": "prompt for deposit amount"
+	  }
+	},
+	{
+	  "___type___": "Transition",
+	  "xmi_id": "_eyhF7syMEfCuhbiBFBlMQg",
+	  "from": "_eyhF28yMEfCuhbiBFBlMQg",
+	  "to": "_eyhF2cyMEfCuhbiBFBlMQg",
+	  "event": {
+	    "___type___": "Event",
+	    "xmi_id": "_eyhF78yMEfCuhbiBFBlMQg",
+	    "name": "deposit_complete"
+	  },
+	  "action": {
+	    "___type___": "Action",
+	    "xmi_id": "_eyhF8MyMEfCuhbiBFBlMQg",
+	    "code": "dispense receipt"
+	  }
+	},
+	{
+	  "___type___": "Transition",
+	  "xmi_id": "_eyhF8cyMEfCuhbiBFBlMQg",
+	  "from": "_eyhF2cyMEfCuhbiBFBlMQg",
+	  "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+	  "event": {
+	    "___type___": "Event",
+	    "xmi_id": "_eyhF8syMEfCuhbiBFBlMQg",
+	    "name": "transaction_complete"
+	  },
+	  "action": {
+	    "___type___": "Action",
+	    "xmi_id": "_eyhF88yMEfCuhbiBFBlMQg",
+	    "code": "eject card"
+	  }
+	},
+	{
+	  "___type___": "Transition",
+	  "xmi_id": "_eyhF9MyMEfCuhbiBFBlMQg",
+	  "from": "_eyhF2syMEfCuhbiBFBlMQg",
+	  "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+	  "event": {
+	    "___type___": "Event",
+	    "xmi_id": "_eyhF9cyMEfCuhbiBFBlMQg",
+	    "name": "transaction_complete"
+	  },
+	  "action": {
+	    "___type___": "Action",
+	    "xmi_id": "_eyhF9syMEfCuhbiBFBlMQg",
+	    "code": "eject card"
+	  }
+	},
+	{
+	  "___type___": "Transition",
+	  "xmi_id": "_eyhF98yMEfCuhbiBFBlMQg",
+	  "from": "_eyhF28yMEfCuhbiBFBlMQg",
+	  "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+	  "event": {
+	    "___type___": "Event",
+	    "xmi_id": "_eyhF10MyMEfCuhbiBFBlMQg",
+	    "name": "transaction_complete"
+	  },
+	  "action": {
+	    "___type___": "Action",
+	    "xmi_id": "_eyhF10cyMEfCuhbiBFBlMQg",
+	    "code": "eject card"
+	  }
+	}
+   	]
+   }
+}

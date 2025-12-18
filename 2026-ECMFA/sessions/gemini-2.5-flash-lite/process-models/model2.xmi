@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proc:ProcessModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:proc="http://ProcessModelling/0.1" xmi:id="_Cy4ocM7MEfC3JOLdj2VwAA" description="Order Fulfillment">
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4occ7MEfC3JOLdj2VwAA" name="Order Received"/>
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4ocs7MEfC3JOLdj2VwAA" name="Inventory Check &amp; Reservation"/>
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4oc87MEfC3JOLdj2VwAA" name="Payment Processing"/>
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4odM7MEfC3JOLdj2VwAA" name="Shipping Preparation"/>
+  <nodes xsi:type="proc:ParallelSplit" xmi:id="_Cy4odc7MEfC3JOLdj2VwAA"/>
+  <nodes xsi:type="proc:Synchronization" xmi:id="_Cy4ods7MEfC3JOLdj2VwAA"/>
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4od87MEfC3JOLdj2VwAA" name="Packaging"/>
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4oeM7MEfC3JOLdj2VwAA" name="Dispatch order"/>
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4oec7MEfC3JOLdj2VwAA" name="Notification"/>
+  <nodes xsi:type="proc:Task" xmi:id="_Cy4oes7MEfC3JOLdj2VwAA" name="Post-Delivery Support"/>
+  <edges xmi:id="_Cy4oe87MEfC3JOLdj2VwAA" input="_Cy4occ7MEfC3JOLdj2VwAA" output="_Cy4odc7MEfC3JOLdj2VwAA" name="received to split"/>
+  <edges xmi:id="_Cy4ofM7MEfC3JOLdj2VwAA" input="_Cy4odc7MEfC3JOLdj2VwAA" output="_Cy4ocs7MEfC3JOLdj2VwAA" name="split to inventory"/>
+  <edges xmi:id="_Cy4ofc7MEfC3JOLdj2VwAA" input="_Cy4odc7MEfC3JOLdj2VwAA" output="_Cy4oc87MEfC3JOLdj2VwAA" name="split to payment"/>
+  <edges xmi:id="_Cy4ofs7MEfC3JOLdj2VwAA" input="_Cy4odc7MEfC3JOLdj2VwAA" output="_Cy4odM7MEfC3JOLdj2VwAA" name="split to shipping"/>
+  <edges xmi:id="_Cy4of87MEfC3JOLdj2VwAA" input="_Cy4ocs7MEfC3JOLdj2VwAA" output="_Cy4ods7MEfC3JOLdj2VwAA" name="inventory to sync"/>
+  <edges xmi:id="_Cy4ogM7MEfC3JOLdj2VwAA" input="_Cy4oc87MEfC3JOLdj2VwAA" output="_Cy4ods7MEfC3JOLdj2VwAA" name="payment to sync"/>
+  <edges xmi:id="_Cy4ogc7MEfC3JOLdj2VwAA" input="_Cy4odM7MEfC3JOLdj2VwAA" output="_Cy4ods7MEfC3JOLdj2VwAA" name="shipping to sync"/>
+  <edges xmi:id="_Cy4ogs7MEfC3JOLdj2VwAA" input="_Cy4ods7MEfC3JOLdj2VwAA" output="_Cy4od87MEfC3JOLdj2VwAA" name="sync to packaging"/>
+  <edges xmi:id="_Cy4og87MEfC3JOLdj2VwAA" input="_Cy4od87MEfC3JOLdj2VwAA" output="_Cy4oeM7MEfC3JOLdj2VwAA" name="packaging to dispatch"/>
+</proc:ProcessModel>

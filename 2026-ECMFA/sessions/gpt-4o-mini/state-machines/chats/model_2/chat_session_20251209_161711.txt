@@ -1,0 +1,315 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||16:17
+
+You: Create two states connected by a transition with guard and action||16:17
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||16:17
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State2"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+      "from": "_eyhF6MyMEfCuhbiBFBlMQg",
+      "to": "_eyhF6cyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_eyhF7MyMEfCuhbiBFBlMQg",
+        "name": "trigger_event"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_eyhF7cyMEfCuhbiBFBlMQg",
+        "code": "perform_action"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_eyhF7syMEfCuhbiBFBlMQg",
+        "condition": "guard_condition"
+      }
+    }
+  ],
+  "description": "ATM"
+}
+------------------------------
+
+You: Create a composite state with two connected states inside||16:24
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||16:24
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_eyhF08yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "NewCompositeState",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "State1"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": true,
+          "name": "State2"
+        }
+      ],
+      "transitions": [
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+          "from": "_eyhF6MyMEfCuhbiBFBlMQg",
+          "to": "_eyhF6cyMEfCuhbiBFBlMQg",
+          "guard": {
+            "___type___": "Guard",
+            "xmi_id": "_eyhF4MyMEfCuhbiBFBlMQg",
+            "condition": "condition_example"
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_eyhF7MyMEfCuhbiBFBlMQg",
+            "code": "perform_action"
+          },
+          "event": {
+            "___type___": "Event",
+            "xmi_id": "_eyhF7cyMEfCuhbiBFBlMQg",
+            "name": "event_trigger"
+          }
+        }
+      ],
+      "description": "Composite state with two connected states."
+    }
+  ],
+  "transitions": [],
+  "description": "ATM"
+}
+------------------------------
+
+You: Translate the current model into Spanish||16:32
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||16:32
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: create a final state for the selected element||16:33
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||16:33
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "State",
+  "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": true,
+  "name": "FinalState"
+}
+------------------------------
+
+You: recommend more substates for Operational||16:36
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||16:37
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "Substate1",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2syMEfCuhbiBFBlMQh",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Substate1A"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2syMEfCuhbiBFBlMQh",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Substate1B"
+    }
+  ],
+  "transitions": [],
+  "description": "Additional substates for Operational state"
+}
+------------------------------
+
+You: recommend guards and actions for the selected transition||16:39
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||16:39
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+  "from": "_eyhF1MyMEfCuhbiBFBlMQg",
+  "to": "_eyhF1cyMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+    "name": "card_verified"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+    "code": "proceed to PIN entry"
+  },
+  "guard": {
+    "___type___": "Guard",
+    "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+    "condition": "card is valid"
+  }
+}
+------------------------------
+
+You: Create the full details of the Transaction State||16:42
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||16:42
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF2MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "Transaction",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Withdrawal"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "BalanceInquiry"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF28yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Deposit"
+    }
+  ],
+  "transitions": [],
+  "description": "This state models an ATM transaction"
+}
+------------------------------
+
+You: Create a composite state to model ending the session with the ATM, in full detail||16:46
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||16:46
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "EndSession",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Card ejected"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF3syMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "Session ended"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF4cyMEfCuhbiBFBlMQg",
+      "from": "_eyhF3cyMEfCuhbiBFBlMQg",
+      "to": "_eyhF3syMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_eyhF4syMEfCuhbiBFBlMQg",
+        "name": "session_complete"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_eyhF5MyMEfCuhbiBFBlMQg",
+        "code": "perform cleanup tasks"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_eyhF5cyMEfCuhbiBFBlMQg",
+        "condition": "all transactions finished"
+      }
+    }
+  ],
+  "description": "This composite state models the process of ending a session at the ATM."
+}
+------------------------------
+

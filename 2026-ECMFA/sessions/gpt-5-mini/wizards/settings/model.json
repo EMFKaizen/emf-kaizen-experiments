@@ -1,0 +1,57 @@
+{
+  "wizards.ecore": [
+    {
+      "___type___": "Wizard",
+      "xmi_id": "_Q-w-sM7UEfC2mPVygn5YyA",
+      "title": "title_example",
+      "pages": [
+        {
+          "___type___": "Page",
+          "xmi_id": "_Q-w-sc7UEfC2mPVygn5YyA",
+          "name": "name_example",
+          "wizard": "_Q-w-sM7UEfC2mPVygn5YyA",
+          "fields": [
+            {
+              "___type___": "Field",
+              "xmi_id": "_Q-w-ss7UEfC2mPVygn5YyA",
+              "label": "label_example",
+              "minLength": 1,
+              "maxLength": 1,
+              "anyLength": true,
+              "isPassword": true
+            }
+          ],
+          "buttons": [
+            {
+              "___type___": "NavigateButton",
+              "xmi_id": "_Q-w-s87UEfC2mPVygn5YyA",
+              "label": "label_example",
+              "toPage": "_Q-w-sc7UEfC2mPVygn5YyA"
+            },
+            {
+              "___type___": "BackButton",
+              "xmi_id": "_Q-w-tM7UEfC2mPVygn5YyA",
+              "label": "label_example"
+            }
+          ],
+          "checkbox": {
+            "___type___": "Checkbox",
+            "xmi_id": "_Q-w-tc7UEfC2mPVygn5YyA",
+            "checked": true,
+            "label": "label_example"
+          }
+        }
+      ],
+      "initialPage": "_Q-w-sc7UEfC2mPVygn5YyA"
+    },
+    {
+      "___type___": "ShowMessageButton",
+      "xmi_id": "_Q-w-ts7UEfC2mPVygn5YyA",
+      "messageText": "messageText_example"
+    },
+    {
+      "___type___": "CloseWizardButton",
+      "xmi_id": "_Q-w-t87UEfC2mPVygn5YyA"
+    }
+  ]
+}

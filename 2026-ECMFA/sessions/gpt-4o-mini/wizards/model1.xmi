@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wiz:Wizard xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Wiz="http://example.com/wizards" xmi:id="_udj_AM7UEfC2mPVygn5YyA" title="Setup your account" initialPage="_udj_Ac7UEfC2mPVygn5YyA">
+  <pages xmi:id="_udj_Ac7UEfC2mPVygn5YyA" name="User Information">
+    <fields xmi:id="_udj_As7UEfC2mPVygn5YyA" label="Name" minLength="2" maxLength="300" anyLength="true"/>
+    <fields xmi:id="_udj_A87UEfC2mPVygn5YyA" label="Email" minLength="5" maxLength="200" anyLength="true"/>
+  </pages>
+  <pages xmi:id="_udj_BM7UEfC2mPVygn5YyA" name="Preferences">
+    <buttons xsi:type="Wiz:BackButton" xmi:id="_udj_Bc7UEfC2mPVygn5YyA"/>
+    <checkbox xmi:id="_udj_Bs7UEfC2mPVygn5YyA" label="notifications?"/>
+  </pages>
+  <pages xmi:id="_udj_B87UEfC2mPVygn5YyA" name="Security Setup">
+    <buttons xsi:type="Wiz:BackButton" xmi:id="_udj_CM7UEfC2mPVygn5YyA"/>
+  </pages>
+  <pages xmi:id="_udj_Cc7UEfC2mPVygn5YyA" name="Summary and Finish"/>
+</Wiz:Wizard>

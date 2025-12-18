@@ -1,0 +1,18 @@
+{
+  "MindMap.ecore": {
+    "SerializationSelection": {
+      "Map": [
+        "name",
+        "description",
+        "root"
+      ],
+      "Concept": [
+        "name",
+        "subConcepts",
+        "parent",
+        "description",
+        "relatedTo"
+      ]
+    }
+  }
+}

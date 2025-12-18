@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_WQPJQM7dEfC_ucElWBea5Q" name="GoalModel" nsURI="http://goalModel/0.1" nsPrefix="gm">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WQUo0M7dEfC_ucElWBea5Q" name="GoalModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WQXsIM7dEfC_ucElWBea5Q" name="goals" upperBound="-1" eType="_WQckoM7dEfC_ucElWBea5Q" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WQZhUM7dEfC_ucElWBea5Q" name="description">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WQckoM7dEfC_ucElWBea5Q" name="Goal">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WQeZ0M7dEfC_ucElWBea5Q" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WQhdIM7dEfC_ucElWBea5Q" name="isSoft">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WQj5YM7dEfC_ucElWBea5Q" name="Actor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WQlukM7dEfC_ucElWBea5Q" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WQpY8M7dEfC_ucElWBea5Q" name="Resource"/>
+</ecore:EPackage>

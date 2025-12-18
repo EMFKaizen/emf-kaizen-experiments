@@ -1,0 +1,68 @@
+{
+  "ProcessModelling.ecore": [
+    {
+      "___type___": "ProcessModel",
+      "xmi_id": "_DMrQMM7GEfCRuoeAi1p5xA",
+      "nodes": [
+        {
+          "___type___": "ExclusiveChoice",
+          "xmi_id": "_DMrQMc7GEfCRuoeAi1p5xA",
+          "conditions": [
+            {
+              "___type___": "GatewayCondition",
+              "xmi_id": "_DMrQMs7GEfCRuoeAi1p5xA",
+              "condition": "condition_example"
+            }
+          ]
+        },
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_DMrQM87GEfCRuoeAi1p5xA",
+          "condition": "condition_example"
+        },
+        {
+          "___type___": "FinalTask",
+          "xmi_id": "_DMrQNM7GEfCRuoeAi1p5xA",
+          "name": "name_example"
+        },
+        {
+          "___type___": "SimpleMerge",
+          "xmi_id": "_DMrQNc7GEfCRuoeAi1p5xA"
+        },
+        {
+          "___type___": "Task",
+          "xmi_id": "_DMrQNs7GEfCRuoeAi1p5xA",
+          "name": "name_example"
+        },
+        {
+          "___type___": "Synchronization",
+          "xmi_id": "_DMrQN87GEfCRuoeAi1p5xA"
+        },
+        {
+          "___type___": "InitialTask",
+          "xmi_id": "_DMrQOM7GEfCRuoeAi1p5xA",
+          "name": "name_example"
+        },
+        {
+          "___type___": "ParallelSplit",
+          "xmi_id": "_DMrQOc7GEfCRuoeAi1p5xA"
+        },
+        {
+          "___type___": "MultiChoice",
+          "xmi_id": "_DMrQOs7GEfCRuoeAi1p5xA",
+          "conditions": []
+        }
+      ],
+      "edges": [
+        {
+          "___type___": "FlowEdge",
+          "xmi_id": "_DMrQO87GEfCRuoeAi1p5xA",
+          "input": "_DMrQMc7GEfCRuoeAi1p5xA",
+          "output": "_DMrQMc7GEfCRuoeAi1p5xA",
+          "name": "name_example"
+        }
+      ],
+      "description": "description_example"
+    }
+  ]
+}

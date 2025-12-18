@@ -1,0 +1,91 @@
+{
+  "___type___": "EPackage",
+  "xmi_id": "_UzsR9s7oEfCBEtIB8TpJ4g",
+  "name": "geographicalEntities",
+  "nsURI": "http://geographical-entities/0.1",
+  "nsPrefix": "geo",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsR_a7oEfCBEtIB8TpJ4g",
+      "name": "Country",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsR_b7oEfCBEtIB8TpJ4g",
+          "name": "cities",
+          "ordered": false,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_UzsR_c7oEfCBEtIB8TpJ4g",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsR_d7oEfCBEtIB8TpJ4g",
+          "name": "capital",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_UzsR_c7oEfCBEtIB8TpJ4g",
+          "containment": false
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsR_e7oEfCBEtIB8TpJ4g",
+          "name": "recommendedToVisit",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_UzsR_c7oEfCBEtIB8TpJ4g",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsR_c7oEfCBEtIB8TpJ4g",
+      "name": "City",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsR_f7oEfCBEtIB8TpJ4g",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsR_g7oEfCBEtIB8TpJ4g",
+          "name": "population",
+          "ordered": true,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsR_h7oEfCBEtIB8TpJ4g",
+          "name": "area",
+          "ordered": true,
+          "unique": false,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EFloat"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}

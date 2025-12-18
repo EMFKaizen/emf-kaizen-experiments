@@ -1,0 +1,44 @@
+{
+   "soba_userInput":"recommend four fields for the selected page",
+   "soba_metaModelContext":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ecore:EPackage xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ecore=\"http://www.eclipse.org/emf/2002/Ecore\" name=\"wizards\" nsURI=\"http://example.com/wizards\" nsPrefix=\"Wiz\">\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Wizard\">\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"title\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"pages\" lowerBound=\"1\" upperBound=\"-1\" eType=\"//Page\" containment=\"true\" eOpposite=\"//Page/wizard\">\n      <eAnnotations source=\"http://www.eclipse.org/OCL/Collection\">\n        <details key=\"nullFree\" value=\"false\"/>\n      <\/eAnnotations>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"initialPage\" lowerBound=\"1\" eType=\"//Page\"/>\n  <\/eClassifiers>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Page\">\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"wizard\" lowerBound=\"1\" eType=\"//Wizard\" eOpposite=\"//Wizard/pages\"/>\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"fields\" upperBound=\"-1\" eType=\"//Field\" containment=\"true\">\n      <eAnnotations source=\"http://www.eclipse.org/OCL/Collection\">\n        <details key=\"nullFree\" value=\"false\"/>\n      <\/eAnnotations>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"buttons\" lowerBound=\"1\" upperBound=\"-1\" eType=\"//Button\" containment=\"true\">\n      <eAnnotations source=\"http://www.eclipse.org/OCL/Collection\">\n        <details key=\"nullFree\" value=\"false\"/>\n      <\/eAnnotations>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"checkbox\" eType=\"//Checkbox\" containment=\"true\"/>\n  <\/eClassifiers>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Field\">\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"label\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"minLength\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EInt\"/>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"maxLength\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EInt\"/>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"anyLength\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EBoolean\"/>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"isPassword\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EBoolean\"/>\n    <\/eStructuralFeatures>\n  <\/eClassifiers>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Checkbox\">\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"checked\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EBoolean\"/>\n    <\/eStructuralFeatures>\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"label\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\n    <\/eStructuralFeatures>\n  <\/eClassifiers>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Button\" abstract=\"true\">\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"label\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\n    <\/eStructuralFeatures>\n  <\/eClassifiers>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"NavigateButton\" eSuperTypes=\"//Button\">\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"toPage\" lowerBound=\"1\" eType=\"//Page\"/>\n  <\/eClassifiers>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"BackButton\" eSuperTypes=\"//Button\"/>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"ShowMessageButton\" eSuperTypes=\"//Button\">\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"messageText\" lowerBound=\"1\">\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\n    <\/eStructuralFeatures>\n  <\/eClassifiers>\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"CloseWizardButton\" eSuperTypes=\"//Button\"/>\n<\/ecore:EPackage>\n",
+   "recommendationPayload":{"results":
+      [	{
+	  "___type___": "Field",
+	  "xmi_id": "_udj_F1B87UEfC2mPVygn5YyA",
+	  "label": "Username",
+	  "minLength": 3,
+	  "maxLength": 50,
+	  "anyLength": false,
+	  "isPassword": false
+	},
+	{
+	  "___type___": "Field",
+	  "xmi_id": "_udj_F2B87UEfC2mPVygn5YyA",
+	  "label": "Password",
+	  "minLength": 8,
+	  "maxLength": 100,
+	  "anyLength": false,
+	  "isPassword": true
+	},
+	{
+	  "___type___": "Field",
+	  "xmi_id": "_udj_F3B87UEfC2mPVygn5YyA",
+	  "label": "Confirm Password",
+	  "minLength": 8,
+	  "maxLength": 100,
+	  "anyLength": false,
+	  "isPassword": true
+	},
+	{
+	  "___type___": "Field",
+	  "xmi_id": "_udj_F4B87UEfC2mPVygn5YyA",
+	  "label": "Security Question Answer",
+	  "minLength": 1,
+	  "maxLength": 200,
+	  "anyLength": true,
+	  "isPassword": false
+	}
+		
+	  ]
+   }
+}

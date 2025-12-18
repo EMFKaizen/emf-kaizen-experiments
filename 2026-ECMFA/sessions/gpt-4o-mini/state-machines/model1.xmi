@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hsm:StateMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:hsm="http://statemachines/0.1" xmi:id="_YLhjsMyMEfCuhbiBFBlMQg" description="Media Player">
+  <states xmi:id="_YLhjscyMEfCuhbiBFBlMQg" name="Playing"/>
+  <states xmi:id="_YLhjssyMEfCuhbiBFBlMQg" name="Pause"/>
+  <states xmi:id="_YLhjs8yMEfCuhbiBFBlMQg" name="Stop"/>
+  <transitions xmi:id="_YLhjtMyMEfCuhbiBFBlMQg" from="_YLhjscyMEfCuhbiBFBlMQg" to="_YLhjssyMEfCuhbiBFBlMQg">
+    <event xmi:id="_YLhjtcyMEfCuhbiBFBlMQg" name="pause"/>
+  </transitions>
+  <transitions xmi:id="_YLhjtsyMEfCuhbiBFBlMQg" from="_YLhjssyMEfCuhbiBFBlMQg" to="_YLhjscyMEfCuhbiBFBlMQg"/>
+  <transitions xmi:id="_YLhjuMyMEfCuhbiBFBlMQg" from="_YLhjs8yMEfCuhbiBFBlMQg" to="_YLhjscyMEfCuhbiBFBlMQg">
+    <event xmi:id="_YLhjucyMEfCuhbiBFBlMQg" name="play"/>
+  </transitions>
+</hsm:StateMachine>

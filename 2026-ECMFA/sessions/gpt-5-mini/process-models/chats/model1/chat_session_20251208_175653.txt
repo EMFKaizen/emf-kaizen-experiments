@@ -1,0 +1,818 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||17:57
+
+You: Create two tasks that are the input of a Synchronisation gateway, the gateway should has as output a new Task with name "Finish"||17:57
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||17:57
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esNewTask1_xxx",
+      "name": "Input Task 1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esNewTask2_xxx",
+      "name": "Input Task 2"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_esNewSync_xxx"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esNewFinish_xxx",
+      "name": "Finish"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esNewEdge1_xxx",
+      "input": "_esNewTask1_xxx",
+      "output": "_esNewSync_xxx",
+      "name": "input1 to synchronization"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esNewEdge2_xxx",
+      "input": "_esNewTask2_xxx",
+      "output": "_esNewSync_xxx",
+      "name": "input2 to synchronization"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esNewEdge3_xxx",
+      "input": "_esNewSync_xxx",
+      "output": "_esNewFinish_xxx",
+      "name": "synchronization to Finish"
+    }
+  ]
+}
+------------------------------
+
+You: Create an exclusive choice gateway with two output conditions: "integration test passed" goes to a new Task "system test", and "integration test failed" that goes to a new Task "notify integration failure"||17:58
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||17:59
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_esXxe87EEfCRuoeAi1p5xA",
+      "conditions": [
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxeg7EEfCRuoeAi1p5xA",
+          "condition": "integration test passed"
+        },
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxeh7EEfCRuoeAi1p5xA",
+          "condition": "integration test failed"
+        }
+      ]
+    },
+    {
+      "___type___": "GatewayCondition",
+      "xmi_id": "_esXxeg7EEfCRuoeAi1p5xA",
+      "condition": "integration test passed"
+    },
+    {
+      "___type___": "GatewayCondition",
+      "xmi_id": "_esXxeh7EEfCRuoeAi1p5xA",
+      "condition": "integration test failed"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxei7EEfCRuoeAi1p5xA",
+      "name": "system test"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxej7EEfCRuoeAi1p5xA",
+      "name": "notify integration failure"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxek7EEfCRuoeAi1p5xA",
+      "input": "_esXxdM7EEfCRuoeAi1p5xA",
+      "output": "_esXxe87EEfCRuoeAi1p5xA",
+      "name": "integration to decision"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxel7EEfCRuoeAi1p5xA",
+      "input": "_esXxe87EEfCRuoeAi1p5xA",
+      "output": "_esXxei7EEfCRuoeAi1p5xA",
+      "name": "to system test",
+      "condition": "integration test passed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxem7EEfCRuoeAi1p5xA",
+      "input": "_esXxe87EEfCRuoeAi1p5xA",
+      "output": "_esXxej7EEfCRuoeAi1p5xA",
+      "name": "to notify integration failure",
+      "condition": "integration test failed"
+    }
+  ]
+}
+------------------------------
+
+You: Translate the current model into Spanish||17:59
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||18:00
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcc7EEfCRuoeAi1p5xA",
+      "name": "Enviar cambios al repositorio"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "Obtener código"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "Prueba unitaria"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "Prueba de integración"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_esXxdc7EEfCRuoeAi1p5xA"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxds7EEfCRuoeAi1p5xA",
+      "input": "_esXxcc7EEfCRuoeAi1p5xA",
+      "output": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "Enviar a obtención de código"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxd87EEfCRuoeAi1p5xA",
+      "input": "_esXxcs7EEfCRuoeAi1p5xA",
+      "output": "_esXxdc7EEfCRuoeAi1p5xA",
+      "name": "Obtención a división paralela"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxeM7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "Dividir a prueba unitaria"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxec7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "Dividir a prueba de integración"
+    }
+  ],
+  "description": "Canalización CI/CD"
+}
+------------------------------
+
+You: Translate the name of the selected tasks into Spanish||18:00
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||18:00
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcc7EEfCRuoeAi1p5xA",
+      "name": "Enviar cambios al repositorio"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "Obtener código"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "Prueba unitaria"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "Prueba de integración"
+    }
+  ]
+}
+------------------------------
+
+You: recommend three more tasks for the process model||18:00
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||18:01
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxeh7EEfCRuoeAi1p5xA",
+      "name": "Code review"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxei7EEfCRuoeAi1p5xA",
+      "name": "Security scan"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxej7EEfCRuoeAi1p5xA",
+      "name": "Deploy to staging"
+    }
+  ]
+}
+------------------------------
+
+You: recommend conditions for a multichoice gateway that goes after task "unit test"||18:01
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||18:02
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "MultiChoice",
+      "xmi_id": "_esXxnf7EEfCRuoeAi1p5xA",
+      "conditions": [
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxng7EEfCRuoeAi1p5xA",
+          "condition": "unit tests passed"
+        },
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxnh7EEfCRuoeAi1p5xA",
+          "condition": "unit tests failed"
+        },
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxni7EEfCRuoeAi1p5xA",
+          "condition": "coverage < 80%"
+        }
+      ]
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxnj7EEfCRuoeAi1p5xA",
+      "name": "Notify unit test failure"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxnk7EEfCRuoeAi1p5xA",
+      "name": "Run coverage analysis"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxnl7EEfCRuoeAi1p5xA",
+      "input": "_esXxc87EEfCRuoeAi1p5xA",
+      "output": "_esXxnf7EEfCRuoeAi1p5xA",
+      "name": "unit to multichoice"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxnm7EEfCRuoeAi1p5xA",
+      "input": "_esXxnf7EEfCRuoeAi1p5xA",
+      "output": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "to integration test",
+      "condition": "unit tests passed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxnn7EEfCRuoeAi1p5xA",
+      "input": "_esXxnf7EEfCRuoeAi1p5xA",
+      "output": "_esXxnj7EEfCRuoeAi1p5xA",
+      "name": "to notify failure",
+      "condition": "unit tests failed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxno7EEfCRuoeAi1p5xA",
+      "input": "_esXxnf7EEfCRuoeAi1p5xA",
+      "output": "_esXxnk7EEfCRuoeAi1p5xA",
+      "name": "to coverage analysis",
+      "condition": "coverage < 80%"
+    }
+  ]
+}
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for AI software systems||18:02
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||18:04
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcc7EEfCRuoeAi1p5xA",
+      "name": "Push changes to repository"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "Checkout code"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "Unit test"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "integration test"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_esXxdc7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_esXxgM7EEfCRuoeAi1p5xA",
+      "conditions": [
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxgc7EEfCRuoeAi1p5xA",
+          "condition": "integration test passed"
+        },
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxgs7EEfCRuoeAi1p5xA",
+          "condition": "integration test failed"
+        }
+      ]
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxg87EEfCRuoeAi1p5xA",
+      "name": "System test"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxgt7EEfCRuoeAi1p5xA",
+      "name": "Notify integration failure"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_esXxhM7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxhc7EEfCRuoeAi1p5xA",
+      "name": "Data preprocessing"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_esXxhs7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxiM7EEfCRuoeAi1p5xA",
+      "name": "Model training"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxic7EEfCRuoeAi1p5xA",
+      "name": "Hyperparameter tuning"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_esXxid7EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxie7EEfCRuoeAi1p5xA",
+      "name": "Model evaluation"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_esXxif7EEfCRuoeAi1p5xA",
+      "conditions": [
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxgn7EEfCRuoeAi1p5xA",
+          "condition": "evaluation passed"
+        },
+        {
+          "___type___": "GatewayCondition",
+          "xmi_id": "_esXxgo7EEfCRuoeAi1p5xA",
+          "condition": "evaluation failed"
+        }
+      ]
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxig7EEfCRuoeAi1p5xA",
+      "name": "Package and deploy"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxih7EEfCRuoeAi1p5xA",
+      "name": "Notify model evaluation failure"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxij7EEfCRuoeAi1p5xA",
+      "name": "Register model"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxik7EEfCRuoeAi1p5xA",
+      "name": "Deploy to production"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxil7EEfCRuoeAi1p5xA",
+      "name": "Monitoring & feedback"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_esXxim7EEfCRuoeAi1p5xA",
+      "name": "Finish"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxds7EEfCRuoeAi1p5xA",
+      "input": "_esXxcc7EEfCRuoeAi1p5xA",
+      "output": "_esXxcs7EEfCRuoeAi1p5xA",
+      "name": "push to checkout"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxd87EEfCRuoeAi1p5xA",
+      "input": "_esXxcs7EEfCRuoeAi1p5xA",
+      "output": "_esXxdc7EEfCRuoeAi1p5xA",
+      "name": "checkout to parallel"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxeM7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxc87EEfCRuoeAi1p5xA",
+      "name": "split to unit"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxec7EEfCRuoeAi1p5xA",
+      "input": "_esXxdc7EEfCRuoeAi1p5xA",
+      "output": "_esXxdM7EEfCRuoeAi1p5xA",
+      "name": "split to integration"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxjM7EEfCRuoeAi1p5xA",
+      "input": "_esXxdM7EEfCRuoeAi1p5xA",
+      "output": "_esXxgM7EEfCRuoeAi1p5xA",
+      "name": "integration to decision"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxj87EEfCRuoeAi1p5xA",
+      "input": "_esXxgM7EEfCRuoeAi1p5xA",
+      "output": "_esXxg87EEfCRuoeAi1p5xA",
+      "name": "to system test",
+      "condition": "integration test passed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxjc7EEfCRuoeAi1p5xA",
+      "input": "_esXxgM7EEfCRuoeAi1p5xA",
+      "output": "_esXxgt7EEfCRuoeAi1p5xA",
+      "name": "to notify integration failure",
+      "condition": "integration test failed"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxk87EEfCRuoeAi1p5xA",
+      "input": "_esXxc87EEfCRuoeAi1p5xA",
+      "output": "_esXxhM7EEfCRuoeAi1p5xA",
+      "name": "unit to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxkS7EEfCRuoeAi1p5xA",
+      "input": "_esXxg87EEfCRuoeAi1p5xA",
+      "output": "_esXxhM7EEfCRuoeAi1p5xA",
+      "name": "system to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxkM7EEfCRuoeAi1p5xA",
+      "input": "_esXxhM7EEfCRuoeAi1p5xA",
+      "output": "_esXxhc7EEfCRuoeAi1p5xA",
+      "name": "sync to data preprocessing"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxlM7EEfCRuoeAi1p5xA",
+      "input": "_esXxhc7EEfCRuoeAi1p5xA",
+      "output": "_esXxhs7EEfCRuoeAi1p5xA",
+      "name": "preprocess to training split"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxl87EEfCRuoeAi1p5xA",
+      "input": "_esXxhs7EEfCRuoeAi1p5xA",
+      "output": "_esXxiM7EEfCRuoeAi1p5xA",
+      "name": "split to training"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxlc7EEfCRuoeAi1p5xA",
+      "input": "_esXxhs7EEfCRuoeAi1p5xA",
+      "output": "_esXxic7EEfCRuoeAi1p5xA",
+      "name": "split to tuning"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxmM7EEfCRuoeAi1p5xA",
+      "input": "_esXxiM7EEfCRuoeAi1p5xA",
+      "output": "_esXxid7EEfCRuoeAi1p5xA",
+      "name": "training to join"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxmc7EEfCRuoeAi1p5xA",
+      "input": "_esXxic7EEfCRuoeAi1p5xA",
+      "output": "_esXxid7EEfCRuoeAi1p5xA",
+      "name": "tuning to join"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxmn7EEfCRuoeAi1p5xA",
+      "input": "_esXxid7EEfCRuoeAi1p5xA",
+      "output": "_esXxie7EEfCRuoeAi1p5xA",
+      "name": "join to evaluation"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxmo7EEfCRuoeAi1p5xA",
+      "input": "_esXxie7EEfCRuoeAi1p5xA",
+      "output": "_esXxif7EEfCRuoeAi1p5xA",
+      "name": "evaluation to decision"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxmp7EEfCRuoeAi1p5xA",
+      "input": "_esXxif7EEfCRuoeAi1p5xA",
+      "output": "_esXxig7EEfCRuoeAi1p5xA",
+      "name": "to package and deploy",
+      "condition": "evaluation passed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxmq7EEfCRuoeAi1p5xA",
+      "input": "_esXxif7EEfCRuoeAi1p5xA",
+      "output": "_esXxih7EEfCRuoeAi1p5xA",
+      "name": "to notify evaluation failure",
+      "condition": "evaluation failed"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxmr7EEfCRuoeAi1p5xA",
+      "input": "_esXxig7EEfCRuoeAi1p5xA",
+      "output": "_esXxij7EEfCRuoeAi1p5xA",
+      "name": "package to register"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxms7EEfCRuoeAi1p5xA",
+      "input": "_esXxij7EEfCRuoeAi1p5xA",
+      "output": "_esXxik7EEfCRuoeAi1p5xA",
+      "name": "register to deploy"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxmt7EEfCRuoeAi1p5xA",
+      "input": "_esXxik7EEfCRuoeAi1p5xA",
+      "output": "_esXxil7EEfCRuoeAi1p5xA",
+      "name": "deploy to monitoring"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxmu7EEfCRuoeAi1p5xA",
+      "input": "_esXxil7EEfCRuoeAi1p5xA",
+      "output": "_esXxim7EEfCRuoeAi1p5xA",
+      "name": "monitor to finish"
+    }
+  ],
+  "description": "CI/CD Pipeline"
+}
+------------------------------
+
+You: complete the process model with a typical CI/CD pipeline for a cyberphysical system that has a digital twin||18:05
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||18:06
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_esXxcM7EEfCRuoeAi1p5xA",
+  "nodes": [
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_esXxEG1EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxST1EEfCRuoeAi1p5xA",
+      "name": "system test"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxNIF1EEfCRuoeAi1p5xA",
+      "name": "notify integration failure"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxDDT1EEfCRuoeAi1p5xA",
+      "name": "Deploy to digital twin"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_esXxPS2EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxHIL1EEfCRuoeAi1p5xA",
+      "name": "HIL test (digital twin)"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxUDT1EEfCRuoeAi1p5xA",
+      "name": "Update digital twin model"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_esXxSync1EEfCRuoeAi1p5xA"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxDHW1EEfCRuoeAi1p5xA",
+      "name": "Deploy to hardware"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_esXxMON1EEfCRuoeAi1p5xA",
+      "name": "Monitor and feedback"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_esXxFIN1EEfCRuoeAi1p5xA",
+      "name": "Finish"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg1EEfCRuoeAi1p5xA",
+      "input": "_esXxdM7EEfCRuoeAi1p5xA",
+      "output": "_esXxEG1EEfCRuoeAi1p5xA",
+      "name": "integration to decision"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxccfe1EEfCRuoeAi1p5xA",
+      "input": "_esXxEG1EEfCRuoeAi1p5xA",
+      "output": "_esXxST1EEfCRuoeAi1p5xA",
+      "name": "integration passed",
+      "condition": "integration test passed"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_esXxccfe2EEfCRuoeAi1p5xA",
+      "input": "_esXxEG1EEfCRuoeAi1p5xA",
+      "output": "_esXxNIF1EEfCRuoeAi1p5xA",
+      "name": "integration failed",
+      "condition": "integration test failed"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg2EEfCRuoeAi1p5xA",
+      "input": "_esXxST1EEfCRuoeAi1p5xA",
+      "output": "_esXxDDT1EEfCRuoeAi1p5xA",
+      "name": "system test to deploy digital twin"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg3EEfCRuoeAi1p5xA",
+      "input": "_esXxDDT1EEfCRuoeAi1p5xA",
+      "output": "_esXxPS2EEfCRuoeAi1p5xA",
+      "name": "deploy to parallel tests"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg4EEfCRuoeAi1p5xA",
+      "input": "_esXxPS2EEfCRuoeAi1p5xA",
+      "output": "_esXxHIL1EEfCRuoeAi1p5xA",
+      "name": "split to HIL"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg5EEfCRuoeAi1p5xA",
+      "input": "_esXxPS2EEfCRuoeAi1p5xA",
+      "output": "_esXxUDT1EEfCRuoeAi1p5xA",
+      "name": "split to update model"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg6EEfCRuoeAi1p5xA",
+      "input": "_esXxHIL1EEfCRuoeAi1p5xA",
+      "output": "_esXxSync1EEfCRuoeAi1p5xA",
+      "name": "HIL to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg7EEfCRuoeAi1p5xA",
+      "input": "_esXxUDT1EEfCRuoeAi1p5xA",
+      "output": "_esXxSync1EEfCRuoeAi1p5xA",
+      "name": "update to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg8EEfCRuoeAi1p5xA",
+      "input": "_esXxSync1EEfCRuoeAi1p5xA",
+      "output": "_esXxDHW1EEfCRuoeAi1p5xA",
+      "name": "sync to deploy hardware"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg9EEfCRuoeAi1p5xA",
+      "input": "_esXxDHW1EEfCRuoeAi1p5xA",
+      "output": "_esXxMON1EEfCRuoeAi1p5xA",
+      "name": "deploy to monitor"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_esXxedg10EEfCRuoeAi1p5xA",
+      "input": "_esXxMON1EEfCRuoeAi1p5xA",
+      "output": "_esXxFIN1EEfCRuoeAi1p5xA",
+      "name": "monitor to finish"
+    }
+  ],
+  "description": "CI/CD Pipeline"
+}
+------------------------------
+

@@ -1,0 +1,70 @@
+{
+  "___type___": "EPackage",
+  "xmi_id": "_UzsRwM7oEfCBEtIB8TpJ4g",
+  "name": "tourismRoutes",
+  "nsURI": "http://tourism-routes/0.1",
+  "nsPrefix": "tour",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsCountryNew01",
+      "name": "Country",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsCountry_cities_ref01",
+          "name": "cities",
+          "ordered": false,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_UzsCityNew01",
+          "containment": true
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_UzsCountry_capital_ref01",
+          "name": "capital",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "_UzsCityNew01",
+          "containment": false
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_UzsCityNew01",
+      "name": "City",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsCity_name_attr01",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_UzsCity_recommended_attr01",
+          "name": "recommended",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EBoolean"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}

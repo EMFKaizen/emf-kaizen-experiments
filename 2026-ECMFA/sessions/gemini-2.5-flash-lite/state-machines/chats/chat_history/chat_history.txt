@@ -1,0 +1,1275 @@
+You: create 10 states with names S1…S10||00:33
+
+------------------------------||00:33
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_state_1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S2"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_3",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S3"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_4",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S4"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_5",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S5"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_6",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S6"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_7",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S7"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_8",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S8"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_9",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S9"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_10",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S10"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: Create a sequence of 3 states, connected by transitions||00:34
+
+------------------------------||00:34
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "State",
+    "xmi_id": "_state1",
+    "isInitial": true,
+    "isFinal": false,
+    "name": "State1"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_state2",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "State2"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_state3",
+    "isInitial": false,
+    "isFinal": true,
+    "name": "State3"
+  },
+  {
+    "___type___": "Event",
+    "xmi_id": "_event1",
+    "name": "Next"
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_trans1",
+    "from": "_state1",
+    "to": "_state2",
+    "event": "_event1"
+  },
+  {
+    "___type___": "Event",
+    "xmi_id": "_event2",
+    "name": "Next"
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_trans2",
+    "from": "_state2",
+    "to": "_state3",
+    "event": "_event2"
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||00:35
+
+------------------------------||00:35
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [],
+  "transitions": [],
+  "description": "Semáforo"
+}
+------------------------------
+
+You: add a composite state with an initial state to the selected element||00:35
+
+------------------------------||00:35
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_compositeState1",
+  "name": "CompositeState1",
+  "isInitial": false,
+  "isFinal": false,
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_initialState1",
+      "name": "InitialState1",
+      "isInitial": true,
+      "isFinal": false
+    }
+  ],
+  "transitions": []
+}
+------------------------------
+
+You: recommend three states for the state machine||00:35
+
+------------------------------||00:35
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "State",
+  "xmi_id": "_A9sOAMyLEfCuhbiBFBlMQg",
+  "name": "State1"
+},
+{
+  "___type___": "State",
+  "xmi_id": "_A9sOAcyLEfCuhbiBFBlMQg",
+  "name": "State2"
+},
+{
+  "___type___": "State",
+  "xmi_id": "_A9sOAsyLEfCuhbiBFBlMQg",
+  "name": "State3"
+}
+------------------------------
+
+You: recommend a better name for the State Machine||00:35
+
+------------------------------||00:35
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [],
+  "transitions": [],
+  "description": "ActivityFlow"
+}
+------------------------------
+
+You: Create the states and transitions for the state machine||00:35
+
+------------------------------||00:35
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "State",
+  "xmi_id": "_state1",
+  "isInitial": true,
+  "isFinal": false,
+  "name": "InitialState"
+},
+{
+  "___type___": "State",
+  "xmi_id": "_state2",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "RunningState"
+},
+{
+  "___type___": "State",
+  "xmi_id": "_state3",
+  "isInitial": false,
+  "isFinal": true,
+  "name": "FinalState"
+},
+{
+  "___type___": "Transition",
+  "xmi_id": "_transition1",
+  "from": "_state1",
+  "to": "_state2",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_event1",
+    "name": "StartEvent"
+  }
+},
+{
+  "___type___": "Transition",
+  "xmi_id": "_transition2",
+  "from": "_state2",
+  "to": "_state3",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_event2",
+    "name": "EndEvent"
+  }
+}
+------------------------------
+
+You: Create the states and transitions for a traffic light that has both lights for cars and for pedestrians, and that has time-triggered transitions||00:35
+
+------------------------------||00:36
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "State",
+    "xmi_id": "_trafficLight_CarGreen",
+    "name": "CarGreen"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_trafficLight_CarYellow",
+    "name": "CarYellow"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_trafficLight_CarRed_PedestrianWalk",
+    "name": "CarRed_PedestrianWalk"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_trafficLight_CarRed_PedestrianWait",
+    "name": "CarRed_PedestrianWait"
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_transition_CarGreen_to_CarYellow",
+    "from": "_trafficLight_CarGreen",
+    "to": "_trafficLight_CarYellow",
+    "event": {
+      "___type___": "TimeEvent",
+      "xmi_id": "_event_CarGreen_timeout",
+      "name": "CarGreenTimeout",
+      "time": 30000.0
+    }
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_transition_CarYellow_to_CarRed_PedestrianWalk",
+    "from": "_trafficLight_CarYellow",
+    "to": "_trafficLight_CarRed_PedestrianWalk",
+    "event": {
+      "___type___": "TimeEvent",
+      "xmi_id": "_event_CarYellow_timeout",
+      "name": "CarYellowTimeout",
+      "time": 5000.0
+    }
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_transition_CarRed_PedestrianWalk_to_CarRed_PedestrianWait",
+    "from": "_trafficLight_CarRed_PedestrianWalk",
+    "to": "_trafficLight_CarRed_PedestrianWait",
+    "event": {
+      "___type___": "TimeEvent",
+      "xmi_id": "_event_PedestrianWalk_timeout",
+      "name": "PedestrianWalkTimeout",
+      "time": 30000.0
+    }
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_transition_CarRed_PedestrianWait_to_CarGreen",
+    "from": "_trafficLight_CarRed_PedestrianWait",
+    "to": "_trafficLight_CarGreen",
+    "event": {
+      "___type___": "TimeEvent",
+      "xmi_id": "_event_PedestrianWait_timeout",
+      "name": "PedestrianWaitTimeout",
+      "time": 5000.0
+    }
+  }
+] }
+------------------------------
+
+You: Create one state with two outgoing transitions to two other new states||00:53
+
+------------------------------||00:53
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "State",
+    "xmi_id": "_NewState1",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "State1"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_NewState2",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "State2"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_NewState3",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "State3"
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_NewTransition1",
+    "from": "_NewState1",
+    "to": "_NewState2"
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_NewTransition2",
+    "from": "_NewState1",
+    "to": "_NewState3"
+  }
+] }
+------------------------------
+
+You: Create two states connected by a time-triggered transition||00:53
+
+------------------------------||00:53
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "State",
+    "xmi_id": "_StateA",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "StateA"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_StateB",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "StateB"
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_Transition1",
+    "from": "_StateA",
+    "to": "_StateB",
+    "event": {
+      "___type___": "TimeEvent",
+      "xmi_id": "_TimeEvent1",
+      "name": "timer",
+      "time": 1000.0
+    }
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||00:53
+
+------------------------------||00:53
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "StateMachine",
+    "xmi_id": "_YLhjsMyMEfCuhbiBFBlMQg",
+    "states": [
+      {
+        "___type___": "State",
+        "xmi_id": "_YLhjscyMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Jugando"
+      },
+      {
+        "___type___": "State",
+        "xmi_id": "_YLhjssyMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Pausa"
+      },
+      {
+        "___type___": "State",
+        "xmi_id": "_YLhjs8yMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Detener"
+      }
+    ],
+    "transitions": [
+      {
+        "___type___": "Transition",
+        "xmi_id": "_YLhjtMyMEfCuhbiBFBlMQg",
+        "from": "_YLhjscyMEfCuhbiBFBlMQg",
+        "to": "_YLhjssyMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+          "name": "pausar"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_YLhjtsyMEfCuhbiBFBlMQg",
+        "from": "_YLhjssyMEfCuhbiBFBlMQg",
+        "to": "_YLhjssyMEfCuhbiBFBlMQg"
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_YLhjuMyMEfCuhbiBFBlMQg",
+        "from": "_YLhjs8yMEfCuhbiBFBlMQg",
+        "to": "_YLhjssyMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_YLhjucyMEfCuhbiBFBlMQg",
+          "name": "reproducir"
+        }
+      }
+    ],
+    "description": "Reproductor Multimedia"
+  }
+] }
+------------------------------
+
+You: Create a composite state that contains the selected elements||00:54
+
+------------------------------||00:54
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_NewCompositeState1",
+  "name": "CompositeState_1",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjscyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Playing"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjssyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Pause"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjs8yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Stop"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtMyMEfCuhbiBFBlMQg",
+      "from": "_YLhjscyMEfCuhbiBFBlMQg",
+      "to": "_YLhjssyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+        "name": "pause"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtsyMEfCuhbiBFBlMQg",
+      "from": "_YLhjssyMEfCuhbiBFBlMQg",
+      "to": "_YLhjssyMEfCuhbiBFBlMQg"
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjuMyMEfCuhbiBFBlMQg",
+      "from": "_YLhjs8yMEfCuhbiBFBlMQg",
+      "to": "_YLhjssyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjucyMEfCuhbiBFBlMQg",
+        "name": "play"
+      }
+    }
+  ]
+}
+------------------------------
+
+You: recommend an event for the selected transition||00:55
+
+------------------------------||00:55
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Event",
+  "xmi_id": "_Qh1JEMyMEfCuhbiBFBlMQg",
+  "name": "resume"
+}
+------------------------------
+
+You: recommend more states for the state machine||00:55
+
+------------------------------||00:55
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "State",
+  "xmi_id": "_new_state_buffering",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "Buffering"
+}
+{
+  "___type___": "State",
+  "xmi_id": "_new_state_loading",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "Loading"
+}
+------------------------------
+
+You: Create a composite state to model the selection of different types of media in the player (videos, music, podcasts)||00:55
+
+------------------------------||00:55
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_mediaSelection",
+  "name": "MediaSelection",
+  "isInitial": false,
+  "isFinal": false,
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_videosState",
+      "name": "Videos",
+      "isInitial": false,
+      "isFinal": false
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_musicState",
+      "name": "Music",
+      "isInitial": false,
+      "isFinal": false
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_podcastsState",
+      "name": "Podcasts",
+      "isInitial": false,
+      "isFinal": false
+    }
+  ],
+  "transitions": []
+}
+------------------------------
+
+You: Create a composite state to model a controller for media streaming in full detail||00:56
+
+------------------------------||00:56
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "CompositeState",
+    "xmi_id": "_-a2r0MyMEfCuhbiBFBlMQg",
+    "isInitial": true,
+    "isFinal": false,
+    "name": "MediaController",
+    "states": [
+      {
+        "___type___": "State",
+        "xmi_id": "_-a2r0cyMEfCuhbiBFBlMQg",
+        "isInitial": true,
+        "isFinal": false,
+        "name": "Idle"
+      },
+      {
+        "___type___": "State",
+        "xmi_id": "_-a2r0syMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Buffering"
+      },
+      {
+        "___type___": "State",
+        "xmi_id": "_-a2r08yMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Playing"
+      },
+      {
+        "___type___": "State",
+        "xmi_id": "_-a2r1MyMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Paused"
+      },
+      {
+        "___type___": "State",
+        "xmi_id": "_-a2r1cyMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Stopped"
+      },
+      {
+        "___type___": "State",
+        "xmi_id": "_-a2r1syMEfCuhbiBFBlMQg",
+        "isInitial": false,
+        "isFinal": false,
+        "name": "Muted"
+      }
+    ],
+    "transitions": [
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r18yMEfCuhbiBFBlMQg",
+        "from": "_-a2r0cyMEfCuhbiBFBlMQg",
+        "to": "_-a2r0syMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r2MyMEfCuhbiBFBlMQg",
+          "name": "loadMedia"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r2cyMEfCuhbiBFBlMQg",
+          "code": "startBuffering()"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r2syMEfCuhbiBFBlMQg",
+        "from": "_-a2r0syMEfCuhbiBFBlMQg",
+        "to": "_-a2r08yMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r28yMEfCuhbiBFBlMQg",
+          "name": "bufferingComplete"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r3MyMEfCuhbiBFBlMQg",
+          "code": "startPlayback()"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r3cyMEfCuhbiBFBlMQg",
+        "from": "_-a2r08yMEfCuhbiBFBlMQg",
+        "to": "_-a2r1cyMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r3syMEfCuhbiBFBlMQg",
+          "name": "stop"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r38yMEfCuhbiBFBlMQg",
+          "code": "stopPlayback()"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r4MyMEfCuhbiBFBlMQg",
+        "from": "_-a2r08yMEfCuhbiBFBlMQg",
+        "to": "_-a2r1MyMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r4cyMEfCuhbiBFBlMQg",
+          "name": "pause"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r4syMEfCuhbiBFBlMQg",
+          "code": "pausePlayback()"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r48yMEfCuhbiBFBlMQg",
+        "from": "_-a2r1MyMEfCuhbiBFBlMQg",
+        "to": "_-a2r08yMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r5MyMEfCuhbiBFBlMQg",
+          "name": "resume"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r5cyMEfCuhbiBFBlMQg",
+          "code": "resumePlayback()"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r5syMEfCuhbiBFBlMQg",
+        "from": "_-a2r08yMEfCuhbiBFBlMQg",
+        "to": "_-a2r1MyMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r58yMEfCuhbiBFBlMQg",
+          "name": "mute"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r6MyMEfCuhbiBFBlMQg",
+          "code": "setVolume(0)"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r6cyMEfCuhbiBFBlMQg",
+        "from": "_-a2r1MyMEfCuhbiBFBlMQg",
+        "to": "_-a2r08yMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r6syMEfCuhbiBFBlMQg",
+          "name": "unmute"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r68yMEfCuhbiBFBlMQg",
+          "code": "setVolume(previousVolume)"
+        }
+      },
+      {
+        "___type___": "Transition",
+        "xmi_id": "_-a2r7MyMEfCuhbiBFBlMQg",
+        "from": "_-a2r1MyMEfCuhbiBFBlMQg",
+        "to": "_-a2r1cyMEfCuhbiBFBlMQg",
+        "event": {
+          "___type___": "Event",
+          "xmi_id": "_-a2r7cyMEfCuhbiBFBlMQg",
+          "name": "stop"
+        },
+        "action": {
+          "___type___": "Action",
+          "xmi_id": "_-a2r7syMEfCuhbiBFBlMQg",
+          "code": "stopPlayback()"
+        }
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: Create two states connected by a transition with guard and action||01:31
+
+------------------------------||01:32
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "State",
+    "xmi_id": "_new_state_1_id_1",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "State1"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_new_state_2_id_1",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "State2"
+  },
+  {
+    "___type___": "Event",
+    "xmi_id": "_new_event_1_id_1",
+    "name": "TriggerEvent"
+  },
+  {
+    "___type___": "Action",
+    "xmi_id": "_new_action_1_id_1",
+    "code": "PerformAction"
+  },
+  {
+    "___type___": "Guard",
+    "xmi_id": "_new_guard_1_id_1",
+    "condition": "IsConditionMet"
+  },
+  {
+    "___type___": "Transition",
+    "xmi_id": "_new_transition_1_id_1",
+    "from": "_new_state_1_id_1",
+    "to": "_new_state_2_id_1",
+    "event": "_new_event_1_id_1",
+    "action": "_new_action_1_id_1",
+    "guard": "_new_guard_1_id_1"
+  }
+] }
+------------------------------
+
+You: Create a composite state with two connected states inside||01:32
+
+------------------------------||01:32
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_newCompositeState0",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "NewCompositeState",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_innerState1_0",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "State1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_innerState2_0",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State2"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transition0",
+      "from": "_innerState1_0",
+      "to": "_innerState2_0",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_event0",
+        "name": "eventToState2"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_action0",
+        "code": "doSomething"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_guard0",
+        "condition": "conditionMet"
+      }
+    }
+  ]
+}
+------------------------------
+
+You: Translate the current model into Spanish||01:32
+
+------------------------------||01:32
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF0cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "FueraDeServicio"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF0syMEfCuhbiBFBlMQg",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "ModoMantenimiento"
+    },
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_eyhF08yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Operacional",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1MyMEfCuhbiBFBlMQg",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "Inactivo"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1cyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "TarjetaInsertada"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF1syMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "IngresoPIN"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF18yMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "MenuPrincipal"
+        },
+        {
+          "___type___": "CompositeState",
+          "xmi_id": "_eyhF2MyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Transaccion",
+          "states": [
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF2cyMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "Retiro"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "ConsultaSaldo"
+            },
+            {
+              "___type___": "State",
+              "xmi_id": "_eyhF28yMEfCuhbiBFBlMQg",
+              "isInitial": false,
+              "isFinal": false,
+              "name": "Deposito"
+            }
+          ],
+          "transitions": [
+            {
+              "___type___": "Transition",
+              "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+              "from": "_eyhF1MyMEfCuhbiBFBlMQg",
+              "to": "_eyhF1cyMEfCuhbiBFBlMQg",
+              "event": {
+                "___type___": "Event",
+                "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg",
+                "name": "tarjeta_detectada"
+              }
+            },
+            {
+              "___type___": "Transition",
+              "xmi_id": "_eyhF3syMEfCuhbiBFBlMQg",
+              "from": "_eyhF1cyMEfCuhbiBFBlMQg",
+              "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+              "action": {
+                "___type___": "Action",
+                "xmi_id": "_eyhF38yMEfCuhbiBFBlMQg",
+                "code": "expulsar tarjeta"
+              },
+              "guard": {
+                "___type___": "Guard",
+                "xmi_id": "_eyhF4MyMEfCuhbiBFBlMQg",
+                "condition": "tarjeta invalida"
+              }
+            },
+            {
+              "___type___": "Transition",
+              "xmi_id": "_eyhF4cyMEfCuhbiBFBlMQg",
+              "from": "_eyhF1cyMEfCuhbiBFBlMQg",
+              "to": "_eyhF1syMEfCuhbiBFBlMQg",
+              "guard": {
+                "___type___": "Guard",
+                "xmi_id": "_eyhF4syMEfCuhbiBFBlMQg",
+                "condition": "tarjeta valida"
+              }
+            },
+            {
+              "___type___": "Transition",
+              "xmi_id": "_eyhF48yMEfCuhbiBFBlMQg",
+              "from": "_eyhF1syMEfCuhbiBFBlMQg",
+              "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+              "event": {
+                "___type___": "TimeEvent",
+                "xmi_id": "_eyhF5MyMEfCuhbiBFBlMQg",
+                "name": "tiempo_agotado",
+                "time": 1000.0
+              },
+              "action": {
+                "___type___": "Action",
+                "xmi_id": "_eyhF5cyMEfCuhbiBFBlMQg",
+                "code": "expulsar tarjeta"
+              }
+            }
+          ],
+          "description": "Este estado modela una transacción de cajero automático"
+        }
+      ],
+      "transitions": [],
+      "description": "El cajero automático está funcionando normalmente"
+    }
+  ],
+  "transitions": [],
+  "description": "Cajero Autom��tico"
+}
+------------------------------
+
+You: create a final state for the selected element||01:32
+
+------------------------------||01:33
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "State",
+  "xmi_id": "_9w404MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": true,
+  "name": "FinalState"
+}
+------------------------------
+
+You: recommend more substates for Operational||01:33
+
+------------------------------||01:33
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "State",
+    "xmi_id": "_new_state_confirm_transaction",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "ConfirmTransaction"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_new_state_receipt",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "Receipt"
+  },
+  {
+    "___type___": "State",
+    "xmi_id": "_new_state_card_returned",
+    "isInitial": false,
+    "isFinal": false,
+    "name": "CardReturned"
+  }
+] }
+------------------------------
+
+You: recommend guards and actions for the selected transition||01:34
+
+------------------------------||01:34
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Guard",
+    "xmi_id": "_EMFKaizen_Guard_0",
+    "condition": "card_is_valid"
+  },
+  {
+    "___type___": "Action",
+    "xmi_id": "_EMFKaizen_Action_0",
+    "code": "authenticate_card()"
+  }
+] }
+------------------------------
+
+You: Create the full details of the Transaction State||01:34
+
+------------------------------||01:34
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+  "from": "_eyhF2cyMEfCuhbiBFBlMQg",
+  "to": "_eyhF2syMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+    "name": "select_balance_inquiry"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+    "code": "display balance"
+  }
+},
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF68yMEfCuhbiBFBlMQg",
+  "from": "_eyhF2syMEfCuhbiBFBlMQg",
+  "to": "_eyhF28yMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF7MyMEfCuhbiBFBlMQg",
+    "name": "select_deposit"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF7cyMEfCuhbiBFBlMQg",
+    "code": "prompt for deposit amount"
+  }
+},
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF7syMEfCuhbiBFBlMQg",
+  "from": "_eyhF28yMEfCuhbiBFBlMQg",
+  "to": "_eyhF2cyMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF78yMEfCuhbiBFBlMQg",
+    "name": "deposit_complete"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF8MyMEfCuhbiBFBlMQg",
+    "code": "dispense receipt"
+  }
+},
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF8cyMEfCuhbiBFBlMQg",
+  "from": "_eyhF2cyMEfCuhbiBFBlMQg",
+  "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF8syMEfCuhbiBFBlMQg",
+    "name": "transaction_complete"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF88yMEfCuhbiBFBlMQg",
+    "code": "eject card"
+  }
+},
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF9MyMEfCuhbiBFBlMQg",
+  "from": "_eyhF2syMEfCuhbiBFBlMQg",
+  "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF9cyMEfCuhbiBFBlMQg",
+    "name": "transaction_complete"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF9syMEfCuhbiBFBlMQg",
+    "code": "eject card"
+  }
+},
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF98yMEfCuhbiBFBlMQg",
+  "from": "_eyhF28yMEfCuhbiBFBlMQg",
+  "to": "_eyhF1MyMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF10MyMEfCuhbiBFBlMQg",
+    "name": "transaction_complete"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF10cyMEfCuhbiBFBlMQg",
+    "code": "eject card"
+  }
+}
+------------------------------
+
+You: Create a composite state to model ending the session with the ATM, in full detail||01:34
+
+------------------------------||01:35
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_endingSessionCompositeState",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "EndingSession",
+  "description": "Models the process of ending an ATM session.",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_sessionEndedFinalState",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "SessionEnded",
+      "description": "The session has concluded."
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_endSessionTransition",
+      "from": "_eyhF1MyMEfCuhbiBFBlMQg",
+      "to": "_sessionEndedFinalState",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_endSessionEvent",
+        "name": "session_finished"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_ejectCardAction",
+        "code": "eject card and receipt"
+      }
+    }
+  ]
+}
+------------------------------
+

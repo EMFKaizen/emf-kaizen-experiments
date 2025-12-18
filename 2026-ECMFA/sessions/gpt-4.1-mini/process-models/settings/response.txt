@@ -1,0 +1,180 @@
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_NewVersion_PaymentInstalments",
+  "description": "Order Fulfillment with Payment in Instalments",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_OrderReceived_PI",
+      "name": "Order Received"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_InventoryCheck_PI",
+      "name": "Inventory Check & Reservation"
+    },
+    {
+      "___type___": "MultiChoice",
+      "xmi_id": "_PaymentChoice_PI",
+      "conditions": []
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_FullPayment_PI",
+      "name": "Full Payment Processing"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_InstalmentPayment_PI",
+      "name": "Instalment Payment Processing"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_PaymentFailed_PI",
+      "name": "Payment Failed Handling"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_ShippingPreparation_PI",
+      "name": "Shipping Preparation"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_ParallelSplit_PI"
+    },
+    {
+      "___type___": "Synchronization",
+      "xmi_id": "_Synchronization_PI"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Packaging_PI",
+      "name": "Packaging"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_DispatchOrder_PI",
+      "name": "Dispatch order"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_Notification_PI",
+      "name": "Notification"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_PostDeliverySupport_PI",
+      "name": "Post-Delivery Support"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_OrderReceived_to_ParallelSplit_PI",
+      "input": "_OrderReceived_PI",
+      "output": "_ParallelSplit_PI",
+      "name": "received to split"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_ParallelSplit_to_InventoryCheck_PI",
+      "input": "_ParallelSplit_PI",
+      "output": "_InventoryCheck_PI",
+      "name": "split to inventory"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_ParallelSplit_to_PaymentChoice_PI",
+      "input": "_ParallelSplit_PI",
+      "output": "_PaymentChoice_PI",
+      "name": "split to payment choice"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_ParallelSplit_to_ShippingPreparation_PI",
+      "input": "_ParallelSplit_PI",
+      "output": "_ShippingPreparation_PI",
+      "name": "split to shipping"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_PaymentChoice_to_FullPayment_PI",
+      "input": "_PaymentChoice_PI",
+      "output": "_FullPayment_PI",
+      "name": "payment choice to full payment",
+      "condition": "payment OK"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_PaymentChoice_to_InstalmentPayment_PI",
+      "input": "_PaymentChoice_PI",
+      "output": "_InstalmentPayment_PI",
+      "name": "payment choice to instalment payment",
+      "condition": "payment in instalments"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_PaymentChoice_to_PaymentFailed_PI",
+      "input": "_PaymentChoice_PI",
+      "output": "_PaymentFailed_PI",
+      "name": "payment choice to payment failed",
+      "condition": "payment cancelled or network error"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_InventoryCheck_to_Synchronization_PI",
+      "input": "_InventoryCheck_PI",
+      "output": "_Synchronization_PI",
+      "name": "inventory to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_FullPayment_to_Synchronization_PI",
+      "input": "_FullPayment_PI",
+      "output": "_Synchronization_PI",
+      "name": "full payment to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_InstalmentPayment_to_Synchronization_PI",
+      "input": "_InstalmentPayment_PI",
+      "output": "_Synchronization_PI",
+      "name": "instalment payment to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_ShippingPreparation_to_Synchronization_PI",
+      "input": "_ShippingPreparation_PI",
+      "output": "_Synchronization_PI",
+      "name": "shipping to sync"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Synchronization_to_Packaging_PI",
+      "input": "_Synchronization_PI",
+      "output": "_Packaging_PI",
+      "name": "sync to packaging"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Packaging_to_DispatchOrder_PI",
+      "input": "_Packaging_PI",
+      "output": "_DispatchOrder_PI",
+      "name": "packaging to dispatch"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_DispatchOrder_to_Notification_PI",
+      "input": "_DispatchOrder_PI",
+      "output": "_Notification_PI",
+      "name": "dispatch to notification"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_Notification_to_PostDeliverySupport_PI",
+      "input": "_Notification_PI",
+      "output": "_PostDeliverySupport_PI",
+      "name": "notification to post-delivery support"
+    }
+  ]
+}

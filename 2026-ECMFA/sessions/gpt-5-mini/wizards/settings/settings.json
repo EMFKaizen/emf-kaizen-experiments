@@ -1,0 +1,43 @@
+{
+  "wizards.ecore": {
+    "SerializationSelection": {
+      "Wizard": [
+        "title",
+        "pages",
+        "initialPage"
+      ],
+      "Page": [
+        "name",
+        "wizard",
+        "fields",
+        "buttons",
+        "checkbox"
+      ],
+      "Field": [
+        "label",
+        "minLength",
+        "maxLength",
+        "anyLength",
+        "isPassword"
+      ],
+      "Checkbox": [
+        "checked",
+        "label"
+      ],
+      "Button": [
+        "label"
+      ],
+      "NavigateButton": [
+        "label",
+        "toPage"
+      ],
+      "BackButton": [
+        "label"
+      ],
+      "ShowMessageButton": [
+        "messageText"
+      ],
+      "CloseWizardButton": []
+    }
+  }
+}

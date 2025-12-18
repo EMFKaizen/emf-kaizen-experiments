@@ -1,0 +1,95 @@
+{
+    "Google Gemini": {
+        "Creative": {
+            "top_p": 1,
+            "temperature": 0.9,
+            "model": "gemini-2.5-pro",
+            "max_output_tokens": 5000
+        },
+        "Precise (Technical Deterministic)": {
+            "top_p": 0.5,
+            "temperature": 0.1,
+            "model": "gemini-2.5-flash-lite"
+        },
+        "Cheap (Cost-Optimized)": {
+            "top_p": 0.8,
+            "temperature": 0.2,
+            "model": "gemini-2.5-flash-lite",
+            "max_output_tokens": 5000
+        },
+        "Reasoning (Expert)": {
+            "reasoning_effort": "high",
+            "temperature": 0.3,
+            "model": "gemini-2.5-pro",
+            "reasoning_effort_enabled": true,
+            "max_output_tokens": 5000
+        },
+        "Dynamic (Balanced)": {
+            "top_p": 0.9,
+            "temperature": 0.5,
+            "model": "gemini-2.5-pro"
+        },
+        "Premium (Expensive but accurate)": {
+            "top_p": 0.8,
+            "temperature": 0.4,
+            "model": "gemini-2.5-pro"
+        }
+    },
+    "model_parameter_support_cache": {
+        "gpt-4o-mini": {
+            "supportsTemperature": true,
+            "supportsTopP": true,
+            "supportsMaxTokens": true,
+            "supportsReasoningEffort": false
+        },
+        "gpt-4.1-mini": {
+            "supportsTemperature": true,
+            "supportsTopP": true,
+            "supportsMaxTokens": true,
+            "supportsReasoningEffort": false
+        }
+    },
+    "active_profile": "experiment",
+    "OpenAI": {
+        "ppp": {"model": "gpt-4.1-mini"},
+        "Creative": {
+            "top_p": 1,
+            "max_tokens": 5000,
+            "temperature": 0.9,
+            "model": "gpt-4o"
+        },
+        "experiment": {
+            "temperature": 0,
+            "model": "gpt-4.1-mini"
+        },
+        "Precise (Technical Deterministic)": {
+            "top_p": 0.5,
+            "temperature": 0.1,
+            "model": "gpt-4o-mini"
+        },
+        "Cheap (Cost-Optimized)": {
+            "top_p": 0.8,
+            "max_tokens": 5000,
+            "temperature": 0.2,
+            "model": "gpt-4o-mini"
+        },
+        "Reasoning (Expert)": {
+            "reasoning_effort": "high",
+            "max_tokens": 5000,
+            "temperature": 0.3,
+            "model": "o4",
+            "reasoning_effort_enabled": true
+        },
+        "Dynamic (Balanced)": {
+            "top_p": 0.9,
+            "temperature": 0.5,
+            "model": "gpt-4o-mini"
+        },
+        "Premium (Expensive but accurate)": {
+            "top_p": 0.8,
+            "temperature": 0.4,
+            "model": "gpt-4o"
+        }
+    },
+    "active_provider": "OpenAI"
+}

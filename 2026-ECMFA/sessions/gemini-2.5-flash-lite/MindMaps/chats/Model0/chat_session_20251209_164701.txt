@@ -1,0 +1,399 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||16:47
+
+You: create 10 concepts with names C1..C10||16:47
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||16:47
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C1",
+    "name": "C1",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C2",
+    "name": "C2",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C3",
+    "name": "C3",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C4",
+    "name": "C4",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C5",
+    "name": "C5",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C6",
+    "name": "C6",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C7",
+    "name": "C7",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C8",
+    "name": "C8",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C9",
+    "name": "C9",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_C10",
+    "name": "C10",
+    "description": "",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "relatedTo": []
+  }
+] }
+------------------------------
+
+You: Create a concept with 3 children concepts, and each children concept should have 2 children related to each other||17:04
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||17:05
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Concept",
+    "xmi_id": "_newConcept1",
+    "name": "Main Branch Concept",
+    "description": "A main concept branching from the root.",
+    "subConcepts": [
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newConcept1_1",
+        "name": "Child Concept A",
+        "description": "First child concept.",
+        "parent": "_newConcept1",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newConcept1_1_1",
+            "name": "Sub-Child A1",
+            "description": "First grandchild concept for Child A.",
+            "parent": "_newConcept1_1",
+            "relatedTo": [
+              "_newConcept1_1_2"
+            ]
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newConcept1_1_2",
+            "name": "Sub-Child A2",
+            "description": "Second grandchild concept for Child A.",
+            "parent": "_newConcept1_1",
+            "relatedTo": [
+              "_newConcept1_1_1"
+            ]
+          }
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newConcept1_2",
+        "name": "Child Concept B",
+        "description": "Second child concept.",
+        "parent": "_newConcept1",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newConcept1_2_1",
+            "name": "Sub-Child B1",
+            "description": "First grandchild concept for Child B.",
+            "parent": "_newConcept1_2",
+            "relatedTo": [
+              "_newConcept1_2_2"
+            ]
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newConcept1_2_2",
+            "name": "Sub-Child B2",
+            "description": "Second grandchild concept for Child B.",
+            "parent": "_newConcept1_2",
+            "relatedTo": [
+              "_newConcept1_2_1"
+            ]
+          }
+        ]
+      },
+      {
+        "___type___": "Concept",
+        "xmi_id": "_newConcept1_3",
+        "name": "Child Concept C",
+        "description": "Third child concept.",
+        "parent": "_newConcept1",
+        "subConcepts": [
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newConcept1_3_1",
+            "name": "Sub-Child C1",
+            "description": "First grandchild concept for Child C.",
+            "parent": "_newConcept1_3",
+            "relatedTo": [
+              "_newConcept1_3_2"
+            ]
+          },
+          {
+            "___type___": "Concept",
+            "xmi_id": "_newConcept1_3_2",
+            "name": "Sub-Child C2",
+            "description": "Second grandchild concept for Child C.",
+            "parent": "_newConcept1_3",
+            "relatedTo": [
+              "_newConcept1_3_1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+] }
+------------------------------
+
+You: Translate the current model into Spanish||17:23
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||17:23
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "Map",
+  "xmi_id": "_MH6ksMyIEfCB57nxSn8rSw",
+  "name": "IA y LLMs para la educación",
+  "description": "Un mapa mental con ideas sobre cómo usar LLMs e IA en la educación universitaria",
+  "root": {
+    "___type___": "Concept",
+    "xmi_id": "_MH6kscyIEfCB57nxSn8rSw",
+    "name": "IA y LLMs en la educación",
+    "subConcepts": [],
+    "description": "Inteligencia Artificial y LLMs como facilitadores en la Educación",
+    "relatedTo": []
+  }
+}
+------------------------------
+
+You: Create a replica of the selected elements, but translated into Spanish||17:33
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||17:33
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_NewConceptID1",
+  "name": "IA y LLMs en educación",
+  "description": "Inteligencia Artificial y LLMs como habilitadores en Educación",
+  "subConcepts": [],
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend three subconcepts for the concept "AI and LLMs in education"||17:37
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||17:37
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_newConcept1",
+  "name": "Personalized Learning",
+  "description": "Utilizing AI and LLMs to tailor educational content and pacing to individual student needs.",
+  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+  "subConcepts": [],
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_newConcept2",
+  "name": "Automated Assessment and Feedback",
+  "description": "Employing AI and LLMs for grading, performance analysis, and providing instant feedback to students.",
+  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+  "subConcepts": [],
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_newConcept3",
+  "name": "AI-Assisted Content Creation",
+  "description": "Leveraging LLMs to generate educational materials, lesson plans, and learning resources.",
+  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+  "subConcepts": [],
+  "relatedTo": []
+}
+------------------------------
+
+You: recommend more subconcepts for the selected concept||17:50
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||17:50
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Concept",
+    "xmi_id": "_newConcept1",
+    "name": "AI Applications in Curriculum Design",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "description": "Exploring how AI can assist in creating and adapting educational curricula.",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_newConcept2",
+    "name": "Ethical Considerations of AI in Education",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "description": "Discussing the ethical implications and responsible use of AI in educational settings.",
+    "relatedTo": []
+  }
+] }
+------------------------------
+
+You: Create subconcepts of "AI and LLMs and education" to completely describe the idea.||17:53
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||17:53
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Concept",
+  "xmi_id": "_A1",
+  "name": "Applications in Education",
+  "description": "Specific ways AI and LLMs are being used or can be used in educational settings.",
+  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+  "subConcepts": [],
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_A2",
+  "name": "Benefits and Impact",
+  "description": "The positive outcomes and transformative effects of integrating AI and LLMs into education.",
+  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+  "subConcepts": [],
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_A3",
+  "name": "Challenges and Ethical Considerations",
+  "description": "Difficulties, risks, and ethical questions associated with AI and LLM adoption in education.",
+  "parent": "_MH6kscyIEfCB57nxSn8rSw",
+  "subConcepts": [],
+  "relatedTo": []
+}
+------------------------------
+
+You: Complete the mind map with concepts that summarise the history of use of AI in education||17:55
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||17:55
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{ "result": [
+  {
+    "___type___": "Concept",
+    "xmi_id": "_k9X30MyKEfCB57nxSn8rSw",
+    "name": "Early AI in Education",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "description": "Foundational period focusing on early AI research and its initial applications in educational settings, like Computer-Assisted Instruction (CAI) and expert systems.",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_k9X30cyKEfCB57nxSn8rSw",
+    "name": "Intelligent Tutoring Systems (ITS)",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "description": "Development of systems designed to provide personalized instruction and feedback, mimicking human tutors.",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_k9X30syKEfCB57nxSn8rSw",
+    "name": "AI and Learning Analytics",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "description": "Utilizing AI to analyze student data for insights into learning processes, performance, and engagement.",
+    "relatedTo": []
+  },
+  {
+    "___type___": "Concept",
+    "xmi_id": "_k9X308yKEfCB57nxSn8rSw",
+    "name": "Modern AI & LLMs in Education",
+    "subConcepts": [],
+    "parent": "_MH6kscyIEfCB57nxSn8rSw",
+    "description": "Current era marked by advanced AI, including Large Language Models (LLMs), for content creation, personalized learning paths, and administrative tasks.",
+    "relatedTo": []
+  }
+] }
+------------------------------
+

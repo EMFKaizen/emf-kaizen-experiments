@@ -1,0 +1,128 @@
+{
+   "soba_userInput":"Add concepts to model additional dimensions of Health, in detail",
+   "soba_metaModelContext":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ecore:EPackage xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ecore=\"http://www.eclipse.org/emf/2002/Ecore\" name=\"mindMap\" nsURI=\"http://mindmap/0.1\" nsPrefix=\"map\">\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Map\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"root\" eType=\"//Concept\" containment=\"true\"/>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Concept\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"subConcepts\" upperBound=\"-1\" eType=\"//Concept\" containment=\"true\" eOpposite=\"//Concept/parent\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"parent\" eType=\"//Concept\" eOpposite=\"//Concept/subConcepts\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"relatedTo\" upperBound=\"-1\" eType=\"//Concept\"/>\r\n  <\/eClassifiers>\r\n<\/ecore:EPackage>\r\n",
+   "recommendationPayload":{"results":[
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_MentalHealth_01",
+	  "name": "Mental Health",
+	  "description": "The state of psychological and emotional well-being.",
+	  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+	  "subConcepts": [
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_Mindfulness_01",
+	      "name": "Mindfulness",
+	      "description": "Paying attention in a particular way: on purpose, in the present moment, and non-judgmentally.",
+	      "parent": "_MentalHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    },
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_CognitiveHealth_01",
+	      "name": "Cognitive Health",
+	      "description": "The ability to think, learn, remember, and reason.",
+	      "parent": "_MentalHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    }
+	  ],
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_EmotionalHealth_01",
+	  "name": "Emotional Health",
+	  "description": "The ability to understand, manage, and express your emotions in healthy ways.",
+	  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+	  "subConcepts": [
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_EmotionalRegulation_01",
+	      "name": "Emotional Regulation",
+	      "description": "The ability to control or reframe one's emotional responses.",
+	      "parent": "_EmotionalHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    },
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_SelfAwareness_01",
+	      "name": "Self-Awareness",
+	      "description": "Understanding one's own emotions, strengths, weaknesses, and values.",
+	      "parent": "_EmotionalHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    }
+	  ],
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_SocialHealth_01",
+	  "name": "Social Health",
+	  "description": "The ability to connect and form meaningful relationships with others.",
+	  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+	  "subConcepts": [
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_Family_01",
+	      "name": "Family",
+	      "description": "Close family members.",
+	      "parent": "_SocialHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    },
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_Friends_01",
+	      "name": "Friends",
+	      "description": "People one knows and likes.",
+	      "parent": "_SocialHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    },
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_Relatives_01",
+	      "name": "Relatives",
+	      "description": "Members of one's family.",
+	      "parent": "_SocialHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    }
+	  ],
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_SpiritualHealth_01",
+	  "name": "Spiritual Health",
+	  "description": "A sense of purpose, meaning, and connection to something larger than oneself.",
+	  "parent": "_F1U4Mcx7EfCB57nxSn8rSw",
+	  "subConcepts": [
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_Purpose_01",
+	      "name": "Purpose",
+	      "description": "Having a reason for living.",
+	      "parent": "_SpiritualHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    },
+	    {
+	      "___type___": "Concept",
+	      "xmi_id": "_Values_01",
+	      "name": "Values",
+	      "description": "Principles or standards of behavior.",
+	      "parent": "_SpiritualHealth_01",
+	      "subConcepts": [],
+	      "relatedTo": []
+	    }
+	  ],
+	  "relatedTo": []
+	}
+	]
+   }
+}

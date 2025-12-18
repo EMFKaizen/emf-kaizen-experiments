@@ -1,0 +1,36 @@
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_endingSessionCompositeState",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "EndingSession",
+  "description": "Models the process of ending an ATM session.",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_sessionEndedFinalState",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "SessionEnded",
+      "description": "The session has concluded."
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_endSessionTransition",
+      "from": "_eyhF1MyMEfCuhbiBFBlMQg",
+      "to": "_sessionEndedFinalState",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_endSessionEvent",
+        "name": "session_finished"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_ejectCardAction",
+        "code": "eject card and receipt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "http://www.eclipse.org/emf/2002/Ecore": {
+    "SerializationSelection": {
+      "EAttribute": [
+        "name",
+        "ordered",
+        "unique",
+        "lowerBound",
+        "upperBound",
+        "eType"
+      ],
+      "EClass": [
+        "name",
+        "abstract",
+        "eSuperTypes",
+        "eStructuralFeatures"
+      ],
+      "EClassifier": [
+        "name"
+      ],
+      "EDataType": [
+        "eAnnotations",
+        "name",
+        "instanceClassName",
+        "instanceTypeName",
+        "eTypeParameters",
+        "serializable"
+      ],
+      "EEnum": [
+        "eAnnotations",
+        "name",
+        "instanceClassName",
+        "instanceTypeName",
+        "eTypeParameters",
+        "serializable",
+        "eLiterals"
+      ],
+      "EEnumLiteral": [
+        "eAnnotations",
+        "name",
+        "value",
+        "literal"
+      ],
+      "EModelElement": [
+        "eAnnotations"
+      ],
+      "ENamedElement": [
+        "eAnnotations",
+        "name"
+      ],
+      "EObject": [],
+      "EPackage": [
+        "name",
+        "nsURI",
+        "nsPrefix",
+        "eClassifiers",
+        "eSubpackages"
+      ],
+      "EReference": [
+        "name",
+        "ordered",
+        "unique",
+        "lowerBound",
+        "upperBound",
+        "eType",
+        "defaultValueLiteral",
+        "containment",
+        "eOpposite"
+      ],
+      "EStructuralFeature": [
+        "name",
+        "ordered",
+        "unique",
+        "lowerBound",
+        "upperBound",
+        "eType"
+      ],
+      "ETypedElement": [
+        "name",
+        "ordered",
+        "unique",
+        "lowerBound",
+        "upperBound",
+        "eType"
+      ]
+    }
+  }
+}

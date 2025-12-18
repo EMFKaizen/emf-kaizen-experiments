@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proc:ProcessModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:proc="http://ProcessModelling/0.1" xmi:id="_cnlMAM7AEfCub4t_QbJKtQ" description="paper publication in a journal">
+  <nodes xsi:type="proc:Task" xmi:id="_cnlMAc7AEfCub4t_QbJKtQ" name="Write paper"/>
+</proc:ProcessModel>

@@ -1,0 +1,565 @@
+[DATE]08/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||13:19
+
+You: create an integer attribute "importance" for class Goal||13:19
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||13:19
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "EAttribute",
+  "xmi_id": "_WQimpM7dEfC_ucElWBea5Q",
+  "name": "importance",
+  "ordered": true,
+  "unique": true,
+  "lowerBound": 0,
+  "upperBound": 1,
+  "eType": "EInt",
+  "eContainingClass": "_WQckoM7dEfC_ucElWBea5Q"
+}
+------------------------------
+
+You: create an abstract class ModelElement with a String attribute name||13:19
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||13:20
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_WQNewM7dEfC_01",
+  "name": "ModelElement",
+  "abstract": true,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_WQNewAttrM7dEfC_01",
+      "name": "name",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString"
+    }
+  ],
+  "ePackage": "_WQPJQM7dEfC_ucElWBea5Q"
+}
+------------------------------
+
+You: Translate the current model into Spanish||13:20
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||13:20
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_WQesPModelPkg1",
+  "name": "ModeloObjetivos",
+  "nsURI": "http://goalModel/0.1/es",
+  "nsPrefix": "gm_es",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQesGoalModel1",
+      "name": "ModeloObjetivos",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_WQesGoalsRef1",
+          "name": "objetivos",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "eType": "_WQesGoal1",
+          "containment": true
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQesDescriptionAttr1",
+          "name": "descripcion",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQesGoal1",
+      "name": "Objetivo",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQesNameAttr1",
+          "name": "nombre",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQesIsSoftAttr1",
+          "name": "esSuave",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EBoolean"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQesActor1",
+      "name": "Actor",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQesActorNameAttr1",
+          "name": "nombre",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQesResource1",
+      "name": "Recurso",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": []
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: create a reference "resource" for the selected class||13:20
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||13:21
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "EReference",
+  "xmi_id": "_WQrsIM7dEfC_ucElWBea5Q",
+  "name": "resource",
+  "ordered": true,
+  "unique": true,
+  "lowerBound": 0,
+  "upperBound": 1,
+  "containment": false,
+  "eType": "_WQpY8M7dEfC_ucElWBea5Q"
+}
+------------------------------
+
+You: recommend more classes for the current metamodel||13:21
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||13:22
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_WQRecPkg1dEfC_az9",
+  "name": "GoalModelExtensions",
+  "nsURI": "http://goalModel/extensions/0.1",
+  "nsPrefix": "gmx",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQTask1dEfC_az9",
+      "name": "Task",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQTask_name_attr_az9",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQTask_description_attr_az9",
+          "name": "description",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_WQTask_assignedTo_ref_az9",
+          "name": "assignedTo",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_WQStake1dEfC_az9"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQStake1dEfC_az9",
+      "name": "Stakeholder",
+      "abstract": false,
+      "eSuperTypes": [
+        "_WQj5YM7dEfC_ucElWBea5Q"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQStake_role_attr_az9",
+          "name": "role",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQContr1dEfC_az9",
+      "name": "Contribution",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_WQContr_source_ref_az9",
+          "name": "source",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_WQckoM7dEfC_ucElWBea5Q"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_WQContr_target_ref_az9",
+          "name": "target",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "containment": false,
+          "eType": "_WQckoM7dEfC_ucElWBea5Q"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQContr_type_attr_az9",
+          "name": "contributionType",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_WQConst1dEfC_az9",
+      "name": "Constraint",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_WQConst_expr_attr_az9",
+          "name": "expression",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_WQConst_constrainedRef_az9",
+          "name": "constrainedElement",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": false,
+          "eType": "_WQckoM7dEfC_ucElWBea5Q"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: recommend attributes for the Resource class||13:22
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||13:23
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "EClass",
+  "xmi_id": "_WQpY8M7dEfC_ucElWBea5Q",
+  "name": "Resource",
+  "abstract": false,
+  "eSuperTypes": [],
+  "eStructuralFeatures": [
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_WQresName1",
+      "name": "name",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_WQresDescription1",
+      "name": "description",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EString"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_WQresCapacity1",
+      "name": "capacity",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EInt"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_WQresAvailable1",
+      "name": "available",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EBoolean"
+    },
+    {
+      "___type___": "EAttribute",
+      "xmi_id": "_WQresCost1",
+      "name": "cost",
+      "ordered": true,
+      "unique": true,
+      "lowerBound": 0,
+      "upperBound": 1,
+      "eType": "EDouble"
+    }
+  ]
+}
+------------------------------
+
+You: use the composite design pattern to create Tasks, which can be simple or composite||13:23
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||13:23
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_TskPkg_01",
+  "name": "TaskModel",
+  "nsURI": "http://taskModel/0.1",
+  "nsPrefix": "tm",
+  "eClassifiers": [
+    {
+      "___type___": "EClass",
+      "xmi_id": "_TaskEClass_01",
+      "name": "Task",
+      "abstract": true,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_Task_name_attr_01",
+          "name": "name",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EString"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_SimpleTaskEClass_01",
+      "name": "SimpleTask",
+      "abstract": false,
+      "eSuperTypes": [
+        "_TaskEClass_01"
+      ],
+      "eStructuralFeatures": []
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_CompositeTaskEClass_01",
+      "name": "CompositeTask",
+      "abstract": false,
+      "eSuperTypes": [
+        "_TaskEClass_01"
+      ],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_CompositeTask_subtasks_ref_01",
+          "name": "subtasks",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": -1,
+          "containment": true,
+          "eType": "_TaskEClass_01"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+
+You: Complete the metamodel to consider decomposition relations (and, or, contribution links) between goals||13:24
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||13:25
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "EPackage",
+  "xmi_id": "_GMR_pkg1",
+  "name": "GoalModelRelations",
+  "nsURI": "http://goalModel/relations/0.1",
+  "nsPrefix": "gmr",
+  "eClassifiers": [
+    {
+      "___type___": "EEnum",
+      "xmi_id": "_GMR_enum1",
+      "name": "DecompositionKind",
+      "eLiterals": [
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_GMR_enumlit_and",
+          "name": "AND",
+          "value": 0,
+          "literal": "AND"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_GMR_enumlit_or",
+          "name": "OR",
+          "value": 1,
+          "literal": "OR"
+        },
+        {
+          "___type___": "EEnumLiteral",
+          "xmi_id": "_GMR_enumlit_contrib",
+          "name": "CONTRIBUTION",
+          "value": 2,
+          "literal": "CONTRIBUTION"
+        }
+      ]
+    },
+    {
+      "___type___": "EClass",
+      "xmi_id": "_GMR_goalLink1",
+      "name": "GoalLink",
+      "abstract": false,
+      "eSuperTypes": [],
+      "eStructuralFeatures": [
+        {
+          "___type___": "EReference",
+          "xmi_id": "_GMR_ref_source",
+          "name": "source",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_WQckoM7dEfC_ucElWBea5Q",
+          "containment": false
+        },
+        {
+          "___type___": "EReference",
+          "xmi_id": "_GMR_ref_target",
+          "name": "target",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_WQckoM7dEfC_ucElWBea5Q",
+          "containment": false
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_GMR_attr_kind",
+          "name": "kind",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 1,
+          "upperBound": 1,
+          "eType": "_GMR_enum1"
+        },
+        {
+          "___type___": "EAttribute",
+          "xmi_id": "_GMR_attr_contribution",
+          "name": "contribution",
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "eType": "EInt"
+        }
+      ]
+    }
+  ],
+  "eSubpackages": []
+}
+------------------------------
+

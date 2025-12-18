@@ -1,0 +1,27 @@
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Pcx7EfCB57nxSn8rSw",
+  "name": "Cardio",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises that raise your heart rate.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Qcx7EfCB57nxSn8rSw",
+  "name": "Strength Training",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises aimed at improving muscle strength.",
+  "relatedTo": []
+},
+{
+  "___type___": "Concept",
+  "xmi_id": "_F1U4Rcx7EfCB57nxSn8rSw",
+  "name": "Flexibility",
+  "subConcepts": [],
+  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+  "description": "Exercises that enhance the range of motion of joints.",
+  "relatedTo": []
+}

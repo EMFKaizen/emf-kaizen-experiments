@@ -1,0 +1,62 @@
+{
+  "___type___": "MultiChoice",
+  "xmi_id": "_NewMultiChoiceGateway_Instalment",
+  "name": "Instalment Payment Choice"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_FullPayment",
+  "name": "Process Full Payment"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_InstalmentSetup",
+  "name": "Setup Instalment Plan"
+},
+{
+  "___type___": "Task",
+  "xmi_id": "_NewTask_ProcessInstalment",
+  "name": "Process Instalment Payment"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_PaymentToInstalmentChoice",
+  "input": "_Cy4oc87MEfC3JOLdj2VwAA",
+  "output": "_NewMultiChoiceGateway_Instalment",
+  "name": "Payment Decision"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_InstalmentChoiceToFull",
+  "input": "_NewMultiChoiceGateway_Instalment",
+  "output": "_NewTask_FullPayment",
+  "condition": "Payment Type = Full"
+},
+{
+  "___type___": "ConditionalFlowEdge",
+  "xmi_id": "_NewEdge_InstalmentChoiceToSetup",
+  "input": "_NewMultiChoiceGateway_Instalment",
+  "output": "_NewTask_InstalmentSetup",
+  "condition": "Payment Type = Instalment"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_FullPaymentToSync",
+  "input": "_NewTask_FullPayment",
+  "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+  "name": "Full Payment Complete"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_InstalmentSetupToProcess",
+  "input": "_NewTask_InstalmentSetup",
+  "output": "_NewTask_ProcessInstalment",
+  "name": "Instalment Plan Ready"
+},
+{
+  "___type___": "FlowEdge",
+  "xmi_id": "_NewEdge_ProcessInstalmentToSync",
+  "input": "_NewTask_ProcessInstalment",
+  "output": "_Cy4ods7MEfC3JOLdj2VwAA",
+  "name": "Instalment Payment Processed"
+}

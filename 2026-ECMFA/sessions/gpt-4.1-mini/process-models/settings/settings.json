@@ -1,0 +1,47 @@
+{
+  "ProcessModelling.ecore": {
+    "SerializationSelection": {
+      "ProcessModel": [
+        "nodes",
+        "edges",
+        "description"
+      ],
+      "Node": [],
+      "Task": [
+        "name"
+      ],
+      "ParallelSplit": [],
+      "Synchronization": [],
+      "SimpleMerge": [],
+      "ExclusiveChoice": [
+        "conditions"
+      ],
+      "MultiChoice": [
+        "conditions"
+      ],
+      "FinalTask": [
+        "name"
+      ],
+      "InitialTask": [
+        "name"
+      ],
+      "FlowEdge": [
+        "input",
+        "output",
+        "name"
+      ],
+	  "ConditionalFlowEdge": [
+	          "input",
+	          "output",
+	          "name",
+			  "condition"
+	        ],
+      "GatewayCondition": [
+        "condition"
+      ],
+      "ChoiceGateway": [
+        "conditions"
+      ]
+    }
+  }
+}

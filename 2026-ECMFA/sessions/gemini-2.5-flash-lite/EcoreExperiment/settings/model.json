@@ -1,0 +1,91 @@
+{
+  "http://www.eclipse.org/emf/2002/Ecore": [
+    {
+      "___type___": "EObject",
+      "xmi_id": "_JzW7YM7pEfCBEtIB8TpJ4g"
+    },
+    {
+      "___type___": "EPackage",
+      "xmi_id": "_JzW7Yc7pEfCBEtIB8TpJ4g",
+      "name": "name_example",
+      "nsURI": "nsURI_example",
+      "nsPrefix": "nsPrefix_example",
+      "eClassifiers": [
+        {
+          "___type___": "EClass",
+          "xmi_id": "_JzW7Ys7pEfCBEtIB8TpJ4g",
+          "name": "name_example",
+          "abstract": true,
+          "eSuperTypes": [
+            "_JzW7Ys7pEfCBEtIB8TpJ4g"
+          ],
+          "eStructuralFeatures": [
+            {
+              "___type___": "EAttribute",
+              "xmi_id": "_JzW7Y87pEfCBEtIB8TpJ4g",
+              "name": "name_example",
+              "ordered": true,
+              "unique": true,
+              "lowerBound": 1,
+              "upperBound": 1,
+              "eType": "_JzW7Ys7pEfCBEtIB8TpJ4g"
+            },
+            {
+              "___type___": "EReference",
+              "xmi_id": "_JzW7Zc7pEfCBEtIB8TpJ4g",
+              "name": "name_example",
+              "ordered": true,
+              "unique": true,
+              "lowerBound": 1,
+              "upperBound": 1,
+              "defaultValueLiteral": "defaultValueLiteral_example",
+              "containment": true,
+              "eOpposite": "_JzW7Zc7pEfCBEtIB8TpJ4g"
+            }
+          ]
+        },
+        {
+          "___type___": "EDataType",
+          "xmi_id": "_JzW7Z87pEfCBEtIB8TpJ4g",
+          "eAnnotations": [],
+          "name": "name_example",
+          "instanceClassName": "java.lang.Object",
+          "instanceTypeName": "instanceTypeName_example",
+          "eTypeParameters": [],
+          "serializable": true
+        },
+        {
+          "___type___": "EEnum",
+          "xmi_id": "_JzW7aM7pEfCBEtIB8TpJ4g",
+          "eAnnotations": [],
+          "name": "name_example",
+          "instanceClassName": "java.lang.Object",
+          "instanceTypeName": "instanceTypeName_example",
+          "eTypeParameters": [],
+          "serializable": true,
+          "eLiterals": [
+            {
+              "___type___": "EEnumLiteral",
+              "xmi_id": "_JzW7ac7pEfCBEtIB8TpJ4g",
+              "eAnnotations": [],
+              "name": "name_example",
+              "value": 1,
+              "literal": "literal_example"
+            }
+          ]
+        }
+      ],
+      "eSubpackages": [
+        {
+          "___type___": "EPackage",
+          "xmi_id": "_JzW7as7pEfCBEtIB8TpJ4g",
+          "name": "name_example",
+          "nsURI": "nsURI_example",
+          "nsPrefix": "nsPrefix_example",
+          "eClassifiers": [],
+          "eSubpackages": []
+        }
+      ]
+    }
+  ]
+}

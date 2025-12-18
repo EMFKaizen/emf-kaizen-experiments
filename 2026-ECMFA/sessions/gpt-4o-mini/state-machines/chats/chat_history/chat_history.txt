@@ -1,0 +1,1061 @@
+You: create 10 states with names S1…S10||15:04
+
+------------------------------||15:04
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_state1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S2"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state3",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S3"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state4",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S4"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state5",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S5"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state6",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S6"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state7",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S7"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state8",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S8"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state9",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S9"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state10",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S10"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: Create a sequence of 3 states, connected by transitions||15:19
+
+------------------------------||15:19
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_S1",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "S1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_S2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S2"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_S3",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "S3"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_T1",
+      "from": "_S1",
+      "to": "_S2",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_E1",
+        "name": "event_S1_to_S2"
+      },
+      "action": null,
+      "guard": null
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_T2",
+      "from": "_S2",
+      "to": "_S3",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_E2",
+        "name": "event_S2_to_S3"
+      },
+      "action": null,
+      "guard": null
+    }
+  ],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: Translate the current model into Spanish||15:21
+
+------------------------------||15:21
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: add a composite state with an initial state to the selected element||15:22
+
+------------------------------||15:22
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_newCompositeStateId",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "CompositeState1",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_newInitialStateId",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "InitialState"
+        }
+      ],
+      "transitions": [],
+      "description": "Composite state with an initial state"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: recommend three states for the state machine||15:25
+
+------------------------------||15:25
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_newState1",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_newState2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State2"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_newState3",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State3"
+    }
+  ],
+  "transitions": [],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: recommend a better name for the State Machine||15:26
+
+------------------------------||15:26
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [],
+  "transitions": [],
+  "description": "Smart Traffic Control"
+}
+------------------------------
+
+You: Create the states and transitions for the state machine||15:37
+
+------------------------------||15:37
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_S1",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "S1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_S2",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S2"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_S3",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "S3"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_T1",
+      "from": "_S1",
+      "to": "_S2",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_E1",
+        "name": "Event1"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_A1",
+        "code": "Action for S1 to S2"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_G1",
+        "condition": "condition for transition S1 to S2"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_T2",
+      "from": "_S2",
+      "to": "_S3",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_E2",
+        "name": "Event2"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_A2",
+        "code": "Action for S2 to S3"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_G2",
+        "condition": "condition for transition S2 to S3"
+      }
+    }
+  ],
+  "description": "Traffic Light"
+}
+------------------------------
+
+You: Create the states and transitions for a traffic light that has both lights for cars and for pedestrians, and that has time-triggered transitions||15:39
+
+------------------------------||15:39
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_jYfA0MyLEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_state_car_green",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "Car Green"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_car_yellow",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Car Yellow"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_car_red",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Car Red"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_pedestrian_walk",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Pedestrian Walk"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_state_pedestrian_stop",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Pedestrian Stop"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transition_green_to_yellow",
+      "from": "_state_car_green",
+      "to": "_state_car_yellow",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_event_green_duration",
+        "name": "Green Duration",
+        "time": 30000.0
+      },
+      "action": null,
+      "guard": null
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transition_yellow_to_red",
+      "from": "_state_car_yellow",
+      "to": "_state_car_red",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_event_yellow_duration",
+        "name": "Yellow Duration",
+        "time": 5000.0
+      },
+      "action": null,
+      "guard": null
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transition_red_to_green",
+      "from": "_state_car_red",
+      "to": "_state_pedestrian_walk",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_event_red_duration",
+        "name": "Red Duration",
+        "time": 30000.0
+      },
+      "action": null,
+      "guard": null
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transition_pedestrian_walk_to_stop",
+      "from": "_state_pedestrian_walk",
+      "to": "_state_pedestrian_stop",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_event_walk_duration",
+        "name": "Walk Duration",
+        "time": 10000.0
+      },
+      "action": null,
+      "guard": null
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_transition_pedestrian_stop_to_green",
+      "from": "_state_pedestrian_stop",
+      "to": "_state_car_green",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_event_stop_duration",
+        "name": "Stop Duration",
+        "time": 2000.0
+      },
+      "action": null,
+      "guard": null
+    }
+  ],
+  "description": "Traffic Light with Car and Pedestrian Controls"
+}
+------------------------------
+
+You: Create one state with two outgoing transitions to two other new states||15:58
+
+------------------------------||15:58
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjtMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "NewState1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjt8yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "NewState2"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjt9yMEfCuhbiBFBlMQg",
+      "from": "_YLhjsMyMEfCuhbiBFBlMQg",
+      "to": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjucyMEfCuhbiBFBlMQg",
+        "name": "event_to_NewState1"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjt0yMEfCuhbiBFBlMQg",
+      "from": "_YLhjsMyMEfCuhbiBFBlMQg",
+      "to": "_YLhjt8yMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhju8yMEfCuhbiBFBlMQg",
+        "name": "event_to_NewState2"
+      }
+    }
+  ],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Create two states connected by a time-triggered transition||16:02
+
+------------------------------||16:02
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjsMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjot8MEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "StateA"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjp8yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "StateB"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjq8yMEfCuhbiBFBlMQg",
+      "from": "_YLhjot8MEfCuhbiBFBlMQg",
+      "to": "_YLhjp8yMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "TimeEvent",
+        "xmi_id": "_YLhjr8yMEfCuhbiBFBlMQg",
+        "name": "timeTransition",
+        "time": 1000.0
+      }
+    }
+  ],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Translate the current model into Spanish||16:04
+
+------------------------------||16:04
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: Create a composite state that contains the selected elements||16:05
+
+------------------------------||16:05
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_YLhjsczMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "CompositeState_Example",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjscyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Playing"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjssyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Pause"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjs8yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Stop"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtMyMEfCuhbiBFBlMQg",
+      "from": "_YLhjscyMEfCuhbiBFBlMQg",
+      "to": "_YLhjssyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+        "name": "pause"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtsyMEfCuhbiBFBlMQg",
+      "from": "_YLhjssyMEfCuhbiBFBlMQg",
+      "to": "_YLhjscyMEfCuhbiBFBlMQg"
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjuMyMEfCuhbiBFBlMQg",
+      "from": "_YLhjs8yMEfCuhbiBFBlMQg",
+      "to": "_YLhjscyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjucyMEfCuhbiBFBlMQg",
+        "name": "play"
+      }
+    }
+  ],
+  "description": "Contains selected states and transitions"
+}
+------------------------------
+
+You: recommend an event for the selected transition||16:09
+
+------------------------------||16:09
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Event",
+  "xmi_id": "_YLhjvcyMEfCuhbiBFBlMQg",
+  "name": "resume"
+}
+------------------------------
+
+You: recommend more states for the state machine||16:10
+
+------------------------------||16:11
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjsMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjs9yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Rewind"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjsAyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Fast Forward"
+    }
+  ],
+  "transitions": [],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Create a composite state to model the selection of different types of media in the player (videos, music, podcasts)||16:13
+
+------------------------------||16:13
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_YLhjsMyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_YLhjs9yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "MediaSelection",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_YLhjtByMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Videos"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_YLhjtCyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Music"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_YLhjtDyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": false,
+          "name": "Podcasts"
+        }
+      ],
+      "transitions": [],
+      "description": "Selection of different types of media"
+    }
+  ],
+  "transitions": [],
+  "description": "Media Player"
+}
+------------------------------
+
+You: Create a composite state to model a controller for media streaming in full detail||16:15
+
+------------------------------||16:15
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_YLhjs9yMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "MediaStreamingController",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "isInitial": true,
+      "isFinal": false,
+      "name": "SelectingMedia"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_1",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "StreamingMedia"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_2",
+      "from": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "to": "_YLhjtcyMEfCuhbiBFBlMQg_1",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_3",
+        "name": "mediaSelected"
+      }
+    },
+    {
+      "___type___": "Transition",
+      "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_4",
+      "from": "_YLhjtcyMEfCuhbiBFBlMQg_1",
+      "to": "_YLhjtcyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_YLhjtcyMEfCuhbiBFBlMQg_5",
+        "name": "stopStreaming"
+      }
+    }
+  ],
+  "description": "Controls media streaming, allowing selection and playing of media."
+}
+------------------------------
+
+You: Create two states connected by a transition with guard and action||16:17
+
+------------------------------||16:17
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State1"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "State2"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+      "from": "_eyhF6MyMEfCuhbiBFBlMQg",
+      "to": "_eyhF6cyMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_eyhF7MyMEfCuhbiBFBlMQg",
+        "name": "trigger_event"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_eyhF7cyMEfCuhbiBFBlMQg",
+        "code": "perform_action"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_eyhF7syMEfCuhbiBFBlMQg",
+        "condition": "guard_condition"
+      }
+    }
+  ],
+  "description": "ATM"
+}
+------------------------------
+
+You: Create a composite state with two connected states inside||16:24
+
+------------------------------||16:24
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "StateMachine",
+  "xmi_id": "_eyhF0MyMEfCuhbiBFBlMQg",
+  "states": [
+    {
+      "___type___": "CompositeState",
+      "xmi_id": "_eyhF08yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "NewCompositeState",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+          "isInitial": true,
+          "isFinal": false,
+          "name": "State1"
+        },
+        {
+          "___type___": "State",
+          "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+          "isInitial": false,
+          "isFinal": true,
+          "name": "State2"
+        }
+      ],
+      "transitions": [
+        {
+          "___type___": "Transition",
+          "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+          "from": "_eyhF6MyMEfCuhbiBFBlMQg",
+          "to": "_eyhF6cyMEfCuhbiBFBlMQg",
+          "guard": {
+            "___type___": "Guard",
+            "xmi_id": "_eyhF4MyMEfCuhbiBFBlMQg",
+            "condition": "condition_example"
+          },
+          "action": {
+            "___type___": "Action",
+            "xmi_id": "_eyhF7MyMEfCuhbiBFBlMQg",
+            "code": "perform_action"
+          },
+          "event": {
+            "___type___": "Event",
+            "xmi_id": "_eyhF7cyMEfCuhbiBFBlMQg",
+            "name": "event_trigger"
+          }
+        }
+      ],
+      "description": "Composite state with two connected states."
+    }
+  ],
+  "transitions": [],
+  "description": "ATM"
+}
+------------------------------
+
+You: Translate the current model into Spanish||16:32
+
+------------------------------||16:32
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: create a final state for the selected element||16:33
+
+------------------------------||16:33
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "State",
+  "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": true,
+  "name": "FinalState"
+}
+------------------------------
+
+You: recommend more substates for Operational||16:36
+
+------------------------------||16:37
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "Substate1",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2syMEfCuhbiBFBlMQh",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Substate1A"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2syMEfCuhbiBFBlMQh",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Substate1B"
+    }
+  ],
+  "transitions": [],
+  "description": "Additional substates for Operational state"
+}
+------------------------------
+
+You: recommend guards and actions for the selected transition||16:39
+
+------------------------------||16:39
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Transition",
+  "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+  "from": "_eyhF1MyMEfCuhbiBFBlMQg",
+  "to": "_eyhF1cyMEfCuhbiBFBlMQg",
+  "event": {
+    "___type___": "Event",
+    "xmi_id": "_eyhF6MyMEfCuhbiBFBlMQg",
+    "name": "card_verified"
+  },
+  "action": {
+    "___type___": "Action",
+    "xmi_id": "_eyhF6cyMEfCuhbiBFBlMQg",
+    "code": "proceed to PIN entry"
+  },
+  "guard": {
+    "___type___": "Guard",
+    "xmi_id": "_eyhF6syMEfCuhbiBFBlMQg",
+    "condition": "card is valid"
+  }
+}
+------------------------------
+
+You: Create the full details of the Transaction State||16:42
+
+------------------------------||16:42
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF2MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "Transaction",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Withdrawal"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF2syMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "BalanceInquiry"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF28yMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Deposit"
+    }
+  ],
+  "transitions": [],
+  "description": "This state models an ATM transaction"
+}
+------------------------------
+
+You: Create a composite state to model ending the session with the ATM, in full detail||16:46
+
+------------------------------||16:46
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "CompositeState",
+  "xmi_id": "_eyhF3MyMEfCuhbiBFBlMQg",
+  "isInitial": false,
+  "isFinal": false,
+  "name": "EndSession",
+  "states": [
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF3cyMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": false,
+      "name": "Card ejected"
+    },
+    {
+      "___type___": "State",
+      "xmi_id": "_eyhF3syMEfCuhbiBFBlMQg",
+      "isInitial": false,
+      "isFinal": true,
+      "name": "Session ended"
+    }
+  ],
+  "transitions": [
+    {
+      "___type___": "Transition",
+      "xmi_id": "_eyhF4cyMEfCuhbiBFBlMQg",
+      "from": "_eyhF3cyMEfCuhbiBFBlMQg",
+      "to": "_eyhF3syMEfCuhbiBFBlMQg",
+      "event": {
+        "___type___": "Event",
+        "xmi_id": "_eyhF4syMEfCuhbiBFBlMQg",
+        "name": "session_complete"
+      },
+      "action": {
+        "___type___": "Action",
+        "xmi_id": "_eyhF5MyMEfCuhbiBFBlMQg",
+        "code": "perform cleanup tasks"
+      },
+      "guard": {
+        "___type___": "Guard",
+        "xmi_id": "_eyhF5cyMEfCuhbiBFBlMQg",
+        "condition": "all transactions finished"
+      }
+    }
+  ],
+  "description": "This composite state models the process of ending a session at the ATM."
+}
+------------------------------
+

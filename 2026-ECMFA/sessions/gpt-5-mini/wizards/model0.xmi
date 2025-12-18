@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wiz:Wizard xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Wiz="http://example.com/wizards" xmi:id="_VRkQoM7UEfC2mPVygn5YyA" title="Choose and Customise the LLM requests" initialPage="_VRkQoc7UEfC2mPVygn5YyA">
+  <pages xmi:id="_VRkQoc7UEfC2mPVygn5YyA" name="Choose the LLM service"/>
+</Wiz:Wizard>

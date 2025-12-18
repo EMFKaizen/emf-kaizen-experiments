@@ -1,0 +1,418 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||12:40
+
+You: Create 10 tasks with names T1..T10||12:40
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||12:40
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T1",
+      "name": "T1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T2",
+      "name": "T2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T3",
+      "name": "T3"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T4",
+      "name": "T4"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T5",
+      "name": "T5"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T6",
+      "name": "T6"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T7",
+      "name": "T7"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T8",
+      "name": "T8"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T9",
+      "name": "T9"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task_T10",
+      "name": "T10"
+    }
+  ],
+  "edges": [],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Create three tasks, one of the task should have as output a ParallelSplit. The ParallelSplit should have as output the other two tasks.||12:42
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||12:42
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask1",
+      "name": "Task1"
+    },
+    {
+      "___type___": "ParallelSplit",
+      "xmi_id": "_newParallelSplit1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask2",
+      "name": "Task2"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask3",
+      "name": "Task3"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge1",
+      "input": "_newTask1",
+      "output": "_newParallelSplit1",
+      "name": "flow_Task1_to_ParallelSplit"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge2",
+      "input": "_newParallelSplit1",
+      "output": "_newTask2",
+      "name": "flow_ParallelSplit_to_Task2"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge3",
+      "input": "_newParallelSplit1",
+      "output": "_newTask3",
+      "name": "flow_ParallelSplit_to_Task3"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Translate the current model into Spanish||12:44
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||12:44
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Escribir artículo"
+    }
+  ],
+  "edges": [],
+  "description": "publicación de artículo en una revista"
+}
+------------------------------
+
+You: add an initial and a final task to the selected element||12:45
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||12:45
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_newInitialTask1",
+      "name": "Initial Task"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_newFinalTask1",
+      "name": "Final Task"
+    }
+  ],
+  "edges": [],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Recommend three tasks for the process model||12:47
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||12:47
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask1",
+      "name": "Review draft"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask2",
+      "name": "Edit paper"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTask3",
+      "name": "Submit paper"
+    }
+  ]
+}
+------------------------------
+
+You: Recommend a better name for the selected element||12:49
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||12:49
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "description": "Journal Paper Publication Process"
+}
+------------------------------
+
+You: finish the process model with the necessary tasks and edges||12:49
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||12:50
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_initTask1",
+      "name": "Start"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task1",
+      "name": "Write paper"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_exclusiveChoice1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task2",
+      "name": "Review paper"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_task3",
+      "name": "Revise paper"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_finalTask1",
+      "name": "Publish paper"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge1",
+      "name": "start_to_write",
+      "input": "_initTask1",
+      "output": "_task1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge2",
+      "name": "write_to_choice",
+      "input": "_task1",
+      "output": "_exclusiveChoice1"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_condEdge1",
+      "name": "accept",
+      "condition": "paper accepted",
+      "input": "_exclusiveChoice1",
+      "output": "_task2"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_condEdge2",
+      "name": "revise",
+      "condition": "paper needs revision",
+      "input": "_exclusiveChoice1",
+      "output": "_task3"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge3",
+      "name": "review_to_publish",
+      "input": "_task2",
+      "output": "_finalTask1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_edge4",
+      "name": "revise_to_write",
+      "input": "_task3",
+      "output": "_task1"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+
+You: Finish the process model for a journal that has an initial phase of deciding if the paper is in the journal scope||12:51
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||12:51
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "ProcessModel",
+  "xmi_id": "_cnlMAM7AEfCub4t_QbJKtQ",
+  "nodes": [
+    {
+      "___type___": "InitialTask",
+      "xmi_id": "_newInitialTask1",
+      "name": "Start process"
+    },
+    {
+      "___type___": "ExclusiveChoice",
+      "xmi_id": "_newExclusiveChoice1"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTaskInScope",
+      "name": "Paper in journal scope"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_newTaskOutScope",
+      "name": "Paper out of journal scope"
+    },
+    {
+      "___type___": "Task",
+      "xmi_id": "_cnlMAc7AEfCub4t_QbJKtQ"
+    },
+    {
+      "___type___": "FinalTask",
+      "xmi_id": "_newFinalTask1",
+      "name": "End process"
+    }
+  ],
+  "edges": [
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdge1",
+      "name": "start to decision",
+      "input": "_newInitialTask1",
+      "output": "_newExclusiveChoice1"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newCondEdgeInScope",
+      "name": "in scope",
+      "condition": "Paper is in journal scope",
+      "input": "_newExclusiveChoice1",
+      "output": "_newTaskInScope"
+    },
+    {
+      "___type___": "ConditionalFlowEdge",
+      "xmi_id": "_newCondEdgeOutScope",
+      "name": "out of scope",
+      "condition": "Paper is not in journal scope",
+      "input": "_newExclusiveChoice1",
+      "output": "_newTaskOutScope"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdge2",
+      "name": "in scope to write paper",
+      "input": "_newTaskInScope",
+      "output": "_cnlMAc7AEfCub4t_QbJKtQ"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdge3",
+      "name": "write paper to end",
+      "input": "_cnlMAc7AEfCub4t_QbJKtQ",
+      "output": "_newFinalTask1"
+    },
+    {
+      "___type___": "FlowEdge",
+      "xmi_id": "_newEdge4",
+      "name": "out of scope to end",
+      "input": "_newTaskOutScope",
+      "output": "_newFinalTask1"
+    }
+  ],
+  "description": "paper publication in a journal"
+}
+------------------------------
+

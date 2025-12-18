@@ -1,0 +1,52 @@
+{
+  "StateMachines.ecore": [
+    {
+      "___type___": "StateMachine",
+      "xmi_id": "_DWwJsMyLEfCuhbiBFBlMQg",
+      "states": [
+        {
+          "___type___": "State",
+          "xmi_id": "_DWwJscyLEfCuhbiBFBlMQg",
+          "isInitial": true,
+          "isFinal": true,
+          "name": "name_example"
+        },
+        {
+          "___type___": "CompositeState",
+          "xmi_id": "_DWwJssyLEfCuhbiBFBlMQg",
+          "isInitial": true,
+          "isFinal": true,
+          "name": "name_example",
+          "states": [],
+          "transitions": [
+            {
+              "___type___": "Transition",
+              "xmi_id": "_DWwJs8yLEfCuhbiBFBlMQg",
+              "from": "_DWwJscyLEfCuhbiBFBlMQg",
+              "to": "_DWwJscyLEfCuhbiBFBlMQg",
+              "event": {
+                "___type___": "TimeEvent",
+                "xmi_id": "_DWwJtMyLEfCuhbiBFBlMQg",
+                "name": "name_example",
+                "time": 1.0
+              },
+              "action": {
+                "___type___": "Action",
+                "xmi_id": "_DWwJtcyLEfCuhbiBFBlMQg",
+                "code": "code_example"
+              },
+              "guard": {
+                "___type___": "Guard",
+                "xmi_id": "_DWwJtsyLEfCuhbiBFBlMQg",
+                "condition": "condition_example"
+              }
+            }
+          ],
+          "description": "description_example"
+        }
+      ],
+      "transitions": [],
+      "description": "description_example"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+   "soba_userInput":"recommend three subconcepts for the concept \"Exercise\"",
+   "soba_metaModelContext":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ecore:EPackage xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ecore=\"http://www.eclipse.org/emf/2002/Ecore\" name=\"mindMap\" nsURI=\"http://mindmap/0.1\" nsPrefix=\"map\">\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Map\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"root\" eType=\"//Concept\" containment=\"true\"/>\r\n  <\/eClassifiers>\r\n  <eClassifiers xsi:type=\"ecore:EClass\" name=\"Concept\">\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"name\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"subConcepts\" upperBound=\"-1\" eType=\"//Concept\" containment=\"true\" eOpposite=\"//Concept/parent\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"parent\" eType=\"//Concept\" eOpposite=\"//Concept/subConcepts\"/>\r\n    <eStructuralFeatures xsi:type=\"ecore:EAttribute\" name=\"description\">\r\n      <eType xsi:type=\"ecore:EDataType\" href=\"http://www.eclipse.org/emf/2002/Ecore#//EString\"/>\r\n    <\/eStructuralFeatures>\r\n    <eStructuralFeatures xsi:type=\"ecore:EReference\" name=\"relatedTo\" upperBound=\"-1\" eType=\"//Concept\"/>\r\n  <\/eClassifiers>\r\n<\/ecore:EPackage>\r\n",
+   "recommendationPayload": { "results": [
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_F1U4P8x7EfCB57nxSn8rSw",
+	  "name": "Aerobics",
+	  "subConcepts": [],
+	  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+	  "description": "A form of exercise that combines rhythmic aerobic exercise with stretching and strength training.",
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_F1U4Q8x7EfCB57nxSn8rSw",
+	  "name": "Weight Training",
+	  "subConcepts": [],
+	  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+	  "description": "A type of strength training that uses free weights or machines to build muscle strength.",
+	  "relatedTo": []
+	},
+	{
+	  "___type___": "Concept",
+	  "xmi_id": "_F1U4R8x7EfCB57nxSn8rSw",
+	  "name": "Yoga",
+	  "subConcepts": [],
+	  "parent": "_F1U4O8x7EfCB57nxSn8rSw",
+	  "description": "A physical, mental, and spiritual practice that incorporates postures, breath control, and meditation.",
+	  "relatedTo": []
+	}
+   ]
+   }
+}

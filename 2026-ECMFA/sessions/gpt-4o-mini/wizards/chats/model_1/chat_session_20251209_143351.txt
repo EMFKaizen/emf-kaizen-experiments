@@ -1,0 +1,432 @@
+[DATE]09/12/25
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||14:34
+
+You: create two pages, with three fields each, and each one with a button to navigate to each other||14:34
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||14:34
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+{
+  "___type___": "Wizard",
+  "xmi_id": "_udj_AM7UEfC2mPVygn5YyA",
+  "title": "Setup your account",
+  "pages": [
+    {
+      "___type___": "Page",
+      "xmi_id": "_udj_Dc7UEfC2mPVygn5YyA",
+      "name": "First Page",
+      "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_udj_Ds7UEfC2mPVygn5YyA",
+          "label": "Field 1",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": true,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_udj_D87UEfC2mPVygn5YyA",
+          "label": "Field 2",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": true,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_udj_Ec7UEfC2mPVygn5YyA",
+          "label": "Field 3",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": true,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_udj_Es7UEfC2mPVygn5YyA",
+          "label": "Go to Second Page",
+          "toPage": "_udj_Fc7UEfC2mPVygn5YyA"
+        }
+      ]
+    },
+    {
+      "___type___": "Page",
+      "xmi_id": "_udj_Fc7UEfC2mPVygn5YyA",
+      "name": "Second Page",
+      "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+      "fields": [
+        {
+          "___type___": "Field",
+          "xmi_id": "_udj_Fs7UEfC2mPVygn5YyA",
+          "label": "Field A",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": true,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_udj_F87UEfC2mPVygn5YyA",
+          "label": "Field B",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": true,
+          "isPassword": false
+        },
+        {
+          "___type___": "Field",
+          "xmi_id": "_udj_Gc7UEfC2mPVygn5YyA",
+          "label": "Field C",
+          "minLength": 1,
+          "maxLength": 100,
+          "anyLength": true,
+          "isPassword": false
+        }
+      ],
+      "buttons": [
+        {
+          "___type___": "NavigateButton",
+          "xmi_id": "_udj_Gs7UEfC2mPVygn5YyA",
+          "label": "Go to First Page",
+          "toPage": "_udj_Dc7UEfC2mPVygn5YyA"
+        }
+      ]
+    }
+  ],
+  "initialPage": "_udj_Dc7UEfC2mPVygn5YyA"
+}
+------------------------------
+
+You: create a page with a button to display the text "setup completed!"||14:35
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||14:36
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+{
+  "___type___": "Page",
+  "xmi_id": "_udj_Dc7UEfC2mPVygn5YyA",
+  "name": "Setup Completion",
+  "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+  "fields": [],
+  "buttons": [
+    {
+      "___type___": "ShowMessageButton",
+      "xmi_id": "_udj_Dc8UEfC2mPVygn5YyA",
+      "label": "Show Setup Message",
+      "messageText": "setup completed!"
+    }
+  ],
+  "checkbox": null
+}
+------------------------------
+
+You: Translate the current model into Spanish||14:37
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||14:37
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+⚠️ Your request does not appear to be related to modeling tasks in EMF Kaizen.
+
+Try something like:
+• "Create a class"
+• "Recommend attributes for..."
+• "Describe the relations in my metamodel"
+• "What does this attribute mean?"
+
+------------------------------
+
+You: add a summary field, and a close button to the selected page||14:38
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||14:38
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+{
+  "___type___": "Field",
+  "xmi_id": "_udj_SF7UEfC2mPVygn5YyA",
+  "label": "Summary",
+  "minLength": 1,
+  "maxLength": 1000,
+  "anyLength": true,
+  "isPassword": false
+},
+{
+  "___type___": "CloseWizardButton",
+  "xmi_id": "_udj_SF7UEfC2mPVygn5YyA_close"
+}
+------------------------------
+
+You: recommend four fields for the selected page||14:40
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||14:40
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+{
+  "___type___": "Field",
+  "xmi_id": "_udj_CF7UEfC2mPVygn5YyA",
+  "label": "Username",
+  "minLength": 3,
+  "maxLength": 50,
+  "anyLength": false,
+  "isPassword": false
+}
+{
+  "___type___": "Field",
+  "xmi_id": "_udj_CG7UEfC2mPVygn5YyA",
+  "label": "Phone Number",
+  "minLength": 10,
+  "maxLength": 15,
+  "anyLength": true,
+  "isPassword": false
+}
+{
+  "___type___": "Field",
+  "xmi_id": "_udj_CH7UEfC2mPVygn5YyA",
+  "label": "Address",
+  "minLength": 5,
+  "maxLength": 100,
+  "anyLength": true,
+  "isPassword": false
+}
+{
+  "___type___": "Field",
+  "xmi_id": "_udj_CI7UEfC2mPVygn5YyA",
+  "label": "Date of Birth",
+  "minLength": 10,
+  "maxLength": 10,
+  "anyLength": false,
+  "isPassword": false
+}
+------------------------------
+
+You: recommend three more pages for the wizard||14:42
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||14:42
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+{
+  "___type___": "Page",
+  "xmi_id": "_udj_Dc7UEfC2mPVygn5YyA",
+  "name": "Page 1",
+  "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+  "fields": [
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_Ds7UEfC2mPVygn5YyA",
+      "label": "Field 1",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_D87UEfC2mPVygn5YyA",
+      "label": "Field 2",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_Dm7UEfC2mPVygn5YyA",
+      "label": "Field 3",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    }
+  ],
+  "buttons": [
+    {
+      "___type___": "NavigateButton",
+      "xmi_id": "_udj_Dc7DrC2mPVygn5YyA",
+      "label": "Next",
+      "toPage": "_udj_Ec7UEfC2mPVygn5YyA"
+    }
+  ]
+},
+{
+  "___type___": "Page",
+  "xmi_id": "_udj_Ec7UEfC2mPVygn5YyA",
+  "name": "Page 2",
+  "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+  "fields": [
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_Es7UEfC2mPVygn5YyA",
+      "label": "Field 1",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_E87UEfC2mPVygn5YyA",
+      "label": "Field 2",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_Em7UEfC2mPVygn5YyA",
+      "label": "Field 3",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    }
+  ],
+  "buttons": [
+    {
+      "___type___": "NavigateButton",
+      "xmi_id": "_udj_Ec7DrC2mPVygn5YyA",
+      "label": "Previous",
+      "toPage": "_udj_Dc7UEfC2mPVygn5YyA"
+    }
+  ]
+},
+{
+  "___type___": "Page",
+  "xmi_id": "_udj_Fc7UEfC2mPVygn5YyA",
+  "name": "Page 3",
+  "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+  "fields": [
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_Fs7UEfC2mPVygn5YyA",
+      "label": "Field 1",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_F87UEfC2mPVygn5YyA",
+      "label": "Field 2",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_Fm7UEfC2mPVygn5YyA",
+      "label": "Field 3",
+      "minLength": 1,
+      "maxLength": 255,
+      "anyLength": false,
+      "isPassword": false
+    }
+  ],
+  "buttons": []
+}
+------------------------------
+
+You: Add more pages to configure double factor authentication||14:43
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||14:43
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+{
+  "___type___": "Page",
+  "xmi_id": "_udj_DA7UEfC2mPVygn5YyA",
+  "name": "Two-Factor Authentication Setup",
+  "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+  "fields": [
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_DD7UEfC2mPVygn5YyA",
+      "label": "Authentication Method",
+      "minLength": 3,
+      "maxLength": 100,
+      "anyLength": true,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_DB7UEfC2mPVygn5YyA",
+      "label": "Phone Number",
+      "minLength": 10,
+      "maxLength": 15,
+      "anyLength": true,
+      "isPassword": false
+    },
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_DC7UEfC2mPVygn5YyA",
+      "label": "Authentication Code",
+      "minLength": 6,
+      "maxLength": 6,
+      "anyLength": false,
+      "isPassword": true
+    }
+  ],
+  "buttons": [
+    {
+      "___type___": "NavigateButton",
+      "xmi_id": "_udj_DE7UEfC2mPVygn5YyA",
+      "label": "Next",
+      "toPage": "_udj_DA7UEfC2mPVygn5YyA"
+    }
+  ]
+}
+------------------------------
+
+You: complete the wizard to model an account setup for an on-line shop||14:44
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||14:45
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+{
+  "___type___": "Page",
+  "xmi_id": "_udj_DM7UEfC2mPVygn5YyA",
+  "name": "Summary",
+  "wizard": "_udj_AM7UEfC2mPVygn5YyA",
+  "fields": [
+    {
+      "___type___": "Field",
+      "xmi_id": "_udj_D87UEfC2mPVygn5YyA",
+      "label": "Summary of your setup",
+      "minLength": 1,
+      "maxLength": 500,
+      "anyLength": true,
+      "isPassword": false
+    }
+  ],
+  "buttons": [
+    {
+      "___type___": "CloseWizardButton",
+      "xmi_id": "_udj_Dc7UEfC2mPVygn5YyA"
+    }
+  ],
+  "checkbox": null
+}
+------------------------------
+

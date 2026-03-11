@@ -1,0 +1,12 @@
+Kept elements:
+Model
+Package
+Primitive Type
+Enumeration
+Enumeration Literal
+Class
+Property
+Literal Integer
+Literal Unlimited Natural
+Generalization
+Association

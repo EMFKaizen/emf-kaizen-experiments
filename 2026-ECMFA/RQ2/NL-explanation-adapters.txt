@@ -1,0 +1,18 @@
+This is a meta-model to define transformation adapters to migrate models between language variants. Language variants are defined via a meta-model (in Ecore) and a feature model that specifies the space of available features. A variant is selected via a configuration of the feature model. The user of the language can change the language variant, and the current models needs to be migrated. This is were adapters come in: they will take care of migrating a model built with a language variant, to the newly selected language variant.
+
+Adapters are components that encapsulate graph transformation rules, which are triggered when a certain feature changes from positive to negative (is deactivated), or changes from negative to positive (is activated), or remains activated, or deactivated. The changes -- positive to negative, negative to positive -- and the context -- positive, negative, are called a configuration diff.
+
+Hence, an adapater has a name, a set of transformation rules, given by their names, and a config cfgDiff (config diff) stating when the adapter should be triggered. A ConfigDiff has: 
+- a delta (ConfigDelta), made of posSet (a set of features that change from positive to negative, i.e., they are deactivated), and a negSet (a set of features that change from negative to positive, i.e., they are activated); 
+- a context (ConfigContext), made of posSet (a set of features that remain selected, or positive), and a negSet (a set of features that remain unselected or negative).
+- It is possible for an adapter to specify other adapters in the before reference, meaning that the adapter should be executed before those.
+
+Constraints that must be followed:
+- The features can only appear in one set. For example, if a feature appears in the posSet of the delta, it cannot appear in the negSet, and it cannot appear in the posSet or negSet of the context. 
+- Two adapters are inverse of each other if the posSet within the ConfigDelta of one is the negSet of the ConfigDelta of the other, and vice-versa. Moreover, the positive and negative context of both should be the same.
+
+Examples:
+- If an adapter A has a ConfigDelta with posSet 'Feat1' and negSet 'Feat2', then it is applicable when 'Feat1' is deactivated (changes from positive to negative), and 'Feat2' is activated (changes from negative to positive).
+- If the adapter A, in addition has a ConfigContext with a posSet 'Feat3' and 'Feat4' and a negSet 'Feat5', then to be applicable in addition it needs both 'Feat3' and 'Feat4' to remain selected and 'Feat5' to remain unselected.
+- An adapter B with ConfigDelta with posSet 'F1', 'F2' is applicable when both 'F1' and 'F2' change from positive to negative (both are deactivated). 
+- An adapter C with ConfigDelta with negSet 'F3', 'F4' is applicable when both 'F3' and 'F4' change from negative to positive (both are activated). 

@@ -15,10 +15,10 @@ We designed two experiments, one two answer RQ1 and RQ1.1, and the other for RQ2
 ### Experiment for RQ1 and RQ1.1
 Design:
 - We selected 5 meta-models in different domains that jointly cover structural and behavioural aspects, and work at the meta-model and model levels.
-– We created 3 models per meta-model, each on a degree of completeness, from almost empty models to detailed ones. These represent different stages at which the assistant may be used.
-– We defined 4 completion request categories (command-like, model-based, recommendation, domain descriptive), and designed 2 NL requests per model. This
+- We created 3 models per meta-model, each on a degree of completeness, from almost empty models to detailed ones. These represent different stages at which the assistant may be used.
+- We defined 4 completion request categories (command-like, model-based, recommendation, domain descriptive), and designed 2 NL requests per model. This
 amounts to 120 requests.
-– We selected 4 LLMs for the experiment: gemini-2.5-flash-lite (from Google), gpt-4o-mini, gpt-4.1-mini and gpt-5-mini (from OpenAI). 
+- We selected 4 LLMs for the experiment: gemini-2.5-flash-lite (from Google), gpt-4o-mini, gpt-4.1-mini and gpt-5-mini (from OpenAI). 
 
 Folder [RQ1](./RQ1) contains:
 - Meta-models used in the evaluation

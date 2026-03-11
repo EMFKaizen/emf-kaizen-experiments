@@ -29,7 +29,7 @@ Folder [RQ1](./RQ1) contains:
 
 ### Experiment for RQ2
 Design:
-- We selected 2 meta-models: the standard UML2 and anothor for specifying adapters for model migration transformations in adaptive languages (check the paper [here](https://www.miso.es/pubs/tosem_adaptive.pdf))
+- We selected 2 meta-models: the standard UML2 and another for specifying adapters for model migration transformations in adaptive languages (check the paper [here](https://www.miso.es/pubs/tosem_adaptive.pdf))
 – We created 3 models per meta-model, each on a degree of completeness, from almost empty models to detailed ones. These represent different stages at which the assistant may.
 – We defined 8 prompts per model.
 - We used gpt-4o-mini.

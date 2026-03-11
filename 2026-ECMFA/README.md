@@ -21,7 +21,7 @@ be used.
 2 NL requests for each model, which amounts to 120 requests.
 – We selected 4 LLMs for the experiment: gemini-2.5-flash-lite (from Google), gpt-4o-mini, gpt-4.1-mini and gpt-5-mini (from OpenAI). This covers different vendors and includes a reasoning model (gpt-5-mini).
 
-Folder (RQ1)[./RQ1] contains:
+Folder [RQ1](./RQ1) contains:
 - Meta-models used in the evaluation
 - Models at different stages of completeness
 - Natural-language assistance requests
@@ -29,12 +29,12 @@ Folder (RQ1)[./RQ1] contains:
 
 ### Experiment for RQ2
 Design:
-- We selected 2 meta-models: UML2 and adapters building for model migration transformations in adaptive languaged (check see paper (here)[https://www.miso.es/pubs/tosem_adaptive.pdf])
+- We selected 2 meta-models: UML2 and adapters building for model migration transformations in adaptive languaged (check see paper [here](https://www.miso.es/pubs/tosem_adaptive.pdf)
 – We created 3 models per meta-model, each on a degree of completeness, from almost empty models to detailed ones. These represent different stages at which the assistant may.
 – We defined 8 prompts per model.
 - We used gpt-4o-mini.
 
-Folder (RQ2)[./RQ2] contains:
+Folder [RQ2](./RQ2) contains:
 - Meta-models used in the evaluation
 - Models at different stages of completeness
 - Natural-language assistance requests

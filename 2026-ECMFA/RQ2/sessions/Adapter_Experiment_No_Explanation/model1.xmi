@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adp:AdapterModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adp="http://adapters.org/0.1" xsi:schemaLocation="http://adapters.org/0.1 Adapters.ecore" xmi:id="_mo0okBP6EfGmU-1fq2dpeQ" name="AdaptiveStateMachines" ecore="StateMachinePL.ecore" transformation="trafos/AdaptiveStateMachines.henshin">
+  <adapters xmi:id="_mo1PoBP6EfGmU-1fq2dpeQ" name="DeselectExitActions">
+    <cfgDiff xmi:id="_mo1PoRP6EfGmU-1fq2dpeQ">
+      <delta xmi:id="_mo1PohP6EfGmU-1fq2dpeQ">
+        <posSet>ExitActions</posSet>
+      </delta>
+      <context xmi:id="_mo1PoxP6EfGmU-1fq2dpeQ">
+        <posSet>Actions</posSet>
+      </context>
+    </cfgDiff>
+    <rules>moveExitActions</rules>
+  </adapters>
+  <adapters xmi:id="_mo1PpBP6EfGmU-1fq2dpeQ" name="DeselectEntryActions">
+    <cfgDiff xmi:id="_mo1PpRP6EfGmU-1fq2dpeQ">
+      <delta xmi:id="_mo1PphP6EfGmU-1fq2dpeQ">
+        <posSet>EntryAction</posSet>
+      </delta>
+      <context xmi:id="_mo1PpxP6EfGmU-1fq2dpeQ">
+        <posSet>Actions</posSet>
+      </context>
+    </cfgDiff>
+    <rules>moveEntryActions</rules>
+  </adapters>
+</adp:AdapterModel>

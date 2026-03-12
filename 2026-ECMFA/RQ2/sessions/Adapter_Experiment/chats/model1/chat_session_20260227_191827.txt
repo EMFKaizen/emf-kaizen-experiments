@@ -1,0 +1,94 @@
+[DATE]27/02/26
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||19:18
+
+You: Create an adapter named DeactivateCondition applicable when 'Condition' is deactivated, and containing rules concatEventCondition, removeConditionSrcAdjacentTransitions, removeConditionTarAdjancentTransitions||19:18
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||19:18||Generated in 6,11s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@2de22551
+------------------------------
+
+You: create two adapters ImmediateByTimed and ImmediateByEvent, applicable when Immediate changes to negative, and applicable one after the other||19:25
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||19:25||Generated in 10,33s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@7c4038be
+------------------------------
+
+You: Create an adapter inverse of DeselectExitActions||19:27
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||19:27||Generated in 7,68s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@f7e49b
+------------------------------
+
+You: Create an adapter like the selected one, but adding ExitActions in the negative context||19:28
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||19:29||Generated in 9,09s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@6d73bc23
+------------------------------
+
+You: Create an adapter like the selected one, but adding ExitActions in the negative context||19:30
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||19:30||Generated in 10,01s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@5b5ca7d
+------------------------------
+
+You: recommend more adapters to cover all possible feature changes, assumming features: ExitAction, Actions, EntryAction||19:32
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||19:32||Generated in 14,55s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@4258eba5
+------------------------------
+
+You: Assumming features: ExitAction, Actions, EntryAction, recommend features for the context and delta of the selected adapter||19:34
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||19:34||Generated in 11,53s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@436528c3
+------------------------------
+
+You: Create two adapters executed one before the other, and applicable when Timed remains selected||19:37
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||19:37||Generated in 13,27s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@23897113
+------------------------------
+
+You: Create adapters to cover all changes of features in the set: Timed, Immediate, Hierarchical||19:38
+
+EMF Kaizen: Processing recommendation request [#9]...
+
+------------------------------||19:38||Generated in 17,63s
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+soba.core.processor.AssistantResponse@72f7a1b6
+------------------------------
+

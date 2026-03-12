@@ -1,0 +1,34 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create an astract class and two active, concrete subclasses",
+    "soba_timestamp": "12:01:29",
+    "recommendationPayload": {
+        "xmi_id": "_stid4YH4EeOZq68N3n_w7g_pkg",
+        "visibility": "public",
+        "packagedElement": [
+            {
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_abstractClass",
+                "name": "AbstractClass",
+                "___type___": "Class",
+                "ownedAttribute": [],
+                "isAbstract": true
+            },
+            {
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concreteClass1",
+                "name": "ConcreteClass1",
+                "___type___": "Class",
+                "ownedAttribute": [],
+                "isAbstract": false
+            },
+            {
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concreteClass2",
+                "name": "ConcreteClass2",
+                "___type___": "Class",
+                "ownedAttribute": [],
+                "isAbstract": false
+            }
+        ],
+        "name": "AbstractClassPackage",
+        "___type___": "Package"
+    }
+}

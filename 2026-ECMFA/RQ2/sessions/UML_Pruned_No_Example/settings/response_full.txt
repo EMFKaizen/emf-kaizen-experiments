@@ -1,0 +1,79 @@
+{
+  "___type___": "Class",
+  "xmi_id": "_aO3oYhc6EfGGEcXPtf6zrg",
+  "name": "PaperMillFactory",
+  "visibility": "public",
+  "generalization": [],
+  "isAbstract": false,
+  "redefinedClassifier": [],
+  "ownedAttribute": [
+    {
+      "___type___": "Property",
+      "xmi_id": "_aO3oZhc6EfGGEcXPtf6zrg",
+      "name": "woodInput",
+      "visibility": "public",
+      "isLeaf": true,
+      "isStatic": false,
+      "type": "_aO3oUBc6EfGGEcXPtf6zrg",
+      "isOrdered": true,
+      "isUnique": true,
+      "lowerValue": {
+        "___type___": "LiteralInteger",
+        "xmi_id": "_aO3oZxc6EfGGEcXPtf6zrg",
+        "name": "minWoodInput",
+        "visibility": "public",
+        "value": 1
+      },
+      "upperValue": {
+        "___type___": "LiteralUnlimitedNatural",
+        "xmi_id": "_aO3oaBc6EfGGEcXPtf6zrg",
+        "name": "maxWoodInput",
+        "visibility": "public",
+        "value": 1000
+      },
+      "isReadOnly": false,
+      "aggregation": "none",
+      "qualifier": [],
+      "isDerived": false,
+      "isDerivedUnion": false,
+      "isID": false,
+      "redefinedProperty": [],
+      "subsettedProperty": []
+    },
+    {
+      "___type___": "Property",
+      "xmi_id": "_aO3obhc6EfGGEcXPtf6zrg",
+      "name": "recycledFiberInput",
+      "visibility": "public",
+      "isLeaf": true,
+      "isStatic": false,
+      "type": "_aO3oUBc6EfGGEcXPtf6zrg",
+      "isOrdered": true,
+      "isUnique": true,
+      "lowerValue": {
+        "___type___": "LiteralInteger",
+        "xmi_id": "_aO3obxc6EfGGEcXPtf6zrg",
+        "name": "minRecycledFiberInput",
+        "visibility": "public",
+        "value": 1
+      },
+      "upperValue": {
+        "___type___": "LiteralUnlimitedNatural",
+        "xmi_id": "_aO3ocBc6EfGGEcXPtf6zrg",
+        "name": "maxRecycledFiberInput",
+        "visibility": "public",
+        "value": 1000
+      },
+      "isReadOnly": false,
+      "aggregation": "none",
+      "qualifier": [],
+      "isDerived": false,
+      "isDerivedUnion": false,
+      "isID": false,
+      "redefinedProperty": [],
+      "subsettedProperty": []
+    }
+  ],
+  "ownedConnector": [],
+  "isActive": true
+}

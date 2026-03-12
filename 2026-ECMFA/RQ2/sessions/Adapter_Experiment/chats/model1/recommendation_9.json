@@ -1,0 +1,60 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create adapters to cover all changes of features in the set: Timed, Immediate, Hierarchical",
+    "soba_timestamp": "19:38:41",
+    "recommendationPayload": {
+        "xmi_id": "_mo0okBP6EfGmU-1fq2dpeQ",
+        "adapters": [
+            {
+                "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+                "before": [],
+                "name": "TimedToImmediate",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PqhP6EfGmU-1fq2dpeQ",
+                        "negSet": ["Timed"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PqxP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Immediate"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["transformTimedToImmediate"]
+            },
+            {
+                "xmi_id": "_mo1PzBP6EfGmU-1fq2dpeQ",
+                "before": ["_mo1PqBP6EfGmU-1fq2dpeQ"],
+                "name": "ImmediateToHierarchical",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PzRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PzhP6EfGmU-1fq2dpeQ",
+                        "negSet": ["Immediate"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PzxP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Hierarchical"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["transformImmediateToHierarchical"]
+            }
+        ],
+        "name": "AdaptiveStateMachines",
+        "ecore": "StateMachinePL.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveStateMachines.henshin"
+    }
+}

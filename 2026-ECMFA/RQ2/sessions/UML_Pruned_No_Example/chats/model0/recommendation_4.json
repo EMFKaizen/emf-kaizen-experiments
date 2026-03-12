@@ -1,0 +1,67 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "add two classes related to the context of the selected model, related via an association",
+    "soba_timestamp": "12:08:38",
+    "recommendationPayload": {
+        "xmi_id": "_stid4YH4EeOZq68N3n_w7g_pkg1",
+        "visibility": "public",
+        "packagedElement": [
+            {
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_class1",
+                "visibility": "public",
+                "name": "Product",
+                "___type___": "Class",
+                "ownedAttribute": [{
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_attr1",
+                    "name": "productName",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "String",
+                        "___type___": "PrimitiveType"
+                    }
+                }]
+            },
+            {
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_class2",
+                "visibility": "public",
+                "name": "Order",
+                "___type___": "Class",
+                "ownedAttribute": [{
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_attr2",
+                    "name": "orderNumber",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "Integer",
+                        "___type___": "PrimitiveType"
+                    }
+                }]
+            }
+        ],
+        "ownedConnector": [{
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_assoc1",
+            "memberEnd": [
+                {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_attr1",
+                    "name": "product",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "Product",
+                        "___type___": "Class"
+                    }
+                },
+                {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_attr2",
+                    "name": "order",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "Order",
+                        "___type___": "Class"
+                    }
+                }
+            ],
+            "___type___": "Association"
+        }],
+        "name": "ProductPackage",
+        "___type___": "Package"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create an astract class and two active, concrete subclasses",
+    "soba_timestamp": "13:03:37",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_aO3oYhc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "ownedConnector": [],
+            "name": "AbstractClass",
+            "___type___": "Class",
+            "ownedAttribute": [],
+            "isActive": false,
+            "isAbstract": true
+        },
+        {
+            "xmi_id": "_aO3oZhc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "ownedConnector": [],
+            "name": "ConcreteClass1",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "xmi_id": "_aO3oZxc6EfGGEcXPtf6zrg",
+                "isStatic": false,
+                "isReadOnly": false,
+                "visibility": "public",
+                "name": "attribute1",
+                "isUnique": true,
+                "___type___": "Property",
+                "type": "_aO3oYhc6EfGGEcXPtf6zrg",
+                "isLeaf": true,
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_aO3oaBc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "ownedConnector": [],
+            "name": "ConcreteClass2",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "xmi_id": "_aO3oaRc6EfGGEcXPtf6zrg",
+                "isStatic": false,
+                "isReadOnly": false,
+                "visibility": "public",
+                "name": "attribute2",
+                "isUnique": true,
+                "___type___": "Property",
+                "type": "_aO3oYhc6EfGGEcXPtf6zrg",
+                "isLeaf": true,
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        }
+    ]}
+}

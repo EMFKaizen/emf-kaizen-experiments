@@ -1,0 +1,35 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create a class Order with attribute customerName",
+    "soba_timestamp": "13:30:06",
+    "recommendationPayload": {
+        "xmi_id": "_aO3oPxc6EfGGEcXPtf6zrg",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "Order",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [{
+            "isStatic": false,
+            "isDerived": false,
+            "visibility": "public",
+            "isUnique": true,
+            "aggregation": "none",
+            "type": "_stk6IYH4EeOZq68N3n_w7g",
+            "isLeaf": false,
+            "subsettedProperty": [],
+            "xmi_id": "_aO3oQhc6EfGGEcXPtf6zrg",
+            "redefinedProperty": [],
+            "isReadOnly": false,
+            "isID": false,
+            "isDerivedUnion": false,
+            "qualifier": [],
+            "name": "customerName",
+            "___type___": "Property",
+            "isOrdered": false
+        }],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

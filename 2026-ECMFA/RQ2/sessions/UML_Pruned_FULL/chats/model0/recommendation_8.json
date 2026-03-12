@@ -1,0 +1,76 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems.",
+    "soba_timestamp": "18:03:29",
+    "recommendationPayload": {
+        "xmi_id": "_stid4YH4EeOZq68N3n_w7g_process",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "PaperMillProcess",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_upper",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 10
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_lower",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stid4YH4EeOZq68N3n_w7g_material",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_materialPreparation",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "materialPreparation",
+                "___type___": "Property",
+                "isOrdered": true
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_upper_pulp",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 10
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_lower_pulp",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stid4YH4EeOZq68N3n_w7g_pulp",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_pulpProcessing",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "pulpProcessing",
+                "___type___": "Property",
+                "isOrdered": true
+            }
+        ],
+        "isActive": true,
+        "isAbstract": false
+    }
+}

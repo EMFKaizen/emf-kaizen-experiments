@@ -1,0 +1,35 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Create a private class OrderTrack with a unique id",
+    "soba_timestamp": "18:10:12",
+    "recommendationPayload": {
+        "xmi_id": "_stk6OIH4EeOZq68N3n_w7g",
+        "visibility": "private",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "OrderTrack",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [{
+            "isStatic": false,
+            "isDerived": false,
+            "visibility": "public",
+            "isUnique": true,
+            "aggregation": "none",
+            "type": "_stk6IIH4EeOZq68N3n_w7g",
+            "isLeaf": true,
+            "subsettedProperty": [],
+            "xmi_id": "_stk6OIH4EeOZq68N3n_w7g_id",
+            "redefinedProperty": [],
+            "isReadOnly": true,
+            "isID": true,
+            "isDerivedUnion": false,
+            "qualifier": [],
+            "name": "id",
+            "___type___": "Property",
+            "isOrdered": false
+        }],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

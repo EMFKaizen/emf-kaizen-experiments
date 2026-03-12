@@ -1,0 +1,45 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Create two more subclasses for the selected class",
+    "soba_timestamp": "12:27:28",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_stk6LKH4EeOZq68N3n_w7g_subclass1",
+            "visibility": "public",
+            "generalization": [{
+                "xmi_id": "_stk6LKH4EeOZq68N3n_w7g_subclass1_gen",
+                "general": "_stk6KIH4EeOZq68N3n_w7g",
+                "isSubstitutable": true,
+                "generalizationSet": [],
+                "___type___": "Generalization",
+                "specific": "_stk6LKH4EeOZq68N3n_w7g_subclass1"
+            }],
+            "ownedConnector": [],
+            "name": "PizzaOrder",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [],
+            "isActive": false,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_stk6LKH4EeOZq68N3n_w7g_subclass2",
+            "visibility": "public",
+            "generalization": [{
+                "xmi_id": "_stk6LKH4EeOZq68N3n_w7g_subclass2_gen",
+                "general": "_stk6KIH4EeOZq68N3n_w7g",
+                "isSubstitutable": true,
+                "generalizationSet": [],
+                "___type___": "Generalization",
+                "specific": "_stk6LKH4EeOZq68N3n_w7g_subclass2"
+            }],
+            "ownedConnector": [],
+            "name": "CustomOrder",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [],
+            "isActive": false,
+            "isAbstract": false
+        }
+    ]}
+}

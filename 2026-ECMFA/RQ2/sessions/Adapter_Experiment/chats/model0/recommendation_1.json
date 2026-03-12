@@ -1,0 +1,35 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create an adapter named InhByDelegation applicable when 'Simple' is activated",
+    "soba_timestamp": "19:00:23",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [{
+            "xmi_id": "_newAdapterId",
+            "before": [],
+            "name": "InhByDelegation",
+            "___type___": "Adapter",
+            "cfgDiff": {
+                "xmi_id": "_newConfigDiffId",
+                "delta": {
+                    "xmi_id": "_newConfigDeltaId",
+                    "negSet": ["Simple"],
+                    "___type___": "ConfigDelta",
+                    "posSet": []
+                },
+                "context": {
+                    "xmi_id": "_newConfigContextId",
+                    "negSet": [],
+                    "___type___": "ConfigContext",
+                    "posSet": ["Simple"]
+                },
+                "___type___": "ConfigDiff"
+            },
+            "rules": []
+        }],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

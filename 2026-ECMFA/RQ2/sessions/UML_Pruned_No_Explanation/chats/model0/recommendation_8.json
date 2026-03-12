@@ -1,0 +1,48 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems.",
+    "soba_timestamp": "13:15:23",
+    "recommendationPayload": {
+        "xmi_id": "_aO3oYhc6EfGGEcXPtf6zrg",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "PaperMillFactory",
+        "___type___": "Class",
+        "ownedAttribute": [{
+            "isStatic": false,
+            "isDerived": false,
+            "upperValue": {
+                "xmi_id": "_aO3oYlc6EfGGEcXPtf6zrg",
+                "visibility": "public",
+                "name": "materialType",
+                "___type___": "LiteralUnlimitedNatural",
+                "value": 1
+            },
+            "visibility": "public",
+            "isUnique": true,
+            "aggregation": "none",
+            "lowerValue": {
+                "xmi_id": "_aO3oYkc6EfGGEcXPtf6zrg",
+                "visibility": "public",
+                "name": "materialType",
+                "___type___": "LiteralString",
+                "value": "Wood or Recycled Fiber"
+            },
+            "type": "_aO3oZRc6EfGGEcXPtf6zrg",
+            "isLeaf": true,
+            "subsettedProperty": [],
+            "xmi_id": "_aO3oYjc6EfGGEcXPtf6zrg",
+            "redefinedProperty": [],
+            "isReadOnly": false,
+            "isID": false,
+            "isDerivedUnion": false,
+            "qualifier": [],
+            "name": "materialType",
+            "___type___": "Property",
+            "isOrdered": true
+        }],
+        "isActive": true,
+        "isAbstract": false
+    }
+}

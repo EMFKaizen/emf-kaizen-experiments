@@ -1,0 +1,84 @@
+[DATE]27/02/26
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||20:01
+
+You: Create an adapter named InhByDelegation applicable when 'Simple' is activated||20:01
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||20:01||Generated in 10,16s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@2a0a5865
+------------------------------
+
+You: create two adapters InhByDelegation and InhByDelegationInterface, one applicable after the other||20:03
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||20:03||Generated in 11,68s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@7e18b9e6
+------------------------------
+
+You: Create adapters, each one covering the activation of exactly one of these features: Multi, Single, Ref||20:04
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||20:04||Generated in 12,87s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@60c2c500
+------------------------------
+
+You: Create two adapters applicable when Ref is activated/deactivated, and both needing Multi as positive context||20:05
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||20:06||Generated in 8,60s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@496d7bd9
+------------------------------
+
+You: create 3 adapters, one executing after the other||20:07
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||20:07||Generated in 12,95s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@5e4b92b3
+------------------------------
+
+You: Create adaters to cover all combinations of activation and deactivation of features Multi and Ref||20:08
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||20:09||Generated in 15,53s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@62b92df8
+------------------------------
+
+You: Create an adapter with rules createClass and deleteClass, applicable when Single is deactivated||20:10
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||20:10||Generated in 5,54s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@11216e2e
+------------------------------
+
+You: create two adapters for features Single and Ref, where both are not applicable at the same time||20:12
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||20:12||Generated in 8,95s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@4c31ec8f
+------------------------------
+

@@ -1,0 +1,111 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create two classes related via an association",
+    "soba_timestamp": "12:39:48",
+    "recommendationPayload": {
+        "xmi_id": "_newPackageId",
+        "profileApplication": [],
+        "visibility": "public",
+        "packagedElement": [
+            {
+                "xmi_id": "_newClass1Id",
+                "visibility": "public",
+                "generalization": [],
+                "ownedConnector": [],
+                "name": "ClassA",
+                "___type___": "Class",
+                "redefinedClassifier": [],
+                "ownedAttribute": [],
+                "isAbstract": false
+            },
+            {
+                "xmi_id": "_newClass2Id",
+                "visibility": "public",
+                "generalization": [],
+                "ownedConnector": [],
+                "name": "ClassB",
+                "___type___": "Class",
+                "redefinedClassifier": [],
+                "ownedAttribute": [],
+                "isAbstract": false
+            },
+            {
+                "xmi_id": "_newAssociationId",
+                "navigableOwnedEnd": [],
+                "memberEnd": [
+                    "_newClass1EndId",
+                    "_newClass2EndId"
+                ],
+                "isDerived": false,
+                "substitution": [],
+                "visibility": "public",
+                "generalization": [],
+                "___type___": "Association",
+                "redefinedClassifier": [],
+                "ownedEnd": [
+                    {
+                        "isStatic": false,
+                        "isDerived": false,
+                        "upperValue": {
+                            "xmi_id": "_newClass1UpperId",
+                            "___type___": "LiteralUnlimitedNatural",
+                            "value": 1
+                        },
+                        "visibility": "public",
+                        "isUnique": true,
+                        "aggregation": "none",
+                        "lowerValue": {
+                            "xmi_id": "_newClass1LowerId",
+                            "___type___": "LiteralInteger",
+                            "value": 1
+                        },
+                        "type": "_newClass1Id",
+                        "isLeaf": false,
+                        "subsettedProperty": [],
+                        "xmi_id": "_newClass1EndId",
+                        "redefinedProperty": [],
+                        "isReadOnly": false,
+                        "isID": false,
+                        "isDerivedUnion": false,
+                        "qualifier": [],
+                        "name": "classA",
+                        "___type___": "Property",
+                        "isOrdered": false
+                    },
+                    {
+                        "isStatic": false,
+                        "isDerived": false,
+                        "upperValue": {
+                            "xmi_id": "_newClass2UpperId",
+                            "___type___": "LiteralUnlimitedNatural",
+                            "value": -1
+                        },
+                        "visibility": "public",
+                        "isUnique": true,
+                        "aggregation": "none",
+                        "lowerValue": {
+                            "xmi_id": "_newClass2LowerId",
+                            "___type___": "LiteralInteger",
+                            "value": 0
+                        },
+                        "type": "_newClass2Id",
+                        "isLeaf": false,
+                        "subsettedProperty": [],
+                        "xmi_id": "_newClass2EndId",
+                        "redefinedProperty": [],
+                        "isReadOnly": false,
+                        "isID": false,
+                        "isDerivedUnion": false,
+                        "qualifier": [],
+                        "name": "classB",
+                        "___type___": "Property",
+                        "isOrdered": false
+                    }
+                ],
+                "isAbstract": false
+            }
+        ],
+        "name": "NewPackage",
+        "___type___": "Package"
+    }
+}

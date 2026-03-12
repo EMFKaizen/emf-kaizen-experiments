@@ -1,0 +1,3 @@
+{
+  "UML.ecore": "This is the standard UML2 meta-model, but restricted to the main elements of class diagrams: Model\r\nPackage\r\nPrimitive Type\r\nEnumeration\r\nEnumeration Literal\r\nClass\r\nProperty\r\nLiteral Integer, Literal Unlimited Natural, and other literals\r\nGeneralization\r\nAssociation"
+}

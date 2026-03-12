@@ -1,0 +1,49 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create missing adapters to handle features 'Composition' and 'Navigation'. They all need feature 'FullAssoc' to remain selected",
+    "soba_timestamp": "12:33:56",
+    "recommendationPayload": {
+        "adapters": [
+            {
+                "before": [],
+                "name": "CompositionAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Composition"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["FullAssoc"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["handleComposition"]
+            },
+            {
+                "before": ["_3xMQChQAEfGgiLaW5H9bqA"],
+                "name": "NavigationAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Navigation"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["FullAssoc"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["handleNavigation"]
+            }
+        ],
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+    }
+}

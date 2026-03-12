@@ -1,0 +1,146 @@
+{
+  "UML.ecore": {
+    "SerializationSelection": {
+      "Class": [
+        "name",
+        "visibility",
+        "generalization",
+        "isAbstract",
+        "redefinedClassifier",
+        "representation",
+        "ownedAttribute",
+        "ownedConnector",
+        "isActive"
+      ],
+      "Package": [
+        "name",
+        "visibility",
+        "URI",
+        "ownedType",
+        "nestedPackage",
+        "packagedElement",
+        "packageImport"
+      ],
+      "Association": [
+        "name",
+        "visibility",
+        "generalization",
+        "isAbstract",
+        "redefinedClassifier",
+        "representation",
+        "substitution",
+        "isDerived",
+        "memberEnd",
+        "ownedEnd",
+        "navigableOwnedEnd"
+      ],
+      "Property": [
+        "name",
+        "visibility",
+        "isLeaf",
+        "isStatic",
+        "type",
+        "isOrdered",
+        "isUnique",
+        "lowerValue",
+        "upperValue",
+        "isReadOnly",
+        "datatype",
+        "aggregation",
+        "associationEnd",
+        "qualifier",
+        "defaultValue",
+        "isDerived",
+        "isDerivedUnion",
+        "isID",
+        "owningAssociation",
+        "redefinedProperty",
+        "subsettedProperty",
+        "association"
+      ],
+      "Enumeration": [
+        "name",
+        "visibility",
+        "ownedAttribute",
+        "ownedOperation",
+        "ownedLiteral"
+      ],
+      "EnumerationLiteral": [
+        "name",
+        "classifier",
+        "slot",
+        "specification",
+        "enumeration"
+      ],
+      "PrimitiveType": [
+        "name",
+        "visibility",
+        "ownedAttribute",
+        "ownedOperation"
+      ],
+      "Model": [
+        "name",
+        "visibility",
+        "packageImport",
+        "URI",
+        "packageMerge",
+        "packagedElement",
+        "profileApplication",
+        "viewpoint"
+      ],
+      "Generalization": [
+        "general",
+        "generalizationSet",
+        "isSubstitutable",
+        "specific"
+      ],
+      "LiteralBoolean": [
+        "name",
+        "visibility",
+        "owningTemplateParameter",
+        "templateParameter",
+        "type",
+        "value"
+      ],
+      "LiteralInteger": [
+        "name",
+        "visibility",
+        "owningTemplateParameter",
+        "templateParameter",
+        "type",
+        "value"
+      ],
+      "LiteralNull": [
+        "name",
+        "visibility",
+        "owningTemplateParameter",
+        "templateParameter",
+        "type"
+      ],
+      "LiteralReal": [
+        "name",
+        "visibility",
+        "owningTemplateParameter",
+        "templateParameter",
+        "type",
+        "value"
+      ],
+      "LiteralString": [
+        "name",
+        "visibility",
+        "owningTemplateParameter",
+        "templateParameter",
+        "type",
+        "value"
+      ],
+      "LiteralUnlimitedNatural": [
+        "name",
+        "visibility",
+        "owningTemplateParameter",
+        "templateParameter",
+        "type",
+        "value"
+      ]
+    }
+  }
+}

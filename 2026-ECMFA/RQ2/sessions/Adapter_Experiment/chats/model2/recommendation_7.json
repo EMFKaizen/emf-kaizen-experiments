@@ -1,0 +1,83 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create three adapters with positive context 'Ref' where one is applied before the others",
+    "soba_timestamp": "19:53:17",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQABQAEfGgiLaW5H9bqA",
+        "adapters": [
+            {
+                "xmi_id": "_3xMQHRQAEfGgiLaW5H9bqA",
+                "before": [],
+                "name": "RefAdapter1",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+                    "delta": {
+                        "xmi_id": "_3xMQHxQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_3xMQIBQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_3xMQIRQAEfGgiLaW5H9bqA",
+                "before": ["_3xMQHRQAEfGgiLaW5H9bqA"],
+                "name": "RefAdapter2",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_3xMQIhQAEfGgiLaW5H9bqA",
+                    "delta": {
+                        "xmi_id": "_3xMQIxQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_3xMQJBQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_3xMQJRQAEfGgiLaW5H9bqA",
+                "before": ["_3xMQIRQAEfGgiLaW5H9bqA"],
+                "name": "RefAdapter3",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_3xMQJhQAEfGgiLaW5H9bqA",
+                    "delta": {
+                        "xmi_id": "_3xMQJxQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_3xMQKBQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "AdaptiveClassDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+    }
+}

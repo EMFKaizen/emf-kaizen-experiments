@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_stid4YH4EeOZq68N3n_w7g" name="Pizzeria">
+  <packagedElement xsi:type="uml:PrimitiveType" xmi:id="_stk6IIH4EeOZq68N3n_w7g" name="int"/>
+  <packagedElement xsi:type="uml:PrimitiveType" xmi:id="_stk6IYH4EeOZq68N3n_w7g" name="String"/>
+  <packagedElement xsi:type="uml:Class" xmi:id="_stk6KIH4EeOZq68N3n_w7g" name="Pizza" isAbstract="true">
+    <ownedAttribute xmi:id="_stk6KYH4EeOZq68N3n_w7g" name="name" type="_stk6IYH4EeOZq68N3n_w7g">
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_stk6KoH4EeOZq68N3n_w7g"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_stk6K4H4EeOZq68N3n_w7g" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_stlhOYH4EeOZq68N3n_w7g" name="CustomPizza">
+    <generalization xmi:id="_1kSCkBS7EfG3h93QlMYnHA" general="_stk6KIH4EeOZq68N3n_w7g"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_1kSCkRS7EfG3h93QlMYnHA" name="Ingredient">
+    <ownedAttribute xmi:id="_1kSCkhS7EfG3h93QlMYnHA" name="name" type="_stk6IYH4EeOZq68N3n_w7g"/>
+  </packagedElement>
+</uml:Model>

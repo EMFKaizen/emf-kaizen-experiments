@@ -1,0 +1,51 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Recommend an enumeration with literals for the selected model, and a class with an attribute whose type is the enumeratio",
+    "soba_timestamp": "13:12:05",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_aO3oYhc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "name": "Color",
+            "ownedLiteral": [
+                {
+                    "xmi_id": "_aO3oZhc6EfGGEcXPtf6zrg",
+                    "name": "Red",
+                    "___type___": "EnumerationLiteral",
+                    "enumeration": "_aO3oYhc6EfGGEcXPtf6zrg"
+                },
+                {
+                    "xmi_id": "_aO3oWhc6EfGGEcXPtf6zrg",
+                    "name": "Green",
+                    "___type___": "EnumerationLiteral",
+                    "enumeration": "_aO3oYhc6EfGGEcXPtf6zrg"
+                },
+                {
+                    "xmi_id": "_aO3oXhc6EfGGEcXPtf6zrg",
+                    "name": "Blue",
+                    "___type___": "EnumerationLiteral",
+                    "enumeration": "_aO3oYhc6EfGGEcXPtf6zrg"
+                }
+            ],
+            "___type___": "Enumeration"
+        },
+        {
+            "xmi_id": "_aO3oYxc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "name": "ColoredObject",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "xmi_id": "_aO3oZxc6EfGGEcXPtf6zrg",
+                "visibility": "public",
+                "lower": 1,
+                "upper": 1,
+                "name": "color",
+                "isUnique": true,
+                "___type___": "Property",
+                "type": "_aO3oYhc6EfGGEcXPtf6zrg",
+                "isOrdered": false
+            }],
+            "isAbstract": false
+        }
+    ]}
+}

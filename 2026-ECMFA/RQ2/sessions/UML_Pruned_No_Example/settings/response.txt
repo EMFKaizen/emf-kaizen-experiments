@@ -1,0 +1,75 @@
+{
+  "___type___": "Class",
+  "xmi_id": "_stmIdIH4EeOZq68N3n_w7g",
+  "name": "DeliveryProcess",
+  "visibility": "public",
+  "generalization": [],
+  "isAbstract": false,
+  "redefinedClassifier": [],
+  "ownedAttribute": [
+    {
+      "___type___": "Property",
+      "xmi_id": "_stmIdYH4EeOZq68N3n_w7g",
+      "name": "deliveryMethod",
+      "visibility": "public",
+      "isLeaf": false,
+      "isStatic": false,
+      "type": "_stk6IIH4EeOZq68N3n_w7g",
+      "isOrdered": false,
+      "isUnique": true,
+      "lowerValue": {
+        "___type___": "LiteralInteger",
+        "xmi_id": "_stmId4H4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "value": 1
+      },
+      "upperValue": {
+        "___type___": "LiteralUnlimitedNatural",
+        "xmi_id": "_stmIeIH4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "value": 1
+      },
+      "isReadOnly": false,
+      "aggregation": "none",
+      "qualifier": [],
+      "isDerived": false,
+      "isDerivedUnion": false,
+      "isID": false,
+      "redefinedProperty": [],
+      "subsettedProperty": []
+    },
+    {
+      "___type___": "Property",
+      "xmi_id": "_stmIeYH4EeOZq68N3n_w7g",
+      "name": "lastMileDelivery",
+      "visibility": "public",
+      "isLeaf": false,
+      "isStatic": false,
+      "type": "_stk6IIH4EeOZq68N3n_w7g",
+      "isOrdered": false,
+      "isUnique": true,
+      "lowerValue": {
+        "___type___": "LiteralInteger",
+        "xmi_id": "_stmIe4H4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "value": 1
+      },
+      "upperValue": {
+        "___type___": "LiteralUnlimitedNatural",
+        "xmi_id": "_stmIfIH4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "value": 1
+      },
+      "isReadOnly": false,
+      "aggregation": "none",
+      "qualifier": [],
+      "isDerived": false,
+      "isDerivedUnion": false,
+      "isID": false,
+      "redefinedProperty": [],
+      "subsettedProperty": []
+    }
+  ],
+  "ownedConnector": [],
+  "isActive": false
+}

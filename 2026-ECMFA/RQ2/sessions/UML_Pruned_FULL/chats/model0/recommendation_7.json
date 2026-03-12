@@ -1,0 +1,73 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Using the composite design pattern, complete the model for a factory that has simple and composite processes.",
+    "soba_timestamp": "18:01:17",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_simpleProcess",
+            "visibility": "public",
+            "ownedConnector": [],
+            "name": "SimpleProcess",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_simpleProcess_attribute",
+                "isReadOnly": false,
+                "visibility": "public",
+                "name": "processName",
+                "___type___": "Property",
+                "aggregation": "none",
+                "type": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_stringType",
+                    "___type___": "PrimitiveType"
+                }
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_compositeProcess",
+            "visibility": "public",
+            "ownedConnector": [],
+            "name": "CompositeProcess",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_compositeProcess_attribute",
+                "isReadOnly": false,
+                "visibility": "public",
+                "name": "processes",
+                "___type___": "Property",
+                "aggregation": "none",
+                "type": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_association",
+                    "___type___": "Association"
+                }
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_association",
+            "memberEnd": [
+                {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_simpleProcess_end",
+                    "visibility": "public",
+                    "name": "simpleProcess",
+                    "___type___": "Property",
+                    "type": "_stid4YH4EeOZq68N3n_w7g_simpleProcess"
+                },
+                {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_compositeProcess_end",
+                    "visibility": "public",
+                    "name": "compositeProcess",
+                    "___type___": "Property",
+                    "type": "_stid4YH4EeOZq68N3n_w7g_compositeProcess"
+                }
+            ],
+            "isDerived": false,
+            "visibility": "public",
+            "name": "contains",
+            "___type___": "Association",
+            "isAbstract": false
+        }
+    ]}
+}

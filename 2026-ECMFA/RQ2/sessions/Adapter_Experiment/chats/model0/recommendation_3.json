@@ -1,0 +1,74 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create adapters, each one covering the activation of exactly one of these features: Multi, Single, Ref",
+    "soba_timestamp": "19:06:17",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "xmi_id": "_newAdapter1",
+                "before": [],
+                "name": "ActivateMulti",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_newAdapter2",
+                "before": [],
+                "name": "ActivateSingle",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Single"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_newAdapter3",
+                "before": [],
+                "name": "ActivateRef",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Ref"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "add two classes with attributes relevant to the context of the selected model",
+    "soba_timestamp": "12:05:09",
+    "recommendationPayload": {
+        "xmi_id": "_stid4YH4EeOZq68N3n_w7g",
+        "profileApplication": [],
+        "packageImport": [],
+        "visibility": "public",
+        "packagedElement": [
+            {
+                "visibility": "public",
+                "name": "Product",
+                "___type___": "Class",
+                "ownedAttribute": [{
+                    "lower": 1,
+                    "upper": 1,
+                    "name": "productId",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "Integer",
+                        "___type___": "PrimitiveType"
+                    }
+                }]
+            },
+            {
+                "visibility": "public",
+                "name": "Supplier",
+                "___type___": "Class",
+                "ownedAttribute": [{
+                    "lower": 1,
+                    "upper": 1,
+                    "name": "supplierName",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "String",
+                        "___type___": "PrimitiveType"
+                    }
+                }]
+            }
+        ],
+        "name": "Factory",
+        "packageMerge": [],
+        "___type___": "Model"
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "recommend 2 classes for the model",
+    "soba_timestamp": "14:17:28",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_newClass1",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "Order",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_newProperty1",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "customerName",
+                "___type___": "Property",
+                "isOrdered": false
+            }],
+            "isActive": false,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_newClass2",
+            "visibility": "private",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "OrderTrack",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_newProperty2",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": true,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "uniqueId",
+                "___type___": "Property",
+                "isOrdered": false
+            }],
+            "isActive": false,
+            "isAbstract": false
+        }
+    ]}
+}

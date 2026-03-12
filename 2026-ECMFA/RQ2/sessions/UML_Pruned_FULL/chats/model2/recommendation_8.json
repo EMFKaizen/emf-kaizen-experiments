@@ -1,0 +1,80 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Complete the model to support the delivery process, including last mile",
+    "soba_timestamp": "18:48:58",
+    "recommendationPayload": {
+        "xmi_id": "_stmDeliveryProcess",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "DeliveryProcess",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmDeliveryMethodUpper",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmDeliveryMethodLower",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmDeliveryMethod",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "deliveryMethod",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmDeliveryAddressUpper",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmDeliveryAddressLower",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stmISYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmDeliveryAddress",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "deliveryAddress",
+                "___type___": "Property",
+                "isOrdered": false
+            }
+        ],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

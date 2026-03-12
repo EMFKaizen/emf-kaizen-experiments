@@ -1,0 +1,23 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create more primitive types, different from the selected ones",
+    "soba_timestamp": "12:30:14",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_stk6LKH4EeOZq68N3n_w7g_float",
+            "visibility": "public",
+            "name": "float",
+            "___type___": "PrimitiveType",
+            "ownedAttribute": [],
+            "ownedOperation": []
+        },
+        {
+            "xmi_id": "_stk6LKH4EeOZq68N3n_w7g_double",
+            "visibility": "public",
+            "name": "double",
+            "___type___": "PrimitiveType",
+            "ownedAttribute": [],
+            "ownedOperation": []
+        }
+    ]}
+}

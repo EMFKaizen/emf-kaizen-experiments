@@ -1,0 +1,83 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create 3 adapters, one executing after the other",
+    "soba_timestamp": "20:07:49",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "xmi_id": "_adapter1",
+                "before": [],
+                "name": "Adapter1",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_configDiff1",
+                    "delta": {
+                        "xmi_id": "_delta1",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_context1",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_adapter2",
+                "before": ["_adapter1"],
+                "name": "Adapter2",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_configDiff2",
+                    "delta": {
+                        "xmi_id": "_delta2",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_context2",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_adapter3",
+                "before": ["_adapter2"],
+                "name": "Adapter3",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_configDiff3",
+                    "delta": {
+                        "xmi_id": "_delta3",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_context3",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

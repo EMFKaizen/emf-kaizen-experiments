@@ -1,0 +1,28 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "recommend adapters for the feature changes that the adapters in the model are missing",
+    "soba_timestamp": "12:28:25",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQHRQAEfGgiLaW5H9bqA",
+        "before": [],
+        "name": "MultiToSingleInh",
+        "___type___": "Adapter",
+        "cfgDiff": {
+            "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+            "delta": {
+                "xmi_id": "_3xMQHxQAEfGgiLaW5H9bqA",
+                "negSet": ["Single"],
+                "___type___": "ConfigDelta",
+                "posSet": ["Multi"]
+            },
+            "context": {
+                "xmi_id": "_3xMQIBQAEfGgiLaW5H9bqA",
+                "negSet": [],
+                "___type___": "ConfigContext",
+                "posSet": ["Ref"]
+            },
+            "___type___": "ConfigDiff"
+        },
+        "rules": ["multiToSingle"]
+    }
+}

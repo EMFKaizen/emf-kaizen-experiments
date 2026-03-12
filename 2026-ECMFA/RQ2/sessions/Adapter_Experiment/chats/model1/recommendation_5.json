@@ -1,0 +1,35 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create an adapter like the selected one, but adding ExitActions in the negative context",
+    "soba_timestamp": "19:30:26",
+    "recommendationPayload": {
+        "xmi_id": "_mo0okBP6EfGmU-1fq2dpeQ",
+        "adapters": [{
+            "xmi_id": "_mo1PpBP6EfGmU-1fq2dpeQ_new",
+            "before": [],
+            "name": "DeselectExitActionsNegativeContext",
+            "___type___": "Adapter",
+            "cfgDiff": {
+                "xmi_id": "_mo1PpRP6EfGmU-1fq2dpeQ_new",
+                "delta": {
+                    "xmi_id": "_mo1PphP6EfGmU-1fq2dpeQ_new",
+                    "negSet": [],
+                    "___type___": "ConfigDelta",
+                    "posSet": ["ExitActions"]
+                },
+                "context": {
+                    "xmi_id": "_mo1PpxP6EfGmU-1fq2dpeQ_new",
+                    "negSet": ["ExitActions"],
+                    "___type___": "ConfigContext",
+                    "posSet": ["Actions"]
+                },
+                "___type___": "ConfigDiff"
+            },
+            "rules": ["moveExitActions"]
+        }],
+        "name": "AdaptiveStateMachines",
+        "ecore": "StateMachinePL.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveStateMachines.henshin"
+    }
+}

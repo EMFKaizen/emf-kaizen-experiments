@@ -1,0 +1,80 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Complete the model to support the delivery process, including last mile",
+    "soba_timestamp": "12:54:46",
+    "recommendationPayload": {
+        "xmi_id": "_stmIdIH4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "DeliveryProcess",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmIeIH4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmId4H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmIdYH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "deliveryMethod",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmIfIH4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmIe4H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmIeYH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "lastMileDelivery",
+                "___type___": "Property",
+                "isOrdered": false
+            }
+        ],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

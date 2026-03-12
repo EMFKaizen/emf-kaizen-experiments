@@ -1,0 +1,38 @@
+{
+  "Adapters.ecore": [
+    {
+      "___type___": "AdapterModel",
+      "xmi_id": "__aiE4BSNEfG4P6Oy7uuV5g",
+      "name": "name_example",
+      "ecore": "ecore_example",
+      "adapters": [
+        {
+          "___type___": "Adapter",
+          "xmi_id": "__aiE4RSNEfG4P6Oy7uuV5g",
+          "name": "name_example",
+          "cfgDiff": {
+            "___type___": "ConfigDiff",
+            "xmi_id": "__aiE4hSNEfG4P6Oy7uuV5g",
+            "delta": {
+              "___type___": "ConfigDelta",
+              "xmi_id": "__aiE4xSNEfG4P6Oy7uuV5g",
+              "posSet": [],
+              "negSet": []
+            },
+            "context": {
+              "___type___": "ConfigContext",
+              "xmi_id": "__aiE5BSNEfG4P6Oy7uuV5g",
+              "posSet": [],
+              "negSet": []
+            }
+          },
+          "rules": [],
+          "before": [
+            "__aiE4RSNEfG4P6Oy7uuV5g"
+          ]
+        }
+      ],
+      "transformation": "transformation_example"
+    }
+  ]
+}

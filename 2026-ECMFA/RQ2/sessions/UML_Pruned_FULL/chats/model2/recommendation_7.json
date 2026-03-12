@@ -1,0 +1,111 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Complete the model to support payment by credit card, or wire transfer",
+    "soba_timestamp": "18:46:54",
+    "recommendationPayload": {
+        "xmi_id": "_stmPaymentMethod",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "PaymentMethod",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmPaymentTypeUpper",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmPaymentTypeLower",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmPaymentType",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "paymentType",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmCardNumberUpper",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmCardNumberLower",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmCardNumber",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "cardNumber",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmWireTransferDetailsUpper",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": -1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmWireTransferDetailsLower",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmWireTransferDetails",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "wireTransferDetails",
+                "___type___": "Property",
+                "isOrdered": false
+            }
+        ],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

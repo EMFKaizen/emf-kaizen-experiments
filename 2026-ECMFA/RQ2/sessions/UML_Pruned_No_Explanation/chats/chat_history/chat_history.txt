@@ -1,0 +1,1214 @@
+You: Create a class with two attributes||16:28
+
+You: Create a class with two attributes||16:32
+
+------------------------------||16:33||Generated in 14,86s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@63dc973e
+------------------------------
+
+You: create a class that inherits from another one||16:35
+
+------------------------------||16:35||Generated in 20,56s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@6b3fa2ef
+------------------------------
+
+You: create two classes: a super class and a subclass||16:36
+
+------------------------------||16:36||Generated in 12,89s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@4dfb5cae
+------------------------------
+
+You: add two classes to the selected model||16:37
+
+------------------------------||16:37||Generated in 7,43s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@75abea6
+------------------------------
+
+You: add two classes with a proper name to the selected model||16:37
+
+------------------------------||16:37||Generated in 20,65s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@3ef173c
+------------------------------
+
+You: Add two classes related to each other via a composition association||16:38
+
+------------------------------||16:39||Generated in 29,87s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@55343a34
+------------------------------
+
+You: Add two classes related to each other via a composition association||16:40
+
+------------------------------||16:41||Generated in 55,34s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@27dc80ff
+------------------------------
+
+You: Create two classes related with an association||16:44
+
+------------------------------||16:45||Generated in 51,56s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@1d461df7
+------------------------------
+
+You: Create two classes connected by an association||16:55
+
+------------------------------||16:56||Generated in 22,83s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@1d132288
+------------------------------
+
+You: Create two classes related by an association||17:12
+
+------------------------------||17:12||Generated in 38,72s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@1b51db3b
+------------------------------
+
+You: create a class with two attributes||13:59
+
+------------------------------||13:59||Generated in 14,76s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@114fa25b
+------------------------------
+
+You: create a class||14:13
+
+You: create two classes||14:13
+
+------------------------------||14:13||Generated in 7,22s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@52b4f893
+------------------------------
+
+You: Create a class with two attributes||14:30
+
+------------------------------||14:30||Generated in 11,93s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@601122cd
+------------------------------
+
+You: create two classes related through inheritance||14:32
+
+------------------------------||14:32||Generated in 10,40s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@2f45ab4a
+------------------------------
+
+You: add two classes with a proper name to the selected model||14:34
+
+------------------------------||14:34||Generated in 7,10s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@587f17cb
+------------------------------
+
+You: add two classes related to the context of the selected model||14:34
+
+------------------------------||14:34||Generated in 4,82s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@2099bfce
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||14:35
+
+------------------------------||14:35||Generated in 13,22s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@ff28a30
+------------------------------
+
+You: recommend two Packages for the selected Model||14:39
+
+------------------------------||14:39||Generated in 8,68s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@55b6a833
+------------------------------
+
+You: Recommend an enumeration with literals for the selected model||14:41
+
+------------------------------||14:41||Generated in 6,68s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@2400943c
+------------------------------
+
+You: Complete the model for a Nail Factory: which turns steel wire into nails using machines that cut, shape the head, and sharpen the point. It also includes systems for material supply, quality control, and packaging.||14:44
+
+------------------------------||14:45||Generated in 1m13s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@46cf19d4
+------------------------------
+
+You: Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems.||14:47
+
+------------------------------||14:48||Generated in 37,00s
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+soba.core.processor.AssistantResponse@60073acb
+------------------------------
+
+You: Create a class with two attributes||14:49
+
+------------------------------||14:49||Generated in 2,48s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@6f0cf4f
+------------------------------
+
+You: create two classes related through inheritance||14:49
+
+------------------------------||14:50||Generated in 5,05s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@3debe825
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||14:50
+
+------------------------------||14:50||Generated in 7,97s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@64cf82bc
+------------------------------
+
+You: create a Package with two other packages inside||14:52
+
+------------------------------||14:52||Generated in 5,40s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@cb18b94
+------------------------------
+
+You: create a Class with a property with cardinality 0..*||14:55
+
+------------------------------||14:55||Generated in 4,31s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@445d6477
+------------------------------
+
+You: create a package that imports another one||14:56
+
+------------------------------||14:56||Generated in 7,89s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@469325ef
+------------------------------
+
+You: create two packages, one importing the other||14:57
+
+------------------------------||14:57||Generated in 3,73s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@43c07f03
+------------------------------
+
+You: recommend two nested Packages for the selected Model||15:03
+
+------------------------------||15:03||Generated in 8,65s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@18ae9a03
+------------------------------
+
+You: Recommend an enumeration with literals for the selected model||15:03
+
+------------------------------||15:03||Generated in 17,26s
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+soba.core.processor.AssistantResponse@7f387e17
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||15:04
+
+------------------------------||15:04||Generated in 10,44s
+EMF Kaizen: Recommendation request [#10] processed.
+Response:
+soba.core.processor.AssistantResponse@5a645d09
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||15:04
+
+------------------------------||15:05||Generated in 20,98s
+EMF Kaizen: Recommendation request [#11] processed.
+Response:
+soba.core.processor.AssistantResponse@2bbdd1fa
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||15:05
+
+------------------------------||15:07||Generated in 1m6s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@18013160
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||15:08
+
+------------------------------||15:08||Generated in 8,71s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@13227dea
+------------------------------
+
+You: recommend two nested Packages for the selected Model||15:08
+
+------------------------------||15:09||Generated in 17,61s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@2fd13e11
+------------------------------
+
+You: recommend two nested Packages for the selected Model||15:09
+
+------------------------------||15:09||Generated in 11,05s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@3821992e
+------------------------------
+
+You: create two classes related through inheritance||15:11
+
+------------------------------||15:11||Generated in 21,63s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@3c2980ee
+------------------------------
+
+You: create two classes related through inheritance||15:12
+
+------------------------------||15:12||Generated in 8,70s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@1568e46d
+------------------------------
+
+You: Complete the model for a Nail Factory: which turns steel wire into nails using machines that cut, shape the head, and sharpen the point. It also includes systems for material supply, quality control, and packaging.||15:15
+
+------------------------------||15:15||Generated in 23,62s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@78b86d49
+------------------------------
+
+You: Complete the model for a Nail Factory: which turns steel wire into nails using machines that cut, shape the head, and sharpen the point. It also includes systems for material supply, quality control, and packaging.||15:16
+
+------------------------------||15:16||Generated in 15,31s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@74916d6a
+------------------------------
+
+You: Complete the model for a Nail Factory: which turns steel wire into nails using machines that cut, shape the head, and sharpen the point. It also includes systems for material supply, quality control, and packaging.||15:17
+
+------------------------------||15:17||Generated in 12,71s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@5bd3f12c
+------------------------------
+
+You: Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems.||15:18
+
+------------------------------||15:18||Generated in 49,96s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@4dc16d1c
+------------------------------
+
+You: Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems||15:19
+
+------------------------------||15:19||Generated in 34,64s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@7357d11c
+------------------------------
+
+You: Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems||15:21
+
+------------------------------||15:21||Generated in 15,20s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@56f3d9dd
+------------------------------
+
+You: Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems||15:23
+
+------------------------------||15:23||Generated in 18,04s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@5d297284
+------------------------------
+
+You: create an astract class and two active, concrete subclasses||15:24
+
+------------------------------||15:24||Generated in 21,61s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@243d08b9
+------------------------------
+
+You: create an astract class and two active, concrete subclasses||15:25
+
+------------------------------||15:26||Generated in 38,06s
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+soba.core.processor.AssistantResponse@59c038f7
+------------------------------
+
+You: Create a class with one mandatory attribute of type integer and an optional multivalued String attribute||15:27
+
+------------------------------||15:28||Generated in 34,46s
+EMF Kaizen: Recommendation request [#10] processed.
+Response:
+soba.core.processor.AssistantResponse@681277e5
+------------------------------
+
+You: Create a class with one mandatory attribute of type integer and an optional multivalued String attribute. Create the datatypes as well if needed||15:30
+
+------------------------------||15:30||Generated in 33,86s
+EMF Kaizen: Recommendation request [#11] processed.
+Response:
+soba.core.processor.AssistantResponse@7c96324e
+------------------------------
+
+You: Create a class with one attribute of type integer and a multivalued String attribute. Create the primitive datatypes as well.||15:32
+
+------------------------------||15:32||Generated in 19,60s
+EMF Kaizen: Recommendation request [#12] processed.
+Response:
+soba.core.processor.AssistantResponse@31cfff9e
+------------------------------
+
+You: Create a class with one integer attribute, a mulitvalued String attribute; and create the primitivetypes as well||15:34
+
+------------------------------||15:35||Generated in 35,74s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@736f411a
+------------------------------
+
+You: create a primitive type Integer||15:35
+
+------------------------------||15:35||Generated in 11,29s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@4d6b4143
+------------------------------
+
+You: create a primitive type Integer; and a Class with an attribute of that type||15:36
+
+------------------------------||15:36||Generated in 17,67s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@55c76c9d
+------------------------------
+
+You: create a primitive type Integer; and a Class with an attribute of that type||15:37
+
+------------------------------||15:37||Generated in 18,51s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@1078710e
+------------------------------
+
+You: create a primitive type Integer; and a Class with an attribute of that type||15:47
+
+------------------------------||15:47||Generated in 18,43s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@5cd5fb8b
+------------------------------
+
+You: create a primitive type Integer; and a Class with an attribute of that type||15:49
+
+------------------------------||15:49||Generated in 9,57s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@5126fb1d
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||15:52
+
+------------------------------||15:53||Generated in 46,05s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@48d2adc2
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||15:54
+
+------------------------------||15:54||Generated in 5,98s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@6a77fbc
+------------------------------
+
+You: Complete the model for a factory that has simple and composite processes, using the composite design pattern||15:55
+
+You: Complete the model for a factory that has simple and composite processes, using the composite design pattern||15:58
+
+------------------------------||15:58||Generated in 8,35s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@23d8de33
+------------------------------
+
+You: Using the composite design pattern, complete the model for a factory that has simple and composite processes.||16:00
+
+------------------------------||16:00||Generated in 27,29s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@3426c90d
+------------------------------
+
+You: Recommend an enumeration with literals for the selected model, and a class with an attribute whose type is the enumeratio||17:01
+
+------------------------------||17:01||Generated in 24,19s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@67174f09
+------------------------------
+
+You: Recommend an enumeration with literals for the selected model, and a class with an attribute whose type is the enumeratio||17:02
+
+------------------------------||17:02||Generated in 17,39s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@646599c6
+------------------------------
+
+You: add two classes with attributes relevant to the context of the selected model||17:04
+
+------------------------------||17:04||Generated in 9,78s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@539c833d
+------------------------------
+
+You: add two classes with attributes relevant to the context of the selected model||17:05
+
+------------------------------||17:05||Generated in 17,04s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@1ed4972a
+------------------------------
+
+You: Create a primitive type DateTime, and a class Order that has an attribute of such type||17:09
+
+------------------------------||17:09||Generated in 25,09s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@8080f48
+------------------------------
+
+You: Create a primitive type DateTime, and a class Order that has an attribute of such type||17:11
+
+------------------------------||17:12||Generated in 55,57s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@6f192ba4
+------------------------------
+
+You: create a class Order with attribute customerName||17:14
+
+------------------------------||17:14||Generated in 25,53s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@43db68e8
+------------------------------
+
+You: create a class Order with attribute customerName||17:15
+
+------------------------------||17:15||Generated in 24,11s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@ed80697
+------------------------------
+
+You: Create a private class OrderTrack with a unique id||17:17
+
+------------------------------||17:17||Generated in 17,70s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@6d274fe8
+------------------------------
+
+You: Create a private class OrderTrack with a unique id||17:18
+
+------------------------------||17:18||Generated in 10,87s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@64219a93
+------------------------------
+
+You: recommend a class with a static private attribute for the selected model||17:19
+
+------------------------------||17:20||Generated in 9,38s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@3450d67f
+------------------------------
+
+You: recommend a class with a static private attribute for the selected model||17:20
+
+------------------------------||17:20||Generated in 9,38s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@6dbcbbd1
+------------------------------
+
+You: recommend a class with a static private attribute for the selected model||17:22
+
+------------------------------||17:22||Generated in 7,34s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@457fcdc9
+------------------------------
+
+You: recommed a class with a static private attribute for the selected model||17:24
+
+------------------------------||17:25||Generated in 32,39s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@7459002d
+------------------------------
+
+You: recommed a class with a static private attribute for the selected model||17:28
+
+------------------------------||17:28||Generated in 3,00s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@148fc881
+------------------------------
+
+You: Create an Order class with a static attribute orderType, whose type is an enumeration with values REGULAR, VIP||17:30
+
+------------------------------||17:31||Generated in 26,32s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@427a0746
+------------------------------
+
+You: Create an Order class with a static attribute orderType, whose type is an enumeration with values REGULAR, VIP||17:31
+
+------------------------------||17:31||Generated in 31,20s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@648db06c
+------------------------------
+
+You: Create a private class OrderTrack with a unique id||17:32
+
+------------------------------||17:32||Generated in 25,21s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@47120b41
+------------------------------
+
+You: Create a private class OrderTrack with a unique id||17:33
+
+------------------------------||17:33||Generated in 21,16s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@78038d3e
+------------------------------
+
+You: Create two more subclasses for the selected class||17:35
+
+------------------------------||17:35||Generated in 26,86s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@efb30da
+------------------------------
+
+You: Create two more subclasses for the selected class||17:36
+
+------------------------------||17:36||Generated in 21,47s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@1693b8dc
+------------------------------
+
+You: create more primitive types, different from the selected ones||17:37
+
+------------------------------||17:37||Generated in 14,50s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@4530e4a7
+------------------------------
+
+You: create more primitive types, different from the selected ones||17:37
+
+------------------------------||17:38||Generated in 10,44s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@2ba06c8
+------------------------------
+
+You: recommend more attributes for class Pizza||17:38
+
+------------------------------||17:39||Generated in 19,00s
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+soba.core.processor.AssistantResponse@8235997
+------------------------------
+
+You: recommend more attributes for class Pizza||17:40
+
+------------------------------||17:40||Generated in 33,07s
+EMF Kaizen: Recommendation request [#10] processed.
+Response:
+soba.core.processor.AssistantResponse@399eb2ed
+------------------------------
+
+You: Recommend two attributes for class Pizza||17:41
+
+------------------------------||17:42||Generated in 32,06s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@5f389d8f
+------------------------------
+
+You: Recommend two attributes for class Pizza||17:42
+
+------------------------------||17:42||Generated in 25,07s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@59daf355
+------------------------------
+
+You: recommend 2 classes for the model||17:43
+
+------------------------------||17:43||Generated in 28,57s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@174cac8c
+------------------------------
+
+You: The pizzera should consider drinks, and orders, which are made of drinks and pizzas||17:45
+
+------------------------------||17:45||Generated in 50,86s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@78c6917
+------------------------------
+
+You: The pizzera should consider drinks, and orders, which are made of drinks and pizzas||17:46
+
+------------------------------||17:47||Generated in 44,49s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@6a37464f
+------------------------------
+
+You: The pizzeria may offer discounts, which have an expiration date, and can be either for a fixed amount, or a percentage||17:48
+
+------------------------------||17:48||Generated in 1,13s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@2487307e
+------------------------------
+
+You: The pizzeria model should consider discounts, which have an expiration date, and can be either for a fixed amount, or a percentage||17:49
+
+------------------------------||17:49||Generated in 43,25s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@4cc6239
+------------------------------
+
+You: The pizzeria model should consider discounts, which have an expiration date, and can be either for a fixed amount, or a percentage||17:50
+
+------------------------------||17:50||Generated in 23,46s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@4fe85096
+------------------------------
+
+You: create two classes related via an association||17:52
+
+------------------------------||17:53||Generated in 42,49s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@64f517b6
+------------------------------
+
+You: create two classes related via an association||17:54
+
+------------------------------||17:54||Generated in 27,17s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@643a3a79
+------------------------------
+
+You: create two classes related via an association||17:56
+
+------------------------------||17:56||Generated in 38,79s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@4b091c60
+------------------------------
+
+You: create two classes related via an association||17:58
+
+------------------------------||17:58||Generated in 20,18s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@2cb9af70
+------------------------------
+
+You: create two classes related via an association||18:02
+
+------------------------------||18:02||Generated in 14,87s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@680e051e
+------------------------------
+
+You: create two classes related via an association||18:03
+
+------------------------------||18:04||Generated in 17,08s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@568e6261
+------------------------------
+
+You: create two classes related via an association||18:11
+
+------------------------------||18:11||Generated in 16,97s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@18ac83b5
+------------------------------
+
+You: create two classes related via an association||18:18
+
+------------------------------||18:19||Generated in 14,78s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@67217fd3
+------------------------------
+
+You: create two classes related via an association||18:21
+
+------------------------------||18:21||Generated in 22,21s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@11e5bcb3
+------------------------------
+
+You: Create a Package sales with a class SalesInfo||18:23
+
+------------------------------||18:23||Generated in 11,94s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@4dd3e1ba
+------------------------------
+
+You: Create a Package sales with a class SalesInfo||18:23
+
+------------------------------||18:24||Generated in 14,56s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@6019b3de
+------------------------------
+
+You: Create a class Address and add an attribute of that type to the selected class||18:26
+
+------------------------------||18:26||Generated in 23,13s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@ccdbaa6
+------------------------------
+
+You: Create a class CreditCardInfo and add an attribute of that type to the selected class||18:27
+
+------------------------------||18:27||Generated in 9,69s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@a3d6307
+------------------------------
+
+You: add a literal Cancelled to the selected enum||18:28
+
+------------------------------||18:28||Generated in 14,56s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@68a6566d
+------------------------------
+
+You: create a literal Cancelled for the selected enum||18:32
+
+------------------------------||18:32||Generated in 15,56s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@78eee5fc
+------------------------------
+
+You: create a literal Cancelled for the selected enum||18:33
+
+------------------------------||18:33||Generated in 15,97s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@6816b13d
+------------------------------
+
+You: add a EuropeAdress class, like the selected one but without state and zip||18:34
+
+------------------------------||18:35||Generated in 47,71s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@5a77b7cc
+------------------------------
+
+You: add a EuropeAdress class, like the selected one but without state and zip||18:35
+
+------------------------------||18:36||Generated in 42,24s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@5e206acb
+------------------------------
+
+You: Recommend two more attributes for Item||18:37
+
+------------------------------||18:37||Generated in 26,49s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@30f2e0e0
+------------------------------
+
+You: Recommend two more attributes for Item||18:38
+
+------------------------------||18:38||Generated in 29,59s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@58215d51
+------------------------------
+
+You: Recommend two more classes for the model||18:40
+
+------------------------------||18:41||Generated in 59,00s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@2ec173e5
+------------------------------
+
+You: Recommend two more classes for the model||18:41
+
+------------------------------||18:42||Generated in 1m0s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@62ea92c2
+------------------------------
+
+You: Complete the model to support payment by credit card, or wire transfer||18:44
+
+------------------------------||18:45||Generated in 42,57s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@181252db
+------------------------------
+
+You: Complete the model to support the delivery process, including last mile||18:46
+
+------------------------------||18:47||Generated in 39,45s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@3f1d358d
+------------------------------
+
+You: Complete the model to support the delivery process, including last mile||18:48
+
+------------------------------||18:48||Generated in 36,71s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@307bd31f
+------------------------------
+
+You: create a primitive type Integer; and a Class with an attribute of that type||13:01
+
+------------------------------||13:01||Generated in 22,54s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@4f8ad451
+------------------------------
+
+You: create an astract class and two active, concrete subclasses||13:03
+
+------------------------------||13:03||Generated in 25,41s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@390645a
+------------------------------
+
+You: add two classes with attributes relevant to the context of the selected model||13:06
+
+------------------------------||13:06||Generated in 37,88s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@2c9498aa
+------------------------------
+
+You: add two classes related to the context of the selected model, related via an association||13:08
+
+------------------------------||13:08||Generated in 24,87s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@c933ede
+------------------------------
+
+You: recommend two nested Packages for the selected Model||13:10
+
+------------------------------||13:10||Generated in 12,52s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@4e70f7a
+------------------------------
+
+You: Recommend an enumeration with literals for the selected model, and a class with an attribute whose type is the enumeratio||13:11
+
+------------------------------||13:12||Generated in 21,33s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@5c62d0c3
+------------------------------
+
+You: Using the composite design pattern, complete the model for a factory that has simple and composite processes.||13:13
+
+------------------------------||13:13||Generated in 11,31s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@32babb12
+------------------------------
+
+You: Create an OO model for paper mill factory, which converts wood or recycled fiber into paper by pulping, cleaning, pressing, and drying the fibers into sheets. The process includes material preparation, pulp processing, sheet formation, finishing, and packaging systems.||13:15
+
+------------------------------||13:15||Generated in 16,43s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@62d9d684
+------------------------------
+
+You: create a class Order with attribute customerName||13:18
+
+------------------------------||13:18||Generated in 10,30s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@1dc1f0a3
+------------------------------
+
+You: create a class Order with attribute customerName||13:19
+
+------------------------------||13:19||Generated in 6,86s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@43bc8c98
+------------------------------
+
+You: Create a private class OrderTrack with a unique id||13:19
+
+------------------------------||13:20||Generated in 15,22s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@698f3ac4
+------------------------------
+
+You: Create two more subclasses for the selected class||13:21
+
+------------------------------||13:21||Generated in 22,10s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@d7d2dd9
+------------------------------
+
+You: create more primitive types, different from the selected ones||13:22
+
+------------------------------||13:22||Generated in 8,47s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@799c87
+------------------------------
+
+You: recommend two attributes for class Pizza||13:23
+
+------------------------------||13:23||Generated in 12,83s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@60bdba16
+------------------------------
+
+You: recommend 2 classes for the model||13:24
+
+------------------------------||13:24||Generated in 27,98s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@5c32f8af
+------------------------------
+
+You: The pizzera should consider drinks, and orders, which are made of drinks and pizzas||13:26
+
+------------------------------||13:26||Generated in 21,28s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@5b9e7722
+------------------------------
+
+You: The pizzeria model should consider discounts, which have an expiration date, and can be either for a fixed amount, or a percentage||13:27
+
+------------------------------||13:28||Generated in 36,13s
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+soba.core.processor.AssistantResponse@70ea0d65
+------------------------------
+
+You: create a class Order with attribute customerName||13:29
+
+------------------------------||13:30||Generated in 17,74s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@2dfde704
+------------------------------
+
+You: Create a private class OrderTrack with a unique id||13:31
+
+------------------------------||13:31||Generated in 12,87s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@50b1aea
+------------------------------
+
+You: Create two more subclasses for the selected class||13:33
+
+------------------------------||13:33||Generated in 13,68s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@7590b28f
+------------------------------
+
+You: create more primitive types, different from the selected ones||13:36
+
+------------------------------||13:36||Generated in 8,00s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@671b4820
+------------------------------
+
+You: recommend two attributes for class Pizza||14:15
+
+------------------------------||14:15||Generated in 26,48s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@5c926d0c
+------------------------------
+
+You: recommend 2 classes for the model||14:17
+
+------------------------------||14:17||Generated in 21,62s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@70fce245
+------------------------------
+
+You: The pizzera should consider drinks, and orders, which are made of drinks and pizzas||14:18
+
+------------------------------||14:19||Generated in 35,88s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@6cf22b65
+------------------------------
+
+You: The pizzeria model should consider discounts, which have an expiration date, and can be either for a fixed amount, or a percentage||14:20
+
+------------------------------||14:21||Generated in 37,32s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@3eafc7ee
+------------------------------
+
+You: create two classes related via an association||11:59
+
+------------------------------||11:59||Generated in 25,91s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@3fc7b289
+------------------------------
+
+You: Create a Package sales with a class SalesInfo||12:01
+
+------------------------------||12:01||Generated in 16,70s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@5d5e5033
+------------------------------
+
+You: create a literal Cancelled for the selected enum||12:02
+
+------------------------------||12:02||Generated in 9,13s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@6dfc649f
+------------------------------
+
+You: add a EuropeAdress class, like the selected one but without state and zip||12:04
+
+------------------------------||12:04||Generated in 23,52s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@5d75b88f
+------------------------------
+
+You: recommend two more attributes for Item||12:05
+
+------------------------------||12:06||Generated in 31,75s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@3d0c978c
+------------------------------
+
+You: Recommend two more classes for the model||12:07
+
+------------------------------||12:08||Generated in 44,10s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@50a2431f
+------------------------------
+
+You: Complete the model to support payment by credit card, or wire transfer||12:10
+
+------------------------------||12:10||Generated in 21,46s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@11eb6744
+------------------------------
+
+You: Complete the model to support the delivery process, including last mile||12:12
+
+------------------------------||12:12||Generated in 21,31s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@b66d2f8
+------------------------------
+

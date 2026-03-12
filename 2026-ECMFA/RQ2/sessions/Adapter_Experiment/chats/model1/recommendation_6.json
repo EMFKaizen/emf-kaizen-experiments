@@ -1,0 +1,60 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "recommend more adapters to cover all possible feature changes, assumming features: ExitAction, Actions, EntryAction",
+    "soba_timestamp": "19:32:25",
+    "recommendationPayload": {
+        "xmi_id": "_mo0okBP6EfGmU-1fq2dpeQ",
+        "adapters": [
+            {
+                "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+                "before": [],
+                "name": "SelectExitActions",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PqhP6EfGmU-1fq2dpeQ",
+                        "negSet": ["ExitActions"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PqxP6EfGmU-1fq2dpeQ",
+                        "negSet": ["EntryAction"],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Actions"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["activateExitActions"]
+            },
+            {
+                "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeR",
+                "before": [],
+                "name": "SelectEntryActions",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeR",
+                    "delta": {
+                        "xmi_id": "_mo1PqhP6EfGmU-1fq2dpeR",
+                        "negSet": ["EntryAction"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PqxP6EfGmU-1fq2dpeR",
+                        "negSet": ["ExitActions"],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Actions"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["activateEntryActions"]
+            }
+        ],
+        "name": "AdaptiveStateMachines",
+        "ecore": "StateMachinePL.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveStateMachines.henshin"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create a primitive type Integer; and a Class with an attribute of that type",
+    "soba_timestamp": "11:57:45",
+    "recommendationPayload": {
+        "xmi_id": "_stid4YH4EeOZq68N3n_w7g",
+        "profileApplication": [],
+        "packageImport": [],
+        "visibility": "public",
+        "packagedElement": [
+            {
+                "name": "Integer",
+                "___type___": "PrimitiveType"
+            },
+            {
+                "name": "MyClass",
+                "___type___": "Class",
+                "ownedAttribute": [{
+                    "name": "myIntegerAttribute",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "Integer",
+                        "___type___": "PrimitiveType"
+                    }
+                }]
+            }
+        ],
+        "name": "Factory",
+        "packageMerge": [],
+        "___type___": "Model"
+    }
+}

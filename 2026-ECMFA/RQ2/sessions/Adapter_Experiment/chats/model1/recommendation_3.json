@@ -1,0 +1,35 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create an adapter inverse of DeselectExitActions",
+    "soba_timestamp": "19:27:38",
+    "recommendationPayload": {
+        "xmi_id": "_mo0okBP6EfGmU-1fq2dpeQ",
+        "adapters": [{
+            "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+            "before": ["_mo1PoBP6EfGmU-1fq2dpeQ"],
+            "name": "SelectExitActions",
+            "___type___": "Adapter",
+            "cfgDiff": {
+                "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeQ",
+                "delta": {
+                    "xmi_id": "_mo1PqhP6EfGmU-1fq2dpeQ",
+                    "negSet": ["ExitActions"],
+                    "___type___": "ConfigDelta",
+                    "posSet": []
+                },
+                "context": {
+                    "xmi_id": "_mo1PqxP6EfGmU-1fq2dpeQ",
+                    "negSet": [],
+                    "___type___": "ConfigContext",
+                    "posSet": ["Actions"]
+                },
+                "___type___": "ConfigDiff"
+            },
+            "rules": ["restoreExitActions"]
+        }],
+        "name": "AdaptiveStateMachines",
+        "ecore": "StateMachinePL.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveStateMachines.henshin"
+    }
+}

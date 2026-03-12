@@ -1,0 +1,83 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create adapters to cover all changes of features in the set: Timed, Immediate, Hierarchical",
+    "soba_timestamp": "20:30:39",
+    "recommendationPayload": {
+        "xmi_id": "_mo0okBP6EfGmU-1fq2dpeQ",
+        "adapters": [
+            {
+                "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+                "before": [],
+                "name": "TimedChangeAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PqhP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Timed"]
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PqxP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_mo1PrBP6EfGmU-1fq2dpeQ",
+                "before": ["_mo1PqBP6EfGmU-1fq2dpeQ"],
+                "name": "ImmediateChangeAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PrRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PrhP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Immediate"]
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PrxP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_mo1PsBP6EfGmU-1fq2dpeQ",
+                "before": ["_mo1PrBP6EfGmU-1fq2dpeQ"],
+                "name": "HierarchicalChangeAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PsRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PshP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Hierarchical"]
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PsxP6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            }
+        ],
+        "name": "AdaptiveStateMachines",
+        "ecore": "StateMachinePL.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveStateMachines.henshin"
+    }
+}

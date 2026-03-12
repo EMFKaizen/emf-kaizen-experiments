@@ -1,0 +1,174 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "add two classes related to the context of the selected model, related via an association",
+    "soba_timestamp": "17:53:43",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_aO3oYhc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "ClassA",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_aO3oZxc6EfGGEcXPtf6zrg",
+                    "visibility": "public",
+                    "name": "value_example",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_aO3oZhc6EfGGEcXPtf6zrg",
+                    "visibility": "public",
+                    "name": "value_example",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_aO3oUBc6EfGGEcXPtf6zrg",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_aO3oYjc6EfGGEcXPtf6zrg",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "attributeA",
+                "___type___": "Property",
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_aO3oYkc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "ClassB",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_aO3oZlc6EfGGEcXPtf6zrg",
+                    "visibility": "public",
+                    "name": "value_example",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_aO3oZkc6EfGGEcXPtf6zrg",
+                    "visibility": "public",
+                    "name": "value_example",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_aO3oUBc6EfGGEcXPtf6zrg",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_aO3oZjc6EfGGEcXPtf6zrg",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "attributeB",
+                "___type___": "Property",
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_aO3oYmc6EfGGEcXPtf6zrg",
+            "memberEnd": [
+                "_aO3oYnc6EfGGEcXPtf6zrg",
+                "_aO3oZqc6EfGGEcXPtf6zrg"
+            ],
+            "visibility": "public",
+            "generalization": [],
+            "name": "ClassARelationClassB",
+            "___type___": "Association",
+            "redefinedClassifier": [],
+            "ownedEnd": [
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "upperValue": {
+                        "xmi_id": "_aO3oZpc6EfGGEcXPtf6zrg",
+                        "visibility": "public",
+                        "name": "value_example",
+                        "___type___": "LiteralUnlimitedNatural",
+                        "value": 1
+                    },
+                    "visibility": "public",
+                    "isUnique": true,
+                    "aggregation": "none",
+                    "lowerValue": {
+                        "xmi_id": "_aO3oZoc6EfGGEcXPtf6zrg",
+                        "visibility": "public",
+                        "name": "value_example",
+                        "___type___": "LiteralInteger",
+                        "value": 1
+                    },
+                    "type": "_aO3oYhc6EfGGEcXPtf6zrg",
+                    "isLeaf": true,
+                    "subsettedProperty": [],
+                    "xmi_id": "_aO3oYnc6EfGGEcXPtf6zrg",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "classAEnd",
+                    "___type___": "Property",
+                    "isOrdered": true
+                },
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "upperValue": {
+                        "xmi_id": "_aO3oZsc6EfGGEcXPtf6zrg",
+                        "visibility": "public",
+                        "name": "value_example",
+                        "___type___": "LiteralUnlimitedNatural",
+                        "value": 1
+                    },
+                    "visibility": "public",
+                    "isUnique": true,
+                    "aggregation": "none",
+                    "lowerValue": {
+                        "xmi_id": "_aO3oZrc6EfGGEcXPtf6zrg",
+                        "visibility": "public",
+                        "name": "value_example",
+                        "___type___": "LiteralInteger",
+                        "value": 1
+                    },
+                    "type": "_aO3oYkc6EfGGEcXPtf6zrg",
+                    "isLeaf": true,
+                    "subsettedProperty": [],
+                    "xmi_id": "_aO3oZqc6EfGGEcXPtf6zrg",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "classBEnd",
+                    "___type___": "Property",
+                    "isOrdered": true
+                }
+            ],
+            "isAbstract": false
+        }
+    ]}
+}

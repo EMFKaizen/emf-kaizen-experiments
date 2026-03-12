@@ -1,0 +1,65 @@
+{
+  "___type___": "AdapterModel",
+  "xmi_id": "_3xMQABQAEfGgiLaW5H9bqA",
+  "name": "AdaptiveClassDiagrams",
+  "ecore": "AdaptiveClassDiagrams.ecore",
+  "adapters": [
+    {
+      "___type___": "Adapter",
+      "xmi_id": "_3xMQHRQAEfGgiLaW5H9bqA",
+      "name": "CompositionAdapter",
+      "cfgDiff": {
+        "___type___": "ConfigDiff",
+        "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+        "delta": {
+          "___type___": "ConfigDelta",
+          "xmi_id": "_3xMQHxQAEfGgiLaW5H9bqA",
+          "posSet": [
+            "Composition"
+          ],
+          "negSet": []
+        },
+        "context": {
+          "___type___": "ConfigContext",
+          "xmi_id": "_3xMQIBQAEfGgiLaW5H9bqA",
+          "posSet": [
+            "FullAssoc"
+          ],
+          "negSet": []
+        }
+      },
+      "rules": [],
+      "before": []
+    },
+    {
+      "___type___": "Adapter",
+      "xmi_id": "_3xMQIRQAEfGgiLaW5H9bqA",
+      "name": "NavigationAdapter",
+      "cfgDiff": {
+        "___type___": "ConfigDiff",
+        "xmi_id": "_3xMQIhQAEfGgiLaW5H9bqA",
+        "delta": {
+          "___type___": "ConfigDelta",
+          "xmi_id": "_3xMQIxQAEfGgiLaW5H9bqA",
+          "posSet": [
+            "Navigation"
+          ],
+          "negSet": []
+        },
+        "context": {
+          "___type___": "ConfigContext",
+          "xmi_id": "_3xMQJBQAEfGgiLaW5H9bqA",
+          "posSet": [
+            "FullAssoc"
+          ],
+          "negSet": []
+        }
+      },
+      "rules": [],
+      "before": [
+        "_3xMQHRQAEfGgiLaW5H9bqA"
+      ]
+    }
+  ],
+  "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+}

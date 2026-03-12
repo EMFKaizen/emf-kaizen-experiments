@@ -1,0 +1,85 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "add two classes with attributes relevant to the context of the selected model",
+    "soba_timestamp": "13:06:48",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_aO3oYhc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "Product",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_aO3oYlc6EfGGEcXPtf6zrg",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_aO3oYkc6EfGGEcXPtf6zrg",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_aO3ocBc6EfGGEcXPtf6zrg",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_aO3oYjc6EfGGEcXPtf6zrg",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": true,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "productId",
+                "___type___": "Property",
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_aO3oZhc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "Order",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_aO3oYnc6EfGGEcXPtf6zrg",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_aO3oYmc6EfGGEcXPtf6zrg",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_aO3ocBc6EfGGEcXPtf6zrg",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_aO3oZjc6EfGGEcXPtf6zrg",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": true,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "orderId",
+                "___type___": "Property",
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        }
+    ]}
+}

@@ -1,0 +1,106 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create two classes related via an association",
+    "soba_timestamp": "11:59:57",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_newClass1",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "ClassA",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [],
+            "isActive": false,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_newClass2",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "ClassB",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [],
+            "isActive": false,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_newAssociation",
+            "navigableOwnedEnd": [],
+            "memberEnd": [
+                "_newClass1",
+                "_newClass2"
+            ],
+            "isDerived": false,
+            "substitution": [],
+            "visibility": "public",
+            "generalization": [],
+            "___type___": "Association",
+            "redefinedClassifier": [],
+            "ownedEnd": [
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "upperValue": {
+                        "xmi_id": "_newLiteral2",
+                        "___type___": "LiteralUnlimitedNatural",
+                        "value": -1
+                    },
+                    "visibility": "public",
+                    "isUnique": true,
+                    "aggregation": "none",
+                    "lowerValue": {
+                        "xmi_id": "_newLiteral1",
+                        "___type___": "LiteralInteger",
+                        "value": 1
+                    },
+                    "type": "_newClass1",
+                    "isLeaf": false,
+                    "subsettedProperty": [],
+                    "xmi_id": "_newEnd1",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "classA",
+                    "___type___": "Property",
+                    "isOrdered": false
+                },
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "upperValue": {
+                        "xmi_id": "_newLiteral4",
+                        "___type___": "LiteralUnlimitedNatural",
+                        "value": -1
+                    },
+                    "visibility": "public",
+                    "isUnique": true,
+                    "aggregation": "none",
+                    "lowerValue": {
+                        "xmi_id": "_newLiteral3",
+                        "___type___": "LiteralInteger",
+                        "value": 1
+                    },
+                    "type": "_newClass2",
+                    "isLeaf": false,
+                    "subsettedProperty": [],
+                    "xmi_id": "_newEnd2",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "classB",
+                    "___type___": "Property",
+                    "isOrdered": false
+                }
+            ],
+            "isAbstract": false
+        }
+    ]}
+}

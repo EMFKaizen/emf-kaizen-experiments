@@ -1,0 +1,55 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create two adapters InhByDelegation and InhByDelegationInterface, one applicable after the other",
+    "soba_timestamp": "11:22:52",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "before": [],
+                "name": "InhByDelegation",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "before": [{
+                    "name": "InhByDelegation",
+                    "___type___": "Adapter"
+                }],
+                "name": "InhByDelegationInterface",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

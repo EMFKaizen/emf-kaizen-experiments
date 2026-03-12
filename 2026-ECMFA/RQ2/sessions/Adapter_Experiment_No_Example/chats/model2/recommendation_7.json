@@ -1,0 +1,67 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create three adapters with positive context 'Ref' where one is applied before the others",
+    "soba_timestamp": "12:32:10",
+    "recommendationPayload": {
+        "adapters": [
+            {
+                "before": [],
+                "name": "Adapter1",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "before": ["Adapter1"],
+                "name": "Adapter2",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "before": ["Adapter1"],
+                "name": "Adapter3",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            }
+        ],
+        "___type___": "AdapterModel"
+    }
+}

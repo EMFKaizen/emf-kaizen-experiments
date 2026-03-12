@@ -1,0 +1,48 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Using the composite design pattern, complete the model for a factory that has simple and composite processes.",
+    "soba_timestamp": "13:13:46",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_simpleProcess",
+            "visibility": "public",
+            "ownedConnector": [],
+            "name": "SimpleProcess",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_simpleProcessAttribute",
+                "isStatic": false,
+                "visibility": "public",
+                "name": "processName",
+                "isUnique": true,
+                "___type___": "Property",
+                "type": "_stid4YH4EeOZq68N3n_w7g_stringType",
+                "isLeaf": true,
+                "isOrdered": false
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_compositeProcess",
+            "ownedBehavior": [{
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_processes",
+                "isStatic": false,
+                "visibility": "public",
+                "name": "processes",
+                "isUnique": false,
+                "___type___": "Property",
+                "type": "_stid4YH4EeOZq68N3n_w7g_simpleProcess",
+                "isLeaf": false,
+                "isOrdered": true
+            }],
+            "visibility": "public",
+            "ownedConnector": [],
+            "name": "CompositeProcess",
+            "___type___": "Class",
+            "ownedAttribute": [],
+            "isActive": true,
+            "isAbstract": false
+        }
+    ]}
+}

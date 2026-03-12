@@ -1,0 +1,588 @@
+{
+  "UML.ecore": [
+    {
+      "___type___": "Generalization",
+      "xmi_id": "_aO3oQBc6EfGGEcXPtf6zrg",
+      "generalizationSet": [],
+      "isSubstitutable": true
+    },
+    {
+      "___type___": "Class",
+      "xmi_id": "_aO3oQRc6EfGGEcXPtf6zrg",
+      "name": "name_example",
+      "visibility": "public",
+      "generalization": [
+        {
+          "___type___": "Generalization",
+          "xmi_id": "_aO3oQhc6EfGGEcXPtf6zrg",
+          "general": "_aO3oQRc6EfGGEcXPtf6zrg",
+          "generalizationSet": [],
+          "isSubstitutable": true,
+          "specific": "_aO3oQRc6EfGGEcXPtf6zrg"
+        }
+      ],
+      "isAbstract": true,
+      "redefinedClassifier": [],
+      "ownedAttribute": [
+        {
+          "___type___": "Property",
+          "xmi_id": "_aO3oQxc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "isLeaf": true,
+          "isStatic": true,
+          "type": "_aO3oQRc6EfGGEcXPtf6zrg",
+          "isOrdered": true,
+          "isUnique": true,
+          "lowerValue": {
+            "___type___": "LiteralReal",
+            "xmi_id": "_aO3oRBc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": 1.0
+          },
+          "upperValue": {
+            "___type___": "LiteralString",
+            "xmi_id": "_aO3oRRc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": "value_example"
+          },
+          "isReadOnly": true,
+          "aggregation": "none",
+          "qualifier": [
+            {
+              "___type___": "Property",
+              "xmi_id": "_aO3oRhc6EfGGEcXPtf6zrg",
+              "name": "name_example",
+              "visibility": "public",
+              "isLeaf": true,
+              "isStatic": true,
+              "isOrdered": true,
+              "isUnique": true,
+              "isReadOnly": true,
+              "aggregation": "none",
+              "associationEnd": "_aO3oQxc6EfGGEcXPtf6zrg",
+              "qualifier": [],
+              "defaultValue": {
+                "___type___": "LiteralString",
+                "xmi_id": "_aO3oRxc6EfGGEcXPtf6zrg",
+                "name": "name_example",
+                "visibility": "public",
+                "value": "value_example"
+              },
+              "isDerived": true,
+              "isDerivedUnion": true,
+              "isID": true,
+              "redefinedProperty": [
+                "_aO3oQxc6EfGGEcXPtf6zrg"
+              ],
+              "subsettedProperty": [
+                "_aO3oQxc6EfGGEcXPtf6zrg"
+              ]
+            }
+          ],
+          "isDerived": true,
+          "isDerivedUnion": true,
+          "isID": true,
+          "redefinedProperty": [],
+          "subsettedProperty": []
+        }
+      ],
+      "ownedConnector": [],
+      "isActive": true
+    },
+    {
+      "___type___": "Enumeration",
+      "xmi_id": "_aO3oSBc6EfGGEcXPtf6zrg",
+      "name": "name_example",
+      "visibility": "public",
+      "ownedAttribute": [
+        {
+          "___type___": "Property",
+          "xmi_id": "_aO3oSRc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "isLeaf": true,
+          "isStatic": true,
+          "type": "_aO3oSBc6EfGGEcXPtf6zrg",
+          "isOrdered": true,
+          "isUnique": true,
+          "lowerValue": {
+            "___type___": "LiteralReal",
+            "xmi_id": "_aO3oShc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": 1.0
+          },
+          "upperValue": {
+            "___type___": "LiteralString",
+            "xmi_id": "_aO3oSxc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": "value_example"
+          },
+          "isReadOnly": true,
+          "datatype": "_aO3oSBc6EfGGEcXPtf6zrg",
+          "aggregation": "none",
+          "qualifier": [
+            {
+              "___type___": "Property",
+              "xmi_id": "_aO3oTBc6EfGGEcXPtf6zrg",
+              "name": "name_example",
+              "visibility": "public",
+              "isLeaf": true,
+              "isStatic": true,
+              "isOrdered": true,
+              "isUnique": true,
+              "isReadOnly": true,
+              "aggregation": "none",
+              "associationEnd": "_aO3oSRc6EfGGEcXPtf6zrg",
+              "qualifier": [],
+              "defaultValue": {
+                "___type___": "LiteralString",
+                "xmi_id": "_aO3oTRc6EfGGEcXPtf6zrg",
+                "name": "name_example",
+                "visibility": "public",
+                "value": "value_example"
+              },
+              "isDerived": true,
+              "isDerivedUnion": true,
+              "isID": true,
+              "redefinedProperty": [
+                "_aO3oSRc6EfGGEcXPtf6zrg"
+              ],
+              "subsettedProperty": [
+                "_aO3oSRc6EfGGEcXPtf6zrg"
+              ]
+            }
+          ],
+          "isDerived": true,
+          "isDerivedUnion": true,
+          "isID": true,
+          "redefinedProperty": [],
+          "subsettedProperty": []
+        }
+      ],
+      "ownedOperation": [],
+      "ownedLiteral": [
+        {
+          "___type___": "EnumerationLiteral",
+          "xmi_id": "_aO3oThc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "classifier": [
+            "_aO3oSBc6EfGGEcXPtf6zrg"
+          ],
+          "slot": [],
+          "specification": {
+            "___type___": "LiteralString",
+            "xmi_id": "_aO3oTxc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": "value_example"
+          },
+          "enumeration": "_aO3oSBc6EfGGEcXPtf6zrg"
+        }
+      ]
+    },
+    {
+      "___type___": "PrimitiveType",
+      "xmi_id": "_aO3oUBc6EfGGEcXPtf6zrg",
+      "name": "name_example",
+      "visibility": "public",
+      "ownedAttribute": [
+        {
+          "___type___": "Property",
+          "xmi_id": "_aO3oURc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "isLeaf": true,
+          "isStatic": true,
+          "type": "_aO3oUBc6EfGGEcXPtf6zrg",
+          "isOrdered": true,
+          "isUnique": true,
+          "lowerValue": {
+            "___type___": "LiteralReal",
+            "xmi_id": "_aO3oUhc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": 1.0
+          },
+          "upperValue": {
+            "___type___": "LiteralString",
+            "xmi_id": "_aO3oUxc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": "value_example"
+          },
+          "isReadOnly": true,
+          "datatype": "_aO3oUBc6EfGGEcXPtf6zrg",
+          "aggregation": "none",
+          "qualifier": [
+            {
+              "___type___": "Property",
+              "xmi_id": "_aO3oVBc6EfGGEcXPtf6zrg",
+              "name": "name_example",
+              "visibility": "public",
+              "isLeaf": true,
+              "isStatic": true,
+              "isOrdered": true,
+              "isUnique": true,
+              "isReadOnly": true,
+              "aggregation": "none",
+              "associationEnd": "_aO3oURc6EfGGEcXPtf6zrg",
+              "qualifier": [],
+              "defaultValue": {
+                "___type___": "LiteralString",
+                "xmi_id": "_aO3oVRc6EfGGEcXPtf6zrg",
+                "name": "name_example",
+                "visibility": "public",
+                "value": "value_example"
+              },
+              "isDerived": true,
+              "isDerivedUnion": true,
+              "isID": true,
+              "redefinedProperty": [
+                "_aO3oURc6EfGGEcXPtf6zrg"
+              ],
+              "subsettedProperty": [
+                "_aO3oURc6EfGGEcXPtf6zrg"
+              ]
+            }
+          ],
+          "isDerived": true,
+          "isDerivedUnion": true,
+          "isID": true,
+          "redefinedProperty": [],
+          "subsettedProperty": []
+        }
+      ],
+      "ownedOperation": []
+    },
+    {
+      "___type___": "Association",
+      "xmi_id": "_aO3oVhc6EfGGEcXPtf6zrg",
+      "name": "name_example",
+      "visibility": "public",
+      "generalization": [
+        {
+          "___type___": "Generalization",
+          "xmi_id": "_aO3oVxc6EfGGEcXPtf6zrg",
+          "general": "_aO3oVhc6EfGGEcXPtf6zrg",
+          "generalizationSet": [],
+          "isSubstitutable": true,
+          "specific": "_aO3oVhc6EfGGEcXPtf6zrg"
+        }
+      ],
+      "isAbstract": true,
+      "redefinedClassifier": [],
+      "substitution": [],
+      "isDerived": true,
+      "memberEnd": [
+        "_aO3oWxc6EfGGEcXPtf6zrg"
+      ],
+      "ownedEnd": [
+        {
+          "___type___": "Property",
+          "xmi_id": "_aO3oWBc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "isLeaf": true,
+          "isStatic": true,
+          "type": "_aO3oVhc6EfGGEcXPtf6zrg",
+          "isOrdered": true,
+          "isUnique": true,
+          "lowerValue": {
+            "___type___": "LiteralReal",
+            "xmi_id": "_aO3oWRc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": 1.0
+          },
+          "upperValue": {
+            "___type___": "LiteralString",
+            "xmi_id": "_aO3oWhc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": "value_example"
+          },
+          "isReadOnly": true,
+          "aggregation": "none",
+          "qualifier": [],
+          "isDerived": true,
+          "isDerivedUnion": true,
+          "isID": true,
+          "owningAssociation": "_aO3oVhc6EfGGEcXPtf6zrg",
+          "redefinedProperty": [],
+          "subsettedProperty": []
+        },
+        {
+          "___type___": "Property",
+          "xmi_id": "_aO3oWxc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "isLeaf": true,
+          "isStatic": true,
+          "isOrdered": true,
+          "isUnique": true,
+          "isReadOnly": true,
+          "aggregation": "none",
+          "qualifier": [],
+          "defaultValue": {
+            "___type___": "LiteralString",
+            "xmi_id": "_aO3oXBc6EfGGEcXPtf6zrg",
+            "name": "name_example",
+            "visibility": "public",
+            "value": "value_example"
+          },
+          "isDerived": true,
+          "isDerivedUnion": true,
+          "isID": true,
+          "owningAssociation": "_aO3oVhc6EfGGEcXPtf6zrg",
+          "redefinedProperty": [
+            "_aO3oWBc6EfGGEcXPtf6zrg"
+          ],
+          "subsettedProperty": [
+            "_aO3oWBc6EfGGEcXPtf6zrg"
+          ],
+          "association": "_aO3oVhc6EfGGEcXPtf6zrg"
+        }
+      ],
+      "navigableOwnedEnd": []
+    },
+    {
+      "___type___": "Model",
+      "xmi_id": "_aO3oXRc6EfGGEcXPtf6zrg",
+      "name": "name_example",
+      "visibility": "public",
+      "packageImport": [],
+      "URI": "URI_example",
+      "packageMerge": [],
+      "packagedElement": [
+        {
+          "___type___": "LiteralString",
+          "xmi_id": "_aO3oXhc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "type": "_aO3oYBc6EfGGEcXPtf6zrg",
+          "value": "value_example"
+        },
+        {
+          "___type___": "LiteralNull",
+          "xmi_id": "_aO3oXxc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public"
+        },
+        {
+          "___type___": "Association",
+          "xmi_id": "_aO3oYBc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "generalization": [
+            {
+              "___type___": "Generalization",
+              "xmi_id": "_aO3oYRc6EfGGEcXPtf6zrg",
+              "general": "_aO3oYBc6EfGGEcXPtf6zrg",
+              "generalizationSet": [],
+              "isSubstitutable": true,
+              "specific": "_aO3oYBc6EfGGEcXPtf6zrg"
+            }
+          ],
+          "isAbstract": true,
+          "redefinedClassifier": [
+            "_aO3oZRc6EfGGEcXPtf6zrg"
+          ],
+          "substitution": [],
+          "isDerived": true,
+          "memberEnd": [
+            "_aO3oZhc6EfGGEcXPtf6zrg",
+            "_aO3oYhc6EfGGEcXPtf6zrg"
+          ],
+          "ownedEnd": [
+            {
+              "___type___": "Property",
+              "xmi_id": "_aO3oYhc6EfGGEcXPtf6zrg",
+              "name": "name_example",
+              "visibility": "public",
+              "isLeaf": true,
+              "isStatic": true,
+              "isOrdered": true,
+              "isUnique": true,
+              "isReadOnly": true,
+              "aggregation": "none",
+              "qualifier": [],
+              "defaultValue": {
+                "___type___": "LiteralString",
+                "xmi_id": "_aO3oYxc6EfGGEcXPtf6zrg",
+                "name": "name_example",
+                "visibility": "public",
+                "value": "value_example"
+              },
+              "isDerived": true,
+              "isDerivedUnion": true,
+              "isID": true,
+              "owningAssociation": "_aO3oYBc6EfGGEcXPtf6zrg",
+              "redefinedProperty": [
+                "_aO3oZhc6EfGGEcXPtf6zrg"
+              ],
+              "subsettedProperty": [
+                "_aO3oZhc6EfGGEcXPtf6zrg"
+              ],
+              "association": "_aO3oYBc6EfGGEcXPtf6zrg"
+            }
+          ],
+          "navigableOwnedEnd": [
+            "_aO3oZhc6EfGGEcXPtf6zrg"
+          ]
+        },
+        {
+          "___type___": "LiteralBoolean",
+          "xmi_id": "_aO3oZBc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "value": true
+        },
+        {
+          "___type___": "Enumeration",
+          "xmi_id": "_aO3oZRc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "ownedAttribute": [
+            {
+              "___type___": "Property",
+              "xmi_id": "_aO3oZhc6EfGGEcXPtf6zrg",
+              "name": "name_example",
+              "visibility": "public",
+              "isLeaf": true,
+              "isStatic": true,
+              "isOrdered": true,
+              "isUnique": true,
+              "isReadOnly": true,
+              "datatype": "_aO3oZRc6EfGGEcXPtf6zrg",
+              "aggregation": "none",
+              "qualifier": [
+                {
+                  "___type___": "Property",
+                  "xmi_id": "_aO3oZxc6EfGGEcXPtf6zrg",
+                  "name": "name_example",
+                  "visibility": "public",
+                  "isLeaf": true,
+                  "isStatic": true,
+                  "isOrdered": true,
+                  "isUnique": true,
+                  "lowerValue": {
+                    "___type___": "LiteralReal",
+                    "xmi_id": "_aO3oaBc6EfGGEcXPtf6zrg",
+                    "name": "name_example",
+                    "visibility": "public",
+                    "value": 1.0
+                  },
+                  "upperValue": {
+                    "___type___": "LiteralString",
+                    "xmi_id": "_aO3oaRc6EfGGEcXPtf6zrg",
+                    "name": "name_example",
+                    "visibility": "public",
+                    "value": "value_example"
+                  },
+                  "isReadOnly": true,
+                  "aggregation": "none",
+                  "associationEnd": "_aO3oZhc6EfGGEcXPtf6zrg",
+                  "qualifier": [],
+                  "isDerived": true,
+                  "isDerivedUnion": true,
+                  "isID": true,
+                  "redefinedProperty": [],
+                  "subsettedProperty": []
+                }
+              ],
+              "isDerived": true,
+              "isDerivedUnion": true,
+              "isID": true,
+              "redefinedProperty": [],
+              "subsettedProperty": [],
+              "association": "_aO3oYBc6EfGGEcXPtf6zrg"
+            }
+          ],
+          "ownedOperation": [],
+          "ownedLiteral": [
+            {
+              "___type___": "EnumerationLiteral",
+              "xmi_id": "_aO3oahc6EfGGEcXPtf6zrg",
+              "name": "name_example",
+              "classifier": [
+                "_aO3oYBc6EfGGEcXPtf6zrg"
+              ],
+              "slot": [],
+              "specification": {
+                "___type___": "LiteralString",
+                "xmi_id": "_aO3oaxc6EfGGEcXPtf6zrg",
+                "name": "name_example",
+                "visibility": "public",
+                "value": "value_example"
+              },
+              "enumeration": "_aO3oZRc6EfGGEcXPtf6zrg"
+            }
+          ]
+        },
+        {
+          "___type___": "Class",
+          "xmi_id": "_aO3obBc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "generalization": [],
+          "isAbstract": true,
+          "redefinedClassifier": [],
+          "ownedAttribute": [],
+          "ownedConnector": [],
+          "isActive": true
+        },
+        {
+          "___type___": "Package",
+          "xmi_id": "_aO3obRc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "URI": "URI_example",
+          "packagedElement": []
+        },
+        {
+          "___type___": "LiteralInteger",
+          "xmi_id": "_aO3obhc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "value": 1
+        },
+        {
+          "___type___": "LiteralUnlimitedNatural",
+          "xmi_id": "_aO3obxc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "value": 1
+        },
+        {
+          "___type___": "PrimitiveType",
+          "xmi_id": "_aO3ocBc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "ownedAttribute": [],
+          "ownedOperation": []
+        },
+        {
+          "___type___": "LiteralReal",
+          "xmi_id": "_aO3ocRc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "visibility": "public",
+          "value": 1.0
+        },
+        {
+          "___type___": "EnumerationLiteral",
+          "xmi_id": "_aO3ochc6EfGGEcXPtf6zrg",
+          "name": "name_example",
+          "classifier": [],
+          "slot": []
+        }
+      ],
+      "profileApplication": [],
+      "viewpoint": "viewpoint_example"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "The pizzeria model should consider discounts, which have an expiration date, and can be either for a fixed amount, or a percentage",
+    "soba_timestamp": "14:21:12",
+    "recommendationPayload": {
+        "xmi_id": "_stk6LIH4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "Discount",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stk6LQH4EeOZq68N3n_w7g",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stk6LNH4EeOZq68N3n_w7g",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stk6LKH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "amount",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stk6LYH4EeOZq68N3n_w7g",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 100
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stk6LWH4EeOZq68N3n_w7g",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stk6LTH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "percentage",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stk6L2H4EeOZq68N3n_w7g",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stk6L1H4EeOZq68N3n_w7g",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stk6LZH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "expirationDate",
+                "___type___": "Property",
+                "isOrdered": false
+            }
+        ],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

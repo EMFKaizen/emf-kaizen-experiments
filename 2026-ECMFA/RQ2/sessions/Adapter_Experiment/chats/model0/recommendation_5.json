@@ -1,0 +1,74 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create 3 adapters, one executing after the other",
+    "soba_timestamp": "19:09:36",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWB",
+                "before": [],
+                "name": "Adapter1",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWC",
+                "before": ["_iWVzoBPiEfG6t-d1nvGLWB"],
+                "name": "Adapter2",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            },
+            {
+                "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWD",
+                "before": ["_iWVzoBPiEfG6t-d1nvGLWC"],
+                "name": "Adapter3",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": []
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

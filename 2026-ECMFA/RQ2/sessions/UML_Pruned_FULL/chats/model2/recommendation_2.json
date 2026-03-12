@@ -1,0 +1,22 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Create a Package sales with a class SalesInfo",
+    "soba_timestamp": "18:31:08",
+    "recommendationPayload": {
+        "xmi_id": "_salesPackage",
+        "visibility": "public",
+        "packagedElement": [{
+            "xmi_id": "_salesInfoClass",
+            "visibility": "public",
+            "generalization": [],
+            "name": "SalesInfo",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [],
+            "isAbstract": false,
+            "ownedOperation": []
+        }],
+        "name": "sales",
+        "___type___": "Package"
+    }
+}

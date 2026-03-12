@@ -1,0 +1,52 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create two adapters for features Single and Ref, where both are not applicable at the same time",
+    "soba_timestamp": "11:33:53",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "before": [],
+                "name": "SingleAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Single"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["ruleForSingle"]
+            },
+            {
+                "before": [],
+                "name": "RefAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Ref"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Single"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["ruleForRef"]
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

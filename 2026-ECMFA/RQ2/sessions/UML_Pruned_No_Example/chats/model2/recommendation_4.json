@@ -1,0 +1,111 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "add a EuropeAdress class, like the selected one but without state and zip",
+    "soba_timestamp": "12:44:55",
+    "recommendationPayload": {
+        "xmi_id": "_stmIY4H4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "EuropeAddress",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmIY7H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmIY6H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmIY5H4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "street",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmIY0H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmIY9H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmIY8H4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "city",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmIY3H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmIY2H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmIY1H4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "country",
+                "___type___": "Property",
+                "isOrdered": false
+            }
+        ],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

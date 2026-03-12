@@ -1,0 +1,84 @@
+[DATE]06/03/26
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||18:29
+
+You: create two classes related via an association||18:29
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||18:30||Generated in 23,67s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@7f4e0b0c
+------------------------------
+
+You: Create a Package sales with a class SalesInfo||18:30
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||18:31||Generated in 9,33s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@ea92986
+------------------------------
+
+You: create a literal Cancelled for the selected enum||18:34
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||18:35||Generated in 9,35s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@3d1b13a
+------------------------------
+
+You: add a EuropeAdress class, like the selected one but without state and zip||18:36
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||18:36||Generated in 51,69s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@7568df9c
+------------------------------
+
+You: recommend two more attributes for Item||18:43
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||18:43||Generated in 22,24s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@81b2f0e
+------------------------------
+
+You: Recommend two more classes for the model||18:44
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||18:45||Generated in 42,53s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@4718c139
+------------------------------
+
+You: Complete the model to support payment by credit card, or wire transfer||18:46
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||18:46||Generated in 25,70s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@1d8f3368
+------------------------------
+
+You: Complete the model to support the delivery process, including last mile||18:48
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||18:48||Generated in 16,92s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@191d2bf3
+------------------------------
+

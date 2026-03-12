@@ -1,0 +1,46 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Recommend an enumeration with literals for the selected model, and a class with an attribute whose type is the enumeratio",
+    "soba_timestamp": "12:13:20",
+    "recommendationPayload": {
+        "xmi_id": "_stid4YH4EeOZq68N3n_w7g",
+        "profileApplication": [],
+        "packageImport": [],
+        "visibility": "public",
+        "packagedElement": [
+            {
+                "name": "Color",
+                "ownedLiteral": [
+                    {
+                        "name": "RED",
+                        "___type___": "EnumerationLiteral"
+                    },
+                    {
+                        "name": "GREEN",
+                        "___type___": "EnumerationLiteral"
+                    },
+                    {
+                        "name": "BLUE",
+                        "___type___": "EnumerationLiteral"
+                    }
+                ],
+                "___type___": "Enumeration"
+            },
+            {
+                "name": "ColoredObject",
+                "___type___": "Class",
+                "ownedAttribute": [{
+                    "name": "color",
+                    "___type___": "Property",
+                    "type": {
+                        "name": "Color",
+                        "___type___": "Enumeration"
+                    }
+                }]
+            }
+        ],
+        "name": "Factory",
+        "packageMerge": [],
+        "___type___": "Model"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create a primitive type Integer; and a Class with an attribute of that type",
+    "soba_timestamp": "13:01:58",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_aO3oUBc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "name": "Integer",
+            "___type___": "PrimitiveType",
+            "ownedAttribute": [],
+            "ownedOperation": []
+        },
+        {
+            "xmi_id": "_aO3oQRc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "MyClass",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_aO3oIxc6EfGGEcXPtf6zrg",
+                    "visibility": "public",
+                    "name": "upperLimit",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_aO3oIRc6EfGGEcXPtf6zrg",
+                    "visibility": "public",
+                    "name": "defaultInteger",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_aO3oUBc6EfGGEcXPtf6zrg",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_aO3oQRc6EfGGEcXPtf6zrg",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "myIntegerAttribute",
+                "___type___": "Property",
+                "isOrdered": false
+            }],
+            "isActive": true,
+            "isAbstract": false
+        }
+    ]}
+}

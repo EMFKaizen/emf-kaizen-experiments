@@ -1,0 +1,35 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "recommend a negative context for the selected adapter",
+    "soba_timestamp": "10:58:27",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQABQAEfGgiLaW5H9bqA",
+        "adapters": [{
+            "xmi_id": "_3xMQHRQAEfGgiLaW5H9bqA",
+            "before": ["_3xMQARQAEfGgiLaW5H9bqA"],
+            "name": "NegativeContextForInhByDelegation",
+            "___type___": "Adapter",
+            "cfgDiff": {
+                "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+                "delta": {
+                    "xmi_id": "_3xMQHxQAEfGgiLaW5H9bqA",
+                    "negSet": ["Ref"],
+                    "___type___": "ConfigDelta",
+                    "posSet": []
+                },
+                "context": {
+                    "xmi_id": "_3xMQIBQAEfGgiLaW5H9bqA",
+                    "negSet": ["Single"],
+                    "___type___": "ConfigContext",
+                    "posSet": []
+                },
+                "___type___": "ConfigDiff"
+            },
+            "rules": []
+        }],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "AdaptiveClassDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+    }
+}

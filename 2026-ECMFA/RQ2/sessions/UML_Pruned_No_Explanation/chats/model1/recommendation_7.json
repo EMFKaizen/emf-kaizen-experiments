@@ -1,0 +1,142 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "The pizzera should consider drinks, and orders, which are made of drinks and pizzas",
+    "soba_timestamp": "14:19:03",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_newOrderClassId",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "Order",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_newCustomerNameId",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "customerName",
+                "___type___": "Property",
+                "isOrdered": false
+            }],
+            "isActive": false,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_newDrinkClassId",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "Drink",
+            "___type___": "Class",
+            "redefinedClassifier": [],
+            "ownedAttribute": [
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "visibility": "public",
+                    "isUnique": true,
+                    "aggregation": "none",
+                    "type": "_stk6IYH4EeOZq68N3n_w7g",
+                    "isLeaf": false,
+                    "subsettedProperty": [],
+                    "xmi_id": "_newDrinkNameId",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "name",
+                    "___type___": "Property",
+                    "isOrdered": false
+                },
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "visibility": "public",
+                    "isUnique": false,
+                    "aggregation": "none",
+                    "type": "_stk6IIH4EeOZq68N3n_w7g",
+                    "isLeaf": false,
+                    "subsettedProperty": [],
+                    "xmi_id": "_newDrinkPriceId",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "price",
+                    "___type___": "Property",
+                    "isOrdered": false
+                }
+            ],
+            "isActive": false,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_newOrderDrinkAssociationId",
+            "navigableOwnedEnd": [],
+            "memberEnd": [
+                "_newOrderClassId",
+                "_newDrinkClassId"
+            ],
+            "visibility": "public",
+            "generalization": [],
+            "name": "OrderDrink",
+            "___type___": "Association",
+            "redefinedClassifier": [],
+            "ownedEnd": [
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "visibility": "public",
+                    "isUnique": false,
+                    "aggregation": "none",
+                    "type": "_newOrderClassId",
+                    "isLeaf": true,
+                    "subsettedProperty": [],
+                    "xmi_id": "_newOrderEndId",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "order",
+                    "___type___": "Property",
+                    "isOrdered": false
+                },
+                {
+                    "isStatic": false,
+                    "isDerived": false,
+                    "visibility": "public",
+                    "isUnique": false,
+                    "aggregation": "none",
+                    "type": "_newDrinkClassId",
+                    "isLeaf": true,
+                    "subsettedProperty": [],
+                    "xmi_id": "_newDrinkEndId",
+                    "redefinedProperty": [],
+                    "isReadOnly": false,
+                    "isID": false,
+                    "isDerivedUnion": false,
+                    "qualifier": [],
+                    "name": "drink",
+                    "___type___": "Property",
+                    "isOrdered": false
+                }
+            ],
+            "isAbstract": false
+        }
+    ]}
+}

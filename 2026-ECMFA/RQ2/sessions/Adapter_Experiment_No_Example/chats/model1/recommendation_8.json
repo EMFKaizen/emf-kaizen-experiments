@@ -1,0 +1,98 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create adapters to cover all changes of features in the set: Timed, Immediate, Hierarchical",
+    "soba_timestamp": "12:12:52",
+    "recommendationPayload": {
+        "xmi_id": "_mo0okBP6EfGmU-1fq2dpeQ",
+        "adapters": [
+            {
+                "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+                "before": [],
+                "name": "DeactivateTimed",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PqP6EfGmU-1fq2dpeQ",
+                        "negSet": ["Timed"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PqX6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": [
+                            "Immediate",
+                            "Hierarchical"
+                        ]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["handleDeactivateTimed"]
+            },
+            {
+                "xmi_id": "_mo1PrBP6EfGmU-1fq2dpeQ",
+                "before": [{
+                    "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+                    "___type___": "Adapter"
+                }],
+                "name": "DeactivateImmediate",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PrRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PrP6EfGmU-1fq2dpeQ",
+                        "negSet": ["Immediate"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PrX6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": [
+                            "Timed",
+                            "Hierarchical"
+                        ]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["handleDeactivateImmediate"]
+            },
+            {
+                "xmi_id": "_mo1PsBP6EfGmU-1fq2dpeQ",
+                "before": [{
+                    "xmi_id": "_mo1PrBP6EfGmU-1fq2dpeQ",
+                    "___type___": "Adapter"
+                }],
+                "name": "DeactivateHierarchical",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_mo1PsRP6EfGmU-1fq2dpeQ",
+                    "delta": {
+                        "xmi_id": "_mo1PsP6EfGmU-1fq2dpeQ",
+                        "negSet": ["Hierarchical"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_mo1PsX6EfGmU-1fq2dpeQ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": [
+                            "Timed",
+                            "Immediate"
+                        ]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["handleDeactivateHierarchical"]
+            }
+        ],
+        "name": "AdaptiveStateMachines",
+        "ecore": "StateMachinePL.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveStateMachines.henshin"
+    }
+}

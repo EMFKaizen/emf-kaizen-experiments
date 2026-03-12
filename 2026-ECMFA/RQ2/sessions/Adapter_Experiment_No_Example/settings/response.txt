@@ -1,0 +1,58 @@
+{
+  "___type___": "AdapterModel",
+  "adapters": [
+    {
+      "___type___": "Adapter",
+      "name": "CompositionAdapter",
+      "cfgDiff": {
+        "___type___": "ConfigDiff",
+        "delta": {
+          "___type___": "ConfigDelta",
+          "posSet": [],
+          "negSet": [
+            "Composition"
+          ]
+        },
+        "context": {
+          "___type___": "ConfigContext",
+          "posSet": [
+            "FullAssoc"
+          ],
+          "negSet": []
+        }
+      },
+      "rules": [
+        "handleComposition"
+      ],
+      "before": []
+    },
+    {
+      "___type___": "Adapter",
+      "name": "NavigationAdapter",
+      "cfgDiff": {
+        "___type___": "ConfigDiff",
+        "delta": {
+          "___type___": "ConfigDelta",
+          "posSet": [],
+          "negSet": [
+            "Navigation"
+          ]
+        },
+        "context": {
+          "___type___": "ConfigContext",
+          "posSet": [
+            "FullAssoc"
+          ],
+          "negSet": []
+        }
+      },
+      "rules": [
+        "handleNavigation"
+      ],
+      "before": [
+        "_3xMQChQAEfGgiLaW5H9bqA"
+      ]
+    }
+  ],
+  "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+}

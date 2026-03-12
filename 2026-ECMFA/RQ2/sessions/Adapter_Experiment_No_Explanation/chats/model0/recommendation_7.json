@@ -1,0 +1,38 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create an adapter with rules createClass and deleteClass, applicable when Single is deactivated",
+    "soba_timestamp": "20:10:51",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [{
+            "xmi_id": "_newAdapter1",
+            "before": [],
+            "name": "AdapterSingleDeactivated",
+            "___type___": "Adapter",
+            "cfgDiff": {
+                "xmi_id": "_newConfigDiff1",
+                "delta": {
+                    "xmi_id": "_newConfigDelta1",
+                    "negSet": [],
+                    "___type___": "ConfigDelta",
+                    "posSet": []
+                },
+                "context": {
+                    "xmi_id": "_newConfigContext1",
+                    "negSet": [],
+                    "___type___": "ConfigContext",
+                    "posSet": []
+                },
+                "___type___": "ConfigDiff"
+            },
+            "rules": [
+                "createClass",
+                "deleteClass"
+            ]
+        }],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

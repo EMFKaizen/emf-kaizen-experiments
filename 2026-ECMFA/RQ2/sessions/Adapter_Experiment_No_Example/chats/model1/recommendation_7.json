@@ -1,0 +1,51 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create two adapters executed one before the other, and applicable when Timed remains selected",
+    "soba_timestamp": "12:11:22",
+    "recommendationPayload": {
+        "adapters": [
+            {
+                "before": [],
+                "name": "AdapterBeforeTimed",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Timed"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["ruleForAdapterBeforeTimed"]
+            },
+            {
+                "before": [{
+                    "name": "AdapterBeforeTimed",
+                    "___type___": "Adapter"
+                }],
+                "name": "AdapterAfterTimed",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Timed"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["ruleForAdapterAfterTimed"]
+            }
+        ],
+        "___type___": "AdapterModel"
+    }
+}

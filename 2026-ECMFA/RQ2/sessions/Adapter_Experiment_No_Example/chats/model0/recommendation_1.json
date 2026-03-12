@@ -1,0 +1,24 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create an adapter named InhByDelegation applicable when 'Simple' is activated",
+    "soba_timestamp": "11:21:37",
+    "recommendationPayload": {
+        "before": [],
+        "name": "InhByDelegation",
+        "___type___": "Adapter",
+        "cfgDiff": {
+            "delta": {
+                "negSet": ["Simple"],
+                "___type___": "ConfigDelta",
+                "posSet": []
+            },
+            "context": {
+                "negSet": [],
+                "___type___": "ConfigContext",
+                "posSet": ["Simple"]
+            },
+            "___type___": "ConfigDiff"
+        },
+        "rules": []
+    }
+}

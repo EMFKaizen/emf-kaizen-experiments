@@ -1,0 +1,23 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "recommend two nested Packages for the selected Model",
+    "soba_timestamp": "17:57:06",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_aO3obYc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "packagedElement": [],
+            "name": "NestedPackage1",
+            "___type___": "Package",
+            "URI": "URI_example_1"
+        },
+        {
+            "xmi_id": "_aO3obZc6EfGGEcXPtf6zrg",
+            "visibility": "public",
+            "packagedElement": [],
+            "name": "NestedPackage2",
+            "___type___": "Package",
+            "URI": "URI_example_2"
+        }
+    ]}
+}

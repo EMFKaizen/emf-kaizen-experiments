@@ -1,0 +1,69 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "recommend two more attributes for Item",
+    "soba_timestamp": "12:06:31",
+    "recommendationPayload": {"results": [
+        {
+            "isStatic": false,
+            "isDerived": false,
+            "upperValue": {
+                "xmi_id": "_stmvZoH4EeOZq68N3n_w7g",
+                "visibility": "public",
+                "___type___": "LiteralUnlimitedNatural",
+                "value": 1
+            },
+            "visibility": "public",
+            "isUnique": true,
+            "aggregation": "none",
+            "lowerValue": {
+                "xmi_id": "_stmvZIH4EeOZq68N3n_w7g",
+                "visibility": "public",
+                "___type___": "LiteralInteger",
+                "value": 0
+            },
+            "type": "_stk6IYH4EeOZq68N3n_w7g",
+            "isLeaf": false,
+            "subsettedProperty": [],
+            "xmi_id": "_stmvZ4H4EeOZq68N3n_w7g",
+            "redefinedProperty": [],
+            "isReadOnly": false,
+            "isID": false,
+            "isDerivedUnion": false,
+            "qualifier": [],
+            "name": "description",
+            "___type___": "Property",
+            "isOrdered": false
+        },
+        {
+            "isStatic": false,
+            "isDerived": false,
+            "upperValue": {
+                "xmi_id": "_stmvZoH4EeOZq68N3n_w7g",
+                "visibility": "public",
+                "___type___": "LiteralUnlimitedNatural",
+                "value": 1
+            },
+            "visibility": "public",
+            "isUnique": true,
+            "aggregation": "none",
+            "lowerValue": {
+                "xmi_id": "_stmvZIH4EeOZq68N3n_w7g",
+                "visibility": "public",
+                "___type___": "LiteralInteger",
+                "value": 0
+            },
+            "type": "_stk6IYH4EeOZq68N3n_w7g",
+            "isLeaf": false,
+            "subsettedProperty": [],
+            "xmi_id": "_stmvZ4H4EeOZq68N3n_w7g",
+            "redefinedProperty": [],
+            "isReadOnly": false,
+            "isID": false,
+            "isDerivedUnion": false,
+            "qualifier": [],
+            "name": "category",
+            "___type___": "Property",
+            "isOrdered": false
+        }
+    ]}
+}

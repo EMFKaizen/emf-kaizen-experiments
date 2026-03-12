@@ -1,0 +1,31 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create the inverse adapter of InhByDelegation",
+    "soba_timestamp": "19:44:57",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQHRQAEfGgiLaW5H9bqA",
+        "before": [],
+        "name": "InhByDelegationInverse",
+        "___type___": "Adapter",
+        "cfgDiff": {
+            "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+            "delta": {
+                "xmi_id": "_3xMQHxQAEfGgiLaW5H9bqA",
+                "negSet": ["Multi"],
+                "___type___": "ConfigDelta",
+                "posSet": ["Single"]
+            },
+            "context": {
+                "xmi_id": "_3xMQIBQAEfGgiLaW5H9bqA",
+                "negSet": [],
+                "___type___": "ConfigContext",
+                "posSet": ["Ref"]
+            },
+            "___type___": "ConfigDiff"
+        },
+        "rules": [
+            "singleByMulti",
+            "inhByRefInverse"
+        ]
+    }
+}

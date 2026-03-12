@@ -1,0 +1,46 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create an adapter with the rules of the selected adapters",
+    "soba_timestamp": "10:54:15",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQABQAEfGgiLaW5H9bqA",
+        "adapters": [{
+            "xmi_id": "_3xMQHSQAEfGgiLaW5H9bqA",
+            "before": [
+                "_3xMQARQAEfGgiLaW5H9bqA",
+                "_3xMQBRQAEfGgiLaW5H9bqA"
+            ],
+            "name": "CombinedRulesAdapter",
+            "___type___": "Adapter",
+            "cfgDiff": {
+                "xmi_id": "_3xMQHtQAEfGgiLaW5H9bqA",
+                "delta": {
+                    "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+                    "negSet": [],
+                    "___type___": "ConfigDelta",
+                    "posSet": [
+                        "Multi",
+                        "Ref"
+                    ]
+                },
+                "context": {
+                    "xmi_id": "_3xMQHBQAEfGgiLaW5H9bqA",
+                    "negSet": [],
+                    "___type___": "ConfigContext",
+                    "posSet": []
+                },
+                "___type___": "ConfigDiff"
+            },
+            "rules": [
+                "multiBySingle",
+                "inhByRef",
+                "createInterface",
+                "copyMethods"
+            ]
+        }],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "AdaptiveClassDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+    }
+}

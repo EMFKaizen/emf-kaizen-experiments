@@ -24,6 +24,7 @@ Folder [RQ1](./RQ1) contains:
 - Meta-models used in the evaluation
 - Models at different stages of completeness
 - Natural-language assistance requests
+- Produced recommedation by EMF-Kaizen, for each model and request
 - Raw and aggregated evaluation results
 
 ### Experiment for RQ2
@@ -38,4 +39,5 @@ Folder [RQ2](./RQ2) contains:
 - Meta-models used in the evaluation
 - Models at different stages of completeness
 - Natural-language assistance requests
+- Produced recommedation by EMF-Kaizen, for each model and request
 - Raw and aggregated evaluation results

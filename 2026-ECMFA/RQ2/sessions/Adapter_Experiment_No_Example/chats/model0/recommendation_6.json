@@ -1,0 +1,89 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create adaters to cover all combinations of activation and deactivation of features Multi and Ref",
+    "soba_timestamp": "11:29:38",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "name": "MultiActivatedRefDeactivated",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Ref"],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Rule1"]
+            },
+            {
+                "name": "MultiDeactivatedRefActivated",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Multi"],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Ref"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Rule2"]
+            },
+            {
+                "name": "MultiActivatedRefActivated",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Ref"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Rule3"]
+            },
+            {
+                "name": "MultiDeactivatedRefDeactivated",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [
+                            "Multi",
+                            "Ref"
+                        ],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Rule4"]
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "recommend two attributes for class Pizza",
+    "soba_timestamp": "14:15:50",
+    "recommendationPayload": {"results": [
+        {
+            "isStatic": false,
+            "isDerived": false,
+            "upperValue": {
+                "xmi_id": "_stk6K6H4EeOZq68N3n_w7g",
+                "___type___": "LiteralUnlimitedNatural",
+                "value": 1
+            },
+            "visibility": "public",
+            "isUnique": true,
+            "aggregation": "none",
+            "lowerValue": {
+                "xmi_id": "_stk6K5H4EeOZq68N3n_w7g",
+                "___type___": "LiteralInteger",
+                "value": 1
+            },
+            "type": "_stk6IYH4EeOZq68N3n_w7g",
+            "isLeaf": false,
+            "subsettedProperty": [],
+            "xmi_id": "_stk6K4H4EeOZq68N3n_w7g",
+            "redefinedProperty": [],
+            "isReadOnly": false,
+            "isID": false,
+            "isDerivedUnion": false,
+            "qualifier": [],
+            "name": "size",
+            "___type___": "Property",
+            "isOrdered": false
+        },
+        {
+            "isStatic": false,
+            "isDerived": false,
+            "upperValue": {
+                "xmi_id": "_stk6K9H4EeOZq68N3n_w7g",
+                "___type___": "LiteralUnlimitedNatural",
+                "value": 10
+            },
+            "visibility": "public",
+            "isUnique": false,
+            "aggregation": "none",
+            "lowerValue": {
+                "xmi_id": "_stk6K8H4EeOZq68N3n_w7g",
+                "___type___": "LiteralInteger",
+                "value": 0
+            },
+            "type": "_stk6IYH4EeOZq68N3n_w7g",
+            "isLeaf": false,
+            "subsettedProperty": [],
+            "xmi_id": "_stk6K7H4EeOZq68N3n_w7g",
+            "redefinedProperty": [],
+            "isReadOnly": false,
+            "isID": false,
+            "isDerivedUnion": false,
+            "qualifier": [],
+            "name": "toppings",
+            "___type___": "Property",
+            "isOrdered": true
+        }
+    ]}
+}

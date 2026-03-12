@@ -1,0 +1,75 @@
+{
+  "___type___": "Class",
+  "xmi_id": "_stmDeliveryProcess",
+  "name": "DeliveryProcess",
+  "visibility": "public",
+  "generalization": [],
+  "isAbstract": false,
+  "redefinedClassifier": [],
+  "ownedAttribute": [
+    {
+      "___type___": "Property",
+      "xmi_id": "_stmDeliveryMethod",
+      "name": "deliveryMethod",
+      "visibility": "public",
+      "isLeaf": false,
+      "isStatic": false,
+      "type": "_stk6IYH4EeOZq68N3n_w7g",
+      "isOrdered": false,
+      "isUnique": true,
+      "lowerValue": {
+        "___type___": "LiteralInteger",
+        "xmi_id": "_stmDeliveryMethodLower",
+        "visibility": "public",
+        "value": 1
+      },
+      "upperValue": {
+        "___type___": "LiteralUnlimitedNatural",
+        "xmi_id": "_stmDeliveryMethodUpper",
+        "visibility": "public",
+        "value": 1
+      },
+      "isReadOnly": false,
+      "aggregation": "none",
+      "qualifier": [],
+      "isDerived": false,
+      "isDerivedUnion": false,
+      "isID": false,
+      "redefinedProperty": [],
+      "subsettedProperty": []
+    },
+    {
+      "___type___": "Property",
+      "xmi_id": "_stmDeliveryAddress",
+      "name": "deliveryAddress",
+      "visibility": "public",
+      "isLeaf": false,
+      "isStatic": false,
+      "type": "_stmISYH4EeOZq68N3n_w7g",
+      "isOrdered": false,
+      "isUnique": true,
+      "lowerValue": {
+        "___type___": "LiteralInteger",
+        "xmi_id": "_stmDeliveryAddressLower",
+        "visibility": "public",
+        "value": 1
+      },
+      "upperValue": {
+        "___type___": "LiteralUnlimitedNatural",
+        "xmi_id": "_stmDeliveryAddressUpper",
+        "visibility": "public",
+        "value": 1
+      },
+      "isReadOnly": false,
+      "aggregation": "none",
+      "qualifier": [],
+      "isDerived": false,
+      "isDerivedUnion": false,
+      "isID": false,
+      "redefinedProperty": [],
+      "subsettedProperty": []
+    }
+  ],
+  "ownedConnector": [],
+  "isActive": false
+}

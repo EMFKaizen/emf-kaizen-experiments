@@ -1,0 +1,60 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create two adapters for features Single and Ref, where both are not applicable at the same time",
+    "soba_timestamp": "20:12:52",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "xmi_id": "_newAdapter1",
+                "before": [],
+                "name": "AdapterSingle",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_newConfigDiff1",
+                    "delta": {
+                        "xmi_id": "_newConfigDelta1",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_newConfigContext1",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Single"]
+            },
+            {
+                "xmi_id": "_newAdapter2",
+                "before": [],
+                "name": "AdapterRef",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_newConfigDiff2",
+                    "delta": {
+                        "xmi_id": "_newConfigDelta2",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "xmi_id": "_newConfigContext2",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Ref"]
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

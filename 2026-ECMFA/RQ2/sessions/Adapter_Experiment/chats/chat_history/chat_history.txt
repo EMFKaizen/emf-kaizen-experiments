@@ -1,0 +1,200 @@
+You: Create an adapter named InhByDelegation applicable when 'Simple' is activated||19:00
+
+------------------------------||19:00||Generated in 7,65s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@30bb4248
+------------------------------
+
+You: create two adapters InhByDelegation and InhByDelegationInterface, one applicable after the other||19:03
+
+------------------------------||19:03||Generated in 10,66s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@64bc291b
+------------------------------
+
+You: Create adapters, each one covering the activation of exactly one of these features: Multi, Single, Ref||19:06
+
+------------------------------||19:06||Generated in 10,82s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@a7e3897
+------------------------------
+
+You: Create two adapters applicable when Ref is activated/deactivated, and both needing Multi as positive context||19:07
+
+------------------------------||19:08||Generated in 8,45s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@21e7206a
+------------------------------
+
+You: create 3 adapters, one executing after the other||19:09
+
+------------------------------||19:09||Generated in 13,83s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@10564688
+------------------------------
+
+You: Create adaters to cover all combinations of activation and deactivation of features Multi and Ref||19:11
+
+------------------------------||19:11||Generated in 12,47s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@2200d281
+------------------------------
+
+You: Create an adapter with rules createClass and deleteClass, applicable when Single is deactivated||19:13
+
+------------------------------||19:14||Generated in 5,64s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@64a12381
+------------------------------
+
+You: create two adapters for features Single and Ref, where both are not applicable at the same time||19:15
+
+------------------------------||19:16||Generated in 8,14s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@29b343c7
+------------------------------
+
+You: Create an adapter named DeactivateCondition applicable when 'Condition' is deactivated, and containing rules concatEventCondition, removeConditionSrcAdjacentTransitions, removeConditionTarAdjancentTransitions||19:18
+
+------------------------------||19:18||Generated in 6,11s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@2de22551
+------------------------------
+
+You: create two adapters ImmediateByTimed and ImmediateByEvent, applicable when Immediate changes to negative, and applicable one after the other||19:25
+
+------------------------------||19:25||Generated in 10,33s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@7c4038be
+------------------------------
+
+You: Create an adapter inverse of DeselectExitActions||19:27
+
+------------------------------||19:27||Generated in 7,68s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@f7e49b
+------------------------------
+
+You: Create an adapter like the selected one, but adding ExitActions in the negative context||19:28
+
+------------------------------||19:29||Generated in 9,09s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@6d73bc23
+------------------------------
+
+You: Create an adapter like the selected one, but adding ExitActions in the negative context||19:30
+
+------------------------------||19:30||Generated in 10,01s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@5b5ca7d
+------------------------------
+
+You: recommend more adapters to cover all possible feature changes, assumming features: ExitAction, Actions, EntryAction||19:32
+
+------------------------------||19:32||Generated in 14,55s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@4258eba5
+------------------------------
+
+You: Assumming features: ExitAction, Actions, EntryAction, recommend features for the context and delta of the selected adapter||19:34
+
+------------------------------||19:34||Generated in 11,53s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@436528c3
+------------------------------
+
+You: Create two adapters executed one before the other, and applicable when Timed remains selected||19:37
+
+------------------------------||19:37||Generated in 13,27s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@23897113
+------------------------------
+
+You: Create adapters to cover all changes of features in the set: Timed, Immediate, Hierarchical||19:38
+
+------------------------------||19:38||Generated in 17,63s
+EMF Kaizen: Recommendation request [#9] processed.
+Response:
+soba.core.processor.AssistantResponse@72f7a1b6
+------------------------------
+
+You: Create two adapters, one applicable before the other, and both requiring the activation of feature 'Multi'||19:42
+
+------------------------------||19:42||Generated in 13,96s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@73174f4f
+------------------------------
+
+You: Create one adapter applicable when both features Multi and Ref change from positive to negative||19:43
+
+------------------------------||19:43||Generated in 8,99s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@5c5dd9ac
+------------------------------
+
+You: create the inverse adapter of InhByDelegation||19:44
+
+------------------------------||19:44||Generated in 5,95s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@46c8a8e0
+------------------------------
+
+You: Create an adapter with the rules of the selected adapters||19:47
+
+------------------------------||19:47||Generated in 13,61s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@151cbba4
+------------------------------
+
+You: recommend adapters for the feature changes that the adapters in the model are missing||19:49
+
+------------------------------||19:49||Generated in 11,01s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@226715da
+------------------------------
+
+You: recommend a negative context for the selected adapter||19:51
+
+------------------------------||19:51||Generated in 7,76s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@65babe35
+------------------------------
+
+You: create three adapters with positive context 'Ref' where one is applied before the others||19:52
+
+------------------------------||19:53||Generated in 18,70s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@5a12819f
+------------------------------
+
+You: Create missing adapters to handle features 'Composition' and 'Navigation'. They all need feature 'FullAssoc' to remain selected||19:54
+
+------------------------------||19:54||Generated in 12,79s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@1f397148
+------------------------------
+

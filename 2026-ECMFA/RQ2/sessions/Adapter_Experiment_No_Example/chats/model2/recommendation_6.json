@@ -1,0 +1,10 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "recommend a negative context for the selected adapter",
+    "soba_timestamp": "12:30:50",
+    "recommendationPayload": {
+        "negSet": ["Ref"],
+        "___type___": "ConfigContext",
+        "posSet": []
+    }
+}

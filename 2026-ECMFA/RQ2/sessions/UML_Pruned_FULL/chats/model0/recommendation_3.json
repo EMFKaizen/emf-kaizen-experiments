@@ -1,0 +1,85 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "add two classes with attributes relevant to the context of the selected model",
+    "soba_timestamp": "17:50:05",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_class1",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "NewClass1",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_literalUnlimitedNat1",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_literalInt1",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stid4YH4EeOZq68N3n_w7g_primitiveTypeInteger",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_attr1",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "attribute1",
+                "___type___": "Property",
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_class2",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "NewClass2",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_literalUnlimitedNat2",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_literalInt2",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stid4YH4EeOZq68N3n_w7g_primitiveTypeInteger",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_attr2",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "attribute2",
+                "___type___": "Property",
+                "isOrdered": true
+            }],
+            "isActive": true,
+            "isAbstract": false
+        }
+    ]}
+}

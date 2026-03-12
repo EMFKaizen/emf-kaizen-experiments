@@ -1,0 +1,60 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "recommend adapters for the feature changes that the adapters in the model are missing",
+    "soba_timestamp": "19:49:15",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQABQAEfGgiLaW5H9bqA",
+        "adapters": [
+            {
+                "xmi_id": "_3xMQHRQAEfGgiLaW5H9bqA",
+                "before": [],
+                "name": "MultiToSingleInh",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+                    "delta": {
+                        "xmi_id": "_3xMQHxQAEfGgiLaW5H9bqA",
+                        "negSet": ["Single"],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "xmi_id": "_3xMQIBQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["multiToSingle"]
+            },
+            {
+                "xmi_id": "_3xMQJRQAEfGgiLaW5H9bqA",
+                "before": [],
+                "name": "NoToSingle",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_3xMQJhQAEfGgiLaW5H9bqA",
+                    "delta": {
+                        "xmi_id": "_3xMQJxQAEfGgiLaW5H9bqA",
+                        "negSet": ["Single"],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["No"]
+                    },
+                    "context": {
+                        "xmi_id": "_3xMQKBQAEfGgiLaW5H9bqA",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["noToSingle"]
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "AdaptiveClassDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+    }
+}

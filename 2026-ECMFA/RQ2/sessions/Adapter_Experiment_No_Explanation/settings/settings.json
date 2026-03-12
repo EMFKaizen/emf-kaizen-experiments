@@ -1,0 +1,34 @@
+{
+  "Adapters.ecore": {
+    "SerializationSelection": {
+      "AdapterModel": [
+        "name",
+        "ecore",
+        "adapters",
+        "transformation"
+      ],
+      "Adapter": [
+        "name",
+        "cfgDiff",
+        "rules",
+        "before"
+      ],
+      "ConfigDiff": [
+        "delta",
+        "context"
+      ],
+      "ConfigTuple": [
+        "posSet",
+        "negSet"
+      ],
+      "ConfigDelta": [
+        "posSet",
+        "negSet"
+      ],
+      "ConfigContext": [
+        "posSet",
+        "negSet"
+      ]
+    }
+  }
+}

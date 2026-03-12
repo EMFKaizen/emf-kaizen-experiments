@@ -1,0 +1,142 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "recommend two more attributes for Item",
+    "soba_timestamp": "12:46:59",
+    "recommendationPayload": {
+        "xmi_id": "_stmIUIH4EeOZq68N3n_w7g",
+        "visibility": "public",
+        "generalization": [],
+        "ownedConnector": [],
+        "name": "Item",
+        "___type___": "Class",
+        "redefinedClassifier": [],
+        "ownedAttribute": [
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stlhX4H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stlhXoH4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stlhXYH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "productName",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stlhYoH4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stlhYYH4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6IIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stlhYIH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "quantity",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stlhZ4H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stlhZoH4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6IYH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stlhZIH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "category",
+                "___type___": "Property",
+                "isOrdered": false
+            },
+            {
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stmhA4H4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stmhAYH4EeOZq68N3n_w7g",
+                    "visibility": "public",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stk6KIH4EeOZq68N3n_w7g",
+                "isLeaf": false,
+                "subsettedProperty": [],
+                "xmi_id": "_stmhAIH4EeOZq68N3n_w7g",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "supplier",
+                "___type___": "Property",
+                "isOrdered": false
+            }
+        ],
+        "isActive": false,
+        "isAbstract": false
+    }
+}

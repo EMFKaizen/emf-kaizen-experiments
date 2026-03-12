@@ -1,0 +1,67 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "Recommend an enumeration with literals for the selected model, and a class with an attribute whose type is the enumeratio",
+    "soba_timestamp": "17:59:07",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_enum1",
+            "visibility": "public",
+            "name": "Color",
+            "ownedLiteral": [
+                {
+                    "xmi_id": "_literalRed",
+                    "name": "Red",
+                    "___type___": "EnumerationLiteral",
+                    "enumeration": "_enum1"
+                },
+                {
+                    "xmi_id": "_literalGreen",
+                    "name": "Green",
+                    "___type___": "EnumerationLiteral",
+                    "enumeration": "_enum1"
+                },
+                {
+                    "xmi_id": "_literalBlue",
+                    "name": "Blue",
+                    "___type___": "EnumerationLiteral",
+                    "enumeration": "_enum1"
+                }
+            ],
+            "___type___": "Enumeration"
+        },
+        {
+            "xmi_id": "_classWithEnumAttribute",
+            "visibility": "public",
+            "name": "ColoredItem",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_upperBound1",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": true,
+                "lowerValue": {
+                    "xmi_id": "_lowerBound1",
+                    "___type___": "LiteralInteger",
+                    "value": 1
+                },
+                "type": "_enum1",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_colorAttribute",
+                "redefinedProperty": [],
+                "isID": false,
+                "isDerivedUnion": false,
+                "name": "color",
+                "___type___": "Property",
+                "isOrdered": false
+            }],
+            "isActive": true,
+            "isAbstract": false
+        }
+    ]}
+}

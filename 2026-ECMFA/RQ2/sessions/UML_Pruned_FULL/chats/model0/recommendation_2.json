@@ -1,0 +1,118 @@
+{
+    "soba_metaModelURI": "http://www.eclipse.org/uml2/5.0.0/UML",
+    "soba_userInput": "create an astract class and two active, concrete subclasses",
+    "soba_timestamp": "17:47:43",
+    "recommendationPayload": {"results": [
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_abstract",
+            "visibility": "public",
+            "generalization": [],
+            "ownedConnector": [],
+            "name": "AbstractClass",
+            "___type___": "Class",
+            "ownedAttribute": [],
+            "isActive": false,
+            "isAbstract": true
+        },
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete1",
+            "visibility": "public",
+            "generalization": [{
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_gen1",
+                "general": "_stid4YH4EeOZq68N3n_w7g_abstract",
+                "isSubstitutable": true,
+                "generalizationSet": [],
+                "___type___": "Generalization",
+                "specific": "_stid4YH4EeOZq68N3n_w7g_concrete1"
+            }],
+            "ownedConnector": [],
+            "name": "ConcreteClass1",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete1_attr_unlimited",
+                    "visibility": "public",
+                    "name": "unlimitedValue",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": false,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete1_attr_literal",
+                    "visibility": "public",
+                    "name": "literalValue",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stid4YH4EeOZq68N3n_w7g_abstract",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete1_attr",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "attribute1",
+                "___type___": "Property",
+                "isOrdered": false
+            }],
+            "isActive": true,
+            "isAbstract": false
+        },
+        {
+            "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete2",
+            "visibility": "public",
+            "generalization": [{
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_gen2",
+                "general": "_stid4YH4EeOZq68N3n_w7g_abstract",
+                "isSubstitutable": true,
+                "generalizationSet": [],
+                "___type___": "Generalization",
+                "specific": "_stid4YH4EeOZq68N3n_w7g_concrete2"
+            }],
+            "ownedConnector": [],
+            "name": "ConcreteClass2",
+            "___type___": "Class",
+            "ownedAttribute": [{
+                "isStatic": false,
+                "isDerived": false,
+                "upperValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete2_attr_unlimited",
+                    "visibility": "public",
+                    "name": "unlimitedValue",
+                    "___type___": "LiteralUnlimitedNatural",
+                    "value": 1
+                },
+                "visibility": "public",
+                "isUnique": false,
+                "aggregation": "none",
+                "lowerValue": {
+                    "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete2_attr_literal",
+                    "visibility": "public",
+                    "name": "literalValue",
+                    "___type___": "LiteralInteger",
+                    "value": 0
+                },
+                "type": "_stid4YH4EeOZq68N3n_w7g_abstract",
+                "isLeaf": true,
+                "subsettedProperty": [],
+                "xmi_id": "_stid4YH4EeOZq68N3n_w7g_concrete2_attr",
+                "redefinedProperty": [],
+                "isReadOnly": false,
+                "isID": false,
+                "isDerivedUnion": false,
+                "qualifier": [],
+                "name": "attribute2",
+                "___type___": "Property",
+                "isOrdered": false
+            }],
+            "isActive": true,
+            "isAbstract": false
+        }
+    ]}
+}

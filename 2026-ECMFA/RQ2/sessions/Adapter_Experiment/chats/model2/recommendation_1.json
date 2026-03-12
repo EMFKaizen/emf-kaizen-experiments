@@ -1,0 +1,60 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create two adapters, one applicable before the other, and both requiring the activation of feature 'Multi'",
+    "soba_timestamp": "19:42:21",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQABQAEfGgiLaW5H9bqB",
+        "adapters": [
+            {
+                "xmi_id": "_3xMQARQAEfGgiLaW5H9bqC",
+                "before": [],
+                "name": "FirstAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_3xMQAhQAEfGgiLaW5H9bqD",
+                    "delta": {
+                        "xmi_id": "_3xMQAxQAEfGgiLaW5H9bqE",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "xmi_id": "_3xMQBBQAEfGgiLaW5H9bqF",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["firstRule"]
+            },
+            {
+                "xmi_id": "_3xMQBRQAEfGgiLaW5H9bqG",
+                "before": ["_3xMQARQAEfGgiLaW5H9bqC"],
+                "name": "SecondAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "xmi_id": "_3xMQBhQAEfGgiLaW5H9bqH",
+                    "delta": {
+                        "xmi_id": "_3xMQBxQAEfGgiLaW5H9bqI",
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "xmi_id": "_3xMQCBQAEfGgiLaW5H9bqJ",
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["secondRule"]
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "AdaptiveClassDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+    }
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adp:AdapterModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adp="http://adapters.org/0.1" xsi:schemaLocation="http://adapters.org/0.1 Adapters.ecore" xmi:id="_3xMQABQAEfGgiLaW5H9bqA" name="AdaptiveClassDiagrams" ecore="AdaptiveClassDiagrams.ecore" transformation="trafos/AdaptiveClassDiagrams.henshin">
+  <adapters xmi:id="_3xMQARQAEfGgiLaW5H9bqA" name="InhByDelegation">
+    <cfgDiff xmi:id="_3xMQAhQAEfGgiLaW5H9bqA">
+      <delta xmi:id="_3xMQAxQAEfGgiLaW5H9bqA">
+        <posSet>Multi</posSet>
+        <negSet>Single</negSet>
+      </delta>
+      <context xmi:id="_3xMQBBQAEfGgiLaW5H9bqA">
+        <posSet>Ref</posSet>
+      </context>
+    </cfgDiff>
+    <rules>multiBySingle</rules>
+    <rules>inhByRef</rules>
+  </adapters>
+  <adapters xmi:id="_3xMQBRQAEfGgiLaW5H9bqA" name="InhByDelegationInterface" before="_3xMQARQAEfGgiLaW5H9bqA">
+    <cfgDiff xmi:id="_3xMQBhQAEfGgiLaW5H9bqA">
+      <delta xmi:id="_3xMQBxQAEfGgiLaW5H9bqA">
+        <posSet>Multi</posSet>
+        <negSet>Single</negSet>
+      </delta>
+      <context xmi:id="_3xMQCBQAEfGgiLaW5H9bqA">
+        <posSet>Interfaces</posSet>
+        <posSet>Methods</posSet>
+      </context>
+    </cfgDiff>
+    <rules>createInterface</rules>
+    <rules>copyMethods</rules>
+  </adapters>
+  <adapters xmi:id="_3xMQCRQAEfGgiLaW5H9bqA" name="AssocByRef">
+    <cfgDiff xmi:id="_3xMQChQAEfGgiLaW5H9bqA">
+      <delta xmi:id="_3xMQCxQAEfGgiLaW5H9bqA">
+        <posSet>FullAssoc</posSet>
+        <negSet>Ref</negSet>
+      </delta>
+      <context xmi:id="_3xMQDBQAEfGgiLaW5H9bqA"/>
+    </cfgDiff>
+    <rules>addNavigRole</rules>
+    <rules>removeNonNavigRole</rules>
+  </adapters>
+  <adapters xmi:id="_3xMQDRQAEfGgiLaW5H9bqA" name="SingleToMultiInh">
+    <cfgDiff xmi:id="_3xMQDhQAEfGgiLaW5H9bqA">
+      <delta xmi:id="_3xMQDxQAEfGgiLaW5H9bqA">
+        <posSet>Single</posSet>
+        <negSet>Multi</negSet>
+      </delta>
+      <context xmi:id="_3xMQEBQAEfGgiLaW5H9bqA"/>
+    </cfgDiff>
+    <rules>singleToMulti</rules>
+  </adapters>
+  <adapters xmi:id="_3xMQERQAEfGgiLaW5H9bqA" name="SingleToNo">
+    <cfgDiff xmi:id="_3xMQEhQAEfGgiLaW5H9bqA">
+      <delta xmi:id="_3xMQExQAEfGgiLaW5H9bqA">
+        <posSet>Single</posSet>
+        <negSet>No</negSet>
+      </delta>
+      <context xmi:id="_3xMQFBQAEfGgiLaW5H9bqA">
+        <posSet>Ref</posSet>
+      </context>
+    </cfgDiff>
+    <rules>SingleToNo</rules>
+  </adapters>
+  <adapters xmi:id="_3xMQFRQAEfGgiLaW5H9bqA" name="RefByAssoc">
+    <cfgDiff xmi:id="_3xMQFhQAEfGgiLaW5H9bqA">
+      <delta xmi:id="_3xMQFxQAEfGgiLaW5H9bqA">
+        <posSet>Ref</posSet>
+        <negSet>FullAssoc</negSet>
+      </delta>
+      <context xmi:id="_3xMQGBQAEfGgiLaW5H9bqA"/>
+    </cfgDiff>
+    <rules>oppositeRoles2Assoc</rules>
+    <rules>singleRole2Assoc</rules>
+  </adapters>
+  <adapters xmi:id="_3xMQGRQAEfGgiLaW5H9bqA" name="InterfaceToNo">
+    <cfgDiff xmi:id="_3xMQGhQAEfGgiLaW5H9bqA">
+      <delta xmi:id="_3xMQGxQAEfGgiLaW5H9bqA">
+        <posSet>Interfaces</posSet>
+      </delta>
+      <context xmi:id="_3xMQHBQAEfGgiLaW5H9bqA">
+        <posSet>Multi</posSet>
+        <negSet>Methods</negSet>
+      </context>
+    </cfgDiff>
+    <rules>interfaceByAbstractClass</rules>
+    <rules>copyInterfaceMethods</rules>
+  </adapters>
+</adp:AdapterModel>

@@ -1,0 +1,38 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create one adapter applicable when both features Multi and Ref change from positive to negative",
+    "soba_timestamp": "10:51:08",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQABQAEfGgiLaW5H9bqB",
+        "adapters": [{
+            "xmi_id": "_3xMQARQAEfGgiLaW5H9bqB",
+            "before": [],
+            "name": "MultiRefToNegative",
+            "___type___": "Adapter",
+            "cfgDiff": {
+                "xmi_id": "_3xMQAhQAEfGgiLaW5H9bqB",
+                "delta": {
+                    "xmi_id": "_3xMQAxQAEfGgiLaW5H9bqB",
+                    "negSet": [
+                        "Multi",
+                        "Ref"
+                    ],
+                    "___type___": "ConfigDelta",
+                    "posSet": []
+                },
+                "context": {
+                    "xmi_id": "_3xMQBBQAEfGgiLaW5H9bqB",
+                    "negSet": [],
+                    "___type___": "ConfigContext",
+                    "posSet": []
+                },
+                "___type___": "ConfigDiff"
+            },
+            "rules": []
+        }],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "AdaptiveClassDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveClassDiagrams.henshin"
+    }
+}

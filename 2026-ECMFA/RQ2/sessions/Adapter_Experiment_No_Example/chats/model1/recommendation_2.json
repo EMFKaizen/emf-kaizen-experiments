@@ -1,0 +1,57 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "create two adapters ImmediateByTimed and ImmediateByEvent, applicable when Immediate changes to negative, and applicable one after the other",
+    "soba_timestamp": "12:00:46",
+    "recommendationPayload": {
+        "xmi_id": "_mo0okBP6EfGmU-1fq2dpeQ",
+        "adapters": [
+            {
+                "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+                "before": [],
+                "name": "ImmediateByTimed",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Immediate"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["timedTransformationRule"]
+            },
+            {
+                "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeQ",
+                "before": [{
+                    "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+                    "___type___": "Adapter"
+                }],
+                "name": "ImmediateByEvent",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Immediate"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["eventTransformationRule"]
+            }
+        ],
+        "name": "AdaptiveStateMachines",
+        "ecore": "StateMachinePL.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "trafos/AdaptiveStateMachines.henshin"
+    }
+}

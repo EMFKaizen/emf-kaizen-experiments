@@ -1,0 +1,48 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create two adapters, one applicable before the other, and both requiring the activation of feature 'Multi'",
+    "soba_timestamp": "12:21:50",
+    "recommendationPayload": {
+        "adapters": [
+            {
+                "before": [],
+                "name": "FirstAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["firstRule"]
+            },
+            {
+                "before": ["FirstAdapter"],
+                "name": "SecondAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Multi"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": []
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["secondRule"]
+            }
+        ],
+        "___type___": "AdapterModel"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create an adapter with the rules of the selected adapters",
+    "soba_timestamp": "12:26:57",
+    "recommendationPayload": {
+        "xmi_id": "_3xMQHRQAEfGgiLaW5H9bqA",
+        "before": ["_3xMQBRQAEfGgiLaW5H9bqA"],
+        "name": "CombinedAdapter",
+        "___type___": "Adapter",
+        "cfgDiff": {
+            "xmi_id": "_3xMQHhQAEfGgiLaW5H9bqA",
+            "delta": {
+                "xmi_id": "_3xMQHxQAEfGgiLaW5H9bqA",
+                "negSet": [
+                    "Multi",
+                    "Ref"
+                ],
+                "___type___": "ConfigDelta",
+                "posSet": []
+            },
+            "context": {
+                "xmi_id": "_3xMQIBQAEfGgiLaW5H9bqA",
+                "negSet": [],
+                "___type___": "ConfigContext",
+                "posSet": []
+            },
+            "___type___": "ConfigDiff"
+        },
+        "rules": [
+            "multiBySingle",
+            "inhByRef",
+            "createInterface",
+            "copyMethods"
+        ]
+    }
+}

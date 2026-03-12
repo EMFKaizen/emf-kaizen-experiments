@@ -1,0 +1,84 @@
+[DATE]07/03/26
+
+EMF Kaizen: Welcome to EMF Kaizen! Ask me anything about your model.||12:22
+
+You: create a class Order with attribute customerName||12:22
+
+EMF Kaizen: Processing recommendation request [#1]...
+
+------------------------------||12:23||Generated in 20,37s
+EMF Kaizen: Recommendation request [#1] processed.
+Response:
+soba.core.processor.AssistantResponse@24f3e945
+------------------------------
+
+You: Create a private class OrderTrack with a unique id||12:24
+
+EMF Kaizen: Processing recommendation request [#2]...
+
+------------------------------||12:25||Generated in 12,16s
+EMF Kaizen: Recommendation request [#2] processed.
+Response:
+soba.core.processor.AssistantResponse@1bf18ca8
+------------------------------
+
+You: Create two more subclasses for the selected class||12:27
+
+EMF Kaizen: Processing recommendation request [#3]...
+
+------------------------------||12:27||Generated in 21,07s
+EMF Kaizen: Recommendation request [#3] processed.
+Response:
+soba.core.processor.AssistantResponse@7931048d
+------------------------------
+
+You: create more primitive types, different from the selected ones||12:30
+
+EMF Kaizen: Processing recommendation request [#4]...
+
+------------------------------||12:30||Generated in 12,68s
+EMF Kaizen: Recommendation request [#4] processed.
+Response:
+soba.core.processor.AssistantResponse@7a80994a
+------------------------------
+
+You: recommend two attributes for class Pizza||12:31
+
+EMF Kaizen: Processing recommendation request [#5]...
+
+------------------------------||12:32||Generated in 34,15s
+EMF Kaizen: Recommendation request [#5] processed.
+Response:
+soba.core.processor.AssistantResponse@cb8eeb6
+------------------------------
+
+You: recommend 2 classes for the model||12:33
+
+EMF Kaizen: Processing recommendation request [#6]...
+
+------------------------------||12:33||Generated in 8,12s
+EMF Kaizen: Recommendation request [#6] processed.
+Response:
+soba.core.processor.AssistantResponse@62b7a99a
+------------------------------
+
+You: The pizzera should consider drinks, and orders, which are made of drinks and pizzas||12:34
+
+EMF Kaizen: Processing recommendation request [#7]...
+
+------------------------------||12:35||Generated in 19,34s
+EMF Kaizen: Recommendation request [#7] processed.
+Response:
+soba.core.processor.AssistantResponse@72901c0d
+------------------------------
+
+You: The pizzeria model should consider discounts, which have an expiration date, and can be either for a fixed amount, or a percentage||12:36
+
+EMF Kaizen: Processing recommendation request [#8]...
+
+------------------------------||12:37||Generated in 25,87s
+EMF Kaizen: Recommendation request [#8] processed.
+Response:
+soba.core.processor.AssistantResponse@60d7f351
+------------------------------
+

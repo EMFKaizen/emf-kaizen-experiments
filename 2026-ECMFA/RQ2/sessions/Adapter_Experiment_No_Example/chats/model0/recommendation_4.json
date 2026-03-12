@@ -1,0 +1,54 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Create two adapters applicable when Ref is activated/deactivated, and both needing Multi as positive context",
+    "soba_timestamp": "11:26:21",
+    "recommendationPayload": {
+        "xmi_id": "_iWVzoBPiEfG6t-d1nvGLWA",
+        "adapters": [
+            {
+                "name": "RefActivationAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": ["Ref"],
+                        "___type___": "ConfigDelta",
+                        "posSet": []
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Multi"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Rule1"]
+            },
+            {
+                "before": [{
+                    "name": "RefActivationAdapter",
+                    "___type___": "Adapter"
+                }],
+                "name": "RefDeactivationAdapter",
+                "___type___": "Adapter",
+                "cfgDiff": {
+                    "delta": {
+                        "negSet": [],
+                        "___type___": "ConfigDelta",
+                        "posSet": ["Ref"]
+                    },
+                    "context": {
+                        "negSet": [],
+                        "___type___": "ConfigContext",
+                        "posSet": ["Multi"]
+                    },
+                    "___type___": "ConfigDiff"
+                },
+                "rules": ["Rule2"]
+            }
+        ],
+        "name": "AdaptiveClassDiagrams",
+        "ecore": "classDiagrams.ecore",
+        "___type___": "AdapterModel",
+        "transformation": "adaptationRules.henshin"
+    }
+}

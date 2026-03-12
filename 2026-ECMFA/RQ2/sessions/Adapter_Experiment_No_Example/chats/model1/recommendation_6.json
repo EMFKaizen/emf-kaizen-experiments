@@ -1,0 +1,31 @@
+{
+    "soba_metaModelURI": "http://adapters.org/0.1",
+    "soba_userInput": "Assumming features: ExitAction, Actions, EntryAction, recommend features for the context and delta of the selected adapter",
+    "soba_timestamp": "12:09:34",
+    "recommendationPayload": {
+        "xmi_id": "_mo1PqBP6EfGmU-1fq2dpeQ",
+        "before": [],
+        "name": "ActivateExitActions",
+        "___type___": "Adapter",
+        "cfgDiff": {
+            "xmi_id": "_mo1PqRP6EfGmU-1fq2dpeQ",
+            "delta": {
+                "xmi_id": "_mo1PqP6EfGmU-1fq2dpeQ",
+                "negSet": [],
+                "___type___": "ConfigDelta",
+                "posSet": ["ExitActions"]
+            },
+            "context": {
+                "xmi_id": "_mo1PqX6EfGmU-1fq2dpeQ",
+                "negSet": [],
+                "___type___": "ConfigContext",
+                "posSet": [
+                    "Actions",
+                    "EntryAction"
+                ]
+            },
+            "___type___": "ConfigDiff"
+        },
+        "rules": ["activateExitActions"]
+    }
+}

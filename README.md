@@ -1,4 +1,4 @@
-# Emf Kaizen Experiments
+# <img src="2026-ECMFA/figures/logov1.png" width="20" style="vertical-align:middle;"> EMF-Kaizen Experiments
 
 This repository collects experimental artifacts associated with research
 papers that evaluate the EMF-Kaizen approach.

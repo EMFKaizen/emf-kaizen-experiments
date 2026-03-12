@@ -27,6 +27,11 @@ Folder [RQ1](./RQ1) contains:
 - Produced recommedation by EMF-Kaizen, for each model and request
 - Raw and aggregated evaluation results
 
+Measurements:
+- The results show syntactic errors, redundandy, semantic fidelity, recommendation size and recommendation time.
+- For semantic fidelity, we took as model the experiment in [Cibrian et al.](https://www.sciencedirect.com/science/article/pii/S0166361525001150), were three levels of fidelity were identified: low (1), medium (2) and high (3). Below are some examples of low, medium and high fidelity for the case study of state machines, were in model2 (a State machine of an ATM) the task is to _Create a composite state to model ending the session with the ATM, in full detail_
+
+
 ### Experiment for RQ2
 Design:
 - We selected 2 meta-models: the standard UML2 and another for specifying adapters for model migration transformations in adaptive languages. You can check the paper [here](https://www.miso.es/pubs/tosem_adaptive.pdf).
@@ -41,3 +46,6 @@ Folder [RQ2](./RQ2) contains:
 - Natural-language assistance requests
 - Produced recommedation by EMF-Kaizen, for each model and request
 - Raw and aggregated evaluation results
+
+Measurements:
+- The results show syntactic errors, redundandy, semantic fidelity, recommendation size and recommendation time.

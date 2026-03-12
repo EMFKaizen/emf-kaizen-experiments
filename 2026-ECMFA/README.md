@@ -31,6 +31,15 @@ Measurements:
 - The results show syntactic errors, redundandy, semantic fidelity, recommendation size and recommendation time.
 - For semantic fidelity, we took as model the experiment in [Cibrian et al.](https://www.sciencedirect.com/science/article/pii/S0166361525001150), were three levels of fidelity were identified: low (1), medium (2) and high (3). Below are some examples of low, medium and high fidelity for the case study of state machines, were in model2 (a State machine of an ATM) the task is to _Create a composite state to model ending the session with the ATM, in full detail_
 
+<p align="center">
+  <img src="images/gpt-41-mini_high.png" width="45%">
+  <img src="images/gpt-4o-mini-medium.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="images/gpt-5o-mini-high.png" width="45%">
+  <img src="images/gemini_25-low.png" width="45%">
+</p>
 
 ### Experiment for RQ2
 Design:
